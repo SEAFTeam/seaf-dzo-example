@@ -1,6 +1,6 @@
 # ООО Березка
 Пример описания корпоративной архитектуры с использованием специализированного 
-фреймворка [SEAF.DZO](./_metamodel_/seaf-dzo/README.md) основанного на [SEAF](./_metamodel_/seaf-core/README.md).
+фреймворка [SEAF.DZO](./_metamodel_/seaf-dzo-core/README.md) основанного на [SEAF](./_metamodel_/seaf-core/README.md).
 
 Структура примера:
 ```mermaid

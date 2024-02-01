@@ -37,10 +37,20 @@ flowchart TB
    ```console
    npx archpkg install
    ```
-5. Откройте проект в IDE.
+5. Перед тем как приступить к работе с проектом, нужно установить graphviz c помощью команды:
+    ```console
+        linux: 
+                 sudo apt-get install graphviz
+        
+        windows: 
+                 winget install graphviz
+    ```
+   детальнее по установке можно посмотреть [тут](https://graphviz.org/download/)
+6. Откройте проект в IDE.
 
 **ВНИМАНИЕ:**
  Рекомендуется использовать плагин IDEA версии 3.12.0 и выше!
+ Ссылка на [плагин](https://github.com/RabotaRu/DocHub/tree/master/distrib).
 
 ## Структура меню
 ```
@@ -86,6 +96,12 @@ flowchart TB
 |- README.md        - Описание репозитория
 
 ```
+
+## Системные требования:
+```
+nodejs 20.х.х
+```
+
 
 ## Лицензия
 

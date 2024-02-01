@@ -1,0 +1,9 @@
+#This file is generated automatically by the utility https://www.npmjs.com/package/archpkg.
+#It is not recommended to make changes to it.
+
+imports:
+  - seaf-core\dochub.yaml
+  - seaf-dzo-core\dochub.yaml
+  - mm-discovery\dochub.yaml
+  - iaas\dochub.yaml
+  - hexagon\dochub.yaml

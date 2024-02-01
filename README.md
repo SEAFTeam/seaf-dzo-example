@@ -100,6 +100,7 @@ flowchart TB
 ## Системные требования:
 ```
 nodejs 20.х.х
+Dochub latest
 ```
 
 

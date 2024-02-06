@@ -313,6 +313,8 @@ seaf.ta.services.network_links:
     ch_type: Основной
     description: Связь между VK и Cloud
     bandwidth: 100
+    ch_number: 600
+    provider: МТС
 
 
   sber.berezka.network_links.cloud_hq:
@@ -324,6 +326,8 @@ seaf.ta.services.network_links:
     ch_type: Основной
     description: Связь между Cloud и головным офисом
     bandwidth: 100
+    ch_number: 700
+    provider: МТС
 
   sber.berezka.network_links.cloud_laptop:
     network_appliance_id:
@@ -334,6 +338,8 @@ seaf.ta.services.network_links:
     ch_type: Основной
     description: Связь между Cloud и клиентскими устройствами
     bandwidth: 10
+    ch_number: 800
+    provider: МТС
 
 #### Создаём описание любых серверов
 seaf.ta.components.server:

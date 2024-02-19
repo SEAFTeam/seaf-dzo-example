@@ -65,3 +65,23 @@ components:
       provider_type: Собственная разработка
       stores_confidential_data: false
       cloud_readiness: Компоненты в гибридном публичном облаке/наборе облаков с управляемыми облачными поставщиками инфраструктурными сервисами (Cloud Native 5)
+
+  sber.berezka.home_cinema.catalog.app:
+    entity: component
+    title: Каталога контента
+    type: component
+
+  sber.berezka.home_cinema.canals.app:
+    entity: component
+    title: Микросервис ТВ-каналы
+    type: component
+
+  sber.berezka.home_cinema.payments.app:
+    entity: component
+    title: Платежи
+    type: component
+
+  sber.berezka.home_cinema.recommendation.app:
+    entity: component
+    title: Рекомендации
+    type: component

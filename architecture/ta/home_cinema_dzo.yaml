@@ -3,24 +3,24 @@
 
 seaf.ta.components.k8s_deployment:
   seaf.ta.components.k8s_deployment.auth:
+    title: Auth
+    description: Микросервис аутентификации
     maxunavailable: 2
     update_strategy: RollingUpdate
     kubernetes_id:
       - sber.berezka.k8s.02
     replicas: 10
-    name: Auth
-    description: Микросервис аутентификации
     deployment_id: k8s_deployment.auth
     availabilityzone_id: sber.berezka.dc_az.moscow
 
   seaf.ta.components.k8s_deployment.payments:
+    title: Payments
+    description: Микросервис платежей
     maxunavailable: 2
     update_strategy: RollingUpdate
     kubernetes_id:
       - sber.berezka.k8s.01
     replicas: 10
-    name: Payments
-    description: Микросервис платежей
     deployment_id: k8s_deployment.payments
     availabilityzone_id: sber.berezka.dc_az.moscow
 
@@ -35,7 +35,7 @@ seaf.ta.components.k8s_pod:
     update_strategy: RollingUpdate
     kubernetes_id:
       - sber.berezka.k8s.02
-    name: Auth Back
+    title: Auth Back
     pod_k8s_id: k8s_pod.auth
     stoptimeout: 60
     ml: false
@@ -52,7 +52,7 @@ seaf.ta.components.k8s_pod:
     update_strategy: RollingUpdate
     kubernetes_id:
       - sber.berezka.k8s.01
-    name: Payments Back
+    title: Payments Back
     pod_k8s_id: k8s_pod.payments
     stoptimeout: 60
     ml: false
@@ -62,17 +62,17 @@ seaf.ta.components.k8s_pod:
 seaf.ta.components.k8s_container:
   seaf.ta.services.k8s_container.identity:
     container_ram: 512
-    name: Identity Container
+    title: Identity Container
     container_type: Контейнер с бизнес-логикой
     emergency_stop: Уровень настройки среды исполнения
-    description: Identity Container
+    description: Контейнер с бизнес-логикой
     container_cpu: 1000
     container_id: k8s_container.identity
     affinity: yes
 
   seaf.ta.services.k8s_container.transaction:
     container_ram: 512
-    name: Identity Container
+    title: Identity Container
     container_type: Контейнер с бизнес-логикой
     emergency_stop: Уровень настройки среды исполнения
     description: Transaction Container
@@ -84,7 +84,7 @@ seaf.ta.components.k8s_image:
   seaf.ta.services.k8s_image.identity:
     repo_path: https://repo.berezka.ru/repo
     image_size: 1000
-    name: identity
+    title: identity
     repo_proved: true
     description: Образ контейнера
     image_id: k8s_image.identity
@@ -92,15 +92,16 @@ seaf.ta.components.k8s_image:
   seaf.ta.services.k8s_image.transaction:
     repo_path: https://repo.berezka.ru/repo
     image_size: 1000
-    name: transaction
+    title: transaction
     repo_proved: true
     description: Образ контейнера
     image_id: k8s_image.transaction
 
 seaf.ta.components.network:
   sber.berezka.network.cisco.04:
+    title: Cisco ASR 1001-X
+    description: Аппаратный маршрутизатор
     network_appliance_id: cisco.04
-    name: Cisco ASR 1001-X
     model: ASR 1001-X
     realization_type:  Физический
     address: 192.168.1.2
@@ -145,36 +146,8 @@ seaf.ta.services.k8s:
       ntp_server: ntp.berezka.ru
 
 seaf.ta.components.server:
-  sber.berezka.server_metal.08:
-    server_id: server_metal.08
-    fqdn_name: server_metal.08.berezka.ru
-    disks:
-      - disks:
-          availabilityzone_id: dc_az.moscow
-          size: 100
-          type: SSD
-    nic_qty: 4
-    os:
-      name: 'Ubuntu 18.04'
-      bit: '64'
-    cpu:
-      cores: 4
-      frequency: 1700
-    ram_qty: 128
-    dc_id: sber.berezka.dc.02
-    vendor: HP
-    type: Физический
-    model: DL360 G8
-    sber:
-      power_module_qty: 2
-      raid_level:
-        - 1
-        - 6
-      rack_mount: true
-      fan_qty: 4
-      raid_spare_disks: 2
-
   sber.berezka.server_metal.09:
+    title: Физический сервер
     server_id: server_metal.09
     fqdn_name: server_metal.09.berezka.ru
     disks:
@@ -203,8 +176,40 @@ seaf.ta.components.server:
       fan_qty: 4
       raid_spare_disks: 2
 
+  sber.berezka.server_metal.10:
+    title: Физический сервер
+    server_id: server_metal.10
+    fqdn_name: server_metal.10.berezka.ru
+    disks:
+      - disks:
+          availabilityzone_id: dc_az.moscow
+          size: 100
+          type: SSD
+    nic_qty: 4
+    os:
+      name: 'Ubuntu 18.04'
+      bit: '64'
+    cpu:
+      cores: 4
+      frequency: 1700
+    ram_qty: 128
+    dc_id: sber.berezka.dc.02
+    vendor: HP
+    type: Физический
+    model: DL360 G8
+    sber:
+      power_module_qty: 2
+      raid_level:
+        - 1
+        - 6
+      rack_mount: true
+      fan_qty: 4
+      raid_spare_disks: 2
+
 seaf.ta.components.hw_storage:
   sber.berezka.hw_storage.02:
+    title: СХД
+    description: Аппаратное хранилище
     storage_id: hw_storage.02
     vendor: IBM Storwize 7000
     volume: 10000
@@ -228,7 +233,8 @@ seaf.ta.components.hw_storage:
 
 seaf.ta.services.monitoring:
   sber.berezka.monitoring.02:
-    name: Zabbix
+    title: Zabbix
+    description: Инфра мониторинг 2
     monitoring_id: monitoring.02
     ha: true
     availabilityzone_id:

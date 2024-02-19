@@ -16,10 +16,11 @@ seaf.ta.services.dc_region:
     region_name: Регион Россия
     title: Регион доступности Россия ООО Березка
     app_components:
-      - sber.berezka.home_cinema.auth
-      - sber.berezka.home_cinema.catalog
-      - sber.berezka.home_cinema.canals
-      - sber.berezka.home_cinema.payments
+      - sber.berezka.home_cinema.auth.app
+      - sber.berezka.home_cinema.auth.token_manager
+      - sber.berezka.home_cinema.catalog.app
+      - sber.berezka.home_cinema.canals.app
+      - sber.berezka.home_cinema.payments.app
 
 #### Создаём AZ
 seaf.ta.services.dc_az:
@@ -29,10 +30,11 @@ seaf.ta.services.dc_az:
     az_vendor: Березка
     availabilityzone_id: dc_az.moscow
     app_components:
-      - sber.berezka.home_cinema.auth
-      - sber.berezka.home_cinema.catalog
-      - sber.berezka.home_cinema.canals
-      - sber.berezka.home_cinema.payments
+      - sber.berezka.home_cinema.auth.app
+      - sber.berezka.home_cinema.auth.token_manager
+      - sber.berezka.home_cinema.catalog.app
+      - sber.berezka.home_cinema.canals.app
+      - sber.berezka.home_cinema.payments.app
 #### Создаём ЦОД
 seaf.ta.services.dc:
   sber.berezka.dc.01:
@@ -46,8 +48,9 @@ seaf.ta.services.dc:
     dc_ownership: Аренда
     availabilityzone_id: sber.berezka.dc_az.moscow
     app_components:
-      - sber.berezka.home_cinema.auth
-      - sber.berezka.home_cinema.catalog
+      - sber.berezka.home_cinema.auth.app
+      - sber.berezka.home_cinema.auth.token_manager
+      - sber.berezka.home_cinema.catalog.app
 
   sber.berezka.dc.02:
     dc_id: dc.02
@@ -60,8 +63,9 @@ seaf.ta.services.dc:
     dc_tier: '3'
     dc_ownership: Аренда
     app_components:
-      - sber.berezka.home_cinema.auth
-      - sber.berezka.home_cinema.catalog
+      - sber.berezka.home_cinema.auth.app
+      - sber.berezka.home_cinema.auth.token_manager
+      - sber.berezka.home_cinema.catalog.app
 #### Создаём офис
 seaf.ta.services.office:
   sber.berezka.office.hq:
@@ -77,8 +81,9 @@ seaf.ta.services.cluster_virtualization:
     availabilityzone_id:
       - sber.berezka.dc_az.moscow
     app_components:
-      - sber.berezka.home_cinema.auth
-      - sber.berezka.home_cinema.catalog
+      - sber.berezka.home_cinema.auth.app
+      - sber.berezka.home_cinema.auth.token_manager
+      - sber.berezka.home_cinema.catalog.app
     drs_support: true
     sdrs_support: true
     name: Кластер виртуализации в облаке Cloud
@@ -90,8 +95,9 @@ seaf.ta.services.cluster_virtualization:
     availabilityzone_id:
       - sber.berezka.dc_az.moscow
     app_components:
-      - sber.berezka.home_cinema.auth
-      - sber.berezka.home_cinema.catalog
+      - sber.berezka.home_cinema.auth.app
+      - sber.berezka.home_cinema.auth.token_manager
+      - sber.berezka.home_cinema.catalog.app
     drs_support: true
     sdrs_support: true
     cluster_fqdn: vcenter.berezka.ru
@@ -113,8 +119,9 @@ seaf.ta.services.cluster_virtualization:
     availabilityzone_id:
       - sber.berezka.dc_az.moscow
     app_components:
-      - sber.berezka.home_cinema.auth
-      - sber.berezka.home_cinema.catalog
+      - sber.berezka.home_cinema.auth.app
+      - sber.berezka.home_cinema.auth.token_manager
+      - sber.berezka.home_cinema.catalog.app
     drs_support: true
     sdrs_support: true
     name: Кластер виртуализации в облаке VK
@@ -772,7 +779,7 @@ seaf.ta.services.storage:
     software: SaaS
     storage_id: obj_storage.cloud_s3
     app_components:
-      - sber.berezka.home_cinema.catalog
+      - sber.berezka.home_cinema.catalog.app
   sber.berezka.obj_storage.vk_s3:
     name: S3 VK
     availabilityzone_id:
@@ -782,7 +789,7 @@ seaf.ta.services.storage:
     software: SaaS
     storage_id: obj_storage.vk_s3
     app_components:
-      - sber.berezka.home_cinema.catalog
+      - sber.berezka.home_cinema.catalog.app
 #### Создаём описание кластеров
 seaf.ta.services.cluster:
   sber.berezka.cluster.01:
@@ -790,8 +797,8 @@ seaf.ta.services.cluster:
     availabilityzone_id:
       - sber.berezka.dc_az.moscow
     app_components:
-      - sber.berezka.home_cinema.catalog
-      - sber.berezka.home_cinema.canals
+      - sber.berezka.home_cinema.catalog.app
+      - sber.berezka.home_cinema.canals.app
     server_id:
       - sber.berezka.server_virtual.01
       - sber.berezka.server_virtual.02
@@ -799,7 +806,7 @@ seaf.ta.services.cluster:
       - sber.berezka.server_virtual.04
     cluster_fqdn: wildfly.berezka.ru
     cluster_reservation_type: Active-Active
-    description: Wildfly cluster for sber.berezka.home_cinema.catalog
+    description: Wildfly cluster for sber.berezka.home_cinema.catalog.app
     requirements:
       - ta.requirement1
       - ta.requirement2
@@ -830,7 +837,7 @@ seaf.ta.services.k8s:
       - sber.berezka.server_virtual.09
       - sber.berezka.server_virtual.10
     app_components:
-      - sber.berezka.home_cinema.payments
+      - sber.berezka.home_cinema.payments.app
 
   sber.berezka.k8s.02:
     master_qty: 3
@@ -856,7 +863,7 @@ seaf.ta.services.k8s:
       - sber.berezka.server_virtual.09
       - sber.berezka.server_virtual.10
     app_components:
-      - sber.berezka.home_cinema.auth
+      - sber.berezka.home_cinema.auth.app
 
 #### Создаём описание сервиса мониторинга
 seaf.ta.services.monitoring:
@@ -868,10 +875,11 @@ seaf.ta.services.monitoring:
       - sber.berezka.dc_az.moscow
     role: Инфраструктурный
     app_components:
-      - sber.berezka.home_cinema.auth
-      - sber.berezka.home_cinema.catalog
-      - sber.berezka.home_cinema.canals
-      - sber.berezka.home_cinema.payments
+      - sber.berezka.home_cinema.auth.app
+      - sber.berezka.home_cinema.auth.token_manager
+      - sber.berezka.home_cinema.catalog.app
+      - sber.berezka.home_cinema.canals.app
+      - sber.berezka.home_cinema.payments.app
 
 #### Создаём описание сервиса резервного копирования
 seaf.ta.services.backup:
@@ -884,10 +892,11 @@ seaf.ta.services.backup:
       - sber.berezka.dc_az.moscow
     replication: false
     app_components:
-      - sber.berezka.home_cinema.auth
-      - sber.berezka.home_cinema.catalog
-      - sber.berezka.home_cinema.payments
-      - sber.berezka.home_cinema.canals
+      - sber.berezka.home_cinema.auth.app
+      - sber.berezka.home_cinema.auth.token_manager
+      - sber.berezka.home_cinema.catalog.app
+      - sber.berezka.home_cinema.payments.app
+      - sber.berezka.home_cinema.canals.app
 #### Создаём описание лицензий
 seaf.ta.services.software:
   seaf.ta.services.licenses.acronis:
@@ -905,5 +914,5 @@ seaf.ta.services.software:
     type: Закрытая платная
     support: Expired
     app_components:
-      - sber.berezka.home_cinema.payments
+      - sber.berezka.home_cinema.payments.app
     lic_qty: 10

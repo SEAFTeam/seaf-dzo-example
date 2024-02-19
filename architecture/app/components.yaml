@@ -6,8 +6,8 @@ components:
     links:
       - id: sber.berezka.1c.db
         direction: '-->'
+    type: component
     sber:
-      type: component
       is_component_of: sber.berezka.1c
       component_type: Сервер Приложений
       scalability: Горизонтальная
@@ -20,8 +20,8 @@ components:
   sber.berezka.1c.db:
     entity: database
     title: База данных 1С
+    type: component
     sber:
-      type: component
       is_component_of: sber.berezka.1c
       component_type: Реляционная СУБД
       scalability: Вертикальная
@@ -41,8 +41,8 @@ components:
       - id: sber.berezka.home_cinema.auth.token_manager
         title: Создание токена
         direction: '-->'
+    type: component
     sber:
-      type: component
       component_type: Сервер Приложений
       is_component_of: sber.berezka.home_cinema.auth
       scalability: Горизонтальная
@@ -55,13 +55,13 @@ components:
   sber.berezka.home_cinema.auth.token_manager:
     entity: component
     title: Менеджер токенов
+    type: component
     sber:
-      type: component
       is_component_of: sber.berezka.home_cinema.auth
       component_type: Микросервис
       scalability: Горизонтальная
-      store_confidential_data: false
       id: 079bdad9-c1c8-412d-93ac-e984e8fe3f8f
       provider: ООО Березка
       provider_type: Собственная разработка
+      stores_confidential_data: false
       cloud_readiness: Компоненты в гибридном публичном облаке/наборе облаков с управляемыми облачными поставщиками инфраструктурными сервисами (Cloud Native 5)

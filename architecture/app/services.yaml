@@ -4,12 +4,17 @@ components:
     description: Домашний кинотеатр
     title: Домашний кинотеатр
 
+  sber.berezka.home_cinema.recomendation:
+    entity: component
+    title: Рекомендации
+    type: service
+
   sber.berezka.home_cinema.catalog:
     entity: component
     title: Каталог фильмов
     description: Каталог фильмов
+    type: service
     sber:
-      type: service
       criticality: Business Critical
       role_model: Централизованная
       class: Продуктовая фабрика (основная деятельность)
@@ -20,8 +25,8 @@ components:
     description: Осуществление платежей пользователей за подписки
     aspects:
       - sber.berezka.home_cinema.payments
+    type: service
     sber:
-      type: service
       criticality: Business Operational
       role_model: Централизованная
       class: Иное
@@ -33,8 +38,8 @@ components:
     aspects:
       - sber.berezka.home_cinema.catalog.multiplex.c1
       - sber.berezka.home_cinema.catalog.multiplex.c2
+    type: service
     sber:
-      type: service
       criticality: Business Operational
       role_model: Централизованная
       class: Иное
@@ -43,8 +48,8 @@ components:
     entity: component
     title: Прикладной сервис аутентификации
     description: Авторизация пользователей для доступа к Домашнему кинотеарту
+    type: service
     sber:
-      type: service
       criticality: Business Critical
       role_model: Централизованная
       class: Клиентский профиль (Customer Information File)
@@ -52,8 +57,8 @@ components:
   sber.berezka.1c:
     entity: component
     title: 1C
+    type: service
     sber:
-      type: service
       role_model: Нецентрализованная
       criticality: Office Productivity
       class: Бухгалтерия и финансы

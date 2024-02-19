@@ -81,7 +81,7 @@ components:
     title: Платежи
     type: component
 
-  sber.berezka.home_cinema.recommendation.app:
+  sber.berezka.home_cinema.recomendation.app:
     entity: component
     title: Рекомендации
     type: component

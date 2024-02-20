@@ -145,9 +145,9 @@ seaf.ta.services.k8s:
       ntp_server: ntp.berezka.ru
 
 seaf.ta.components.server:
-  sber.berezka.server_metal.07:
-    server_id: server_metal.07
-    fqdn_name: server_metal.07.berezka.ru
+  sber.berezka.server_metal.08:
+    server_id: server_metal.08
+    fqdn_name: server_metal.08.berezka.ru
     disks:
       - disks:
           availabilityzone_id: dc_az.moscow
@@ -174,9 +174,9 @@ seaf.ta.components.server:
       fan_qty: 4
       raid_spare_disks: 2
 
-  sber.berezka.server_metal.08:
-    server_id: server_metal.08
-    fqdn_name: server_metal.08.berezka.ru
+  sber.berezka.server_metal.09:
+    server_id: server_metal.09
+    fqdn_name: server_metal.09.berezka.ru
     disks:
       - disks:
           availabilityzone_id: dc_az.moscow

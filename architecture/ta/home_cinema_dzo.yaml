@@ -122,7 +122,7 @@ seaf.ta.services.k8s:
     cni: Calico
     is_own: false
     app_components:
-      - sber.berezka.home_cinema.payments
+      - sber.berezka.home_cinema.payments.app
     cluster_autoscaler: true
     hpa: true
     keys: Vault
@@ -235,8 +235,9 @@ seaf.ta.services.monitoring:
       - sber.berezka.dc_az.moscow
     role: Инфраструктурный
     app_components:
-      - sber.berezka.home_cinema.auth
-      - sber.berezka.home_cinema.catalog
+      - sber.berezka.home_cinema.auth.app
+      - sber.berezka.home_cinema.auth.token_manager
+      - sber.berezka.home_cinema.catalog.app
     sber:
       siem_anabled: true
       alarm_transport:

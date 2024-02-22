@@ -12,7 +12,7 @@ $package:
     version: 1.2.2
     # Зависимости от других пакетов
     dependencies:
-      seaf-dzo-core: "1.2.2"
+      seaf-dzo-core: ">=1.2.2"
       hexagon: ">=1.1.0"
       iaas: ">=1.2.0"
       dochub: ">=3.9.0"

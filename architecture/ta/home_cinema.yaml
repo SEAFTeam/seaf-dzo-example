@@ -91,7 +91,6 @@ seaf.ta.services.cluster_virtualization:
       - sber.berezka.home_cinema.catalog.app
     drs_support: true
     sdrs_support: true
-    name: Кластер виртуализации в облаке Cloud
     oversubscription_rate: 1
 
   sber.berezka.cluster_virtualization.cloud.02:
@@ -117,10 +116,9 @@ seaf.ta.services.cluster_virtualization:
       - sber.berezka.server_metal.04
       - sber.berezka.server_metal.05
       - sber.berezka.server_metal.06
-    name: Собственный кластер виртуализации в облаке Cloud
 
   sber.berezka.cluster_virtualization.vk.01:
-    title: Кластер виртуализации
+    title: Кластер виртуализации в облаке VK
     description: Кластер виртуализации в облаке VK
     virtualization_id: cluster_virtualization.vk.01
     availabilityzone_id:
@@ -131,7 +129,6 @@ seaf.ta.services.cluster_virtualization:
       - sber.berezka.home_cinema.catalog.app
     drs_support: true
     sdrs_support: true
-    name: Кластер виртуализации в облаке VK
     oversubscription_rate: 1
 
 #### Создаём описание сетевых устройств
@@ -191,6 +188,7 @@ seaf.ta.components.network:
     placement_type: Периметр
     purpose: VPN шлюз
     address: 192.168.1.2
+
 #### Создаём описание сетей
 seaf.ta.services.network:
 #### Создаём описание внутренних сети
@@ -844,6 +842,7 @@ seaf.ta.services.storage:
     storage_id: obj_storage.vk_s3
     app_components:
       - sber.berezka.home_cinema.catalog.app
+
 #### Создаём описание кластеров
 seaf.ta.services.cluster:
   sber.berezka.cluster.01:
@@ -958,6 +957,7 @@ seaf.ta.services.backup:
       - sber.berezka.home_cinema.catalog.app
       - sber.berezka.home_cinema.payments.app
       - sber.berezka.home_cinema.canals.app
+
 #### Создаём описание лицензий
 seaf.ta.services.software:
   seaf.ta.services.licenses.acronis:

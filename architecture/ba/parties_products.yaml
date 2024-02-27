@@ -73,6 +73,13 @@ seaf.ba.parties:
   sber.sosenka:
     title: Сосенка
 
+  sber.sosenka.customers:
+    title: Клиенты Сосенки
+    relates:
+      - sber.sosenka
+    has_interest:
+      - sber.berezka.partner_catalog
+
   sber.berezka.customers:
     title: Клиенты Березки
     relates:
@@ -114,6 +121,12 @@ seaf.ba.parties:
 
 seaf.ba.products:
 
+  sber.sosenka.mobile_app:
+    title: Мобильное приложение партнера для потребления медиа-контента
+    owner: sber.sosenka
+    is_channel:
+      type: Цифровой
+
   sber.berezka.media_platform_saas:
     title: Медиа-платформа
     owner: sber.berezka
@@ -140,6 +153,8 @@ seaf.ba.products:
   sber.berezka.partner_catalog:
     title: Каталог контента для партнера
     owner: sber.berezka
+    used_in:
+      - sber.sosenka.mobile_app
 
   sber.berezka.content_catalog:
     title: Каталог контента

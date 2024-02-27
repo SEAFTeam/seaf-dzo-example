@@ -189,6 +189,8 @@ seaf.ba.products:
     owner: sber.berezka.team.support
     used_in:
       - sber.berezka.support
+    is_channel:
+      type: Цифровой
 
   sber.berezka.support_channels.telegram:
     title: Поддержка пользователей в телеграм

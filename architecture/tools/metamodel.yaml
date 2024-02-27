@@ -98,6 +98,14 @@ mm_discovery.stalker:
         title: Зона Advanced
     domains:
       - seaf.ta.**
+  sber.berezka.technical_reverese_adv:
+    title: Техническая архитектура Advanced Reverse
+    location: Метамодель/Техническая/Reverse/Advanced
+    nodes:
+      seaf.ta.reverse.cloud_ru.advanced:
+        title: Зона Advanced
+    domains:
+      - seaf.ta.reverse.cloud_ru.advanced.**
   sber.berezka.ia:
     title: Информационная архитектура
     location: Метамодель/Информационная архитектура

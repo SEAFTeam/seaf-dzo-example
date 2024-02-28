@@ -198,7 +198,7 @@ seaf.ta.services.network:
     type: LAN
     segment: Сегмент обработки данных
     lan_type: Проводная
-    ipnetowrk: 192.168.1.0/24
+    ipnetwork: 192.168.1.0/24
     network_appliance_id:
       - sber.berezka.network.cisco.01
     description: Сеть внутри co-location Cloud
@@ -212,7 +212,7 @@ seaf.ta.services.network:
     type: LAN
     segment: Сегмент обработки данных
     lan_type: Проводная
-    ipnetowrk: 192.168.2.0/24
+    ipnetwork: 192.168.2.0/24
     network_appliance_id:
       - sber.berezka.network.cisco.01
     description: Сеть внутри Cloud
@@ -226,7 +226,7 @@ seaf.ta.services.network:
     type: LAN
     segment: Сегмент обработки данных
     lan_type: Проводная
-    ipnetowrk: 192.168.3.0/24
+    ipnetwork: 192.168.3.0/24
     network_appliance_id:
       -
     description: Сеть внутри VK
@@ -240,7 +240,7 @@ seaf.ta.services.network:
     type: LAN
     segment: Клиентский
     lan_type: Проводная
-    ipnetowrk: 192.168.4.0/24
+    ipnetwork: 192.168.4.0/24
     network_appliance_id:
       - sber.berezka.network.cisco.03
     description: Сеть внутри головного офиса
@@ -321,7 +321,7 @@ seaf.ta.services.network:
   sber.berezka.dmz.10.10.10.0:
     title: DMZ сеть
     vlan: 100
-    ipnetowrk: 10.10.10.0/24
+    ipnetwork: 10.10.10.0/24
     purpose: DMZ сеть
     type: LAN
     lan_type: Проводная

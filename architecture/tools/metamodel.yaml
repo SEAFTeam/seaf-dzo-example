@@ -98,6 +98,23 @@ mm_discovery.stalker:
         title: Зона Advanced
     domains:
       - seaf.ta.**
+  sber.sbertech.k8s:
+    title: Kubernetes
+    location: Метамодель/Техническая/Kubernetes
+    nodes:
+      seaf:
+        title: SEAF
+      seaf.ta:
+        title: Kubernetes Архитектура
+    domains:
+      - seaf.ta.services.k8s
+      - seaf.ta.components.k8s_deployment
+      - seaf.ta.components.k8s_pod
+      - seaf.ta.components.k8s_container
+      - seaf.ta.components.k8s_image
+      - seaf.ta.services.network
+      - seaf.ta.components.server
+      - seaf.ta.services.dc_az
   sber.berezka.ia:
     title: Информационная архитектура
     location: Метамодель/Информационная архитектура

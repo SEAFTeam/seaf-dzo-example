@@ -26,7 +26,7 @@ docs:
     source: README.md
 imports:
   # Подключение зависимостей
-  - _metamodel_/packages.yaml
+  # - _metamodel_/packages.yaml
 
   # Меню для пользователя для навигации
   - architecture/interface/root.yaml

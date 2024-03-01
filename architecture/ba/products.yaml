@@ -1,0 +1,100 @@
+seaf.ba.products:
+
+  sber.berezka.media_platform_self:
+    title: Медиа-платформа
+    used_in:
+      - sber.berezka.home_cinema
+    owner: sber.berezka
+
+  sber.berezka.home_cinema:
+    title: Домашний кинотеатр
+    owner: sber.berezka
+
+  sber.center.payments:
+    title: Прием платежей
+    used_in:
+      - sber.berezka.home_cinema
+    owner: sber.center
+
+  sber.center.fl_auth:
+    title: Аутентификация пользователей
+    owner: sber.center
+    used_in:
+      - sber.berezka.home_cinema
+
+  sber.berezka.media_platform_saas:
+    title: Медиа-платформа
+    owner: sber.berezka
+
+  sber.berezka.media_platform:
+    title: Медиа-платформа для клиентов
+    owner: sber.berezka.team.product
+    used_in:
+      - sber.berezka.media_platform_saas
+      - sber.berezka.consume_content
+
+  sber.berezka.mobile_app:
+    title: Мобильное приложение для пользователей
+    owner: sber.berezka
+    is_channel:
+      type: Цифровой
+
+  sber.berezka.web_app:
+    title: Веб-приложение для пользователей
+    owner: sber.berezka
+    is_channel:
+      type: Цифровой
+
+  sber.berezka.partner_catalog:
+    title: Каталог контента для партнера
+    owner: sber.berezka
+
+  sber.berezka.content_catalog:
+    title: Каталог контента
+    owner: sber.berezka.team.product
+    used_in:
+      - sber.berezka.media_platform_saas
+      - sber.berezka.partner_catalog
+      - sber.berezka.media_platform
+      - sber.berezka.mobile_app
+      - sber.berezka.web_app
+
+  sber.berezka.consume_content:
+    title: Предоставление (просмотр) медиа-контента по запросу
+    owner: sber.berezka
+
+  sber.berezka.content_search:
+    title: Поиск медиа-контента
+    owner: sber.berezka.team.product
+    used_in:
+      - sber.berezka.media_platform_saas
+      - sber.berezka.media_platform
+      - sber.berezka.web_app
+
+  sber.berezka.support:
+    title: Оказание поддержки клиентам
+    owner: sber.berezka.team.support
+    used_in:
+      - sber.berezka.media_platform_saas
+
+  sber.berezka.support_channels:
+    title: Каналы взаимодействия с клиентом по оказанию поддержки
+    owner: sber.berezka.team.support
+    used_in:
+      - sber.berezka.support
+
+  sber.berezka.support_channels.telegram:
+    title: Поддержка пользователей в телеграм
+    owner: sber.berezka.team.support
+    used_in:
+      - sber.berezka.support_channels
+    is_channel:
+      type: Цифровой
+
+  sber.berezka.support_channels.email:
+    title: Поддержка пользоваталей через почту
+    owner: sber.berezka.team.support
+    used_in:
+      - sber.berezka.support_channels
+    is_channel:
+      type: Цифровой

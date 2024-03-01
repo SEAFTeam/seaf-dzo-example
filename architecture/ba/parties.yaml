@@ -1,0 +1,54 @@
+seaf.ba.parties:
+
+  sber.center:
+    title: Центр
+
+  sber.berezka.fl:
+    title: ФЛ
+    has_interest:
+        - sber.berezka.home_cinema
+
+  sber.berezka:
+    title: Березка
+
+  sber.sosenka:
+    title: Сосенка
+
+  sber.berezka.customers:
+    title: Клиенты Березки
+    relates:
+      - sber.berezka
+
+  sber.berezka.team:
+    title: Внутренние сотрудники Березки
+    relates:
+      - sber.berezka
+
+  sber.berezka.customers.web:
+    title: Пользователи веб-приложения
+    relates:
+      - sber.berezka.customers
+    has_interest:
+      - sber.berezka.consume_content
+
+  sber.berezka.customers.ios_app:
+    title: Пользователи мобильного приложения
+    relates:
+      - sber.berezka.customers
+    has_interest:
+      - sber.berezka.consume_content
+
+  sber.berezka.team.product:
+    title: Продуктовая команда Березки
+    relates:
+      - sber.berezka.team
+
+  sber.berezka.team.support:
+    title: Команда сопровождения Березки
+    relates:
+      - sber.berezka.team
+
+  content_matter_buz:
+    title: Контентно-зависимый бизнес
+    has_interest:
+      - sber.berezka.media_platform_saas

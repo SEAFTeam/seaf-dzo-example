@@ -16,37 +16,31 @@ seaf.ba.parties:
 
   sber.berezka.customers:
     title: Клиенты Березки
-    relates:
-      - sber.berezka
+    is_part_of: sber.berezka
 
   sber.berezka.team:
     title: Внутренние сотрудники Березки
-    relates:
-      - sber.berezka
+    is_part_of: sber.berezka
 
   sber.berezka.customers.web:
     title: Пользователи веб-приложения
-    relates:
-      - sber.berezka.customers
+    is_part_of: sber.berezka.customers
     has_interest:
       - sber.berezka.consume_content
 
   sber.berezka.customers.ios_app:
     title: Пользователи мобильного приложения
-    relates:
-      - sber.berezka.customers
+    is_part_of: sber.berezka.customers
     has_interest:
       - sber.berezka.consume_content
 
   sber.berezka.team.product:
     title: Продуктовая команда Березки
-    relates:
-      - sber.berezka.team
+    is_part_of: sber.berezka.team
 
   sber.berezka.team.support:
     title: Команда сопровождения Березки
-    relates:
-      - sber.berezka.team
+    is_part_of: sber.berezka.team
 
   content_matter_buz:
     title: Контентно-зависимый бизнес

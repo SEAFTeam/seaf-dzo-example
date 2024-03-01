@@ -23,7 +23,7 @@ seaf.ba.products:
       - sber.berezka.home_cinema
 
   sber.berezka.media_platform_saas:
-    title: Медиа-платформа
+    title: Медиа-платформа (SaaS)
     owner: sber.berezka
 
   sber.berezka.media_platform:

@@ -4,11 +4,17 @@ seaf.ba.products:
     title: Медиа-платформа
     used_in:
       - sber.berezka.home_cinema
-    owner: sber.berezka
+    owner: sber.berezka.team.product
 
   sber.berezka.home_cinema:
     title: Домашний кинотеатр
     owner: sber.berezka
+
+  sber.berezka.consume_content:
+    title: Предоставление (просмотр) медиа-контента по запросу
+    owner: sber.berezka
+    used_in:
+      - sber.berezka.home_cinema
 
   sber.center.payments:
     title: Прием платежей
@@ -23,7 +29,7 @@ seaf.ba.products:
       - sber.berezka.home_cinema
 
   sber.berezka.media_platform_saas:
-    title: Медиа-платформа
+    title: Медиа-платформа (SaaS)
     owner: sber.berezka
 
   sber.berezka.media_platform:
@@ -58,10 +64,6 @@ seaf.ba.products:
       - sber.berezka.media_platform
       - sber.berezka.mobile_app
       - sber.berezka.web_app
-
-  sber.berezka.consume_content:
-    title: Предоставление (просмотр) медиа-контента по запросу
-    owner: sber.berezka
 
   sber.berezka.content_search:
     title: Поиск медиа-контента

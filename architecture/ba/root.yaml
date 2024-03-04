@@ -1,8 +1,12 @@
 imports:
-  - parties_products.yaml
-  - processes.yaml
-  - resources.yaml
-  - capabilities.yaml
 
-  # Application layer manifest example (to be detached before release)
-#  - apps.yaml
+  - self.yaml
+  - parties.yaml
+  - products.yaml
+  - processes.yaml
+
+  # Отключено до разработки соответствующих расширений
+  # - resources.yaml
+  # - capabilities.yaml
+
+  #todo Выпилить или переписать ридми

@@ -32,14 +32,14 @@ seaf.ta.components.k8s_pod:
     secrets: Yes
     access_level: Не привилегированный
     update_strategy: RollingUpdate
-    kubernetes_id:
-      - sber.berezka.k8s.02
     name: Auth Back
     pod_k8s_id: k8s_pod.auth
     stoptimeout: 60
     ml: false
     description: Бекенд под
     priorityclass: 5
+    deployment_id:
+      - seaf.ta.components.k8s_deployment.auth
 
   seaf.ta.services.k8s_pod.payments:
     tmp_storage: 100
@@ -48,14 +48,14 @@ seaf.ta.components.k8s_pod:
     secrets: Yes
     access_level: Не привилегированный
     update_strategy: RollingUpdate
-    kubernetes_id:
-      - sber.berezka.k8s.01
     name: Payments Back
     pod_k8s_id: k8s_pod.payments
     stoptimeout: 60
     ml: false
     description: Бекенд под
     priorityclass: 5
+    deployment_id:
+      - seaf.ta.components.k8s_deployment.payments
 
 seaf.ta.components.k8s_container:
   seaf.ta.services.k8s_container.identity:

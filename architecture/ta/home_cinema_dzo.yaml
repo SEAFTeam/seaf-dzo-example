@@ -52,7 +52,6 @@ seaf.ta.components.k8s_pod:
     tmp_storage: 100
     pv: false
     scheduled: false
-    replicas: 5
     secrets: Yes
     access_level: Не привилегированный
     update_strategy: RollingUpdate
@@ -71,7 +70,6 @@ seaf.ta.components.k8s_pod:
     tmp_storage: 100
     pv: false
     scheduled: false
-    replicas: 5
     secrets: Yes
     access_level: Не привилегированный
     update_strategy: RollingUpdate

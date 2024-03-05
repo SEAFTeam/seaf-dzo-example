@@ -32,7 +32,6 @@ seaf.ta.components.k8s_pod:
     secrets: Yes
     access_level: Не привилегированный
     update_strategy: RollingUpdate
-    name: Auth Back
     pod_k8s_id: k8s_pod.auth
     stoptimeout: 60
     ml: false
@@ -48,7 +47,6 @@ seaf.ta.components.k8s_pod:
     secrets: Yes
     access_level: Не привилегированный
     update_strategy: RollingUpdate
-    name: Payments Back
     pod_k8s_id: k8s_pod.payments
     stoptimeout: 60
     ml: false

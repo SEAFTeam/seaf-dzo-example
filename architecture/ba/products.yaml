@@ -1,10 +1,10 @@
 seaf.ba.products:
 
-  sber.berezka.media_platform_self:
-    title: Медиа-платформа
-    used_in:
-      - sber.berezka.home_cinema
-    owner: sber.berezka.team.product
+#  sber.berezka.media_platform_self:
+#    title: Медиа-платформа
+#    used_in:
+#      - sber.berezka.home_cinema
+#    owner: sber.berezka.team.product
 
   sber.berezka.home_cinema:
     title: Домашний кинотеатр
@@ -12,14 +12,17 @@ seaf.ba.products:
 
   sber.berezka.consume_content:
     title: Предоставление (просмотр) медиа-контента по запросу
-    owner: sber.berezka
+    owner: sber.berezka.team.product
     used_in:
       - sber.berezka.home_cinema
+      - sber.berezka.mobile_app
+      - sber.berezka.web_app
 
   sber.center.payments:
     title: Прием платежей
     used_in:
       - sber.berezka.home_cinema
+      - sber.berezka.web_app
     owner: sber.center
 
   sber.center.fl_auth:
@@ -27,13 +30,15 @@ seaf.ba.products:
     owner: sber.center
     used_in:
       - sber.berezka.home_cinema
+      - sber.berezka.web_app
+      - sber.berezka.mobile_app
 
   sber.berezka.media_platform_saas:
     title: Медиа-платформа (SaaS)
     owner: sber.berezka
 
   sber.berezka.media_platform:
-    title: Медиа-платформа для клиентов
+    title: Медиа-платформа
     owner: sber.berezka.team.product
     used_in:
       - sber.berezka.media_platform_saas
@@ -59,19 +64,14 @@ seaf.ba.products:
     title: Каталог контента
     owner: sber.berezka.team.product
     used_in:
-      - sber.berezka.media_platform_saas
       - sber.berezka.partner_catalog
       - sber.berezka.media_platform
-      - sber.berezka.mobile_app
-      - sber.berezka.web_app
 
   sber.berezka.content_search:
     title: Поиск медиа-контента
     owner: sber.berezka.team.product
     used_in:
-      - sber.berezka.media_platform_saas
       - sber.berezka.media_platform
-      - sber.berezka.web_app
 
   sber.berezka.support:
     title: Оказание поддержки клиентам
@@ -82,6 +82,8 @@ seaf.ba.products:
   sber.berezka.support_channels:
     title: Каналы взаимодействия с клиентом по оказанию поддержки
     owner: sber.berezka.team.support
+    is_channel:
+      type: Цифровой
     used_in:
       - sber.berezka.support
 

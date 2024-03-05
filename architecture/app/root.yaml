@@ -1,4 +1,5 @@
 imports:
+  - base/root.yaml
   - services.yaml
   - functionality.yaml
   - components.yaml

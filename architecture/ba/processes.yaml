@@ -3,21 +3,21 @@ seaf.ba.processes:
   sber.berezka.streaming_ondemand:
     title: Стриминг по запросу
     products:
-      - sber.berezka.media_platform_self
+      - sber.berezka.media_platform
     next_processes:
       - sber.berezka.play
 
   sber.berezka.access_management:
     title: Управление доступами
     products:
-      - sber.berezka.media_platform_self
+      - sber.berezka.media_platform
     next_processes:
       - sber.berezka.streaming_ondemand
 
   sber.berezka.access_upload:
     title: Загрузки
     products:
-      - sber.berezka.media_platform_self
+      - sber.berezka.media_platform
     next_processes:
       - sber.berezka.streaming_ondemand
 

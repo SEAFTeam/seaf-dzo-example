@@ -63,8 +63,8 @@ seaf.ta.components.k8s_pod:
     ml: false
     description: Бекенд под
     priorityclass: 5
-    container_id:
-      - seaf.ta.services.k8s_container.identity
+    deployment_id:
+      - seaf.ta.components.k8s_deployment.auth
 
   seaf.ta.services.k8s_pod.payments:
     tmp_storage: 100
@@ -73,16 +73,14 @@ seaf.ta.components.k8s_pod:
     secrets: Yes
     access_level: Не привилегированный
     update_strategy: RollingUpdate
-    kubernetes_id:
-      - flix.k8s.01
-    title: Payments Back
+    name: Payments Back
     pod_k8s_id: k8s_pod.payments
     stoptimeout: 60
     ml: false
     description: Бекенд под
     priorityclass: 5
-    container_id:
-      - seaf.ta.services.k8s_container.transaction
+    deployment_id:
+      - seaf.ta.components.k8s_deployment.payments
 
 seaf.ta.components.k8s_container:
   seaf.ta.services.k8s_container.identity:

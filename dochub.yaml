@@ -9,13 +9,13 @@ $package:
     # Описание
     description: Пример для ДЗО по использованию архитектурного фреймворка SEAF-DZO
     # Версия
-    version: 1.2.0
+    version: 1.2.5
     # Зависимости от других пакетов
     dependencies:
       seaf-dzo-core: ">=1.2.2"
       hexagon: ">=1.1.0"
       iaas: ">=1.2.0"
-      dochub: ">=3.8.0"
+      dochub: ">=3.9.0"
       mm-discovery: ">=1.2.0"
 
 docs:

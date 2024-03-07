@@ -12,6 +12,10 @@ seaf.ta.components.k8s_deployment:
     replicas: 10
     deployment_id: k8s_deployment.auth
     availabilityzone_id: flix.dc_az.moscow
+    k8s_pod:
+      - seaf.ta.services.k8s_pod.auth
+    container_id:
+      - seaf.ta.services.k8s_container.identity
 
   seaf.ta.components.k8s_deployment.payments:
     title: Payments
@@ -23,6 +27,25 @@ seaf.ta.components.k8s_deployment:
     replicas: 10
     deployment_id: k8s_deployment.payments
     availabilityzone_id: flix.dc_az.moscow
+    container_id:
+      - seaf.ta.services.k8s_container.transaction
+    k8s_pod:
+      - seaf.ta.services.k8s_pod.payments
+
+seaf.ta.components.k8s_statefulset:
+  seaf.ta.components.k8s_statefulset.auth:
+    statefulset_id: k8s_statefulset.auth
+    update_strategy: RollingUpdate
+    replicas: 3
+    maxunavailable: 3
+    kubernetes_id:
+      - flix.k8s.01
+    availabilityzone_id: sber.berezka.dc_az.moscow
+    container_id:
+      - seaf.ta.services.k8s_container.identity
+    k8s_pod:
+      - seaf.ta.services.k8s_pod.auth
+    name: auth
 
 seaf.ta.components.k8s_pod:
   seaf.ta.services.k8s_pod.auth:
@@ -41,6 +64,8 @@ seaf.ta.components.k8s_pod:
     ml: false
     description: Бекенд под
     priorityclass: 5
+    container_id:
+      - seaf.ta.services.k8s_container.identity
 
   seaf.ta.services.k8s_pod.payments:
     tmp_storage: 100
@@ -58,6 +83,8 @@ seaf.ta.components.k8s_pod:
     ml: false
     description: Бекенд под
     priorityclass: 5
+    container_id:
+      - seaf.ta.services.k8s_container.transaction
 
 seaf.ta.components.k8s_container:
   seaf.ta.services.k8s_container.identity:
@@ -69,6 +96,8 @@ seaf.ta.components.k8s_container:
     container_cpu: 1000
     container_id: k8s_container.identity
     affinity: yes
+    k8s_image:
+      - seaf.ta.services.k8s_image.identity
 
   seaf.ta.services.k8s_container.transaction:
     container_ram: 512
@@ -79,6 +108,8 @@ seaf.ta.components.k8s_container:
     container_cpu: 1000
     container_id: k8s_container.transaction
     affinity: yes
+    k8s_image:
+      - seaf.ta.services.k8s_image.transaction
 
 seaf.ta.components.k8s_image:
   seaf.ta.services.k8s_image.identity:

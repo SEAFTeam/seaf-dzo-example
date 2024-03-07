@@ -1,0 +1,11 @@
+entities:
+  seaf.app.services.menu:
+    menu: >
+      (
+          [
+              {
+                  "location": "Архитектура/Прикладная/Сервисы",
+                  "link": 'entities/components/seaf.app.services.registry'
+              }
+          ]
+      )

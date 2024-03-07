@@ -9,7 +9,7 @@ entities:
                   'link': 'entities/seaf.ta/components_md'
               },
               {
-                  'location': 'Архитектура/Техническая/Технические компоненты/Сервера',
+                  'location': 'Архитектура/Техническая/Технические компоненты/Серверы',
                   'link': 'entities/seaf.ta/server_md'
               },
               {
@@ -61,7 +61,7 @@ entities:
                   'link': 'entities/seaf.ta/office_md'
               },
               {
-                  'location': 'Архитектура/Техническая/Технические сервисы/Кластера',
+                  'location': 'Архитектура/Техническая/Технические сервисы/Кластеры',
                   'link': 'entities/seaf.ta/cluster_md'
               },
               {
@@ -69,11 +69,11 @@ entities:
                   'link': 'entities/seaf.ta/storage_md'
               },
               {
-                  'location': 'Архитектура/Техническая/Технические сервисы/Кластера виртуализации',
+                  'location': 'Архитектура/Техническая/Технические сервисы/Кластеры виртуализации',
                   'link': 'entities/seaf.ta/cluster_virtualization_md'
               },
               {
-                  'location': 'Архитектура/Техническая/Технические сервисы/Кластера Kubernetes',
+                  'location': 'Архитектура/Техническая/Технические сервисы/Кластеры Kubernetes',
                   'link': 'entities/seaf.ta/k8s_md'
               },
               {

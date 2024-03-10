@@ -9,7 +9,7 @@ $package:
     # Описание
     description: Пример для ДЗО по использованию архитектурного фреймворка SEAF-DZO
     # Версия
-    version: 1.2.5
+    version: 1.2.6
     # Зависимости от других пакетов
     dependencies:
       seaf-dzo-core: ">=1.2.2"

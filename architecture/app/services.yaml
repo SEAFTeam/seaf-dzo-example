@@ -8,6 +8,11 @@ components:
     entity: component
     title: Рекомендации
     type: service
+    sber:
+      service_type: Система
+      criticality: Mission Critical
+      class: Продуктовая фабрика (основная деятельность)
+      role_model: Централизованная
 
   flix.home_cinema.catalog:
     entity: component
@@ -15,6 +20,8 @@ components:
     description: Каталог фильмов
     type: service
     sber:
+      service_type: Функциональная подсистема
+      parent: sber.berezka.home_cinema
       criticality: Business Critical
       role_model: Централизованная
       class: Продуктовая фабрика (основная деятельность)
@@ -27,6 +34,8 @@ components:
       - flix.home_cinema.payments
     type: service
     sber:
+      service_type: Функциональная подсистема
+      parent: sber.berezka.home_cinema
       criticality: Business Operational
       role_model: Централизованная
       class: Иное
@@ -40,6 +49,8 @@ components:
       - flix.home_cinema.catalog.multiplex.c2
     type: service
     sber:
+      service_type: Функциональная подсистема
+      parent: sber.berezka.home_cinema
       criticality: Business Operational
       role_model: Централизованная
       class: Иное
@@ -50,6 +61,8 @@ components:
     description: Авторизация пользователей для доступа к Домашнему кинотеарту
     type: service
     sber:
+      service_type: Функциональная подсистема
+      parent: sber.berezka.home_cinema
       criticality: Business Critical
       role_model: Централизованная
       class: Клиентский профиль (Customer Information File)
@@ -59,6 +72,7 @@ components:
     title: 1C
     type: service
     sber:
+      service_type: Система
       role_model: Нецентрализованная
       criticality: Office Productivity
       class: Бухгалтерия и финансы

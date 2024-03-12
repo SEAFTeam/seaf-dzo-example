@@ -24,6 +24,7 @@ seaf.ba.parties:
     title: Контентно-зависимый бизнес
     has_interest:
       - id: flix.media_platform_saas
+        type: Потребляет
 
 
 #  group.sosenka:
@@ -41,13 +42,16 @@ seaf.ba.parties:
     is_part_of: flix.customers.fl
     has_interest:
       - id: flix.home_cinema
+        type: Потребляет
 
   flix.customers.fl.ios_app:
     title: Пользователи мобильного приложения
     is_part_of: flix.customers.fl
     has_interest:
       - id: flix.home_cinema
+        type: Потребляет
       - id: flix.support
+        type: Интересуется
 
   flix.team.product:
     title: Продуктовая команда Березки

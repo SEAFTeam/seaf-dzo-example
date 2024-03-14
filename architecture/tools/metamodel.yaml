@@ -17,7 +17,9 @@ mm_discovery.stalker:
       seaf.ta.reverse.cloud_ru:
         title: Реверс из SberCloud
       seaf.ta.reverse.cloud_ru.advanced:
-        title: Зона Advanced
+        title: Платформа Advanced
+      seaf.ta.reverse.cloud_ru.enterprise:
+        title: Платформа Enterprise
       seaf.app:
         title: Прикладная архитектура
       seaf.ia:
@@ -95,7 +97,9 @@ mm_discovery.stalker:
       seaf.ta.reverse.cloud_ru:
         title: Реверс из SberCloud
       seaf.ta.reverse.cloud_ru.advanced:
-        title: Зона Advanced
+        title: Платформа Advanced
+      seaf.ta.reverse.cloud_ru.enterprise:
+        title: Платформа Enterprise
     domains:
       - seaf.ta.**
   flix.technical.k8s:
@@ -120,9 +124,17 @@ mm_discovery.stalker:
     location: Метамодель/Техническая/Reverse/Advanced
     nodes:
       seaf.ta.reverse.cloud_ru.advanced:
-        title: Зона Advanced
+        title: Платформа Advanced
     domains:
       - seaf.ta.reverse.cloud_ru.advanced.**
+  flix.technical_reverse_ent:
+    title: Техническая архитектура Enterprise Reverse
+    location: Метамодель/Техническая/Reverse/Enterprise
+    nodes:
+      seaf.ta.reverse.cloud_ru.enterprise:
+        title: Платформа Enterprise
+    domains:
+      - seaf.ta.reverse.cloud_ru.enterprise.**
   flix.ia:
     title: Информационная архитектура
     location: Метамодель/Информационная архитектура

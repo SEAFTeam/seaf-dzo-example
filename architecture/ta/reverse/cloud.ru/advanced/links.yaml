@@ -1,4 +1,4 @@
-seaf.ta.reverse.cloud_ru.advanced.links:
+seaf.ta.reverse.general.links:
   sber.berezka.links.home_cinema.auth:
     app_id: sber.berezka.home_cinema.auth
     reverse_ta_id:
@@ -15,5 +15,5 @@ seaf.ta.reverse.cloud_ru.advanced.links:
       - sber.berezka.ecss.82935ed6-9c65-4e73-a1ad-1511e21f50b0
       - sber.berezka.elbs.ad9af3b6-fd82-404e-8d6c-466660e92329
       - sber.berezka.rdss.97c20535c2b1428886a45ca7383632b7in03
-      - sber.berezka.cces.dmss.fc5d98f2-d0c3-4125-9354-744c786ead81
+      - sber.berezka.cces.dmss.7bb3c551-0fc3-4916-a853-302390af0569
       - sber.berezka.ecss.fb77c40e-b1e2-4aa5-89a9-45725b7ccf30

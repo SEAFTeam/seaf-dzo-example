@@ -1,0 +1,11 @@
+imports:
+  - enterprise_egws.yaml
+  - enterprise_orgnets.yaml
+  - enterprise_orgs.yaml
+  - enterprise_vappnets.yaml
+  - enterprise_vapps.yaml
+  - enterprise_vdcs.yaml
+  - enterprise_vms.yaml
+  - enterprise_egws_fw.yaml
+  - enterprise_egws_nat.yaml
+  - enterprise_vdcgroups.yaml

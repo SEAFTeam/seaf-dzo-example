@@ -1,19 +1,34 @@
-seaf.ta.reverse.cloud_ru.advanced.links:
+seaf.ta.reverse.general.links:
   sber.berezka.links.home_cinema.auth:
-    app_id: sber.berezka.home_cinema.auth
+    app_id: sber.berezka.home_cinema.auth.app
     reverse_ta_id:
       - sber.berezka.ecss.62f713a4-1139-461f-8053-1df267861aef
       - sber.berezka.ecss.729d3b73-350c-4987-86ed-01d36b719c57
       - sber.berezka.rdss.0e493e5847714a14a313e215d9e59b15in03
       - sber.berezka.elbs.ad9af3b6-fd82-404e-8d6c-466660e92329
       - sber.berezka.ecss.e5e60a69-0653-4297-8799-ea0df4f0cacc
+      - sber.sbercloud.vdcs.464f7346-ea60-48d0-a351-7454dc3a2ddb
 
   sber.berezka.links.home_cinema.catalog:
-    app_id: sber.berezka.home_cinema.catalog
+    app_id: sber.berezka.home_cinema.catalog.app
     reverse_ta_id:
       - sber.berezka.ecss.82935ed6-9c65-4e73-a1ad-1511e21f50b0
       - sber.berezka.ecss.82935ed6-9c65-4e73-a1ad-1511e21f50b0
       - sber.berezka.elbs.ad9af3b6-fd82-404e-8d6c-466660e92329
       - sber.berezka.rdss.97c20535c2b1428886a45ca7383632b7in03
-      - sber.berezka.cces.dmss.fc5d98f2-d0c3-4125-9354-744c786ead81
+      - sber.berezka.dmss.7bb3c551-0fc3-4916-a853-302390af0569
       - sber.berezka.ecss.fb77c40e-b1e2-4aa5-89a9-45725b7ccf30
+
+  sber.berezka.links.home_cinema.payments:
+    app_id: sber.berezka.home_cinema.payments.app
+    reverse_ta_id:
+      - sber.sbercloud.vms.7b49d0ff-07f3-4b5d-84cd-5aafc82b4851
+      - sber.sbercloud.vms.135b9f91-6f9e-4601-961b-278fb11b8744
+      - sber.sbercloud.vms.263789e6-1d31-46ac-b649-bf81e4fee2df
+      - sber.sbercloud.vapps.cc60841b-d544-4998-abb3-bb27ed78c8d0
+      - sber.sbercloud.vdcs.d43a43b4-a377-4643-9439-f613cad09964
+
+  sber.berezka.links.home_cinema.canals:
+    app_id: sber.berezka.home_cinema.canals.app
+    reverse_ta_id:
+      - sber.sbercloud.orgs.ade0d087-ac75-4ec9-9f7c-f443f9b6164b

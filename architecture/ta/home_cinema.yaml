@@ -73,18 +73,7 @@ seaf.ta.services.dc:
 
   alfa.sbercloud.dc.cloud_ent:
     dc_id: sbercloud.dc.cloud_ent
-    dc_name: Cloud.ru (Enablers)
-    dc_ownership: Услуга
-    dc_type: IaaS/PaaS провайдер
-    dc_vendor: Cloud.ru
-    dc_address: Нет адреса
-    dc_rack_qty: 0
-    dc_tier: Tier III
-    availabilityzone_id: sber.berezka.dc_az.moscow
-
-  sber.berezka.dc.cloud_ent:
-    dc_id: berezka.dc.cloud_ent
-    dc_name: Cloud.ru (DZO)
+    title: Cloud.ru (Услуга по договору №1)
     dc_ownership: Услуга
     dc_type: IaaS/PaaS провайдер
     dc_vendor: Cloud.ru

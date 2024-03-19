@@ -1,0 +1,59 @@
+seaf.ta.reverse.cloud_ru.enterprise.egws_fw:
+    sber.sbercloud.egws_fw.f2beb6f8-3416-4b43-8c87-b2c8c52890b1:
+        id: f2beb6f8-3416-4b43-8c87-b2c8c52890b1
+        gw_id: sber.sbercloud.egws.29181421-2891-47aa-82ef-1cdbcf0b87c9
+        name: ping 77.88.8.8
+        description: null
+        enabled: true
+        sourceFirewallGroups:
+            urn:vcloud:firewallGroup:1208f01d-21d1-4794-aa16-25b88c9e0665:
+                type: IP_SET
+                ip_addresses:
+                    - 192.168.100.20
+                members: null
+            urn:vcloud:firewallGroup:80795f4a-291c-4765-94d1-3e41f0c7fc42:
+                type: IP_SET
+                ip_addresses:
+                    - 192.168.100.10
+                members: null
+        destinationFirewallGroups:
+            urn:vcloud:firewallGroup:d6a8c0d7-a53e-4d3a-8ee8-45c7d51ed809:
+                type: IP_SET
+                ip_addresses:
+                    - 77.88.8.8
+                members: null
+        ip_protocol: IPV4
+        action: ALLOW
+        action_value: ALLOW
+        direction: IN_OUT
+        port_profiles:
+            ICMP ALL:
+                -   protocol: ICMPv6
+                    dst_ports: []
+                -   protocol: ICMPv4
+                    dst_ports: []
+        DC: sber.sbercloud.dc.cloud_ent
+    sber.sbercloud.egws_fw.d2a8489b-1de0-4e41-9726-888e4b79de56:
+        id: d2a8489b-1de0-4e41-9726-888e4b79de56
+        gw_id: sber.sbercloud.egws.29181421-2891-47aa-82ef-1cdbcf0b87c9
+        name: ping 8.8.8.8
+        description: null
+        enabled: true
+        sourceFirewallGroups: {}
+        destinationFirewallGroups:
+            urn:vcloud:firewallGroup:f38d8759-dc89-4aa7-abc6-a41f2c5133b9:
+                type: IP_SET
+                ip_addresses:
+                    - 8.8.8.8
+                members: null
+        ip_protocol: IPV4
+        action: DROP
+        action_value: DROP
+        direction: IN_OUT
+        port_profiles:
+            ICMP ALL:
+                -   protocol: ICMPv6
+                    dst_ports: []
+                -   protocol: ICMPv4
+                    dst_ports: []
+        DC: sber.sbercloud.dc.cloud_ent

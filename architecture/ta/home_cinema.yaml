@@ -69,6 +69,18 @@ seaf.ta.services.dc:
       - sber.berezka.home_cinema.auth.app
       - sber.berezka.home_cinema.auth.token_manager
       - sber.berezka.home_cinema.catalog.app
+
+  sber.sbercloud.dc.cloud_ent:
+    dc_id: sbercloud.dc.cloud_ent
+    title: Cloud.ru (Услуга по договору №1)
+    dc_ownership: Услуга
+    dc_type: IaaS/PaaS провайдер
+    dc_vendor: Cloud.ru
+    dc_address: Нет адреса
+    dc_rack_qty: 0
+    dc_tier: Tier III
+    availabilityzone_id: sber.berezka.dc_az.moscow
+
 #### Создаём офис
 seaf.ta.services.office:
   sber.berezka.office.hq:

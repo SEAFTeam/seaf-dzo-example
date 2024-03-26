@@ -21,6 +21,10 @@ seaf.app.integrations:
     description: Авторизация в сервисе
     from: sber.berezka.home_cinema.catalog
     to: sber.berezka.home_cinema.auth
+    sber:
+      status: Используется
+      async: Ложно
+      technical-use: По запросу
     specifications:
       - oauth
 
@@ -29,5 +33,9 @@ seaf.app.integrations:
     description: Сервис оплаты
     from: sber.berezka.home_cinema.payments
     to: sber.berezka.home_cinema.auth
+    sber:
+      status: Используется
+      async: Ложно
+      technical-use: По запросу
     specifications:
       - smartpay

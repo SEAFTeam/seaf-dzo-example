@@ -70,6 +70,9 @@ components:
     entity: component
     title: Каталога контента
     type: component
+    sber:
+      component_type: Микросервис
+      is_component_of: sber.berezka.home_cinema.catalog
 
   sber.berezka.home_cinema.canals.app:
     entity: component

@@ -19,7 +19,7 @@ seaf.app.integrations:
   sber.berezka.home_cinema.oauth:
     title: Авторизация
     description: Авторизация в сервисе
-    from: sber.berezka.home_cinema.catalog
+    from: sber.berezka.home_cinema.catalog.app
     to: sber.berezka.home_cinema.auth
     sber:
       status: Используется

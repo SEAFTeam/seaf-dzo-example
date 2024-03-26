@@ -25,6 +25,10 @@ seaf.app.integrations:
     description: Авторизация в сервисе
     from: flix.home_cinema.catalog
     to: flix.home_cinema.auth
+    sber:
+      status: Используется
+      async: Ложно
+      technical-use: По запросу
     specifications:
       - group.adopted.oauth
 
@@ -33,5 +37,9 @@ seaf.app.integrations:
     description: Сервис оплаты
     from: flix.home_cinema.payments
     to: flix.home_cinema.auth
+    sber:
+      status: Используется
+      async: Ложно
+      technical-use: По запросу
     specifications:
       - smartpay

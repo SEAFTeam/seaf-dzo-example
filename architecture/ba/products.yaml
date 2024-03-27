@@ -47,14 +47,18 @@ seaf.ba.products:
   sber.berezka.mobile_app:
     title: Мобильное приложение для пользователей
     owner: sber.berezka
-    is_channel:
-      type: Цифровой
+    sber:
+      status: Используется
+      is_channel:
+        type: Цифровой
 
   sber.berezka.web_app:
     title: Веб-приложение для пользователей
     owner: sber.berezka
-    is_channel:
-      type: Цифровой
+    sber:
+      status: Используется
+      is_channel:
+        type: Цифровой
 
   sber.berezka.partner_catalog:
     title: Каталог контента для партнера
@@ -82,8 +86,9 @@ seaf.ba.products:
   sber.berezka.support_channels:
     title: Каналы взаимодействия с клиентом по оказанию поддержки
     owner: sber.berezka.team.support
-    is_channel:
-      type: Цифровой
+    sber:
+      is_channel:
+        type: Цифровой
     used_in:
       - sber.berezka.support
 
@@ -92,13 +97,15 @@ seaf.ba.products:
     owner: sber.berezka.team.support
     used_in:
       - sber.berezka.support_channels
-    is_channel:
-      type: Цифровой
+    sber:
+      is_channel:
+        type: Цифровой
 
   sber.berezka.support_channels.email:
     title: Поддержка пользоваталей через почту
     owner: sber.berezka.team.support
     used_in:
       - sber.berezka.support_channels
-    is_channel:
-      type: Цифровой
+    sber:
+      is_channel:
+        type: Цифровой

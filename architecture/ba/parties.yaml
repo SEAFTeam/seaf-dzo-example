@@ -25,6 +25,8 @@ seaf.ba.parties:
     has_interest:
       - id: flix.media_platform_saas
         type: Потребляет
+    sber:
+      type: Крупный и средний бизнес
 
 
 #  group.sosenka:
@@ -43,6 +45,8 @@ seaf.ba.parties:
     has_interest:
       - id: flix.home_cinema
         type: Потребляет
+    sber:
+      type: Физические лица
 
   flix.customers.fl.ios_app:
     title: Пользователи мобильного приложения
@@ -52,6 +56,8 @@ seaf.ba.parties:
         type: Потребляет
       - id: flix.support
         type: Интересуется
+    sber:
+      type: Физические лица
 
   flix.team.product:
     title: Продуктовая команда Березки

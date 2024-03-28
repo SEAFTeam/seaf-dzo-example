@@ -13,6 +13,8 @@ seaf.ba.products:
       group.entertainment.cinema:
         title: Домашний кинотеатр для группы
 
+    sber:
+      status: Используется
 
   flix.consume_content:
     title: Предоставление (просмотр) медиа-контента по запросу
@@ -21,6 +23,8 @@ seaf.ba.products:
       - flix.home_cinema
       - flix.mobile_app
       - flix.web_app
+    sber:
+      status: Используется
 
   alfa.payments:
     title: Прием платежей
@@ -50,6 +54,8 @@ seaf.ba.products:
       group.b2b.payments:
         title: Медиа-платформа (SaaS)
 
+    sber:
+      status: Используется
 
   flix.media_platform:
     title: Медиа-платформа
@@ -63,20 +69,22 @@ seaf.ba.products:
     owner: flix
     sber:
       status: Используется
-      is_channel:
-        type: Цифровой
+      subtype: Канал
+      type: Цифровой
 
   flix.web_app:
     title: Веб-приложение для пользователей
     owner: flix
     sber:
       status: Используется
-      is_channel:
-        type: Цифровой
+      subtype: Канал
+      type: Цифровой
 
   flix.partner_catalog:
     title: Каталог контента для партнера
     owner: flix
+    sber:
+      status: Используется
 
   flix.content_catalog:
     title: Каталог контента
@@ -101,8 +109,8 @@ seaf.ba.products:
     title: Каналы взаимодействия с клиентом по оказанию поддержки
     owner: flix.team.support
     sber:
-      is_channel:
-        type: Цифровой
+      subtype: Канал
+      type: Цифровой
     used_in:
       - flix.support
 
@@ -112,8 +120,8 @@ seaf.ba.products:
     used_in:
       - flix.support_channels
     sber:
-      is_channel:
-        type: Цифровой
+      subtype: Канал
+      type: Цифровой
 
   flix.support_channels.email:
     title: Поддержка пользоваталей через почту
@@ -121,5 +129,5 @@ seaf.ba.products:
     used_in:
       - flix.support_channels
     sber:
-      is_channel:
-        type: Цифровой
+      subtype: Канал
+      type: Цифровой

@@ -9,6 +9,8 @@ seaf.ba.products:
   sber.berezka.home_cinema:
     title: Домашний кинотеатр
     owner: sber.berezka
+    sber:
+      status: Используется
 
   sber.berezka.consume_content:
     title: Предоставление (просмотр) медиа-контента по запросу
@@ -17,6 +19,8 @@ seaf.ba.products:
       - sber.berezka.home_cinema
       - sber.berezka.mobile_app
       - sber.berezka.web_app
+    sber:
+      status: Используется
 
   sber.center.payments:
     title: Прием платежей
@@ -36,6 +40,8 @@ seaf.ba.products:
   sber.berezka.media_platform_saas:
     title: Медиа-платформа (SaaS)
     owner: sber.berezka
+    sber:
+      status: Используется
 
   sber.berezka.media_platform:
     title: Медиа-платформа
@@ -49,20 +55,22 @@ seaf.ba.products:
     owner: sber.berezka
     sber:
       status: Используется
-      is_channel:
-        type: Цифровой
+      subtype: Канал
+      type: Цифровой
 
   sber.berezka.web_app:
     title: Веб-приложение для пользователей
     owner: sber.berezka
     sber:
       status: Используется
-      is_channel:
-        type: Цифровой
+      subtype: Канал
+      type: Цифровой
 
   sber.berezka.partner_catalog:
     title: Каталог контента для партнера
     owner: sber.berezka
+    sber:
+      status: Используется
 
   sber.berezka.content_catalog:
     title: Каталог контента
@@ -87,8 +95,8 @@ seaf.ba.products:
     title: Каналы взаимодействия с клиентом по оказанию поддержки
     owner: sber.berezka.team.support
     sber:
-      is_channel:
-        type: Цифровой
+      subtype: Канал
+      type: Цифровой
     used_in:
       - sber.berezka.support
 
@@ -98,8 +106,8 @@ seaf.ba.products:
     used_in:
       - sber.berezka.support_channels
     sber:
-      is_channel:
-        type: Цифровой
+      subtype: Канал
+      type: Цифровой
 
   sber.berezka.support_channels.email:
     title: Поддержка пользоваталей через почту
@@ -107,5 +115,5 @@ seaf.ba.products:
     used_in:
       - sber.berezka.support_channels
     sber:
-      is_channel:
-        type: Цифровой
+      subtype: Канал
+      type: Цифровой

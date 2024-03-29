@@ -69,16 +69,16 @@ seaf.ba.products:
     owner: flix
     sber:
       status: Используется
-      subtype: Канал
-      type: Цифровой
+      type: Канал
+      channel_type: Цифровой
 
   flix.web_app:
     title: Веб-приложение для пользователей
     owner: flix
     sber:
       status: Используется
-      subtype: Канал
-      type: Цифровой
+      type: Канал
+      channel_type: Цифровой
 
   flix.partner_catalog:
     title: Каталог контента для партнера
@@ -109,8 +109,8 @@ seaf.ba.products:
     title: Каналы взаимодействия с клиентом по оказанию поддержки
     owner: flix.team.support
     sber:
-      subtype: Канал
-      type: Цифровой
+      type: Канал
+      channel_type: Цифровой
     used_in:
       - flix.support
 
@@ -120,8 +120,8 @@ seaf.ba.products:
     used_in:
       - flix.support_channels
     sber:
-      subtype: Канал
-      type: Цифровой
+      type: Канал
+      channel_type: Цифровой
 
   flix.support_channels.email:
     title: Поддержка пользоваталей через почту
@@ -129,5 +129,5 @@ seaf.ba.products:
     used_in:
       - flix.support_channels
     sber:
-      subtype: Канал
-      type: Цифровой
+      type: Канал
+      channel_type: Цифровой

@@ -1,42 +1,62 @@
 seaf.ia.data_objects:
+  payments.data_objects.payment:
+    title: Информация об оплате
+    master_system: sber.payment_gate
+    sber:
+      category: Прочее
+      status: Используется
+
+  content_bus.data_objects.media_content_files:
+    title: Файлы медиа-контента
+    master_system: sber.berezka.home_cinema.catalog.app
+    sber:
+      category: Прочее
+      status: Используется
+
   sber.berezka.data_objects.client_name:
     title: ФИО Клиента
-    status: Используется
     business_object: sber.berezka.business_objects.client
-    category: Перс.данные
     master_system: sber.berezka.home_cinema
+    sber:
+      category: Перс данные
+      status: Используется
 
   sber.berezka.data_objects.client_phone:
     title: Телефон клиента
-    status: Используется
     business_object: sber.berezka.business_objects.client
-    category: Перс.данные
     master_system: sber.berezka.home_cinema
+    sber:
+      category: Перс данные
+      status: Используется
 
   sber.berezka.data_objects.client_adress:
     title: Адрес клиента
-    status: Используется
     business_object: sber.berezka.business_objects.client
-    category: Перс.данные
     master_system: sber.berezka.home_cinema
+    sber:
+      category: Перс данные
+      status: Используется
 
   sber.berezka.data_objects.service_deal:
     title: Сделка по услуге
-    status: Используется
-    category: Иное
     business_object: sber.berezka.business_objects.service
     master_system: sber.berezka.home_cinema.payments
+    sber:
+      category: Прочее
+      status: Используется
 
   sber.berezka.data_objects.service_params:
     title: Параметры сделки
-    status: Используется
-    category: Иное
     business_object: sber.berezka.business_objects.service
     master_system: sber.berezka.home_cinema.payments
+    sber:
+      category: Прочее
+      status: Используется
 
   sber.berezka.data_objects.service_stats:
     title: Статистика по услугам
-    status: Планируется
-    category: Иное
     business_object: sber.berezka.business_objects.service
     master_system: sber.berezka.home_cinema.catalog
+    sber:
+      category: Прочее
+      status: Планируется

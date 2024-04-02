@@ -8,6 +8,8 @@ seaf.ba.parties:
     has_interest:
       - id: sber.berezka.media_platform_saas
         type: Потребляет
+    sber:
+      type: Крупный и средний бизнес
 
   sber.center:
     title: Центр
@@ -28,6 +30,8 @@ seaf.ba.parties:
     has_interest:
       - id: sber.berezka.home_cinema
         type: Потребляет
+    sber:
+      type: Физические лица
 
   sber.berezka.customers.fl.ios_app:
     title: Пользователи мобильного приложения
@@ -37,6 +41,8 @@ seaf.ba.parties:
         type: Потребляет
       - id: sber.berezka.support
         type: Интересуется
+    sber:
+      type: Физические лица
 
   sber.berezka.team.product:
     title: Продуктовая команда Березки

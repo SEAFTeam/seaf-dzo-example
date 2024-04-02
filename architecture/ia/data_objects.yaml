@@ -1,5 +1,19 @@
 seaf.ia.data_objects:
-  flix.data_objects.client_name:
+  payments.data_objects.payment:
+    title: Информация об оплате
+    master_system: sber.payment_gate
+    sber:
+      category: Прочее
+      status: Используется
+
+  content_bus.data_objects.media_content_files:
+    title: Файлы медиа-контента
+    master_system: flix.home_cinema.catalog.app
+    sber:
+      category: Прочее
+      status: Используется
+
+  sber.berezka.data_objects.client_name:
     title: ФИО Клиента
     business_object: flix.business_objects.client
     master_system: flix.home_cinema

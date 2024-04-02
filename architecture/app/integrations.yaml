@@ -39,3 +39,13 @@ seaf.app.integrations:
       technical-use: По запросу
     specifications:
       - smartpay
+
+  sber.berezka.home_cinema.gate_payments:
+    title: Платежи
+    description: Проведение оплаты через шлюз
+    from: sber.payment_gate
+    to: sber.berezka.home_cinema.payments
+    data-objects:
+      - payments.data_objects.payment
+    sber:
+      status: Используется

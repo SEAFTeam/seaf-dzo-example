@@ -138,7 +138,7 @@ seaf.ta.components.network:
       auth_type: Двухфакторная
 
 seaf.ta.services.k8s:
-  sber.berezka.k8s.02:
+  sber.berezka.k8s.03:
     kubernetes_id: k8s.02
     availabilityzone_id:
       - sber.berezka.dc_az.moscow

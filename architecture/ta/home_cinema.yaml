@@ -101,9 +101,9 @@ seaf.ta.services.cluster_virtualization:
       - sber.berezka.home_cinema.auth.app
       - sber.berezka.home_cinema.auth.token_manager
       - sber.berezka.home_cinema.catalog.app
-    drs_support: true
-    sdrs_support: true
-    oversubscription_rate: 1
+    drs_support: false
+    sdrs_support: false
+    oversubscription_rate: 3
 
   sber.berezka.cluster_virtualization.cloud.02:
     title: Кластер виртуализации
@@ -910,7 +910,7 @@ seaf.ta.services.k8s:
   sber.berezka.k8s.02:
     title: K8s кластер
     description: K8s кластер в az.moscow
-    master_qty: 3
+    master_qty: 1
     software: '1.28'
     kubernetes_id: k8s.02
     auth: Keycloack

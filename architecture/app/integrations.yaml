@@ -1,6 +1,10 @@
 # Описание интеграций сервисов и компонентов
 seaf.app.integration_specifications:
-  oauth:
+
+  group.standards:
+    title: Стандарты, принятые на уровне Группы
+
+  group.standards.oauth:
     description: Протокол OAuth авторизации
     title: OAuth авторизация
     interface_standard_type: Универсальный интерфейс/Индустриальный стандарт
@@ -8,7 +12,7 @@ seaf.app.integration_specifications:
       - OAuth
       - HTTP
 
-  smartpay:
+  group.standards.smartpay:
     description: Протокол платежей
     title: SmartPay Оплата
     interface_standard_type: Универсальный интерфейс/Индустриальный стандарт
@@ -16,18 +20,18 @@ seaf.app.integration_specifications:
       - HTTP
 
 seaf.app.integrations:
-  sber.berezka.home_cinema.oauth:
+  flix.home_cinema.oauth:
     title: Авторизация
     description: Авторизация в сервисе
-    from: sber.berezka.home_cinema.catalog
-    to: sber.berezka.home_cinema.auth
+    from: flix.home_cinema.catalog
+    to: flix.home_cinema.auth
     specifications:
-      - oauth
+      - group.adopted.oauth
 
-  sber.berezka.home_cinema.payments:
+  flix.home_cinema.payments:
     title: Платежи
     description: Сервис оплаты
-    from: sber.berezka.home_cinema.payments
-    to: sber.berezka.home_cinema.auth
+    from: flix.home_cinema.payments
+    to: flix.home_cinema.auth
     specifications:
       - smartpay

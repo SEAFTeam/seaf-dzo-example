@@ -1,6 +1,6 @@
 # Конфигурация рендеринга матемодели репозитория
 mm_discovery.stalker:
-  sber.berezka.overview:
+  flix.overview:
     title: Общая карта
     location: Метамодель/Общая метамодель
     nodes:
@@ -55,7 +55,7 @@ mm_discovery.stalker:
         
             ]);
         )
-  sber.berezka.applcation:
+  flix.applcation:
     title: Прикладная архитектура
     location: Метамодель/Прикладная
     nodes:
@@ -68,7 +68,7 @@ mm_discovery.stalker:
       - components
       - seaf.change.requirements
       - seaf.app.**
-  sber.berezka.change:
+  flix.change:
     title: Управление изменениями
     location: Метамодель/Управление изменениями
     nodes:
@@ -78,7 +78,7 @@ mm_discovery.stalker:
         title: Управление изменениями
     domains:
       - seaf.change.**
-  sber.berezka.technical:
+  flix.technical:
     title: Техническая архитектура
     location: Метамодель/Техническая
     nodes:
@@ -98,7 +98,7 @@ mm_discovery.stalker:
         title: Зона Advanced
     domains:
       - seaf.ta.**
-  sber.berezka.technical.k8s:
+  flix.technical.k8s:
     title: Kubernetes
     location: Метамодель/Техническая/Kubernetes
     nodes:
@@ -115,7 +115,7 @@ mm_discovery.stalker:
       - seaf.ta.services.network
       - seaf.ta.components.server
       - seaf.ta.services.dc_az
-  sber.berezka.technical_reverese_adv:
+  flix.technical_reverese_adv:
     title: Техническая архитектура Advanced Reverse
     location: Метамодель/Техническая/Reverse/Advanced
     nodes:
@@ -123,7 +123,7 @@ mm_discovery.stalker:
         title: Зона Advanced
     domains:
       - seaf.ta.reverse.cloud_ru.advanced.**
-  sber.berezka.ia:
+  flix.ia:
     title: Информационная архитектура
     location: Метамодель/Информационная архитектура
     nodes:
@@ -133,7 +133,7 @@ mm_discovery.stalker:
         title: Информационная архитектура
     domains:
       - seaf.ia.**
-  sber.berezka.ba:
+  flix.ba:
     title: Бизнес-архитектура
     location: Метамодель/Бизнес-архитектура
     nodes:

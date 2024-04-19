@@ -1,2 +1,7 @@
 seaf.self:
-  - sber.berezka
+  - flix.home_cinema
+  - flix.consumers
+  - flix.network
+  - flix.lan
+  - flix.cluster_virtualization
+  

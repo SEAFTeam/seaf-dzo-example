@@ -1,5 +1,5 @@
 seaf.ta.reverse.cloud_ru.advanced.peerings:
-    sber.berezka.peerings.b58bce54-e2c9-4d00-b5eb-a7db6e80bd7c:
+    flix.peerings.b58bce54-e2c9-4d00-b5eb-a7db6e80bd7c:
         id: b58bce54-e2c9-4d00-b5eb-a7db6e80bd7c
         name: peering-Internal-External
         request_vpc: d48e294f-eb6a-4352-8d73-275b7a966e90
@@ -7,4 +7,4 @@ seaf.ta.reverse.cloud_ru.advanced.peerings:
         description: ''
         status: ACTIVE
         tenant: 9f7dcs8823ed23e9cwe223ecwe22236
-        DC: sber.berezka.dc.01
+        DC: flix.dc.01

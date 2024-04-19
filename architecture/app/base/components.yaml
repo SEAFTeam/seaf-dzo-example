@@ -1,12 +1,12 @@
-components:
-  sber:
-    title: Сбер
-    entity: package
-    description: Группа компаний Сбер
-  sber.sberbank:
-    title: Сбербанк
-    entity: package
-    description: ПАО Сбербанк
+# components:
+#   sber:
+#     title: Сбер
+#     entity: package
+#     description: Группа компаний Сбер
+#   group.sberbank:
+#     title: Сбербанк
+#     entity: package
+#     description: ПАО Сбербанк
 
 
 

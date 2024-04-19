@@ -1,27 +1,22 @@
 components:
-  sber.berezka.home_cinema:
-    entity: component
+  flix.home_cinema:
+    entity: frame
     description: Домашний кинотеатр
     title: Домашний кинотеатр
-    type: service
-    sber:
-      service_type: Система
-      criticality: Mission Critical
-      class: Продуктовая фабрика (основная деятельность)
-      role_model: Централизованная
-      change_type: Используется
-      target_status: Целевая
-      live_stage: Промышленная эксплуатация
-      live_stage_target: Промышленная эксплуатация
 
-  sber.berezka.home_cinema.catalog:
+  flix.home_cinema.recomendation:
+    entity: component
+    title: Рекомендации
+    type: service
+
+  flix.home_cinema.catalog:
     entity: component
     title: Каталог фильмов
     description: Каталог фильмов
     type: service
     sber:
       service_type: Функциональная подсистема
-      parent: sber.berezka.home_cinema
+      parent: flix.home_cinema
       criticality: Business Critical
       role_model: Централизованная
       class: Продуктовая фабрика (основная деятельность)
@@ -30,16 +25,16 @@ components:
       target_status: Целевая
       change_type: Модифицируется
 
-  sber.berezka.home_cinema.payments:
+  flix.home_cinema.payments:
     entity: component
     title: Платежи
     description: Осуществление платежей пользователей за подписки
     aspects:
-      - sber.berezka.home_cinema.payments
+      - flix.home_cinema.payments
     type: service
     sber:
       service_type: Функциональная подсистема
-      parent: sber.berezka.home_cinema
+      parent: flix.home_cinema
       criticality: Business Operational
       role_model: Централизованная
       class: Иное
@@ -48,17 +43,17 @@ components:
       change_type: Модифицируется
       target_status: Целевая
 
-  sber.berezka.home_cinema.canals:
+  flix.home_cinema.canals:
     entity: component
     title: ТВ-Каналы
     description: Трансляция ТВ-каналов
     aspects:
-      - sber.berezka.home_cinema.catalog.multiplex.c1
-      - sber.berezka.home_cinema.catalog.multiplex.c2
+      - flix.home_cinema.catalog.multiplex.c1
+      - flix.home_cinema.catalog.multiplex.c2
     type: service
     sber:
       service_type: Функциональная подсистема
-      parent: sber.berezka.home_cinema
+      parent: flix.home_cinema
       criticality: Business Operational
       role_model: Централизованная
       class: Иное
@@ -67,16 +62,16 @@ components:
       live_stage: Промышленная эксплуатация
       live_stage_target: Промышленная эксплуатация
 
-  sber.berezka.home_cinema.auth:
+  flix.home_cinema.auth:
     entity: component
     title: Прикладной сервис аутентификации
     description: Авторизация пользователей для доступа к Домашнему кинотеарту
     type: service
     aspects:
-      - sber.berezka.home_cinema.auth
+      - flix.home_cinema.auth
     sber:
       service_type: Функциональная подсистема
-      parent: sber.berezka.home_cinema
+      parent: flix.home_cinema
       criticality: Business Critical
       role_model: Централизованная
       class: Клиентский профиль (Customer Information File)
@@ -85,7 +80,7 @@ components:
       live_stage_target: Промышленная эксплуатация
       change_type: Используется
 
-  sber.berezka.1c:
+  flix.1c:
     entity: component
     title: 1C
     type: service
@@ -99,7 +94,7 @@ components:
       change_type: Используется
       target_status: Целевая
 
-  sber.payment_gate:
+  alfa.payment_gate:
     entity: component
     title: Платежный шлюз
     type: service

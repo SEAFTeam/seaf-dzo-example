@@ -4,7 +4,7 @@
 
 ## Структура и связи 
 
-![Структура и связи метамодели](@entity/mm_discovery.stalker/map_smartants?id=sber.berezka.overview)
+![Структура и связи метамодели](@entity/mm_discovery.stalker/map_smartants?id=flix.overview)
 
 ## Общая статистика
 

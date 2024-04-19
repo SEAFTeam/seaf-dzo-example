@@ -1,5 +1,5 @@
 seaf.ta.reverse.cloud_ru.advanced.backup_policies:
-    sber.berezka.backup_policies.b76135366-534d-4ec4-b341-39ed62c20788:
+    flix.backup_policies.b76135366-534d-4ec4-b341-39ed62c20788:
         id: b76135366-534d-4ec4-b341-39ed62c20788
         name: Weekly_Backups
         operation_type: backup
@@ -24,8 +24,8 @@ seaf.ta.reverse.cloud_ru.advanced.backup_policies:
             -   vault_id: b25cffcc-b485-4c7b-9f92-6acb6e736e66
                 destination_vault_id: null
         tenant: 9f7dcs8823ed23e9cwe223ecwe22236
-        DC: sber.berezka.dc.01
-    sber.berezka.backup_policies.37b80f77-7fb4-4a10-9b3f-73c7ca605777:
+        DC: flix.dc.01
+    flix.backup_policies.37b80f77-7fb4-4a10-9b3f-73c7ca605777:
         id: 37b80f77-7fb4-4a10-9b3f-73c7ca605777
         name: Daily_Backups
         operation_type: backup
@@ -50,4 +50,4 @@ seaf.ta.reverse.cloud_ru.advanced.backup_policies:
             -   vault_id: 25bd50a1-20a3-4ca7-b84a-d9f6dda9a65c
                 destination_vault_id: null
         tenant: 9f7dcs8823ed23e9cwe223ecwe22236
-        DC: sber.berezka.dc.01
+        DC: flix.dc.01

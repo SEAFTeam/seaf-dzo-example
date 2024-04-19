@@ -1,5 +1,5 @@
 seaf.ta.reverse.cloud_ru.advanced.elbs:
-    sber.berezka.elbs.6d174721-db0e-4758-9a96-2f626e1a6632:
+    flix.elbs.6d174721-db0e-4758-9a96-2f626e1a6632:
         id: 6d174721-db0e-4758-9a96-2f626e1a6632
         name: elb-ingress-test
         description: ''
@@ -22,8 +22,8 @@ seaf.ta.reverse.cloud_ru.advanced.elbs:
         tags: []
         forwardingpolicy: []
         tenant: 9f7dcs8823ed23e9cwe223ecwe22236
-        DC: sber.berezka.dc.01
-    sber.berezka.elbs.ad9af3b6-fd82-404e-8d6c-466660e92329:
+        DC: flix.dc.01
+    flix.elbs.ad9af3b6-fd82-404e-8d6c-466660e92329:
         id: ad9af3b6-fd82-404e-8d6c-466660e92329
         name: elb-ingress-prod
         description: ''
@@ -67,4 +67,4 @@ seaf.ta.reverse.cloud_ru.advanced.elbs:
         tags: []
         forwardingpolicy: []
         tenant: 9f7dcs8823ed23e9cwe223ecwe22236
-        DC: sber.berezka.dc.01
+        DC: flix.dc.01

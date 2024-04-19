@@ -1,11 +1,11 @@
 seaf.ta.reverse.cloud_ru.advanced.nat_gateways:
-    sber.berezka.nat_gateways.d9dade58-8b2c-4505-814f-eb38e503f1b1:
+    flix.nat_gateways.d9dade58-8b2c-4505-814f-eb38e503f1b1:
         id: d9dade58-8b2c-4505-814f-eb38e503f1b1
         name: nat-gateway
         description: ''
         subnet_id: 0d9f37b6-0889-4763-8cf3-20d9641af0c1
         tenant: 9f7dcs8823ed23e9cwe223ecwe22236
-        DC: sber.berezka.dc.01
+        DC: flix.dc.01
         status: ACTIVE
         address: 10.10.0.25
         snat_rules:

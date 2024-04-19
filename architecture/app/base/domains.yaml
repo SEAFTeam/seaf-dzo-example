@@ -1,11 +1,14 @@
 # Предопределенные домены прикладных компонентов
 components:
-  sber.berezka:
-    title: Березка
+  flix:
+    title: Прикладная архитектура Участника Фликс
     entity: package
-    description: ООО Березка
+
+  alfa:
+    title: Прикладная архитектура Участника Альфа
+    entity: package
 
 aspects:
-  sber:
-    title: Сбер
+  alfa:
+    title: Функциональность АС Участника Альфа
 

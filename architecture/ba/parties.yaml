@@ -1,54 +1,70 @@
 seaf.ba.parties:
 
-  sber.berezka:
-    title: Березка
+  group:
+    title: Группа
 
-  sber.berezka.content_matter_buz:
+  alfa:
+    title: Альфа
+    relates_to:
+      - group
+
+  ezon:
+    title: e-Zone
+    relates_to:
+      - group
+
+  flix:
+    title: Фликс
+    relates_to:
+      - group
+
+
+
+  flix.content_matter_buz:
     title: Контентно-зависимый бизнес
     has_interest:
-      - id: sber.berezka.media_platform_saas
+      - id: flix.media_platform_saas
         type: Потребляет
     sber:
       type: Крупный и средний бизнес
 
-  sber.center:
-    title: Центр
 
-#  sber.sosenka:
+#  group.sosenka:
 #    title: Сосенка
 
-  sber.berezka.customers.fl:
+  flix.customers.fl:
     title: ФЛ
 
-  sber.berezka.team:
+  flix.team:
     title: Внутренние сотрудники Березки
-    is_part_of: sber.berezka
+    is_part_of: flix
 
-  sber.berezka.customers.fl.web:
+  flix.customers.fl.web:
     title: Пользователи веб-приложения
-    is_part_of: sber.berezka.customers.fl
+    is_part_of: flix.customers.fl
     has_interest:
-      - id: sber.berezka.home_cinema
+      - id: flix.home_cinema
         type: Потребляет
     sber:
       type: Физические лица
 
-  sber.berezka.customers.fl.ios_app:
+
+  flix.customers.fl.ios_app:
     title: Пользователи мобильного приложения
-    is_part_of: sber.berezka.customers.fl
+    is_part_of: flix.customers.fl
     has_interest:
-      - id: sber.berezka.home_cinema
+      - id: flix.home_cinema
         type: Потребляет
-      - id: sber.berezka.support
+      - id: flix.support
         type: Интересуется
     sber:
       type: Физические лица
 
-  sber.berezka.team.product:
+  flix.team.product:
     title: Продуктовая команда Березки
-    is_part_of: sber.berezka.team
+    is_part_of: flix.team
 
-  sber.berezka.team.support:
+  flix.team.support:
     title: Команда сопровождения Березки
-    is_part_of: sber.berezka.team
+    is_part_of: flix.team
 

@@ -1,12 +1,12 @@
 seaf.ta.reverse.cloud_ru.advanced.branches:
-  sber.berezka.branches.kremlin:
+  flix.branches.kremlin:
     id: kremlin
     name: Кремль
     country: Россия
     city: Москва
     location: Красная площадь 1
     symbol: svg_branch
-  sber.berezka.branches.spb:
+  flix.branches.spb:
     id: spb
     name: Смольный
     country: Россия

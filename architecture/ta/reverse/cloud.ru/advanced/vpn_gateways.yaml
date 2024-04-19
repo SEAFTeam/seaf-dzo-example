@@ -1,5 +1,5 @@
 seaf.ta.reverse.cloud_ru.advanced.vpn_gateways:
-  sber.berezka.vpn_gateways.vpngw-offices:
+  flix.vpn_gateways.vpngw-offices:
     id: vpngw-offices
     name: vpngw-offices
     vpc_id: abddcd66-c607-4ec6-9d12-30378e0e54c0
@@ -7,4 +7,4 @@ seaf.ta.reverse.cloud_ru.advanced.vpn_gateways:
     ip_address: 188.72.107.53
     type: IPSec
     tenant: 9f7dcs8823ed23e9cwe223ecwe22236
-    DC: sber.berezka.dc.01
+    DC: flix.dc.01

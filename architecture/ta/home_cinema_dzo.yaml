@@ -9,8 +9,10 @@ seaf.ta.components.k8s_deployment:
     update_strategy: RollingUpdate
     kubernetes_id:
       - flix.k8s.02
+      - flix.k8s.02
     replicas: 10
     deployment_id: k8s_deployment.auth
+    availabilityzone_id: flix.dc_az.moscow
     availabilityzone_id: flix.dc_az.moscow
     k8s_pod:
       - seaf.ta.services.k8s_pod.auth
@@ -73,6 +75,9 @@ seaf.ta.components.k8s_pod:
     secrets: Yes
     access_level: Не привилегированный
     update_strategy: RollingUpdate
+    kubernetes_id:
+      - flix.k8s.01
+    title: Payments Back
     pod_k8s_id: k8s_pod.payments
     stoptimeout: 60
     ml: false

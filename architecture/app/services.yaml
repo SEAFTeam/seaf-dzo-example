@@ -8,15 +8,6 @@ components:
     entity: component
     title: Рекомендации
     type: service
-    sber:
-      service_type: Система
-      criticality: Mission Critical
-      class: Продуктовая фабрика (основная деятельность)
-      role_model: Централизованная
-      change_type: Используется
-      target_status: Целевая
-      live_stage: Промышленная эксплуатация
-      live_stage_target: Промышленная эксплуатация
 
   flix.home_cinema.catalog:
     entity: component

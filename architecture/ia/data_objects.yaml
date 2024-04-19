@@ -13,7 +13,7 @@ seaf.ia.data_objects:
       category: Прочее
       status: Используется
 
-  sber.berezka.data_objects.client_name:
+  flix.data_objects.client_name:
     title: ФИО Клиента
     business_object: flix.business_objects.client
     master_system: flix.home_cinema

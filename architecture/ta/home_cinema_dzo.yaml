@@ -42,7 +42,7 @@ seaf.ta.components.k8s_statefulset:
     maxunavailable: 3
     kubernetes_id:
       - flix.k8s.01
-    availabilityzone_id: sber.berezka.dc_az.moscow
+    availabilityzone_id: flix.dc_az.moscow
     container_id:
       - seaf.ta.services.k8s_container.identity
     k8s_pod:
@@ -285,7 +285,7 @@ seaf.ta.services.monitoring:
       frequency: 5
       pam_anabled: true
       cluster_id: $null
-      sber_radar: https://console.radar.sber.ru/dashboard/
+      sber_radar: https://console.radar.alfa.ru/dashboard/
 
 seaf.change.requirements:
   flix.home_cinema.requirement1:

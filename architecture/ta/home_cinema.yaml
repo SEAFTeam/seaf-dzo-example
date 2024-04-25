@@ -96,7 +96,7 @@ seaf.ta.services.dc:
     dc_address: Нет адреса
     dc_rack_qty: 0
     dc_tier: Tier III
-    availabilityzone_id: sber.berezka.dc_az.moscow
+    availabilityzone_id: flix.dc_az.moscow
 
 #### Создаём офис
 seaf.ta.services.office:
@@ -108,43 +108,43 @@ seaf.ta.services.office:
 
 #### Создаём окружения для сервисов
 seaf.ta.services.environment:
-  sber.berezka.environment.dev:
+  flix.environment.dev:
     environment_id: environment.dev
     title: Окружение для разработки
 
-  sber.berezka.environment.test:
+  flix.environment.test:
     environment_id: environment.test
     title: Окружение для тестирования
 
-  sber.berezka.environment.prod:
+  flix.environment.prod:
     environment_id: environment.prod
     title: Окружение для продакшена
 
 #### Создаём стенды в окружениях
 seaf.ta.services.stand:
-  sber.berezka.stand.dev:
+  flix.stand.dev:
     stand_name: stand.dev
-    environment_id: sber.berezka.environment.dev
+    environment_id: flix.environment.dev
     title: Стенд для разработки
 
-  sber.berezka.stand.intest:
+  flix.stand.intest:
     stand_name: stand.intest
-    environment_id: sber.berezka.environment.test
+    environment_id: flix.environment.test
     title: Стенд для интеграционного тестирования
 
-  sber.berezka.stand.ntest:
+  flix.stand.ntest:
     stand_name: stand.ntest
-    environment_id: sber.berezka.environment.test
+    environment_id: flix.environment.test
     title: Стенд для нагрузочного тестирования
 
-  sber.berezka.stand.prod:
+  flix.stand.prod:
     stand_name: stand.prod
-    environment_id: sber.berezka.environment.prod
+    environment_id: flix.environment.prod
     title: Стенд для продакшена
 
-  sber.berezka.stand.preprod:
+  flix.stand.preprod:
     stand_name: stand.preprod
-    environment_id: sber.berezka.environment.prod
+    environment_id: flix.environment.prod
 
 #### Создаём сервис виртуализации
 seaf.ta.services.cluster_virtualization:
@@ -163,8 +163,6 @@ seaf.ta.services.cluster_virtualization:
     oversubscription_rate: 1
     stand_id:
       - flix.stand.prod
-
-
   flix.cluster_virtualization.cloud.02:
     title: Кластер виртуализации
     description: Собственный кластер виртуализации в облаке Cloud
@@ -188,9 +186,8 @@ seaf.ta.services.cluster_virtualization:
       - flix.server_metal.04
       - flix.server_metal.05
       - flix.server_metal.06
-    stand_id:
-      - sber.berezka.stand.prod
-
+  stand_id:
+        - flix.stand.prod
   flix.cluster_virtualization.vk.01:
     title: Кластер виртуализации в облаке VK
     description: Кластер виртуализации в облаке VK
@@ -205,7 +202,7 @@ seaf.ta.services.cluster_virtualization:
     sdrs_support: true
     oversubscription_rate: 1
     stand_id:
-      - sber.berezka.stand.prod
+      - flix.stand.prod
 
 #### Создаём описание сетевых устройств
 seaf.ta.components.network:
@@ -220,7 +217,7 @@ seaf.ta.components.network:
     purpose: Пограничный маршрутизатор
     address: 192.168.1.1
     stand_id:
-      - sber.berezka.stand.prod
+      - flix.stand.prod
 
   flix.network.fortigate.01:
     title: FortiGate 4800F
@@ -233,7 +230,7 @@ seaf.ta.components.network:
     purpose: Пограничный маршрутизатор
     address: 10.10.10.1
     stand_id:
-      - sber.berezka.stand.prod
+      - flix.stand.prod
 
   flix.network.fortigate.02:
     title: FortiGate 4800F
@@ -246,7 +243,7 @@ seaf.ta.components.network:
     address: 10.10.10.1
     office: office.hq
     stand_id:
-      - sber.berezka.stand.prod
+      - flix.stand.prod
 
 #### Создаём описание VPN шлюза
   flix.network.cisco.02:
@@ -260,7 +257,7 @@ seaf.ta.components.network:
     purpose: VPN шлюз
     address: 192.168.1.2
     stand_id:
-      - sber.berezka.stand.prod
+      - flix.stand.prod
 
   flix.network.cisco.03:
     title: Cisco ASR 1001-X
@@ -273,7 +270,7 @@ seaf.ta.components.network:
     purpose: VPN шлюз
     address: 192.168.1.2
     stand_id:
-      - sber.berezka.stand.prod
+      - flix.stand.prod
 
 #### Создаём описание сетей
 seaf.ta.services.network:
@@ -292,7 +289,7 @@ seaf.ta.services.network:
       - flix.dc.01
     vlan: 160
     stand_id:
-      - sber.berezka.stand.prod
+      - flix.stand.prod
 
   flix.lan.192.168.2.0:
     title: LAN сеть
@@ -308,7 +305,7 @@ seaf.ta.services.network:
       - flix.dc.01
     vlan: 150
     stand_id:
-      - sber.berezka.stand.prod
+      - flix.stand.prod
 
   flix.lan.192.168.3.0:
     title: LAN сеть
@@ -324,7 +321,7 @@ seaf.ta.services.network:
       - flix.dc.02
     vlan: 110
     stand_id:
-      - sber.berezka.stand.prod
+      - flix.stand.prod
 
   flix.lan.192.168.4.0:
     title: LAN сеть
@@ -339,7 +336,7 @@ seaf.ta.services.network:
     office_id: flix.office.hq
     vlan: 1
     stand_id:
-      - sber.berezka.stand.prod
+      - flix.stand.prod
 
 #### Создаём описание внешних сетей
   flix.wan.1.1.1.0:
@@ -502,7 +499,7 @@ seaf.ta.components.server:
     storage_id: flix.hw_storage.01
     network_connection: flix.lan.192.168.2.0
     stand_id:
-      - sber.berezka.stand.prod
+      - flix.stand.prod
   flix.server_metal.02:
     title: Физический сервер
     server_id: server_metal.02
@@ -768,7 +765,7 @@ seaf.ta.components.server:
       - flix.dc_az.moscow
     description: Сервер приложений для прикладного компонента Авторизация
     stand_id:
-      - sber.berezka.stand.prod
+      - flix.stand.prod
 #### Сервера для k8s кластера
   flix.server_virtual.05:
     title: Виртуальный сервер
@@ -913,7 +910,7 @@ seaf.ta.components.server:
       - flix.dc_az.moscow
     description: Сервер приложений для кластера K8s
     stand_id:
-      - sber.berezka.stand.prod
+      - flix.stand.prod
 
 #### Создаём описание СХД
 #### Создаём описание аппаратных СХД
@@ -928,7 +925,7 @@ seaf.ta.components.hw_storage:
     disk_type: SSD
     protocols: FC, Ethernet
     stand_id:
-      - sber.berezka.stand.prod
+      - flix.stand.prod
 
 #### Создаём описание программных СХД
 seaf.ta.services.storage:
@@ -948,7 +945,7 @@ seaf.ta.services.storage:
     type: Software Defined Storage
     erasure_coding: 2
     stand_id:
-      - sber.berezka.stand.prod
+      - flix.stand.prod
 
   #### Создаём описание объектных хранилищ
   flix.obj_storage.cloud_s3:
@@ -1023,7 +1020,7 @@ seaf.ta.services.k8s:
     keys: Vault
     policy: Kyverno
     stand_id:
-      - sber.berezka.stand.prod
+      - flix.stand.prod
     server_id:
       - flix.server_virtual.05
       - flix.server_virtual.06
@@ -1053,7 +1050,7 @@ seaf.ta.services.k8s:
     keys: Vault
     policy: Kyverno
     stand_id:
-      - sber.berezka.stand.prod
+      - flix.stand.prod
     server_id:
       - flix.server_virtual.05
       - flix.server_virtual.06

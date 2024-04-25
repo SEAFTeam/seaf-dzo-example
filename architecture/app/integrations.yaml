@@ -49,11 +49,11 @@ seaf.app.integrations:
     specifications:
       - smartpay
 
-  sber.berezka.home_cinema.gate_payments:
+  flix.home_cinema.gate_payments:
     title: Платежи
     description: Проведение оплаты через шлюз
-    from: sber.payment_gate
-    to: sber.berezka.home_cinema.payments
+    from: alfa.payment_gate
+    to: flix.home_cinema.payments
     data-objects:
       - payments.data_objects.payment
     sber:

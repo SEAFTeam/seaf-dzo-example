@@ -1,7 +1,7 @@
 seaf.ia.data_objects:
   payments.data_objects.payment:
     title: Информация об оплате
-    master_system: sber.payment_gate
+    master_system: alfa.payment_gate
     sber:
       category: Прочее
       status: Используется

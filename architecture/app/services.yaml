@@ -16,7 +16,7 @@ components:
     type: service
     sber:
       service_type: Функциональная подсистема
-      parent: sber.berezka.home_cinema
+      parent: flix.home_cinema
       criticality: Business Critical
       role_model: Централизованная
       class: Продуктовая фабрика (основная деятельность)
@@ -34,7 +34,7 @@ components:
     type: service
     sber:
       service_type: Функциональная подсистема
-      parent: sber.berezka.home_cinema
+      parent: flix.home_cinema
       criticality: Business Operational
       role_model: Централизованная
       class: Иное
@@ -53,7 +53,7 @@ components:
     type: service
     sber:
       service_type: Функциональная подсистема
-      parent: sber.berezka.home_cinema
+      parent: flix.home_cinema
       criticality: Business Operational
       role_model: Централизованная
       class: Иное
@@ -68,10 +68,10 @@ components:
     description: Авторизация пользователей для доступа к Домашнему кинотеарту
     type: service
     aspects:
-      - sber.berezka.home_cinema.auth
+      - flix.home_cinema.auth
     sber:
       service_type: Функциональная подсистема
-      parent: sber.berezka.home_cinema
+      parent: flix.home_cinema
       criticality: Business Critical
       role_model: Централизованная
       class: Клиентский профиль (Customer Information File)
@@ -94,7 +94,7 @@ components:
       change_type: Используется
       target_status: Целевая
 
-  sber.payment_gate:
+  alfa.payment_gate:
     entity: component
     title: Платежный шлюз
     type: service

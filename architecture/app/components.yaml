@@ -72,7 +72,7 @@ components:
     type: component
     sber:
       component_type: Микросервис
-      is_component_of: sber.berezka.home_cinema.catalog
+      is_component_of: flix.home_cinema.catalog
 
   flix.home_cinema.canals.app:
     entity: component

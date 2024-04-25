@@ -6,6 +6,9 @@ seaf.ba.processes:
       - flix.media_platform
     next_processes:
       - flix.play
+    requirements:
+      - flix.home_cinema.requirement1
+      - flix.home_cinema.requirement2
 
   flix.access_management:
     title: Управление доступами
@@ -13,6 +16,8 @@ seaf.ba.processes:
       - flix.media_platform
     next_processes:
       - flix.streaming_ondemand
+    consumes:
+      -flix.business_objects.client
 
   flix.access_upload:
     title: Загрузки
@@ -34,6 +39,8 @@ seaf.ba.processes:
       - alfa.fl_auth
     next_processes:
       - flix.brows_cat
+    produces:
+      - flix.business_objects.client
 
   alfa.payments.aquiring:
     title: Оплата онлайн
@@ -49,8 +56,11 @@ seaf.ba.processes:
       - flix.home_cinema
     next_processes:
       - flix.streaming_ondemand
+    supported:
+      - flix.home_cinema.recomendation.app
 
   flix.play:
     title: Просмотр фильмов
     products:
       - flix.home_cinema
+    is_part_of: flix.streaming_ondemand

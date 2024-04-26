@@ -7,7 +7,7 @@ seaf.ta.reverse.cloud_ru.advanced.links:
       - flix.rdss.0e493e5847714a14a313e215d9e59b15in03
       - flix.elbs.ad9af3b6-fd82-404e-8d6c-466660e92329
       - flix.ecss.e5e60a69-0653-4297-8799-ea0df4f0cacc
-      - alfa.sbercloud.vdcs.464f7346-ea60-48d0-a351-7454dc3a2ddb
+      - flix.vdcs.464f7346-ea60-48d0-a351-7454dc3a2ddb
 
   flix.links.home_cinema.catalog:
     app_id: flix.home_cinema.catalog

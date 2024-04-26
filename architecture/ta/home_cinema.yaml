@@ -70,8 +70,8 @@ seaf.ta.services.dc:
       - flix.home_cinema.auth.token_manager
       - flix.home_cinema.catalog.app
 
-  alfa.sbercloud.dc.cloud_ent:
-    dc_id: sbercloud.dc.cloud_ent
+  flix.dc.cloud_ent:
+    dc_id: flix.dc.cloud_ent
     title: Cloud.ru (Услуга по договору №1)
     dc_ownership: Услуга
     dc_type: IaaS/PaaS провайдер

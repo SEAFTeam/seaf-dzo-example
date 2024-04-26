@@ -3,9 +3,6 @@
 
 #### Создаём клиентских устройств
 seaf.ta.components.user_device:
-
-  flix.user_device.laptop:
-
   flix.user_device.laptop:
     user_device_id: user_device.laptop
     title: Ноутбуки сотрудников
@@ -14,7 +11,6 @@ seaf.ta.components.user_device:
 
 #### Создаём Регион
 seaf.ta.services.dc_region:
-  flix.dc_region.russia:
   flix.dc_region.russia:
     region_id: dc_region.russia
     title: Регион Россия
@@ -34,10 +30,8 @@ seaf.ta.services.dc_region:
 #### Создаём AZ
 seaf.ta.services.dc_az:
   flix.dc_az.moscow:
-  flix.dc_az.moscow:
     title: Зона доступности Москва
     description: Зона доступности Москва
-    region_id: flix.dc_region.russia
     region_id: flix.dc_region.russia
     az_vendor: Березка
     availabilityzone_id: dc_az.moscow
@@ -52,9 +46,9 @@ seaf.ta.services.dc_az:
       - flix.home_cinema.catalog.app
       - flix.home_cinema.canals.app
       - flix.home_cinema.payments.app
+
 #### Создаём ЦОД
 seaf.ta.services.dc:
-  flix.dc.01:
   flix.dc.01:
     dc_id: dc.01
     title: Sber Cloud DC
@@ -186,7 +180,7 @@ seaf.ta.services.cluster_virtualization:
       - flix.server_metal.04
       - flix.server_metal.05
       - flix.server_metal.06
-  stand_id:
+    stand_id:
         - flix.stand.prod
   flix.cluster_virtualization.vk.01:
     title: Кластер виртуализации в облаке VK
@@ -439,7 +433,6 @@ seaf.ta.services.network_links:
     bandwidth: 100
     ch_number: '600'
     provider: МТС
-
 
   flix.network_links.cloud_hq:
     title: HQ линк

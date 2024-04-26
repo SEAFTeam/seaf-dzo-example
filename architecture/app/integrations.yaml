@@ -5,11 +5,6 @@ seaf.app.integration_specifications:
     title: Стандарты, принятые на уровне Группы
 
   group.standards.oauth:
-
-  group.standards:
-    title: Стандарты, принятые на уровне Группы
-
-  group.standards.oauth:
     description: Протокол OAuth авторизации
     title: OAuth авторизация
     interface_standard_type: Универсальный интерфейс/Индустриальный стандарт

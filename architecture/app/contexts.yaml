@@ -1,7 +1,15 @@
 # Контексты прикладной архитектуры
 contexts:
-  overview:
-    title: Прикладные сервисы
+  flix:
+    title: Прикладные сервисы Участника Фликс
     location: Прикладные сервисы
     components:
+      - flix
       - flix.**
+
+  alfa:
+    title: Прикладные сервисы Участника Альфа
+    location: Прикладные сервисы
+    components:
+      - alfa
+      - alfa.**

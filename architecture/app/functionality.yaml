@@ -1,7 +1,7 @@
 # Прикладная функциональность
 aspects:
   flix:
-    title: ООО Березка
+    title: Функциональность АС Участника Фликс 
   flix.home_cinema:
     title: Домашний кинотеатр
   flix.home_cinema.auth:

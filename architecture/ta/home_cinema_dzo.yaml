@@ -111,7 +111,7 @@ seaf.ta.components.k8s_container:
 
 seaf.ta.components.k8s_image:
   seaf.ta.services.k8s_image.identity:
-    repo_path: https://repo.berezka.ru/repo
+    repo_path: https://repo.flix.ru/repo
     image_size: 1000
     title: identity
     repo_proved: true
@@ -119,7 +119,7 @@ seaf.ta.components.k8s_image:
     image_id: k8s_image.identity
 
   seaf.ta.services.k8s_image.transaction:
-    repo_path: https://repo.berezka.ru/repo
+    repo_path: https://repo.flix.ru/repo
     image_size: 1000
     title: transaction
     repo_proved: true
@@ -144,7 +144,7 @@ seaf.ta.services.k8s:
 #     kubernetes_id: k8s.02
 #     availabilityzone_id:
 #       - flix.dc_az.moscow
-#     cluster_fqdn: k8s.02.berezka.ru
+#     cluster_fqdn: k8s.02.flix.ru
 #     software:  '1.28'
 #     master_qty: 3
 #     worker_qty: 3
@@ -172,9 +172,9 @@ seaf.ta.services.k8s:
 #       tls_version: '1.2'
 #       reservation_rate: 100
 #       az_used: 1
-#       ntp_server: ntp.berezka.ru
+#       ntp_server: ntp.flix.ru
 
-  sber.berezka.k8s.03:
+  flix.k8s.03:
     kubernetes_id: k8s.02
     availabilityzone_id:
       - flix.dc_az.moscow
@@ -206,14 +206,14 @@ seaf.ta.services.k8s:
       tls_version: '1.2'
       reservation_rate: 100
       az_used: 1
-      ntp_server: ntp.berezka.ru
+      ntp_server: ntp.flix.ru
 
 
 seaf.ta.components.server:
   flix.server_metal.09:
     title: Физический сервер
     server_id: server_metal.09
-    fqdn_name: server_metal.09.berezka.ru
+    fqdn_name: server_metal.09.flix.ru
     disks:
       - disks:
           availabilityzone_id: dc_az.moscow
@@ -243,7 +243,7 @@ seaf.ta.components.server:
   flix.server_metal.10:
     title: Физический сервер
     server_id: server_metal.10
-    fqdn_name: server_metal.10.berezka.ru
+    fqdn_name: server_metal.10.flix.ru
     disks:
       - disks:
           availabilityzone_id: dc_az.moscow
@@ -281,7 +281,7 @@ seaf.ta.components.hw_storage:
     disk_type: SSD
     protocols: FC, Ethernet
     sber:
-      storage_console: https://console-hw-storage.02.berezka.ru
+      storage_console: https://console-hw-storage.02.flix.ru
       reservation_ratio: 100
       compression_rate: 5
       storage_controller_qty: 2
@@ -292,7 +292,7 @@ seaf.ta.components.hw_storage:
       snapshot_lic: true
       pwr_supply_qty: 4
       ssd_cache_qty: 4
-      ntp_server: ntp.berezka.ru
+      ntp_server: ntp.flix.ru
       erasure_coding: 1
 
 seaf.ta.services.monitoring:
@@ -313,7 +313,7 @@ seaf.ta.services.monitoring:
       alarm_transport:
         - mail
         - TG
-      monitoring_console: https://monitoring-console.berezka.ru
+      monitoring_console: https://monitoring-console.flix.ru
       history: 365
       frequency: 5
       pam_anabled: true

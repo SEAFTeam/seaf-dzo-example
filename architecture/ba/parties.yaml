@@ -36,7 +36,7 @@ seaf.ba.parties:
     title: ФЛ
 
   flix.team:
-    title: Внутренние сотрудники Березки
+    title: Внутренние сотрудники Фликс
     is_part_of: flix
 
   flix.customers.fl.web:
@@ -60,10 +60,10 @@ seaf.ba.parties:
       type: Физические лица
 
   flix.team.product:
-    title: Продуктовая команда Березки
+    title: Продуктовая команда Фликс
     is_part_of: flix.team
 
   flix.team.support:
-    title: Команда сопровождения Березки
+    title: Команда сопровождения Фликс
     is_part_of: flix.team
 

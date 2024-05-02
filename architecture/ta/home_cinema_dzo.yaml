@@ -9,7 +9,6 @@ seaf.ta.components.k8s_deployment:
     update_strategy: RollingUpdate
     kubernetes_id:
       - flix.k8s.02
-      - flix.k8s.02
     replicas: 10
     deployment_id: k8s_deployment.auth
     availabilityzone_id: flix.dc_az.moscow
@@ -143,11 +142,45 @@ seaf.ta.components.network:
       auth_type: Двухфакторная
 
 seaf.ta.services.k8s:
-  flix.k8s.02:
+#   flix.k8s.02:
+#     kubernetes_id: k8s.02
+#     availabilityzone_id:
+#       - flix.dc_az.moscow
+#     cluster_fqdn: k8s.02.berezka.ru
+#     software:  '1.28'
+#     master_qty: 3
+#     worker_qty: 3
+#     auth: Keycloack
+#     cni: Calico
+#     is_own: false
+#     app_components:
+#       - flix.home_cinema.payments.app
+#     cluster_autoscaler: true
+#     hpa: true
+#     keys: Vault
+#     policy: Kyverno
+#     service_mesh: Istio
+#     server_id:
+#       - flix.server_virtual.05
+#       - flix.server_virtual.06
+#       - flix.server_virtual.07
+#       - flix.server_virtual.08
+#       - flix.server_virtual.09
+#       - flix.server_virtual.10
+#     sber:
+#       pv: false
+#       https_api_connect: true
+#       anonymous_api_connect: false
+#       tls_version: '1.2'
+#       reservation_rate: 100
+#       az_used: 1
+#       ntp_server: ntp.berezka.ru
+
+  sber.berezka.k8s.03:
     kubernetes_id: k8s.02
     availabilityzone_id:
       - flix.dc_az.moscow
-    cluster_fqdn: k8s.02.berezka.ru
+    cluster_fqdn: k8s.02.flix.ru
     software:  '1.28'
     master_qty: 3
     worker_qty: 3
@@ -176,6 +209,7 @@ seaf.ta.services.k8s:
       reservation_rate: 100
       az_used: 1
       ntp_server: ntp.berezka.ru
+
 
 seaf.ta.components.server:
   flix.server_metal.09:

@@ -152,9 +152,9 @@ seaf.ta.services.cluster_virtualization:
       - flix.home_cinema.auth.app
       - flix.home_cinema.auth.token_manager
       - flix.home_cinema.catalog.app
-    drs_support: true
-    sdrs_support: true
-    oversubscription_rate: 1
+    drs_support: false
+    sdrs_support: false
+    oversubscription_rate: 3
     stand_id:
       - flix.stand.prod
   flix.cluster_virtualization.cloud.02:
@@ -1023,7 +1023,7 @@ seaf.ta.services.k8s:
       - flix.server_virtual.10
     app_components:
       - flix.home_cinema.payments.app
-
+  
   flix.k8s.02:
     title: K8s кластер
     description: K8s кластер в az.moscow
@@ -1031,7 +1031,7 @@ seaf.ta.services.k8s:
     software: '1.28'
     kubernetes_id: k8s.02
     auth: Keycloack
-    cluster_fqdn: k8s.02.berezka.ru
+    cluster_fqdn: k8s.02.flix.ru
     worker_qty: 2
     availabilityzone_id:
       - flix.dc_az.moscow

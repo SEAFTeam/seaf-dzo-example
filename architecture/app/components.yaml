@@ -13,7 +13,7 @@ components:
       scalability: Горизонтальная
       stores_confidential_data: false
       id: 3b31288d-2a8b-4c10-89b1-0499759365c9
-      provider: ООО Березка
+      provider: ООО Фликс
       provider_type: Собственная разработка
       cloud_readiness: Компоненты в гибридном публичном облаке/наборе облаков с управляемыми облачными поставщиками инфраструктурными сервисами (Cloud Native 5)
 
@@ -48,7 +48,7 @@ components:
       scalability: Горизонтальная
       stores_confidential_data: true
       id: 523dfceb-a84b-40dc-abf1-1d6f84724f2a
-      provider: ООО Березка
+      provider: ООО Фликс
       provider_type: Собственная разработка
       cloud_readiness: Компоненты в гибридном публичном облаке/наборе облаков с управляемыми облачными поставщиками инфраструктурными сервисами (Cloud Native 5)
 
@@ -61,7 +61,7 @@ components:
       component_type: Микросервис
       scalability: Горизонтальная
       id: 079bdad9-c1c8-412d-93ac-e984e8fe3f8f
-      provider: ООО Березка
+      provider: ООО Фликс
       provider_type: Собственная разработка
       stores_confidential_data: false
       cloud_readiness: Компоненты в гибридном публичном облаке/наборе облаков с управляемыми облачными поставщиками инфраструктурными сервисами (Cloud Native 5)

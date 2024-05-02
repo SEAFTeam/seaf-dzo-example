@@ -2,14 +2,14 @@
 contexts:
   flix:
     title: Прикладные сервисы Участника Фликс
-    location: Прикладные сервисы
+    location: Прикладные сервисы/Фликс
     components:
       - flix
       - flix.**
 
   alfa:
     title: Прикладные сервисы Участника Альфа
-    location: Прикладные сервисы
+    location: Прикладные сервисы/Альфа
     components:
       - alfa
       - alfa.**

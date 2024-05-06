@@ -142,42 +142,9 @@ seaf.ta.components.network:
       auth_type: Двухфакторная
 
 seaf.ta.services.k8s:
-#   flix.k8s.02:
-#     kubernetes_id: k8s.02
-#     availabilityzone_id:
-#       - flix.dc_az.moscow
-#     cluster_fqdn: k8s.02.flix.ru
-#     software:  '1.28'
-#     master_qty: 3
-#     worker_qty: 3
-#     auth: Keycloack
-#     cni: Calico
-#     is_own: false
-#     app_components:
-#       - flix.home_cinema.payments.app
-#     cluster_autoscaler: true
-#     hpa: true
-#     keys: Vault
-#     policy: Kyverno
-#     service_mesh: Istio
-#     server_id:
-#       - flix.server_virtual.05
-#       - flix.server_virtual.06
-#       - flix.server_virtual.07
-#       - flix.server_virtual.08
-#       - flix.server_virtual.09
-#       - flix.server_virtual.10
-#     sber:
-#       pv: false
-#       https_api_connect: true
-#       anonymous_api_connect: false
-#       tls_version: '1.2'
-#       reservation_rate: 100
-#       az_used: 1
-#       ntp_server: ntp.flix.ru
-
-  flix.k8s.03:
+  flix.k8s.02:
     kubernetes_id: k8s.02
+    description: K8s кластер в az.moscow
     availabilityzone_id:
       - flix.dc_az.moscow
     cluster_fqdn: k8s.02.flix.ru
@@ -188,19 +155,12 @@ seaf.ta.services.k8s:
     cni: Calico
     is_own: false
     app_components:
-      - flix.home_cinema.payments.app
+      - flix.home_cinema.auth.app
     cluster_autoscaler: true
     hpa: true
     keys: Vault
     policy: Kyverno
     service_mesh: Istio
-    server_id:
-      - flix.server_virtual.05
-      - flix.server_virtual.06
-      - flix.server_virtual.07
-      - flix.server_virtual.08
-      - flix.server_virtual.09
-      - flix.server_virtual.10
     sber:
       pv: false
       https_api_connect: true
@@ -209,7 +169,6 @@ seaf.ta.services.k8s:
       reservation_rate: 100
       az_used: 1
       ntp_server: ntp.flix.ru
-
 
 seaf.ta.components.server:
   flix.server_metal.09:

@@ -36,6 +36,7 @@ seaf.ta.services.dc_az:
       - flix.home_cinema.catalog.app
       - flix.home_cinema.canals.app
       - flix.home_cinema.payments.app
+
 #### Создаём ЦОД
 seaf.ta.services.dc:
   flix.dc.01:
@@ -1012,36 +1013,6 @@ seaf.ta.services.k8s:
     app_components:
       - flix.home_cinema.payments.app
   
-  flix.k8s.02:
-    title: K8s кластер
-    description: K8s кластер в az.moscow
-    master_qty: 1
-    software: '1.28'
-    kubernetes_id: k8s.02
-    auth: Keycloack
-    cluster_fqdn: k8s.02.flix.ru
-    worker_qty: 2
-    availabilityzone_id:
-      - flix.dc_az.moscow
-    cni:  Calico
-    is_own: false
-    cluster_autoscaler: true
-    service_mesh: Istio
-    hpa: true
-    keys: Vault
-    policy: Kyverno
-    stand_id:
-      - flix.stand.prod
-    server_id:
-      - flix.server_virtual.05
-      - flix.server_virtual.06
-      - flix.server_virtual.07
-      - flix.server_virtual.08
-      - flix.server_virtual.09
-      - flix.server_virtual.10
-    app_components:
-      - flix.home_cinema.auth.app
-
 #### Создаём описание сервиса мониторинга
 seaf.ta.services.monitoring:
   flix.monitoring.01:

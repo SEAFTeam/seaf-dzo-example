@@ -1,7 +1,7 @@
 seaf.ia.data_objects:
   payments.data_objects.payment:
     title: Информация об оплате
-    master_system: sber.payment_gate
+    master_system: alfa.payment_gate
     sber:
       category: Прочее
       status: Используется
@@ -13,50 +13,62 @@ seaf.ia.data_objects:
       category: Прочее
       status: Используется
 
-  sber.berezka.data_objects.client_name:
+  flix.data_objects.client_name:
     title: ФИО Клиента
-    business_object: sber.berezka.business_objects.client
-    master_system: sber.berezka.home_cinema
     sber:
       category: Перс данные
       status: Используется
+    status: Используется
+    business_object: flix.business_objects.client
+    category: Перс.данные
+    master_system: flix.home_cinema
 
-  sber.berezka.data_objects.client_phone:
+  flix.data_objects.client_phone:
     title: Телефон клиента
-    business_object: sber.berezka.business_objects.client
-    master_system: sber.berezka.home_cinema
+    status: Используется
+    business_object: flix.business_objects.client
+    category: Перс.данные
+    master_system: flix.home_cinema
     sber:
       category: Перс данные
       status: Используется
 
-  sber.berezka.data_objects.client_adress:
+  flix.data_objects.client_adress:
     title: Адрес клиента
-    business_object: sber.berezka.business_objects.client
-    master_system: sber.berezka.home_cinema
+    status: Используется
+    business_object: flix.business_objects.client
+    category: Перс.данные
+    master_system: flix.home_cinema
     sber:
       category: Перс данные
       status: Используется
 
-  sber.berezka.data_objects.service_deal:
+  flix.data_objects.service_deal:
     title: Сделка по услуге
-    business_object: sber.berezka.business_objects.service
-    master_system: sber.berezka.home_cinema.payments
+    status: Используется
+    category: Иное
+    business_object: flix.business_objects.service
+    master_system: flix.home_cinema.payments
     sber:
       category: Прочее
       status: Используется
 
-  sber.berezka.data_objects.service_params:
+  flix.data_objects.service_params:
     title: Параметры сделки
-    business_object: sber.berezka.business_objects.service
-    master_system: sber.berezka.home_cinema.payments
+    status: Используется
+    category: Иное
+    business_object: flix.business_objects.service
+    master_system: flix.home_cinema.payments
     sber:
       category: Прочее
       status: Используется
 
-  sber.berezka.data_objects.service_stats:
+  flix.data_objects.service_stats:
     title: Статистика по услугам
-    business_object: sber.berezka.business_objects.service
-    master_system: sber.berezka.home_cinema.catalog
+    status: Планируется
+    category: Иное
+    business_object: flix.business_objects.service
+    master_system: flix.home_cinema.catalog
     sber:
       category: Прочее
       status: Планируется

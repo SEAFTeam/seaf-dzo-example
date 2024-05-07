@@ -1,5 +1,5 @@
 seaf.ta.reverse.cloud_ru.advanced.ecss:
-    sber.berezka.ecss.e5e60a69-0653-4297-8799-ea0df4f0cacc:
+    flix.ecss.e5e60a69-0653-4297-8799-ea0df4f0cacc:
         id: e5e60a69-0653-4297-8799-ea0df4f0cacc
         name: ecs-prod-someserver1
         flavor: s7n.large.2
@@ -36,9 +36,9 @@ seaf.ta.reverse.cloud_ru.advanced.ecss:
             - 13867d36-264c-4fab-bc30-990cb9723cf6
         type: vm
         tenant: 9f7dcs8823ed23e9cwe223ecwe22236
-        DC: sber.berezka.dc.01
+        DC: flix.dc.01
         description: Пример описания сервера, здесь может быть любой текст
-    sber.berezka.ecss.fb77c40e-b1e2-4aa5-89a9-45725b7ccf30:
+    flix.ecss.fb77c40e-b1e2-4aa5-89a9-45725b7ccf30:
         id: fb77c40e-b1e2-4aa5-89a9-45725b7ccf30
         name: ecs-prod-someserver2
         flavor: s7n.xlarge.2
@@ -80,9 +80,9 @@ seaf.ta.reverse.cloud_ru.advanced.ecss:
             - 13867d36-264c-4fab-bc30-990cb9723cf6
         type: vm
         tenant: 9f7dcs8823ed23e9cwe223ecwe22236
-        DC: sber.berezka.dc.01
+        DC: flix.dc.01
         description: Пример описания сервера, здесь может быть любой текст
-    sber.berezka.ecss.729d3b73-350c-4987-86ed-01d36b719c57:
+    flix.ecss.729d3b73-350c-4987-86ed-01d36b719c57:
         id: 729d3b73-350c-4987-86ed-01d36b719c57
         name: ecs-auth-server
         flavor: s7n.large.2
@@ -119,9 +119,9 @@ seaf.ta.reverse.cloud_ru.advanced.ecss:
             - 13867d36-264c-4fab-bc30-990cb9723cf6
         type: vm
         tenant: 9f7dcs8823ed23e9cwe223ecwe22236
-        DC: sber.berezka.dc.01
+        DC: flix.dc.01
         description: Пример описания сервера, здесь может быть любой текст
-    sber.berezka.ecss.d33114ee-70d6-4444-9457-e142216b95aa:
+    flix.ecss.d33114ee-70d6-4444-9457-e142216b95aa:
         id: d33114ee-70d6-4444-9457-e142216b95aa
         name: ecs-test-nginx
         flavor: s7n.large.2
@@ -157,9 +157,9 @@ seaf.ta.reverse.cloud_ru.advanced.ecss:
             - 13867d36-264c-4fab-bc30-990cb9723cf6
         type: vm
         tenant: 9f7dcs8823ed23e9cwe223ecwe22236
-        DC: sber.berezka.dc.01
+        DC: flix.dc.01
         description: Пример описания сервера, здесь может быть любой текст
-    sber.berezka.ecss.62f713a4-1139-461f-8053-1df267861aef:
+    flix.ecss.62f713a4-1139-461f-8053-1df267861aef:
         id: 62f713a4-1139-461f-8053-1df267861aef
         name: ecs-prod-nginx
         flavor: s7n.large.2
@@ -201,9 +201,9 @@ seaf.ta.reverse.cloud_ru.advanced.ecss:
             - 13867d36-264c-4fab-bc30-990cb9723cf6
         type: vm
         tenant: 9f7dcs8823ed23e9cwe223ecwe22236
-        DC: sber.berezka.dc.01
+        DC: flix.dc.01
         description: Пример описания сервера, здесь может быть любой текст
-    sber.berezka.ecss.82935ed6-9c65-4e73-a1ad-1511e21f50b0:
+    flix.ecss.82935ed6-9c65-4e73-a1ad-1511e21f50b0:
         id: 82935ed6-9c65-4e73-a1ad-1511e21f50b0
         name: ecs-prod-app1
         flavor: s7n.large.2
@@ -239,9 +239,9 @@ seaf.ta.reverse.cloud_ru.advanced.ecss:
             - 13867d36-264c-4fab-bc30-990cb9723cf6
         type: vm
         tenant: 9f7dcs8823ed23e9cwe223ecwe22236
-        DC: sber.berezka.dc.01
+        DC: flix.dc.01
         description: Пример описания сервера, здесь может быть любой текст
-    sber.berezka.ecss.9c84c9c0-58b8-40b1-84e8-c165535d9c33:
+    flix.ecss.9c84c9c0-58b8-40b1-84e8-c165535d9c33:
         id: 9c84c9c0-58b8-40b1-84e8-c165535d9c33
         name: ecs-test-app
         flavor: s7n.xlarge.2
@@ -272,9 +272,9 @@ seaf.ta.reverse.cloud_ru.advanced.ecss:
             - 13867d36-264c-4fab-bc30-990cb9723cf6
         type: vm
         tenant: 9f7dcs8823ed23e9cwe223ecwe22236
-        DC: sber.berezka.dc.01
+        DC: flix.dc.01
         description: Пример описания сервера, здесь может быть любой текст
-    sber.berezka.ecss.113c84ac-c328-4119-8057-402b96a7c06c:
+    flix.ecss.113c84ac-c328-4119-8057-402b96a7c06c:
         id: 113c84ac-c328-4119-8057-402b96a7c06c
         name: ecs-prod-zabbix
         flavor: s7n.large.2
@@ -305,9 +305,9 @@ seaf.ta.reverse.cloud_ru.advanced.ecss:
             - 13867d36-264c-4fab-bc30-990cb9723cf6
         type: vm
         tenant: 9f7dcs8823ed23e9cwe223ecwe22236
-        DC: sber.berezka.dc.01
+        DC: flix.dc.01
         description: Пример описания сервера, здесь может быть любой текст
-    sber.berezka.ecss.ab37d178-869f-49ff-bb7c-25e6730a5c61:
+    flix.ecss.ab37d178-869f-49ff-bb7c-25e6730a5c61:
         id: ab37d178-869f-49ff-bb7c-25e6730a5c61
         name: ecs-prod-dochub
         flavor: s7n.xlarge.2
@@ -338,9 +338,9 @@ seaf.ta.reverse.cloud_ru.advanced.ecss:
             - 13867d36-264c-4fab-bc30-990cb9723cf6
         type: vm
         tenant: 9f7dcs8823ed23e9cwe223ecwe22236
-        DC: sber.berezka.dc.01
+        DC: flix.dc.01
         description: Пример описания сервера, здесь может быть любой текст
-    sber.berezka.ecss.f86bc8e3-8187-48fc-9973-4bd4c35370fe:
+    flix.ecss.f86bc8e3-8187-48fc-9973-4bd4c35370fe:
         id: f86bc8e3-8187-48fc-9973-4bd4c35370fe
         name: ecs-prod-app2
         flavor: s7n.xlarge.2
@@ -376,9 +376,9 @@ seaf.ta.reverse.cloud_ru.advanced.ecss:
             - 13867d36-264c-4fab-bc30-990cb9723cf6
         type: vm
         tenant: 9f7dcs8823ed23e9cwe223ecwe22236
-        DC: sber.berezka.dc.01
+        DC: flix.dc.01
         description: Пример описания сервера, здесь может быть любой текст
-    sber.berezka.ecss.ea0e59a3-02c0-43dc-aacf-58d8d7dd9e8a:
+    flix.ecss.ea0e59a3-02c0-43dc-aacf-58d8d7dd9e8a:
         id: ea0e59a3-02c0-43dc-aacf-58d8d7dd9e8a
         name: ecs-fw-external
         flavor: c6nl.xlarge.2
@@ -416,9 +416,9 @@ seaf.ta.reverse.cloud_ru.advanced.ecss:
             - 13867d36-264c-4fab-bc30-990cb9723cf6
         type: vm
         tenant: 9f7dcs8823ed23e9cwe223ecwe22236
-        DC: sber.berezka.dc.01
+        DC: flix.dc.01
         description: Пример описания сервера, здесь может быть любой текст
-    sber.berezka.ecss.6196ae7c-ef37-4f2a-b1b3-33983e30d128:
+    flix.ecss.6196ae7c-ef37-4f2a-b1b3-33983e30d128:
         id: 6196ae7c-ef37-4f2a-b1b3-33983e30d128
         name: ecs-prod-app3
         flavor: s6.xlarge.2
@@ -449,5 +449,5 @@ seaf.ta.reverse.cloud_ru.advanced.ecss:
             - 13867d36-264c-4fab-bc30-990cb9723cf6
         type: vm
         tenant: 9f7dcs8823ed23e9cwe223ecwe22236
-        DC: sber.berezka.dc.01
+        DC: flix.dc.01
         description: Пример описания сервера, здесь может быть любой текст

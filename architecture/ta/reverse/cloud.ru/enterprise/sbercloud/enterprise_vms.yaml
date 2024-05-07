@@ -1,5 +1,5 @@
 seaf.ta.reverse.cloud_ru.enterprise.vms:
-    sber.sbercloud.vms.135b9f91-6f9e-4601-961b-278fb11b8744:
+    flix.vms.135b9f91-6f9e-4601-961b-278fb11b8744:
         id: 135b9f91-6f9e-4601-961b-278fb11b8744
         original_id: urn:vcloud:vm:135b9f91-6f9e-4601-961b-278fb11b8744
         name: WebAppVM02
@@ -21,8 +21,8 @@ seaf.ta.reverse.cloud_ru.enterprise.vms:
             - DBNET
             - WebApp
         subnet_ids:
-            - sber.sbercloud.vappnets.f2071d7e-d088-4d09-8f7d-06353a694af2
-            - sber.sbercloud.vappnets.7bfd8e44-f146-4494-95ed-0ad64c01f530
+            - flix.vappnets.f2071d7e-d088-4d09-8f7d-06353a694af2
+            - flix.vappnets.7bfd8e44-f146-4494-95ed-0ad64c01f530
         disks:
             -   '2000':
                     device: 0/0
@@ -30,12 +30,12 @@ seaf.ta.reverse.cloud_ru.enterprise.vms:
                     az: ''
                     type: Gold
         tags: []
-        vdc_id: sber.sbercloud.vdcs.d43a43b4-a377-4643-9439-f613cad09964
+        vdc_id: flix.vdcs.d43a43b4-a377-4643-9439-f613cad09964
         vdc_name: DocHub_SEAF_test-VDC02
-        vapp_id: sber.sbercloud.vapps.8570756b-fa4a-46dd-b557-92281453942b
+        vapp_id: flix.vapps.8570756b-fa4a-46dd-b557-92281453942b
         tenant: ''
-        DC: sber.sbercloud.dc.cloud_ent
-    sber.sbercloud.vms.263789e6-1d31-46ac-b649-bf81e4fee2df:
+        DC: flix.dc.cloud_ent
+    flix.vms.263789e6-1d31-46ac-b649-bf81e4fee2df:
         id: 263789e6-1d31-46ac-b649-bf81e4fee2df
         original_id: urn:vcloud:vm:263789e6-1d31-46ac-b649-bf81e4fee2df
         name: Segment-50-VM
@@ -55,7 +55,7 @@ seaf.ta.reverse.cloud_ru.enterprise.vms:
         subnets:
             - Segment_50
         subnet_ids:
-            - sber.sbercloud.vappnets.ab6caf1e-654d-4cbb-8441-70114c84f435
+            - flix.vappnets.ab6caf1e-654d-4cbb-8441-70114c84f435
         disks:
             -   '2000':
                     device: 0/0
@@ -63,12 +63,12 @@ seaf.ta.reverse.cloud_ru.enterprise.vms:
                     az: ''
                     type: Gold
         tags: []
-        vdc_id: sber.sbercloud.vdcs.464f7346-ea60-48d0-a351-7454dc3a2ddb
+        vdc_id: flix.vdcs.464f7346-ea60-48d0-a351-7454dc3a2ddb
         vdc_name: DocHub_SEAF_test-VDC01
-        vapp_id: sber.sbercloud.vapps.665e0498-e0c0-4684-bf20-8b428ee25b89
+        vapp_id: flix.vapps.665e0498-e0c0-4684-bf20-8b428ee25b89
         tenant: ''
-        DC: sber.sbercloud.dc.cloud_ent
-    sber.sbercloud.vms.442cd6a1-b632-4f28-ab84-709647d30697:
+        DC: flix.dc.cloud_ent
+    flix.vms.442cd6a1-b632-4f28-ab84-709647d30697:
         id: 442cd6a1-b632-4f28-ab84-709647d30697
         original_id: urn:vcloud:vm:442cd6a1-b632-4f28-ab84-709647d30697
         name: Segment-60-VM
@@ -88,7 +88,7 @@ seaf.ta.reverse.cloud_ru.enterprise.vms:
         subnets:
             - Segment_60
         subnet_ids:
-            - sber.sbercloud.vappnets.0caa071a-2ff4-43df-8e54-e1b04ceda6db
+            - flix.vappnets.0caa071a-2ff4-43df-8e54-e1b04ceda6db
         disks:
             -   '2000':
                     device: 0/0
@@ -96,12 +96,12 @@ seaf.ta.reverse.cloud_ru.enterprise.vms:
                     az: ''
                     type: Gold
         tags: []
-        vdc_id: sber.sbercloud.vdcs.d43a43b4-a377-4643-9439-f613cad09964
+        vdc_id: flix.vdcs.d43a43b4-a377-4643-9439-f613cad09964
         vdc_name: DocHub_SEAF_test-VDC02
-        vapp_id: sber.sbercloud.vapps.cc60841b-d544-4998-abb3-bb27ed78c8d0
+        vapp_id: flix.vapps.cc60841b-d544-4998-abb3-bb27ed78c8d0
         tenant: ''
-        DC: sber.sbercloud.dc.cloud_ent
-    sber.sbercloud.vms.628d061c-ae97-4f1a-87ff-77eaef45e73d:
+        DC: flix.dc.cloud_ent
+    flix.vms.628d061c-ae97-4f1a-87ff-77eaef45e73d:
         id: 628d061c-ae97-4f1a-87ff-77eaef45e73d
         original_id: urn:vcloud:vm:628d061c-ae97-4f1a-87ff-77eaef45e73d
         name: DBVM02
@@ -121,7 +121,7 @@ seaf.ta.reverse.cloud_ru.enterprise.vms:
         subnets:
             - DBNET
         subnet_ids:
-            - sber.sbercloud.vappnets.f2071d7e-d088-4d09-8f7d-06353a694af2
+            - flix.vappnets.f2071d7e-d088-4d09-8f7d-06353a694af2
         disks:
             -   '2000':
                     device: 0/0
@@ -129,12 +129,12 @@ seaf.ta.reverse.cloud_ru.enterprise.vms:
                     az: ''
                     type: Gold
         tags: []
-        vdc_id: sber.sbercloud.vdcs.d43a43b4-a377-4643-9439-f613cad09964
+        vdc_id: flix.vdcs.d43a43b4-a377-4643-9439-f613cad09964
         vdc_name: DocHub_SEAF_test-VDC02
-        vapp_id: sber.sbercloud.vapps.8570756b-fa4a-46dd-b557-92281453942b
+        vapp_id: flix.vapps.8570756b-fa4a-46dd-b557-92281453942b
         tenant: ''
-        DC: sber.sbercloud.dc.cloud_ent
-    sber.sbercloud.vms.7b49d0ff-07f3-4b5d-84cd-5aafc82b4851:
+        DC: flix.dc.cloud_ent
+    flix.vms.7b49d0ff-07f3-4b5d-84cd-5aafc82b4851:
         id: 7b49d0ff-07f3-4b5d-84cd-5aafc82b4851
         original_id: urn:vcloud:vm:7b49d0ff-07f3-4b5d-84cd-5aafc82b4851
         name: DBVM01
@@ -154,7 +154,7 @@ seaf.ta.reverse.cloud_ru.enterprise.vms:
         subnets:
             - DBNET
         subnet_ids:
-            - sber.sbercloud.vappnets.ec7382d7-cd01-4fba-be92-bac3190d8e70
+            - flix.vappnets.ec7382d7-cd01-4fba-be92-bac3190d8e70
         disks:
             -   '2000':
                     device: 0/0
@@ -162,12 +162,12 @@ seaf.ta.reverse.cloud_ru.enterprise.vms:
                     az: ''
                     type: Gold
         tags: []
-        vdc_id: sber.sbercloud.vdcs.464f7346-ea60-48d0-a351-7454dc3a2ddb
+        vdc_id: flix.vdcs.464f7346-ea60-48d0-a351-7454dc3a2ddb
         vdc_name: DocHub_SEAF_test-VDC01
-        vapp_id: sber.sbercloud.vapps.83c11c8e-e1bd-4b66-b33b-b9a63625839b
+        vapp_id: flix.vapps.83c11c8e-e1bd-4b66-b33b-b9a63625839b
         tenant: ''
-        DC: sber.sbercloud.dc.cloud_ent
-    sber.sbercloud.vms.ec87f708-d56f-4220-a1e4-922cd3bfada9:
+        DC: flix.dc.cloud_ent
+    flix.vms.ec87f708-d56f-4220-a1e4-922cd3bfada9:
         id: ec87f708-d56f-4220-a1e4-922cd3bfada9
         original_id: urn:vcloud:vm:ec87f708-d56f-4220-a1e4-922cd3bfada9
         name: WebAppVM01
@@ -189,8 +189,8 @@ seaf.ta.reverse.cloud_ru.enterprise.vms:
             - DBNET
             - WebApp
         subnet_ids:
-            - sber.sbercloud.vappnets.ec7382d7-cd01-4fba-be92-bac3190d8e70
-            - sber.sbercloud.vappnets.e423f924-eb81-4b6d-bb59-06b52213b16a
+            - flix.vappnets.ec7382d7-cd01-4fba-be92-bac3190d8e70
+            - flix.vappnets.e423f924-eb81-4b6d-bb59-06b52213b16a
         disks:
             -   '2000':
                     device: 0/0
@@ -198,8 +198,8 @@ seaf.ta.reverse.cloud_ru.enterprise.vms:
                     az: ''
                     type: Gold
         tags: []
-        vdc_id: sber.sbercloud.vdcs.464f7346-ea60-48d0-a351-7454dc3a2ddb
+        vdc_id: flix.vdcs.464f7346-ea60-48d0-a351-7454dc3a2ddb
         vdc_name: DocHub_SEAF_test-VDC01
-        vapp_id: sber.sbercloud.vapps.83c11c8e-e1bd-4b66-b33b-b9a63625839b
+        vapp_id: flix.vapps.83c11c8e-e1bd-4b66-b33b-b9a63625839b
         tenant: ''
-        DC: sber.sbercloud.dc.cloud_ent
+        DC: flix.dc.cloud_ent

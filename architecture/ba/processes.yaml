@@ -1,56 +1,66 @@
 seaf.ba.processes:
 
-  sber.berezka.streaming_ondemand:
+  flix.streaming_ondemand:
     title: Стриминг по запросу
     products:
-      - sber.berezka.media_platform
+      - flix.media_platform
     next_processes:
-      - sber.berezka.play
+      - flix.play
+    requirements:
+      - flix.home_cinema.requirement1
+      - flix.home_cinema.requirement2
 
-  sber.berezka.access_management:
+  flix.access_management:
     title: Управление доступами
     products:
-      - sber.berezka.media_platform
+      - flix.media_platform
     next_processes:
-      - sber.berezka.streaming_ondemand
+      - flix.streaming_ondemand
+    consumes:
+      -flix.business_objects.client
 
-  sber.berezka.access_upload:
+  flix.access_upload:
     title: Загрузки
     products:
-      - sber.berezka.media_platform
+      - flix.media_platform
     next_processes:
-      - sber.berezka.streaming_ondemand
+      - flix.streaming_ondemand
 
-  sber.center.registartion:
+  alfa.fl_auth.registration:
     title: Регистрация
     products:
-      - sber.center.fl_auth
+      - alfa.fl_auth
     next_processes:
-      - sber.center.sign_in
+      - alfa.fl_auth.sign_in
 
-  sber.center.sign_in:
+  alfa.fl_auth.sign_in:
     title: Логин
     products:
-      - sber.center.fl_auth
+      - alfa.fl_auth
     next_processes:
-      - sber.berezka.brows_cat
+      - flix.brows_cat
+    produces:
+      - flix.business_objects.client
 
-  sber.center.aquiring:
+  alfa.payments.aquiring:
     title: Оплата онлайн
     products:
-      - sber.center.payments
+      - alfa.payments
     next_processes:
-      - sber.berezka.access_management
+      - flix.access_management
   
-  sber.berezka.brows_cat:
+  flix.brows_cat:
     title: Выбор фильма
-    owner: sber.berezka.team.product
+    owner: flix.team.product
     products:
-      - sber.berezka.home_cinema
+      - flix.home_cinema
     next_processes:
-      - sber.berezka.streaming_ondemand
+      - flix.streaming_ondemand
+    supported:
+      - flix.home_cinema.recomendation.app
 
-  sber.berezka.play:
+  flix.play:
     title: Просмотр фильмов
     products:
-      - sber.berezka.home_cinema
+      - flix.home_cinema
+    is_part_of: flix.streaming_ondemand

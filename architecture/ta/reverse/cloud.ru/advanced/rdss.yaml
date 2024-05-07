@@ -1,5 +1,5 @@
 seaf.ta.reverse.cloud_ru.advanced.rdss:
-    sber.berezka.rdss.0e493e5847714a14a313e215d9e59b15in03:
+    flix.rdss.0e493e5847714a14a313e215d9e59b15in03:
         id: 0e493e5847714a14a313e215d9e59b15in03
         name: rds-prod-postgre
         status: ACTIVE
@@ -30,8 +30,8 @@ seaf.ta.reverse.cloud_ru.advanced.rdss:
         az: ru-moscow-1
         tags: []
         tenant: 9f7dcs8823ed23e9cwe223ecwe22236
-        DC: sber.berezka.dc.01
-    sber.berezka.rdss.97c20535c2b1428886a45ca7383632b7in03:
+        DC: flix.dc.01
+    flix.rdss.97c20535c2b1428886a45ca7383632b7in03:
         id: 97c20535c2b1428886a45ca7383632b7in03
         name: rds-test-postgre
         status: ACTIVE
@@ -62,4 +62,4 @@ seaf.ta.reverse.cloud_ru.advanced.rdss:
         az: ru-moscow-1
         tags: []
         tenant: 9f7dcs8823ed23e9cwe223ecwe22236
-        DC: sber.berezka.dc.01
+        DC: flix.dc.01

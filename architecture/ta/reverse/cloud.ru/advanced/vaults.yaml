@@ -1,5 +1,5 @@
 seaf.ta.reverse.cloud_ru.advanced.vaults:
-    sber.berezka.vaults.25bd50a1-20a3-4ca7-b84a-d9f6dda9a65c:
+    flix.vaults.25bd50a1-20a3-4ca7-b84a-d9f6dda9a65c:
         id: 25bd50a1-20a3-4ca7-b84a-d9f6dda9a65c
         name: Daily_Backups
         description: null
@@ -101,8 +101,8 @@ seaf.ta.reverse.cloud_ru.advanced.vaults:
                 protect_status: available
                 extra_info: {}
         tenant: 9f7dcs8823ed23e9cwe223ecwe22236
-        DC: sber.berezka.dc.01
-    sber.berezka.vaults.b25cffcc-b485-4c7b-9f92-6acb6e736e66:
+        DC: flix.dc.01
+    flix.vaults.b25cffcc-b485-4c7b-9f92-6acb6e736e66:
         id: b25cffcc-b485-4c7b-9f92-6acb6e736e66
         name: Weekly_Backup
         description: null
@@ -204,4 +204,4 @@ seaf.ta.reverse.cloud_ru.advanced.vaults:
                 protect_status: available
                 extra_info: {}
         tenant: 9f7dcs8823ed23e9cwe223ecwe22236
-        DC: sber.berezka.dc.01
+        DC: flix.dc.01

@@ -995,7 +995,7 @@ seaf.ta.services.k8s:
     availabilityzone_id:
       - flix.dc_az.moscow
     cni:  Calico
-    is_own: false
+    is_own: true
     cluster_autoscaler: true
     service_mesh: Istio
     hpa: true

@@ -167,7 +167,6 @@ seaf.ta.services.k8s:
       anonymous_api_connect: false
       tls_version: '1.2'
       reservation_rate: 100
-      az_used: 1
       ntp_server: ntp.flix.ru
 
 seaf.ta.components.server:

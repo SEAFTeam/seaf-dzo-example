@@ -27,4 +27,4 @@ docs:
   flix.documentations.seaf.dzo.ta:
     location: SEAF.DZO/Техническая архитектура
     type: markdown
-    source: ../_metamodel_/seaf-dzo-core/entities/ta/README.md
+    source: ../_metamodel_/seaf-dzo-core/docs/ta/README.md

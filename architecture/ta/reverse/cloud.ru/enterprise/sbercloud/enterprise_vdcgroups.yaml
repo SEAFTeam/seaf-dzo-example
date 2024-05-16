@@ -1,49 +1,49 @@
 seaf.ta.reverse.cloud_ru.enterprise.vdcgroups:
-    sber.sbercloud.vdcgroups.e4fd2d5e-1736-4f17-b804-c72ad696aa3a:
+    flix.vdcgroups.e4fd2d5e-1736-4f17-b804-c72ad696aa3a:
         id: e4fd2d5e-1736-4f17-b804-c72ad696aa3a
         original_id: urn:vcloud:vdcGroup:e4fd2d5e-1736-4f17-b804-c72ad696aa3a
         name: DocHub_SEAF_DCG
         networkprovidertype: NSX_T
         type: LOCAL
-        networkpoolid: sber.sbercloud.netpools.5057807b-9cf8-4684-802c-72fc4cd48098
+        networkpoolid: flix.netpools.5057807b-9cf8-4684-802c-72fc4cd48098
         localegress: false
         dfwenabled: false
-        org_id: sber.sbercloud.orgs.ade0d087-ac75-4ec9-9f7c-f443f9b6164b
+        org_id: flix.orgs.ade0d087-ac75-4ec9-9f7c-f443f9b6164b
         networks:
-            -   id: sber.sbercloud.orgnets.434f23fa-782c-4387-bdcb-52730534ca4e
+            -   id: flix.orgnets.434f23fa-782c-4387-bdcb-52730534ca4e
                 name: Segment_01
-            -   id: sber.sbercloud.orgnets.9fcaf8dc-cca0-4ea5-9931-23d70243ed8b
+            -   id: flix.orgnets.9fcaf8dc-cca0-4ea5-9931-23d70243ed8b
                 name: WebApp
         vdcs:
-            -   id: sber.sbercloud.vdcs.464f7346-ea60-48d0-a351-7454dc3a2ddb
+            -   id: flix.vdcs.464f7346-ea60-48d0-a351-7454dc3a2ddb
                 name: DocHub_SEAF_test-VDC01
-                org_id: sber.sbercloud.orgs.ade0d087-ac75-4ec9-9f7c-f443f9b6164b
+                org_id: flix.orgs.ade0d087-ac75-4ec9-9f7c-f443f9b6164b
                 org_name: DocHub_SEAF_test-D5aEk1nqZ
-            -   id: sber.sbercloud.vdcs.d43a43b4-a377-4643-9439-f613cad09964
+            -   id: flix.vdcs.d43a43b4-a377-4643-9439-f613cad09964
                 name: DocHub_SEAF_test-VDC02
-                org_id: sber.sbercloud.orgs.ade0d087-ac75-4ec9-9f7c-f443f9b6164b
+                org_id: flix.orgs.ade0d087-ac75-4ec9-9f7c-f443f9b6164b
                 org_name: DocHub_SEAF_test-D5aEk1nqZ
-        DC: sber.sbercloud.dc.cloud_ent
-    sber.sbercloud.vdcgroups.ec2a42cb-e497-4352-be77-ea137a2e52de:
+        DC: flix.dc.cloud_ent
+    flix.vdcgroups.ec2a42cb-e497-4352-be77-ea137a2e52de:
         id: ec2a42cb-e497-4352-be77-ea137a2e52de
         original_id: urn:vcloud:vdcGroup:ec2a42cb-e497-4352-be77-ea137a2e52de
         name: Internal_net
         networkprovidertype: NSX_T
         type: LOCAL
-        networkpoolid: sber.sbercloud.netpools.5057807b-9cf8-4684-802c-72fc4cd48098
+        networkpoolid: flix.netpools.5057807b-9cf8-4684-802c-72fc4cd48098
         localegress: false
         dfwenabled: false
-        org_id: sber.sbercloud.orgs.ade0d087-ac75-4ec9-9f7c-f443f9b6164b
+        org_id: flix.orgs.ade0d087-ac75-4ec9-9f7c-f443f9b6164b
         networks:
-            -   id: sber.sbercloud.orgnets.be8bcd3d-947f-4a32-89a5-d773857211dd
+            -   id: flix.orgnets.be8bcd3d-947f-4a32-89a5-d773857211dd
                 name: DBNET
         vdcs:
-            -   id: sber.sbercloud.vdcs.464f7346-ea60-48d0-a351-7454dc3a2ddb
+            -   id: flix.vdcs.464f7346-ea60-48d0-a351-7454dc3a2ddb
                 name: DocHub_SEAF_test-VDC01
-                org_id: sber.sbercloud.orgs.ade0d087-ac75-4ec9-9f7c-f443f9b6164b
+                org_id: flix.orgs.ade0d087-ac75-4ec9-9f7c-f443f9b6164b
                 org_name: DocHub_SEAF_test-D5aEk1nqZ
-            -   id: sber.sbercloud.vdcs.d43a43b4-a377-4643-9439-f613cad09964
+            -   id: flix.vdcs.d43a43b4-a377-4643-9439-f613cad09964
                 name: DocHub_SEAF_test-VDC02
-                org_id: sber.sbercloud.orgs.ade0d087-ac75-4ec9-9f7c-f443f9b6164b
+                org_id: flix.orgs.ade0d087-ac75-4ec9-9f7c-f443f9b6164b
                 org_name: DocHub_SEAF_test-D5aEk1nqZ
-        DC: sber.sbercloud.dc.cloud_ent
+        DC: flix.dc.cloud_ent

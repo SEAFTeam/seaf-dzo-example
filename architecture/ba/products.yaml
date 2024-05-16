@@ -1,119 +1,121 @@
 seaf.ba.products:
 
-#  sber.berezka.media_platform_self:
+#  flix.media_platform_self:
 #    title: Медиа-платформа
 #    used_in:
-#      - sber.berezka.home_cinema
-#    owner: sber.berezka.team.product
+#      - flix.home_cinema
+#    owner: flix.team.product
 
-  sber.berezka.home_cinema:
+  flix.home_cinema:
     title: Домашний кинотеатр
-    owner: sber.berezka
     sber:
       status: Используется
+    owner: flix
 
-  sber.berezka.consume_content:
+
+  flix.consume_content:
     title: Предоставление (просмотр) медиа-контента по запросу
-    owner: sber.berezka.team.product
+    owner: flix.team.product
     used_in:
-      - sber.berezka.home_cinema
-      - sber.berezka.mobile_app
-      - sber.berezka.web_app
+      - flix.home_cinema
+      - flix.mobile_app
+      - flix.web_app
     sber:
       status: Используется
 
-  sber.center.payments:
+  alfa.payments:
     title: Прием платежей
     used_in:
-      - sber.berezka.home_cinema
-      - sber.berezka.web_app
-    owner: sber.center
+      - flix.home_cinema
+      - flix.web_app
+    owner: alfa
 
-  sber.center.fl_auth:
+  alfa.fl_auth:
     title: Аутентификация пользователей
-    owner: sber.center
+    owner: alfa
     used_in:
-      - sber.berezka.home_cinema
-      - sber.berezka.web_app
-      - sber.berezka.mobile_app
+      - flix.home_cinema
+      - flix.web_app
+      - flix.mobile_app
 
-  sber.berezka.media_platform_saas:
+  flix.media_platform_saas:
     title: Медиа-платформа (SaaS)
-    owner: sber.berezka
+    owner: flix
     sber:
       status: Используется
 
-  sber.berezka.media_platform:
+
+  flix.media_platform:
     title: Медиа-платформа
-    owner: sber.berezka.team.product
+    owner: flix.team.product
     used_in:
-      - sber.berezka.media_platform_saas
-      - sber.berezka.consume_content
+      - flix.media_platform_saas
+      - flix.consume_content
 
-  sber.berezka.mobile_app:
+  flix.mobile_app:
     title: Мобильное приложение для пользователей
-    owner: sber.berezka
+    owner: flix
     sber:
       status: Используется
       type: Канал
       channel_type: Цифровой
 
-  sber.berezka.web_app:
+  flix.web_app:
     title: Веб-приложение для пользователей
-    owner: sber.berezka
+    owner: flix
     sber:
       status: Используется
       type: Канал
       channel_type: Цифровой
 
-  sber.berezka.partner_catalog:
+  flix.partner_catalog:
     title: Каталог контента для партнера
-    owner: sber.berezka
     sber:
       status: Используется
+    owner: flix
 
-  sber.berezka.content_catalog:
+  flix.content_catalog:
     title: Каталог контента
-    owner: sber.berezka.team.product
+    owner: flix.team.product
     used_in:
-      - sber.berezka.partner_catalog
-      - sber.berezka.media_platform
+      - flix.partner_catalog
+      - flix.media_platform
 
-  sber.berezka.content_search:
+  flix.content_search:
     title: Поиск медиа-контента
-    owner: sber.berezka.team.product
+    owner: flix.team.product
     used_in:
-      - sber.berezka.media_platform
+      - flix.media_platform
 
-  sber.berezka.support:
+  flix.support:
     title: Оказание поддержки клиентам
-    owner: sber.berezka.team.support
+    owner: flix.team.support
     used_in:
-      - sber.berezka.media_platform_saas
+      - flix.media_platform_saas
 
-  sber.berezka.support_channels:
+  flix.support_channels:
     title: Каналы взаимодействия с клиентом по оказанию поддержки
-    owner: sber.berezka.team.support
+    owner: flix.team.support
     sber:
       type: Канал
       channel_type: Цифровой
     used_in:
-      - sber.berezka.support
+      - flix.support
 
-  sber.berezka.support_channels.telegram:
+  flix.support_channels.telegram:
     title: Поддержка пользователей в телеграм
-    owner: sber.berezka.team.support
+    owner: flix.team.support
     used_in:
-      - sber.berezka.support_channels
+      - flix.support_channels
     sber:
       type: Канал
       channel_type: Цифровой
 
-  sber.berezka.support_channels.email:
+  flix.support_channels.email:
     title: Поддержка пользоваталей через почту
-    owner: sber.berezka.team.support
+    owner: flix.team.support
     used_in:
-      - sber.berezka.support_channels
+      - flix.support_channels
     sber:
       type: Канал
       channel_type: Цифровой

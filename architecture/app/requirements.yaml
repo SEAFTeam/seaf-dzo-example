@@ -1,5 +1,5 @@
 seaf.change.requirements:
-  auth:
+  alfa.fl_auth.auth:
     title: Авторизация
     type: functional
     description: Авторизация должна проходить без ввода пароля

@@ -8,10 +8,10 @@ seaf.ta.components.k8s_deployment:
     maxunavailable: 2
     update_strategy: RollingUpdate
     kubernetes_id:
-      - sber.berezka.k8s.02
+      - flix.k8s.02
     replicas: 10
     deployment_id: k8s_deployment.auth
-    availabilityzone_id: sber.berezka.dc_az.moscow
+    availabilityzone_id: flix.dc_az.moscow
     k8s_pod:
       - seaf.ta.services.k8s_pod.auth
     container_id:
@@ -23,10 +23,10 @@ seaf.ta.components.k8s_deployment:
     maxunavailable: 2
     update_strategy: RollingUpdate
     kubernetes_id:
-      - sber.berezka.k8s.01
+      - flix.k8s.01
     replicas: 10
     deployment_id: k8s_deployment.payments
-    availabilityzone_id: sber.berezka.dc_az.moscow
+    availabilityzone_id: flix.dc_az.moscow
     container_id:
       - seaf.ta.services.k8s_container.transaction
     k8s_pod:
@@ -39,8 +39,8 @@ seaf.ta.components.k8s_statefulset:
     replicas: 3
     maxunavailable: 3
     kubernetes_id:
-      - sber.berezka.k8s.01
-    availabilityzone_id: sber.berezka.dc_az.moscow
+      - flix.k8s.01
+    availabilityzone_id: flix.dc_az.moscow
     container_id:
       - seaf.ta.services.k8s_container.identity
     k8s_pod:
@@ -55,6 +55,8 @@ seaf.ta.components.k8s_pod:
     secrets: Yes
     access_level: Не привилегированный
     update_strategy: RollingUpdate
+    kubernetes_id:
+      - flix.k8s.02
     title: Auth Back
     pod_k8s_id: k8s_pod.auth
     stoptimeout: 60
@@ -72,6 +74,8 @@ seaf.ta.components.k8s_pod:
     secrets: Yes
     access_level: Не привилегированный
     update_strategy: RollingUpdate
+    kubernetes_id:
+      - flix.k8s.01
     title: Payments Back
     pod_k8s_id: k8s_pod.payments
     stoptimeout: 60
@@ -109,7 +113,7 @@ seaf.ta.components.k8s_container:
 
 seaf.ta.components.k8s_image:
   seaf.ta.services.k8s_image.identity:
-    repo_path: https://repo.berezka.ru/repo
+    repo_path: https://repo.flix.ru/repo
     image_size: 1000
     title: identity
     repo_proved: true
@@ -117,7 +121,7 @@ seaf.ta.components.k8s_image:
     image_id: k8s_image.identity
 
   seaf.ta.services.k8s_image.transaction:
-    repo_path: https://repo.berezka.ru/repo
+    repo_path: https://repo.flix.ru/repo
     image_size: 1000
     title: transaction
     repo_proved: true
@@ -125,7 +129,7 @@ seaf.ta.components.k8s_image:
     image_id: k8s_image.transaction
 
 seaf.ta.components.network:
-  sber.berezka.network.cisco.04:
+  flix.network.cisco.04:
     title: Cisco ASR 1001-X
     description: Аппаратный маршрутизатор
     network_appliance_id: cisco.04
@@ -138,11 +142,12 @@ seaf.ta.components.network:
       auth_type: Двухфакторная
 
 seaf.ta.services.k8s:
-  sber.berezka.k8s.03:
+  flix.k8s.02:
     kubernetes_id: k8s.02
+    description: K8s кластер в az.moscow
     availabilityzone_id:
-      - sber.berezka.dc_az.moscow
-    cluster_fqdn: k8s.02.berezka.ru
+      - flix.dc_az.moscow
+    cluster_fqdn: k8s.02.flix.ru
     software:  '1.28'
     master_qty: 3
     worker_qty: 3
@@ -150,33 +155,25 @@ seaf.ta.services.k8s:
     cni: Calico
     is_own: false
     app_components:
-      - sber.berezka.home_cinema.payments.app
+      - flix.home_cinema.auth.app
     cluster_autoscaler: true
     hpa: true
     keys: Vault
     policy: Kyverno
     service_mesh: Istio
-    server_id:
-      - sber.berezka.server_virtual.05
-      - sber.berezka.server_virtual.06
-      - sber.berezka.server_virtual.07
-      - sber.berezka.server_virtual.08
-      - sber.berezka.server_virtual.09
-      - sber.berezka.server_virtual.10
     sber:
       pv: false
       https_api_connect: true
       anonymous_api_connect: false
       tls_version: '1.2'
       reservation_rate: 100
-      az_used: 1
-      ntp_server: ntp.berezka.ru
+      ntp_server: ntp.flix.ru
 
 seaf.ta.components.server:
-  sber.berezka.server_metal.09:
+  flix.server_metal.09:
     title: Физический сервер
     server_id: server_metal.09
-    fqdn_name: server_metal.09.berezka.ru
+    fqdn_name: server_metal.09.flix.ru
     disks:
       - disks:
           availabilityzone_id: dc_az.moscow
@@ -190,7 +187,7 @@ seaf.ta.components.server:
       cores: 4
       frequency: 1700
     ram_qty: 128
-    dc_id: sber.berezka.dc.02
+    dc_id: flix.dc.02
     vendor: HP
     type: Физический
     model: DL360 G8
@@ -203,10 +200,10 @@ seaf.ta.components.server:
       fan_qty: 4
       raid_spare_disks: 2
 
-  sber.berezka.server_metal.10:
+  flix.server_metal.10:
     title: Физический сервер
     server_id: server_metal.10
-    fqdn_name: server_metal.10.berezka.ru
+    fqdn_name: server_metal.10.flix.ru
     disks:
       - disks:
           availabilityzone_id: dc_az.moscow
@@ -220,7 +217,7 @@ seaf.ta.components.server:
       cores: 4
       frequency: 1700
     ram_qty: 128
-    dc_id: sber.berezka.dc.02
+    dc_id: flix.dc.02
     vendor: HP
     type: Физический
     model: DL360 G8
@@ -234,17 +231,17 @@ seaf.ta.components.server:
       raid_spare_disks: 2
 
 seaf.ta.components.hw_storage:
-  sber.berezka.hw_storage.02:
+  flix.hw_storage.02:
     title: СХД
     description: Аппаратное хранилище
     storage_id: hw_storage.02
     vendor: IBM Storwize 7000
     volume: 10000
-    dc_id: sber.berezka.dc.01
+    dc_id: flix.dc.01
     disk_type: SSD
     protocols: FC, Ethernet
     sber:
-      storage_console: https://console-hw-storage.02.berezka.ru
+      storage_console: https://console-hw-storage.02.flix.ru
       reservation_ratio: 100
       compression_rate: 5
       storage_controller_qty: 2
@@ -255,36 +252,36 @@ seaf.ta.components.hw_storage:
       snapshot_lic: true
       pwr_supply_qty: 4
       ssd_cache_qty: 4
-      ntp_server: ntp.berezka.ru
+      ntp_server: ntp.flix.ru
       erasure_coding: 1
 
 seaf.ta.services.monitoring:
-  sber.berezka.monitoring.02:
+  flix.monitoring.02:
     title: Zabbix
     description: Инфра мониторинг 2
     monitoring_id: monitoring.02
     ha: true
     availabilityzone_id:
-      - sber.berezka.dc_az.moscow
+      - flix.dc_az.moscow
     role: Инфраструктурный
     app_components:
-      - sber.berezka.home_cinema.auth.app
-      - sber.berezka.home_cinema.auth.token_manager
-      - sber.berezka.home_cinema.catalog.app
+      - flix.home_cinema.auth.app
+      - flix.home_cinema.auth.token_manager
+      - flix.home_cinema.catalog.app
     sber:
       siem_anabled: true
       alarm_transport:
         - mail
         - TG
-      monitoring_console: https://monitoring-console.berezka.ru
+      monitoring_console: https://monitoring-console.flix.ru
       history: 365
       frequency: 5
       pam_anabled: true
       cluster_id: $null
-      sber_radar: https://console.radar.sber.ru/dashboard/
+      sber_radar: https://console.radar.alfa.ru/dashboard/
 
 seaf.change.requirements:
-  ta.requirement1:
+  flix.home_cinema.requirement1:
     title: RPO
     type: non-functional
     description: RPO 9 часов
@@ -292,7 +289,7 @@ seaf.change.requirements:
       test_check:
         title: Провести учения
         condition: Учения завершились успешно
-  ta.requirement2:
+  flix.home_cinema.requirement2:
     title: RTO
     type: non-functional
     description: RTO 2 часа

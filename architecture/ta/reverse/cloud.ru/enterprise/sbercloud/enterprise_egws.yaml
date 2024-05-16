@@ -1,5 +1,5 @@
 seaf.ta.reverse.cloud_ru.enterprise.egws:
-    sber.sbercloud.egws.29181421-2891-47aa-82ef-1cdbcf0b87c9:
+    flix.egws.29181421-2891-47aa-82ef-1cdbcf0b87c9:
         id: 29181421-2891-47aa-82ef-1cdbcf0b87c9
         original_id: urn:vcloud:gateway:29181421-2891-47aa-82ef-1cdbcf0b87c9
         name: DocHub_SEAF_test-VDC01-EDGE01
@@ -7,12 +7,12 @@ seaf.ta.reverse.cloud_ru.enterprise.egws:
         type: NSXT_BACKED
         vdc_id: null
         vdc_name: null
-        vdcgroup_id: sber.sbercloud.vdcgroups.e4fd2d5e-1736-4f17-b804-c72ad696aa3a
+        vdcgroup_id: flix.vdcgroups.e4fd2d5e-1736-4f17-b804-c72ad696aa3a
         vdcgroup_name: DocHub_SEAF_DCG
-        org_id: sber.sbercloud.orgs.ade0d087-ac75-4ec9-9f7c-f443f9b6164b
+        org_id: flix.orgs.ade0d087-ac75-4ec9-9f7c-f443f9b6164b
         gatewayinterfaces:
             -   name: pd10-02-t0-shared-01
-                network_id: sber.sbercloud.orgnets.94e65c18-3eca-40aa-9957-242a36eb9e43
+                network_id: flix.orgnets.94e65c18-3eca-40aa-9957-242a36eb9e43
                 iftype: uplink
                 usefordefaultroute: No idea where to get from new API
                 connected: true
@@ -24,7 +24,7 @@ seaf.ta.reverse.cloud_ru.enterprise.egws:
                             -   startaddress: 46.243.141.134
                                 endaddress: 46.243.141.134
             -   name: WebApp
-                network_id: sber.sbercloud.orgnets.9fcaf8dc-cca0-4ea5-9931-23d70243ed8b
+                network_id: flix.orgnets.9fcaf8dc-cca0-4ea5-9931-23d70243ed8b
                 iftype: INTERNAL
                 usefordefaultroute: false
                 connected: true
@@ -35,4 +35,4 @@ seaf.ta.reverse.cloud_ru.enterprise.egws:
                         ipranges:
                             -   startaddress: 192.168.100.2
                                 endaddress: 192.168.100.254
-        DC: sber.sbercloud.dc.cloud_ent
+        DC: flix.dc.cloud_ent

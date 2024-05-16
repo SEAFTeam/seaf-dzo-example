@@ -1,28 +1,28 @@
 # Прикладные компоненты обеспечивающие прикладные сервисы
 components:
-  sber.berezka.1c.buh:
+  flix.1c.buh:
     entity: component
     title: 1С Бухгалтерия
     links:
-      - id: sber.berezka.1c.db
+      - id: flix.1c.db
         direction: '-->'
     type: component
     sber:
-      is_component_of: sber.berezka.1c
+      is_component_of: flix.1c
       component_type: Сервер Приложений
       scalability: Горизонтальная
       stores_confidential_data: false
       id: 3b31288d-2a8b-4c10-89b1-0499759365c9
-      provider: ООО Березка
+      provider: ООО Фликс
       provider_type: Собственная разработка
       cloud_readiness: Компоненты в гибридном публичном облаке/наборе облаков с управляемыми облачными поставщиками инфраструктурными сервисами (Cloud Native 5)
 
-  sber.berezka.1c.db:
+  flix.1c.db:
     entity: database
     title: База данных 1С
     type: component
     sber:
-      is_component_of: sber.berezka.1c
+      is_component_of: flix.1c
       component_type: Реляционная СУБД
       scalability: Вертикальная
       stores_confidential_data: false
@@ -31,60 +31,60 @@ components:
       provider_type: Внешний(Иностранный)
       cloud_readiness: Монолит на виртуализированном аппаратном обеспечении (Cloud Ready 1)
 
-  sber.berezka.home_cinema.auth.app:
+  flix.home_cinema.auth.app:
     entity: component
     title: Аутентификация
     description: Авторизация пользователей
     aspects:
-      - sber.berezka.home_cinema.auth
+      - flix.home_cinema.auth
     links:
-      - id: sber.berezka.home_cinema.auth.token_manager
+      - id: flix.home_cinema.auth.token_manager
         title: Создание токена
         direction: '-->'
     type: component
     sber:
       component_type: Сервер Приложений
-      is_component_of: sber.berezka.home_cinema.auth
+      is_component_of: flix.home_cinema.auth
       scalability: Горизонтальная
       stores_confidential_data: true
       id: 523dfceb-a84b-40dc-abf1-1d6f84724f2a
-      provider: ООО Березка
+      provider: ООО Фликс
       provider_type: Собственная разработка
       cloud_readiness: Компоненты в гибридном публичном облаке/наборе облаков с управляемыми облачными поставщиками инфраструктурными сервисами (Cloud Native 5)
 
-  sber.berezka.home_cinema.auth.token_manager:
+  flix.home_cinema.auth.token_manager:
     entity: component
     title: Менеджер токенов
     type: component
     sber:
-      is_component_of: sber.berezka.home_cinema.auth
+      is_component_of: flix.home_cinema.auth
       component_type: Микросервис
       scalability: Горизонтальная
       id: 079bdad9-c1c8-412d-93ac-e984e8fe3f8f
-      provider: ООО Березка
+      provider: ООО Фликс
       provider_type: Собственная разработка
       stores_confidential_data: false
       cloud_readiness: Компоненты в гибридном публичном облаке/наборе облаков с управляемыми облачными поставщиками инфраструктурными сервисами (Cloud Native 5)
 
-  sber.berezka.home_cinema.catalog.app:
+  flix.home_cinema.catalog.app:
     entity: component
     title: Каталога контента
     type: component
     sber:
       component_type: Микросервис
-      is_component_of: sber.berezka.home_cinema.catalog
+      is_component_of: flix.home_cinema.catalog
 
-  sber.berezka.home_cinema.canals.app:
+  flix.home_cinema.canals.app:
     entity: component
     title: Микросервис ТВ-каналы
     type: component
 
-  sber.berezka.home_cinema.payments.app:
+  flix.home_cinema.payments.app:
     entity: component
     title: Платежи
     type: component
 
-  sber.berezka.home_cinema.recomendation.app:
+  flix.home_cinema.recomendation.app:
     entity: component
     title: Рекомендации
     type: component

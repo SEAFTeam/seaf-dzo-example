@@ -1,5 +1,5 @@
 seaf.ta.reverse.cloud_ru.advanced.dmss:
-    sber.berezka.dmss.7bb3c551-0fc3-4916-a853-302390af0569:
+    flix.dmss.7bb3c551-0fc3-4916-a853-302390af0569:
         id: 7bb3c551-0fc3-4916-a853-302390af0569
         name: dms-rabbitmq-test
         engine: rabbitmq
@@ -25,8 +25,8 @@ seaf.ta.reverse.cloud_ru.advanced.dmss:
         node_num: 1
         disk_encrypted: false
         tenant: 9f7dcs8823ed23e9cwe223ecwe22236
-        DC: sber.berezka.dc.01
-    sber.berezka.dmss.fc5d98f2-d0c3-4125-9354-744c786ead81:
+        DC: flix.dc.01
+    flix.dmss.fc5d98f2-d0c3-4125-9354-744c786ead81:
         id: fc5d98f2-d0c3-4125-9354-744c786ead81
         name: dms-rabbitmq-prod
         engine: rabbitmq
@@ -52,4 +52,4 @@ seaf.ta.reverse.cloud_ru.advanced.dmss:
         node_num: 1
         disk_encrypted: false
         tenant: 9f7dcs8823ed23e9cwe223ecwe22236
-        DC: sber.berezka.dc.01
+        DC: flix.dc.01

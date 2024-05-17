@@ -990,7 +990,6 @@ seaf.ta.services.k8s:
     software: '1.28'
     kubernetes_id: k8s.01
     auth: Keycloack
-    cluster_fqdn: k8s.01.flix.ru
     worker_qty: 2
     availabilityzone_id:
       - flix.dc_az.moscow
@@ -1021,13 +1020,16 @@ seaf.ta.services.monitoring:
     ha: false
     availabilityzone_id:
       - flix.dc_az.moscow
-    role: Инфраструктурный
+
     app_components:
       - flix.home_cinema.auth.app
       - flix.home_cinema.auth.token_manager
       - flix.home_cinema.catalog.app
       - flix.home_cinema.canals.app
       - flix.home_cinema.payments.app
+    role:
+      - Инфраструктурный
+      - Журналирование
     stand_id:
       - flix.stand.prod
 
@@ -1038,7 +1040,6 @@ seaf.ta.services.backup:
     description: Резервное копирование Acronis
     backup_id: backup.01
     path: sw_storage.01
-    schedule: Ежедневно
     availabilityzone_id:
       - flix.dc_az.moscow
     replication: false

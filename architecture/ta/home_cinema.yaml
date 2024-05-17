@@ -990,7 +990,6 @@ seaf.ta.services.k8s:
     software: '1.28'
     kubernetes_id: k8s.01
     auth: Keycloack
-    cluster_fqdn: k8s.01.flix.ru
     worker_qty: 2
     availabilityzone_id:
       - flix.dc_az.moscow

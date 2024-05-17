@@ -149,7 +149,6 @@ seaf.ta.services.k8s:
     description: K8s кластер в az.moscow
     availabilityzone_id:
       - flix.dc_az.moscow
-    cluster_fqdn: k8s.02.flix.ru
     software:  '1.28'
     master_qty: 3
     worker_qty: 3

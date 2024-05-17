@@ -1037,7 +1037,6 @@ seaf.ta.services.backup:
     description: Резервное копирование Acronis
     backup_id: backup.01
     path: sw_storage.01
-    schedule: Ежедневно
     availabilityzone_id:
       - flix.dc_az.moscow
     replication: false

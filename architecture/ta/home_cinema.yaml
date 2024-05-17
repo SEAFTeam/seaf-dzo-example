@@ -998,7 +998,6 @@ seaf.ta.services.k8s:
     is_own: true
     cluster_autoscaler: true
     service_mesh: Istio
-    hpa: true
     keys: Vault
     policy: Kyverno
     stand_id:

@@ -7,6 +7,7 @@ seaf.ta.components.k8s_deployment:
     description: Микросервис аутентификации
     maxunavailable: 2
     update_strategy: RollingUpdate
+    hpa: false
     kubernetes_id:
       - flix.k8s.02
     replicas: 10
@@ -22,6 +23,7 @@ seaf.ta.components.k8s_deployment:
     description: Микросервис платежей
     maxunavailable: 2
     update_strategy: RollingUpdate
+    hpa: false
     kubernetes_id:
       - flix.k8s.01
     replicas: 10
@@ -36,6 +38,7 @@ seaf.ta.components.k8s_statefulset:
   seaf.ta.components.k8s_statefulset.auth:
     statefulset_id: k8s_statefulset.auth
     update_strategy: RollingUpdate
+    hpa: false
     replicas: 3
     maxunavailable: 3
     kubernetes_id:
@@ -84,7 +87,6 @@ seaf.ta.components.k8s_pod:
     priorityclass: 5
     container_id:
       - seaf.ta.services.k8s_container.transaction
-
 
 seaf.ta.components.k8s_container:
   seaf.ta.services.k8s_container.identity:
@@ -157,7 +159,6 @@ seaf.ta.services.k8s:
     app_components:
       - flix.home_cinema.auth.app
     cluster_autoscaler: true
-    hpa: true
     keys: Vault
     policy: Kyverno
     service_mesh: Istio

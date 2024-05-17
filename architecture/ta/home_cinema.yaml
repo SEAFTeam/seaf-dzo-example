@@ -1020,13 +1020,16 @@ seaf.ta.services.monitoring:
     ha: false
     availabilityzone_id:
       - flix.dc_az.moscow
-    role: Инфраструктурный
+
     app_components:
       - flix.home_cinema.auth.app
       - flix.home_cinema.auth.token_manager
       - flix.home_cinema.catalog.app
       - flix.home_cinema.canals.app
       - flix.home_cinema.payments.app
+    role:
+      - Инфраструктурный
+      - Журналирование
     stand_id:
       - flix.stand.prod
 

@@ -29,6 +29,6 @@ seaf.ta.reverse.general.links:
       - flix.vdcs.d43a43b4-a377-4643-9439-f613cad09964
 
   flix.links.home_cinema.canals:
-    app_id: sber.berezka.home_cinema.canals.app
+    app_id: flix.home_cinema.canals.app
     reverse_ta_id:
       - flix.orgs.ade0d087-ac75-4ec9-9f7c-f443f9b6164b

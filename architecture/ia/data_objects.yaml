@@ -8,7 +8,7 @@ seaf.ia.data_objects:
 
   content_bus.data_objects.media_content_files:
     title: Файлы медиа-контента
-    master_system: sber.berezka.home_cinema.catalog.app
+    master_system: flix.home_cinema.catalog.app
     sber:
       category: Прочее
       status: Используется

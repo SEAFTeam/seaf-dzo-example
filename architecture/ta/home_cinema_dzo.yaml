@@ -14,10 +14,7 @@ seaf.ta.components.k8s_deployment:
     deployment_id: k8s_deployment.auth
     availabilityzone_id:
       - flix.dc_az.moscow
-    k8s_pod:
-      - seaf.ta.services.k8s_pod.auth
-    container_id:
-      - seaf.ta.services.k8s_container.identity
+    k8s_pod: seaf.ta.services.k8s_pod.auth
 
   seaf.ta.components.k8s_deployment.payments:
     title: Payments
@@ -31,10 +28,7 @@ seaf.ta.components.k8s_deployment:
     deployment_id: k8s_deployment.payments
     availabilityzone_id:
      - flix.dc_az.moscow
-    container_id:
-      - seaf.ta.services.k8s_container.transaction
-    k8s_pod:
-      - seaf.ta.services.k8s_pod.payments
+    k8s_pod: seaf.ta.services.k8s_pod.payments
 
 seaf.ta.components.k8s_statefulset:
   seaf.ta.components.k8s_statefulset.auth:
@@ -47,8 +41,7 @@ seaf.ta.components.k8s_statefulset:
       - flix.k8s.01
     availabilityzone_id:
       - flix.dc_az.moscow
-    container_id:
-      - seaf.ta.services.k8s_container.identity
+    container_id: seaf.ta.services.k8s_container.identity
     k8s_pod:
       - seaf.ta.services.k8s_pod.auth
     name: auth
@@ -123,7 +116,8 @@ seaf.ta.components.k8s_image:
     title: identity
     repo_proved: true
     description: Образ контейнера
-    image_id: k8s_image.identity
+    image_id:
+      - k8s_image.identity
 
   seaf.ta.services.k8s_image.transaction:
     repo_path: https://repo.flix.ru/repo

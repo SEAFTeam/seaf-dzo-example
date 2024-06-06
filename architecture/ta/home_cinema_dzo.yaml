@@ -32,6 +32,8 @@ seaf.ta.components.k8s_deployment:
 
 seaf.ta.components.k8s_statefulset:
   seaf.ta.components.k8s_statefulset.auth:
+    description: Микросервис аутентификации
+    title:  Микросервис аутентификации
     statefulset_id: k8s_statefulset.auth
     update_strategy: RollingUpdate
     hpa: false
@@ -54,8 +56,6 @@ seaf.ta.components.k8s_pod:
     secrets: Yes
     access_level: Не привилегированный
     update_strategy: RollingUpdate
-    kubernetes_id:
-      - flix.k8s.02
     title: Auth Back
     pod_k8s_id: k8s_pod.auth
     stoptimeout: 60
@@ -65,7 +65,6 @@ seaf.ta.components.k8s_pod:
     container_id:
       - seaf.ta.services.k8s_container.identity
 
-
   seaf.ta.services.k8s_pod.payments:
     tmp_storage: 100
     pv: false
@@ -73,8 +72,6 @@ seaf.ta.components.k8s_pod:
     secrets: Yes
     access_level: Не привилегированный
     update_strategy: RollingUpdate
-    kubernetes_id:
-      - flix.k8s.01
     title: Payments Back
     pod_k8s_id: k8s_pod.payments
     stoptimeout: 60
@@ -99,7 +96,7 @@ seaf.ta.components.k8s_container:
 
   seaf.ta.services.k8s_container.transaction:
     container_ram: 512
-    title: Identity Container
+    title: Transaction Container
     container_type: Контейнер с бизнес-логикой
     emergency_stop: Уровень настройки среды исполнения
     description: Transaction Container

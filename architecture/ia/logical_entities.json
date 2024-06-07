@@ -1,0 +1,150 @@
+{
+  "seaf.ia.logical_entities": {
+    "actor": {
+      "code": "actor",
+      "title": "актёр",
+      "description": "актеры мужчины",
+      "category": "Прочее",
+      "status": "Используется",
+      "business_term": [
+        "flix.content.actor"
+      ],
+      "comments": "без комментариев"
+    },
+    "actress": {
+      "code": "actress",
+      "title": "актриса",
+      "description": "актрисы женщины",
+      "category": "Прочее",
+      "status": "Используется",
+      "business_term": "flix.content.actor",
+      "comments": "без комментариев"
+    },
+    "store": {
+      "code": "store",
+      "title": "магазин",
+      "description": "store - магазин",
+      "category": "Прочее",
+      "status": "Используется",
+      "business_term": "store",
+      "comments": "без комментариев"
+    },
+    "address": {
+      "code": "address",
+      "title": "адрес",
+      "description": "полный адрес",
+      "category": "Прочее",
+      "status": "Используется",
+      "business_term": "address",
+      "comments": "без комментариев"
+    },
+    "addressFL": {
+      "code": "addressFL",
+      "title": "адрес Ф.Л.",
+      "description": "физический адрес",
+      "category": "Прочее",
+      "status": "Используется",
+      "business_term": "address",
+      "comments": "без комментариев"
+    },
+    "addressUL": {
+      "code": "addressUL",
+      "title": "адрес Ю.Л.",
+      "description": "юридический адрес",
+      "category": "Прочее",
+      "status": "Используется",
+      "business_term": "address",
+      "comments": "без комментариев"
+    },
+    "city": {
+      "code": "city",
+      "title": "город",
+      "description": "названия городов",
+      "category": "Прочее",
+      "status": "Используется",
+      "business_term": "address",
+      "comments": "без комментариев"
+    },
+    "country": {
+      "code": "country",
+      "title": "страна",
+      "description": "названия стран",
+      "category": "Прочее",
+      "status": "Используется",
+      "business_term": "address",
+      "comments": "без комментариев"
+    },
+    "customer": {
+      "code": "customer",
+      "title": "заказчик",
+      "description": "customer-заказчик",
+      "category": "Прочее",
+      "status": "Используется",
+      "business_term": "alfa.fl.customer",
+      "comments": "без комментариев"
+    },
+    "film_category": {
+      "code": "film_category",
+      "title": "категория",
+      "description": "Кинофильмы по категориям",
+      "category": "Прочее",
+      "status": "Используется",
+      "business_term": "film_category",
+      "comments": "без комментариев"
+    },
+    "inventory": {
+      "code": "inventory",
+      "title": "инвентарь",
+      "description": "inventory-инвентарь",
+      "category": "Прочее",
+      "status": "Используется",
+      "business_term": "store",
+      "comments": "без комментариев"
+    },
+    "language": {
+      "code": "language",
+      "title": "язык",
+      "description": "language - язык фильма",
+      "category": "Прочее",
+      "status": "Используется",
+      "business_term": "language",
+      "comments": "без комментариев"
+    },
+    "rental": {
+      "code": "rental",
+      "title": "аренда",
+      "description": "rental-аренда",
+      "category": "Прочее",
+      "status": "Используется",
+      "business_term": "rental_rate",
+      "comments": "без комментариев"
+    },
+    "staff": {
+      "code": "staff",
+      "title": "персонал",
+      "description": "staff-personal команда",
+      "category": "Прочее",
+      "status": "Используется",
+      "business_term": "staff",
+      "comments": "без комментариев"
+    },
+    "payment": {
+      "code": "payment",
+      "title": "оплата",
+      "description": "payment-Оплата",
+      "category": "Прочее",
+      "status": "Используется",
+      "business_term": "alfa.fl.payment",
+      "comments": "без комментариев"
+    },
+    "film": {
+      "code": "film",
+      "title": "фильм",
+      "description": "названия фильмов",
+      "category": "Прочее",
+      "status": "Используется",
+      "business_term": "flix.content.film",
+      "comments": "без комментариев"
+    }
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "seaf.ia.physical_tables": {
+    "actor": {
+      "title": "actor",
+      "description": "актёры",
+      "system": "flix.home_cinema.catalog",
+      "dbms": "postgresql",
+      "database": "dvdrental",
+      "schema": "public",
+      "logical_entity": [
+        "actor",
+        "actress"
+      ],
+      "business_term": [
+        "flix.content.actor"
+      ]
+    },
+    "store": {
+      "title": "store",
+      "description": "магазин",
+      "system": "flix.home_cinema.catalog",
+      "dbms": "postgresql",
+      "database": "dvdrental",
+      "schema": "public",
+      "logical_entity": "store"
+    },
+    "address": {
+      "title": "address",
+      "description": "адрес",
+      "system": "flix.home_cinema.catalog",
+      "dbms": "postgresql",
+      "database": "dvdrental",
+      "schema": "public",
+      "logical_entity": "address"
+    },
+    "category": {
+      "title": "category",
+      "description": "категория",
+      "system": "flix.home_cinema.catalog",
+      "dbms": "postgresql",
+      "database": "dvdrental",
+      "schema": "public",
+      "logical_entity": "film_category"
+    },
+    "city": {
+      "title": "city",
+      "description": "город",
+      "system": "flix.home_cinema.catalog",
+      "dbms": "postgresql",
+      "database": "dvdrental",
+      "schema": "public",
+      "logical_entity": "city"
+    },
+    "country": {
+      "title": "country",
+      "description": "страна",
+      "system": "flix.home_cinema.catalog",
+      "dbms": "postgresql",
+      "database": "dvdrental",
+      "schema": "public",
+      "logical_entity": "country"
+    },
+    "customer": {
+      "title": "customer",
+      "description": "заказчик",
+      "system": "flix.home_cinema.catalog",
+      "dbms": "postgresql",
+      "database": "dvdrental",
+      "schema": "public",
+      "logical_entity": "customer"
+    },
+    "film_actor": {
+      "title": "film_actor",
+      "description": "Актёрский состав фильмов",
+      "system": "flix.home_cinema.catalog",
+      "dbms": "postgresql",
+      "database": "dvdrental",
+      "schema": "public",
+      "logical_entity": null
+    },
+    "film_category": {
+      "title": "film_category",
+      "description": "Кинофильмы по категориям",
+      "system": "flix.home_cinema.catalog",
+      "dbms": "postgresql",
+      "database": "dvdrental",
+      "schema": "public",
+      "logical_entity": null
+    },
+    "inventory": {
+      "title": "inventory",
+      "description": "инвентарь",
+      "system": "flix.home_cinema.catalog",
+      "dbms": "postgresql",
+      "database": "dvdrental",
+      "schema": "public",
+      "logical_entity": "inventory"
+    },
+    "language": {
+      "title": "language",
+      "description": "язык",
+      "system": "flix.home_cinema.catalog",
+      "dbms": "postgresql",
+      "database": "dvdrental",
+      "schema": "public",
+      "logical_entity": "language"
+    },
+    "rental": {
+      "title": "rental",
+      "description": "аренда",
+      "system": "flix.home_cinema.catalog",
+      "dbms": "postgresql",
+      "database": "dvdrental",
+      "schema": "public",
+      "logical_entity": "rental"
+    },
+    "staff": {
+      "title": "staff",
+      "description": "персонал",
+      "system": "flix.home_cinema.catalog",
+      "dbms": "postgresql",
+      "database": "dvdrental",
+      "schema": "public",
+      "logical_entity": "staff"
+    },
+    "flix.fl.payment": {
+      "title": "payment",
+      "description": "Оплата",
+      "system": "flix.home_cinema.catalog",
+      "dbms": "postgresql",
+      "database": "dvdrental",
+      "schema": "public",
+      "logical_entity": "payment"
+    },
+    "film": {
+      "title": "film",
+      "description": "фильмы",
+      "system": "flix.home_cinema.catalog",
+      "dbms": "postgresql",
+      "database": "dvdrental",
+      "schema": "public",
+      "logical_entity": "film"
+    }
+  }
+}

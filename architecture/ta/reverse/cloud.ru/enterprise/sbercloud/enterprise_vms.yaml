@@ -1,26 +1,19 @@
-seaf.ta.reverse.cloud_ru.enterprise.vms:
-    flix.vms.135b9f91-6f9e-4601-961b-278fb11b8744:
+seaf.ta.components.server:
+    flix.servers.135b9f91-6f9e-4601-961b-278fb11b8744:
         id: 135b9f91-6f9e-4601-961b-278fb11b8744
-        original_id: urn:vcloud:vm:135b9f91-6f9e-4601-961b-278fb11b8744
-        name: WebAppVM02
+        type: Виртуальный
+        title: WebAppVM02
+        fqdn: WebAppVM02
         description: ''
-        flavor: ''
         os:
             type: Ubuntu Linux (64-bit)
             bit: '64'
         cpu:
             cores: 2
             frequency: ''
-            arch: VM_64
         ram: 2048
         nic_qty: 2
-        addresses:
-            - 192.168.1.200
-            - 192.168.100.20
         subnets:
-            - DBNET
-            - WebApp
-        subnet_ids:
             - flix.vappnets.f2071d7e-d088-4d09-8f7d-06353a694af2
             - flix.vappnets.7bfd8e44-f146-4494-95ed-0ad64c01f530
         disks:
@@ -29,32 +22,35 @@ seaf.ta.reverse.cloud_ru.enterprise.vms:
                     size: 16
                     az: ''
                     type: Gold
-        tags: []
-        vdc_id: flix.vdcs.d43a43b4-a377-4643-9439-f613cad09964
-        vdc_name: DocHub_SEAF_test-VDC02
-        vapp_id: flix.vapps.8570756b-fa4a-46dd-b557-92281453942b
-        tenant: ''
-        DC: flix.dc.cloud_ent
-    flix.vms.263789e6-1d31-46ac-b649-bf81e4fee2df:
+        reverse:
+            reverse_type: VMwareCloud
+            original_id: urn:vcloud:vm:135b9f91-6f9e-4601-961b-278fb11b8744
+            addresses:
+                - 192.168.1.200
+                - 192.168.100.20
+            subnet_names:
+                - DBNET
+                - WebApp
+            tags: []
+            vdc_id: flix.vdcs.d43a43b4-a377-4643-9439-f613cad09964
+            vdc_name: DocHub_SEAF_test-VDC02
+            vapp_id: flix.vapps.8570756b-fa4a-46dd-b557-92281453942b
+            tenant: ''
+    flix.servers.263789e6-1d31-46ac-b649-bf81e4fee2df:
         id: 263789e6-1d31-46ac-b649-bf81e4fee2df
-        original_id: urn:vcloud:vm:263789e6-1d31-46ac-b649-bf81e4fee2df
-        name: Segment-50-VM
+        type: Виртуальный
+        title: Segment-50-VM
+        fqdn: Segment-50-VM
         description: ''
-        flavor: ''
         os:
             type: Ubuntu Linux (64-bit)
             bit: '64'
         cpu:
             cores: 2
             frequency: ''
-            arch: VM_64
         ram: 2048
         nic_qty: 1
-        addresses:
-            - 192.168.50.2
         subnets:
-            - Segment_50
-        subnet_ids:
             - flix.vappnets.ab6caf1e-654d-4cbb-8441-70114c84f435
         disks:
             -   '2000':
@@ -62,32 +58,33 @@ seaf.ta.reverse.cloud_ru.enterprise.vms:
                     size: 16
                     az: ''
                     type: Gold
-        tags: []
-        vdc_id: flix.vdcs.464f7346-ea60-48d0-a351-7454dc3a2ddb
-        vdc_name: DocHub_SEAF_test-VDC01
-        vapp_id: flix.vapps.665e0498-e0c0-4684-bf20-8b428ee25b89
-        tenant: ''
-        DC: flix.dc.cloud_ent
-    flix.vms.442cd6a1-b632-4f28-ab84-709647d30697:
+        reverse:
+            reverse_type: VMwareCloud
+            original_id: urn:vcloud:vm:263789e6-1d31-46ac-b649-bf81e4fee2df
+            addresses:
+                - 192.168.50.2
+            subnet_names:
+                - Segment_50
+            tags: []
+            vdc_id: flix.vdcs.464f7346-ea60-48d0-a351-7454dc3a2ddb
+            vdc_name: DocHub_SEAF_test-VDC01
+            vapp_id: flix.vapps.665e0498-e0c0-4684-bf20-8b428ee25b89
+            tenant: ''
+    flix.servers.442cd6a1-b632-4f28-ab84-709647d30697:
         id: 442cd6a1-b632-4f28-ab84-709647d30697
-        original_id: urn:vcloud:vm:442cd6a1-b632-4f28-ab84-709647d30697
-        name: Segment-60-VM
+        type: Виртуальный
+        title: Segment-60-VM
+        fqdn: Segment-60-VM
         description: ''
-        flavor: ''
         os:
             type: Ubuntu Linux (64-bit)
             bit: '64'
         cpu:
             cores: 2
             frequency: ''
-            arch: VM_64
         ram: 2048
         nic_qty: 1
-        addresses:
-            - 192.168.60.2
         subnets:
-            - Segment_60
-        subnet_ids:
             - flix.vappnets.0caa071a-2ff4-43df-8e54-e1b04ceda6db
         disks:
             -   '2000':
@@ -95,32 +92,33 @@ seaf.ta.reverse.cloud_ru.enterprise.vms:
                     size: 16
                     az: ''
                     type: Gold
-        tags: []
-        vdc_id: flix.vdcs.d43a43b4-a377-4643-9439-f613cad09964
-        vdc_name: DocHub_SEAF_test-VDC02
-        vapp_id: flix.vapps.cc60841b-d544-4998-abb3-bb27ed78c8d0
-        tenant: ''
-        DC: flix.dc.cloud_ent
-    flix.vms.628d061c-ae97-4f1a-87ff-77eaef45e73d:
+        reverse:
+            reverse_type: VMwareCloud
+            original_id: urn:vcloud:vm:442cd6a1-b632-4f28-ab84-709647d30697
+            addresses:
+                - 192.168.60.2
+            subnet_names:
+                - Segment_60
+            tags: []
+            vdc_id: flix.vdcs.d43a43b4-a377-4643-9439-f613cad09964
+            vdc_name: DocHub_SEAF_test-VDC02
+            vapp_id: flix.vapps.cc60841b-d544-4998-abb3-bb27ed78c8d0
+            tenant: ''
+    flix.servers.628d061c-ae97-4f1a-87ff-77eaef45e73d:
         id: 628d061c-ae97-4f1a-87ff-77eaef45e73d
-        original_id: urn:vcloud:vm:628d061c-ae97-4f1a-87ff-77eaef45e73d
-        name: DBVM02
+        type: Виртуальный
+        title: DBVM02
+        fqdn: DBVM02
         description: null
-        flavor: ''
         os:
             type: Ubuntu Linux (64-bit)
             bit: '64'
         cpu:
             cores: 2
             frequency: ''
-            arch: VM_64
         ram: 2048
         nic_qty: 1
-        addresses:
-            - 192.168.1.20
         subnets:
-            - DBNET
-        subnet_ids:
             - flix.vappnets.f2071d7e-d088-4d09-8f7d-06353a694af2
         disks:
             -   '2000':
@@ -128,32 +126,33 @@ seaf.ta.reverse.cloud_ru.enterprise.vms:
                     size: 16
                     az: ''
                     type: Gold
-        tags: []
-        vdc_id: flix.vdcs.d43a43b4-a377-4643-9439-f613cad09964
-        vdc_name: DocHub_SEAF_test-VDC02
-        vapp_id: flix.vapps.8570756b-fa4a-46dd-b557-92281453942b
-        tenant: ''
-        DC: flix.dc.cloud_ent
-    flix.vms.7b49d0ff-07f3-4b5d-84cd-5aafc82b4851:
+        reverse:
+            reverse_type: VMwareCloud
+            original_id: urn:vcloud:vm:628d061c-ae97-4f1a-87ff-77eaef45e73d
+            addresses:
+                - 192.168.1.20
+            subnet_names:
+                - DBNET
+            tags: []
+            vdc_id: flix.vdcs.d43a43b4-a377-4643-9439-f613cad09964
+            vdc_name: DocHub_SEAF_test-VDC02
+            vapp_id: flix.vapps.8570756b-fa4a-46dd-b557-92281453942b
+            tenant: ''
+    flix.servers.7b49d0ff-07f3-4b5d-84cd-5aafc82b4851:
         id: 7b49d0ff-07f3-4b5d-84cd-5aafc82b4851
-        original_id: urn:vcloud:vm:7b49d0ff-07f3-4b5d-84cd-5aafc82b4851
-        name: DBVM01
+        type: Виртуальный
+        title: DBVM01
+        fqdn: DBVM01
         description: ''
-        flavor: ''
         os:
             type: Ubuntu Linux (64-bit)
             bit: '64'
         cpu:
             cores: 2
             frequency: ''
-            arch: VM_64
         ram: 2048
         nic_qty: 1
-        addresses:
-            - 192.168.1.10
         subnets:
-            - DBNET
-        subnet_ids:
             - flix.vappnets.ec7382d7-cd01-4fba-be92-bac3190d8e70
         disks:
             -   '2000':
@@ -161,34 +160,33 @@ seaf.ta.reverse.cloud_ru.enterprise.vms:
                     size: 16
                     az: ''
                     type: Gold
-        tags: []
-        vdc_id: flix.vdcs.464f7346-ea60-48d0-a351-7454dc3a2ddb
-        vdc_name: DocHub_SEAF_test-VDC01
-        vapp_id: flix.vapps.83c11c8e-e1bd-4b66-b33b-b9a63625839b
-        tenant: ''
-        DC: flix.dc.cloud_ent
-    flix.vms.ec87f708-d56f-4220-a1e4-922cd3bfada9:
+        reverse:
+            reverse_type: VMwareCloud
+            original_id: urn:vcloud:vm:7b49d0ff-07f3-4b5d-84cd-5aafc82b4851
+            addresses:
+                - 192.168.1.10
+            subnet_names:
+                - DBNET
+            tags: []
+            vdc_id: flix.vdcs.464f7346-ea60-48d0-a351-7454dc3a2ddb
+            vdc_name: DocHub_SEAF_test-VDC01
+            vapp_id: flix.vapps.83c11c8e-e1bd-4b66-b33b-b9a63625839b
+            tenant: ''
+    flix.servers.ec87f708-d56f-4220-a1e4-922cd3bfada9:
         id: ec87f708-d56f-4220-a1e4-922cd3bfada9
-        original_id: urn:vcloud:vm:ec87f708-d56f-4220-a1e4-922cd3bfada9
-        name: WebAppVM01
+        type: Виртуальный
+        title: WebAppVM01
+        fqdn: WebAppVM01
         description: ''
-        flavor: ''
         os:
             type: Ubuntu Linux (64-bit)
             bit: '64'
         cpu:
             cores: 2
             frequency: ''
-            arch: VM_64
         ram: 2048
         nic_qty: 2
-        addresses:
-            - 192.168.1.100
-            - 192.168.100.10
         subnets:
-            - DBNET
-            - WebApp
-        subnet_ids:
             - flix.vappnets.ec7382d7-cd01-4fba-be92-bac3190d8e70
             - flix.vappnets.e423f924-eb81-4b6d-bb59-06b52213b16a
         disks:
@@ -197,9 +195,18 @@ seaf.ta.reverse.cloud_ru.enterprise.vms:
                     size: 16
                     az: ''
                     type: Gold
-        tags: []
-        vdc_id: flix.vdcs.464f7346-ea60-48d0-a351-7454dc3a2ddb
-        vdc_name: DocHub_SEAF_test-VDC01
-        vapp_id: flix.vapps.83c11c8e-e1bd-4b66-b33b-b9a63625839b
-        tenant: ''
-        DC: flix.dc.cloud_ent
+        reverse:
+            reverse_type: VMwareCloud
+            original_id: urn:vcloud:vm:ec87f708-d56f-4220-a1e4-922cd3bfada9
+            addresses:
+                - 192.168.1.100
+                - 192.168.100.10
+            subnet_names:
+                - DBNET
+                - WebApp
+            tags: []
+            vdc_id: flix.vdcs.464f7346-ea60-48d0-a351-7454dc3a2ddb
+            vdc_name: DocHub_SEAF_test-VDC01
+            vapp_id: flix.vapps.83c11c8e-e1bd-4b66-b33b-b9a63625839b
+            tenant: ''
+

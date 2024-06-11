@@ -1,336 +1,276 @@
 {
   "seaf.ia.logical_attributes": {
-    "actor.first_name": {
+    "flix.content.film.description": {
+      "code": "description",
+      "title": "Краткое описание",
+      "description": "text.None",
+      "logical_entity": "flix.content.film",
+      "link_attr": null
+    },
+    "flix.content.film.category": {
+      "code": "category",
+      "title": "категория",
+      "description": "smallint.['PRIMARY KEY', 'FOREIGN KEY']",
+      "logical_entity": "flix.content.film",
+      "business_term": "flix.content.category",
+      "link_attr": "flix.content.category"
+    },
+    "flix.content.film.actors": {
+      "code": "actor",
+      "title": "актеры",
+      "description": "smallint.['FOREIGN KEY', 'PRIMARY KEY']",
+      "logical_entity": "flix.content.film",
+      "business_term": "flix.content.actor",
+      "link_attr": "flix.content.actor",
+      "link_type": "аггрегация"
+    },
+    "flix.content.film.actresses": {
+      "code": "actor",
+      "title": "актрисы",
+      "description": "smallint.['FOREIGN KEY', 'PRIMARY KEY']",
+      "logical_entity": "flix.content.film",
+      "business_term": "flix.content.actor",
+      "link_attr": "flix.content.actress",
+      "link_type": "аггрегация"
+    },
+    "flix.content.film.release_year": {
+      "code": "release_year",
+      "title": "год выпуска",
+      "description": "integer.None",
+      "logical_entity": "flix.content.film",
+      "link_attr": null
+    },
+    "flix.content.film.language": {
+      "code": "language",
+      "title": "язык",
+      "description": "smallint.['FOREIGN KEY']",
+      "logical_entity": "flix.content.film",
+      "business_term": "flix.content.language",
+      "link_attr": "flix.content.language"
+    },
+    "flix.content.film.rental_duration": {
+      "code": "rental_duration",
+      "title": "длительность проката",
+      "description": "smallint.None",
+      "logical_entity": "flix.content.film",
+      "link_attr": null
+    },
+    "flix.content.film.length": {
+      "code": "length",
+      "title": "продолжительность фильма",
+      "description": "smallint.None",
+      "logical_entity": "flix.content.film",
+      "link_attr": null
+    },
+    "flix.content.film.rating": {
+      "code": "rating",
+      "title": "рэйтинг",
+      "description": "USER-DEFINED.None",
+      "logical_entity": "flix.content.film",
+      "business_term": "flix.recom.rating",
+      "link_attr": null
+    },
+
+    "flix.content.actor.first_name": {
       "code": "first_name",
       "title": "Имя",
       "description": "character varying.None",
-      "logical_entity": "actor",
-      "business_term": "first_name",
+      "logical_entity": "flix.content.actor",
       "link_attr": null
     },
-    "actor.last_name": {
+    "flix.content.actor.last_name": {
       "code": "last_name",
       "title": "Фамилия",
       "description": "character varying.None",
-      "logical_entity": "actor",
-      "business_term": "last_name",
+      "logical_entity": "flix.content.actor",
       "link_attr": null
     },
-    "actor.films": {
+    "flix.content.actor.films": {
       "code": "films",
       "title": "фильмы",
       "description": "character varying.None",
-      "logical_entity": "actor",
-      "business_term": "film",
-      "link_attr": "film",
+      "logical_entity": "flix.content.actor",
+      "business_term": "flix.content.film",
+      "link_attr": "flix.content.film",
       "link_type": "аггрегация"
     },
-    "store.manager": {
-      "code": "manager_staff",
-      "title": "управляющий",
-      "description": "smallint.['FOREIGN KEY']",
-      "logical_entity": "store",
-      "business_term": "manager_staff_id",
-      "link_attr": "staff"
-    },
-    "store.address": {
-      "code": "address",
-      "title": "адрес",
-      "description": "smallint.['FOREIGN KEY']",
-      "logical_entity": "store",
-      "business_term": [
-        "address"
-      ],
-      "link_attr": "address"
-    },
-    "address.district": {
-      "code": "district",
-      "title": "район",
-      "description": "character varying.None",
-      "logical_entity": "address",
-      "business_term": "district",
-      "link_attr": null
-    },
-    "address.city": {
-      "code": "city",
-      "title": "город",
-      "description": "smallint.['FOREIGN KEY']",
-      "logical_entity": "address",
-      "business_term": "city",
-      "link_attr": "city"
-    },
-    "address.postal_code": {
-      "code": "postal_code",
-      "title": "почтовый индекс",
-      "description": "character varying.None",
-      "logical_entity": "address",
-      "business_term": "postal_code",
-      "link_attr": null
-    },
-    "address.phone": {
-      "code": "phone",
-      "title": "телефон",
-      "description": "character varying.None",
-      "logical_entity": "address",
-      "business_term": "phone",
-      "link_attr": null
-    },
-    "addressFL.parent": {
-      "code": "parent",
-      "title": "Родительский класс",
-      "description": "character varying.None",
-      "logical_entity": "addressFL",
-      "business_term": "address",
-      "link_attr": "address",
-      "link_type": "обобщение"
-    },
-    "addressUL.parent": {
-      "code": "parent",
-      "title": "Родительский класс",
-      "description": "character varying.None",
-      "logical_entity": "addressUL",
-      "business_term": "address",
-      "link_attr": "address",
-      "link_type": "обобщение"
-    },
-    "city.country": {
-      "code": "country",
-      "title": "страна",
-      "description": "smallint.['FOREIGN KEY']",
-      "logical_entity": "city",
-      "business_term": "country",
-      "link_attr": "country"
-    },
-    "country.country": {
-      "code": "country",
-      "title": "страна",
-      "description": "character varying.None",
-      "logical_entity": "country",
-      "business_term": "country",
-      "link_attr": null
-    },
-    "customer.first_name": {
+    
+    "flix.content.actress.first_name": {
       "code": "first_name",
       "title": "Имя",
       "description": "character varying.None",
-      "logical_entity": "customer",
-      "business_term": "first_name",
+      "logical_entity": "flix.content.actress",
       "link_attr": null
     },
-    "customer.last_name": {
+    "flix.content.actress.last_name": {
       "code": "last_name",
       "title": "Фамилия",
       "description": "character varying.None",
-      "logical_entity": "customer",
-      "business_term": "last_name",
+      "logical_entity": "flix.content.actress",
       "link_attr": null
     },
-    "customer.email": {
-      "code": "email",
-      "title": "email",
-      "description": "character varying.None",
-      "logical_entity": "customer",
-      "business_term": "email",
-      "link_attr": null
-    },
-    "customer.address": {
-      "code": "address",
-      "title": "адрес",
-      "description": "smallint.['FOREIGN KEY']",
-      "logical_entity": "customer",
-      "business_term": "address",
-      "link_attr": "address"
-    },
-    "customer.active": {
-      "code": "active",
-      "title": "флаг активности",
-      "description": "integer.None",
-      "logical_entity": "customer",
-      "business_term": "active",
-      "link_attr": null
-    },
-    "rental.rental_date": {
-      "code": "rental_date",
-      "title": "rental_date",
-      "description": "timestamp without time zone.None",
-      "logical_entity": "rental",
-      "business_term": "rental_date",
-      "link_attr": null
-    },
-    "rental.film": {
-      "code": "film",
+    "flix.content.actress.films": {
+      "code": "films",
       "title": "фильмы",
-      "description": "smallint.['FOREIGN KEY']",
-      "logical_entity": "rental",
-      "business_term": "film",
-      "link_attr": "film"
+      "description": "character varying.None",
+      "logical_entity": "flix.content.actress",
+      "business_term": "flix.content.film",
+      "link_attr": "flix.content.film",
+      "link_type": "аггрегация"
     },
-    "rental.customer": {
-      "code": "customer_id",
-      "title": "покупатель",
-      "description": "smallint.['FOREIGN KEY']",
-      "logical_entity": "rental",
-      "business_term": "customer",
-      "link_attr": "customer"
-    },
-    "rental.return_date": {
-      "code": "return_date",
-      "title": "дата возврата",
-      "description": "timestamp without time zone.None",
-      "logical_entity": "rental",
-      "business_term": "return_date",
+    
+    "flix.address.district": {
+      "code": "district",
+      "title": "район",
+      "description": "character varying.None",
+      "logical_entity": "flix.address",
       "link_attr": null
     },
-    "rental.staff": {
-      "code": "staff",
-      "title": "сотрудник проката",
+    "flix.address.city": {
+      "code": "city",
+      "title": "город",
       "description": "smallint.['FOREIGN KEY']",
-      "logical_entity": "rental",
-      "business_term": "staff",
-      "link_attr": "staff"
+      "logical_entity": "flix.address",
+      "link_attr": "flix.city"
     },
-    "staff.first_name": {
+    "flix.address.postal_code": {
+      "code": "postal_code",
+      "title": "почтовый индекс",
+      "description": "character varying.None",
+      "logical_entity": "flix.address",
+      "business_term": "flix.postal_code",
+      "link_attr": null
+    },
+    "flix.address.phone": {
+      "code": "phone",
+      "title": "телефон",
+      "description": "character varying.None",
+      "logical_entity": "flix.address",
+      "business_term": "flix.phone",
+      "link_attr": null
+    },
+    "flix.addressFL.parent": {
+      "code": "parent",
+      "title": "Родительский класс",
+      "description": "character varying.None",
+      "logical_entity": "flix.addressFL",
+      "business_term": "flix.address",
+      "link_attr": "flix.address",
+      "link_type": "обобщение"
+    },
+    "flix.addressUL.parent": {
+      "code": "parent",
+      "title": "Родительский класс",
+      "description": "character varying.None",
+      "logical_entity": "flix.addressUL",
+      "business_term": "flix.address",
+      "link_attr": "flix.address",
+      "link_type": "обобщение"
+    },
+    "flix.city.country": {
+      "code": "country",
+      "title": "страна",
+      "description": "smallint.['FOREIGN KEY']",
+      "logical_entity": "flix.city",
+      "business_term": "flix.country",
+      "link_attr": "flix.country",
+      "link_type": "зависимость"
+    },
+
+    "flix.staff.first_name": {
       "code": "first_name",
       "title": "имя",
       "description": "character varying.None",
       "logical_entity": "flix.staff",
-      "business_term": "first_name",
       "link_attr": null
     },
-    "staff.last_name": {
+    "flix.staff.last_name": {
       "code": "last_name",
       "title": "фамилия",
       "description": "character varying.None",
       "logical_entity": "flix.staff",
-      "business_term": "last_name",
       "link_attr": null
     },
-    "staff.address": {
+    "flix.staff.address": {
       "code": "address",
       "title": "адрес",
       "description": "smallint.['FOREIGN KEY']",
       "logical_entity": "flix.staff",
-      "business_term": "address",
-      "link_attr": "address"
+      "business_term": "flix.address",
+      "link_attr": "flix.addressUL"
     },
-    "staff.email": {
+    "flix.staff.email": {
       "code": "email",
       "title": "email сотрудника",
       "description": "character varying.None",
       "logical_entity": "flix.staff",
-      "business_term": "email",
       "link_attr": null
     },
-    "payment.customer_": {
+
+    "alfa.fl.customer.first_name": {
+      "code": "first_name",
+      "title": "Имя",
+      "description": "character varying.None",
+      "logical_entity": "alfa.fl.customer",
+      "link_attr": null
+    },
+    "alfa.fl.customer.last_name": {
+      "code": "last_name",
+      "title": "Фамилия",
+      "description": "character varying.None",
+      "logical_entity": "alfa.fl.customer",
+      "link_attr": null
+    },
+    "alfa.fl.customer.email": {
+      "code": "email",
+      "title": "email",
+      "description": "character varying.None",
+      "logical_entity": "alfa.fl.customer",
+      "link_attr": null
+    },
+    "alfa.fl.customer.address": {
+      "code": "address",
+      "title": "адрес",
+      "description": "smallint.['FOREIGN KEY']",
+      "logical_entity": "alfa.fl.customer",
+      "business_term": "flix.address",
+      "link_attr": "flix.address"
+    },
+    "alfa.fl.payment.customer": {
       "code": "customer",
       "title": "покупатель",
       "description": "smallint.['FOREIGN KEY']",
-      "logical_entity": "payment",
-      "business_term": "customer_id",
-      "link_attr": "customer"
+      "logical_entity": "alfa.fl.payment",
+      "link_attr": "alfa.fl.customer"
     },
-    "payment.staff_": {
+    "alfa.fl.payment.staff": {
       "code": "staff_id",
       "title": "менеджер продаж",
       "description": "smallint.['FOREIGN KEY']",
-      "logical_entity": "payment",
-      "business_term": "staff_id",
-      "link_attr": "staff"
+      "logical_entity": "alfa.fl.payment",
+      "business_term": "flix.staff",
+      "link_attr": "flix.staff"
     },
-    "payment.rental": {
+    "alfa.fl.payment.rental": {
       "code": "rental",
-      "title": "договор аренды",
+      "title": "договор оплаты",
       "description": "integer.['FOREIGN KEY']",
-      "logical_entity": "payment",
+      "logical_entity": "alfa.fl.payment",
       "business_term": "rental_id",
       "link_attr": "rental"
     },
-    "payment.amount": {
+    "alfa.fl.payment.amount": {
       "code": "amount",
       "title": "стоимость",
       "description": "numeric.None",
-      "logical_entity": "payment",
-      "business_term": "amount",
+      "logical_entity": "alfa.fl.payment",
       "link_attr": null
     },
-    "payment.payment_date": {
+    "alfa.fl.payment.payment_date": {
       "code": "payment_date",
       "title": "дата оплаты",
       "description": "timestamp without time zone.None",
-      "logical_entity": "payment",
-      "business_term": "payment_date",
-      "link_attr": null
-    },
-    "film.title": {
-      "code": "title",
-      "title": "Название",
-      "description": "character varying.None",
-      "logical_entity": "film",
-      "business_term": "title",
-      "link_attr": null
-    },
-    "film.description": {
-      "code": "description",
-      "title": "Краткое описание",
-      "description": "text.None",
-      "logical_entity": "film",
-      "business_term": "description",
-      "link_attr": null
-    },
-    "film.category": {
-      "code": "category",
-      "title": "категория",
-      "description": "smallint.['PRIMARY KEY', 'FOREIGN KEY']",
-      "logical_entity": "film",
-      "business_term": "film_category",
-      "link_attr": "film_category"
-    },
-    "film.actor": {
-      "code": "actor",
-      "title": "актеры",
-      "description": "smallint.['FOREIGN KEY', 'PRIMARY KEY']",
-      "logical_entity": "film",
-      "business_term": "actor",
-      "link_attr": "actor"
-    },
-    "film.release_year": {
-      "code": "release_year",
-      "title": "год выпуска",
-      "description": "integer.None",
-      "logical_entity": "film",
-      "business_term": "release_year",
-      "link_attr": null
-    },
-    "film.language": {
-      "code": "language",
-      "title": "язык",
-      "description": "smallint.['FOREIGN KEY']",
-      "logical_entity": "film",
-      "business_term": "language",
-      "link_attr": "language"
-    },
-    "film.rental_duration": {
-      "code": "rental_duration",
-      "title": "длительность проката",
-      "description": "smallint.None",
-      "logical_entity": "film",
-      "business_term": "rental_duration",
-      "link_attr": null
-    },
-    "film.length": {
-      "code": "length",
-      "title": "продолжительность фильма",
-      "description": "smallint.None",
-      "logical_entity": "film",
-      "business_term": "length",
-      "link_attr": null
-    },
-    "film.rating": {
-      "code": "rating",
-      "title": "рэйтинг",
-      "description": "USER-DEFINED.None",
-      "logical_entity": "film",
-      "business_term": "rating",
+      "logical_entity": "alfa.fl.payment",
       "link_attr": null
     }
   }

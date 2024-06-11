@@ -1,5 +1,38 @@
 {
   "seaf.ia.business_terms": {
+    "flix.content.film": {
+      "title": "Фильм",
+      "description": "данные о фильме, такие как название, год выпуска, продолжительность, рейтинг и т.д.",
+      "status": "Используется",
+      "processes": "flix.play",
+      "creation_date": "2024-03-19",
+      "modify_date": "2024-03-19 18:41:52.955066",
+      "owner": "Ответственный (ФИО)",
+      "comments": "без комментариев",
+      "legal_doc": "Нормативный/правовой документ"
+    },
+    "flix.content.language": {
+      "title": "Язык",
+      "description": "Язык оригинала фильма",
+      "status": "Используется",
+      "processes": "flix.brows_cat",
+      "creation_date": "2024-03-19",
+      "modify_date": "2024-03-19 18:41:07.558793",
+      "owner": "Ответственный (ФИО)",
+      "comments": "без комментариев",
+      "legal_doc": "Нормативный/правовой документ"
+    },
+    "flix.content.category": {
+      "title": "Категория",
+      "description": "Категория фильма",
+      "status": "Используется",
+      "processes": "Используется в бизнес-процессах",
+      "creation_date": "2024-03-19",
+      "modify_date": "2024-03-19 18:40:34.088676",
+      "owner": "Ответственный (ФИО)",
+      "comments": "без комментариев",
+      "legal_doc": "Нормативный/правовой документ"
+    },
     "flix.content.actor": {
       "title": "Актёр",
       "description": "данные актера, включая имя и фамилию",
@@ -11,46 +44,13 @@
       "comments": "без комментариев",
       "legal_doc": "Нормативный/правовой документ"
     },
-    "store": {
-      "title": "Магазин",
-      "description": "данные магазина, включая менеджера и адрес",
+    "flix.recom.rating": {
+      "title": "Рейтинг",
+      "description": "Рейтинг фильма",
       "status": "Используется",
-      "processes": "Используется в бизнес-процессах",
+      "processes": "flix.brows_cat",
       "creation_date": "2024-03-19",
-      "modify_date": "2024-03-19 18:40:25.059266",
-      "owner": "Ответственный (ФИО)",
-      "comments": "без комментариев",
-      "legal_doc": "Нормативный/правовой документ"
-    },
-    "address": {
-      "title": "Адрес",
-      "description": "адресные данные для сотрудников и клиентов",
-      "status": "Используется",
-      "processes": "flix.streaming_ondemand",
-      "creation_date": "2024-03-19",
-      "modify_date": "2024-03-19 18:40:27.373968",
-      "owner": "Ответственный (ФИО)",
-      "comments": "без комментариев",
-      "legal_doc": "Нормативный/правовой документ"
-    },
-    "film_category": {
-      "title": "Категория",
-      "description": "Категория фильма",
-      "status": "Используется",
-      "processes": "Используется в бизнес-процессах",
-      "creation_date": "2024-03-19",
-      "modify_date": "2024-03-19 18:40:34.088676",
-      "owner": "Ответственный (ФИО)",
-      "comments": "без комментариев",
-      "legal_doc": "Нормативный/правовой документ"
-    },
-    "alfa.fl.customer": {
-      "title": "Клиент",
-      "description": "данные клиента",
-      "status": "Используется",
-      "processes": "alfa.fl_auth.sign_in",
-      "creation_date": "2024-03-19",
-      "modify_date": "2024-03-19 18:40:40.508516",
+      "modify_date": "2024-03-19 18:42:03.714730",
       "owner": "Ответственный (ФИО)",
       "comments": "без комментариев",
       "legal_doc": "Нормативный/правовой документ"
@@ -66,13 +66,24 @@
       "comments": "без комментариев",
       "legal_doc": "Нормативный/правовой документ"
     },
-    "language": {
-      "title": "Язык",
-      "description": "Язык оригинала фильма",
+    "flix.address": {
+      "title": "Адрес",
+      "description": "адресные данные для сотрудников и клиентов",
       "status": "Используется",
-      "processes": "flix.brows_cat",
+      "processes": "flix.streaming_ondemand",
       "creation_date": "2024-03-19",
-      "modify_date": "2024-03-19 18:41:07.558793",
+      "modify_date": "2024-03-19 18:40:27.373968",
+      "owner": "Ответственный (ФИО)",
+      "comments": "без комментариев",
+      "legal_doc": "Нормативный/правовой документ"
+    },
+    "alfa.fl.customer": {
+      "title": "Клиент",
+      "description": "данные клиента",
+      "status": "Используется",
+      "processes": "alfa.fl_auth.sign_in",
+      "creation_date": "2024-03-19",
+      "modify_date": "2024-03-19 18:40:40.508516",
       "owner": "Ответственный (ФИО)",
       "comments": "без комментариев",
       "legal_doc": "Нормативный/правовой документ"
@@ -84,50 +95,6 @@
       "processes": "alfa.payments.aquiring",
       "creation_date": "2024-03-19",
       "modify_date": "2024-03-19 18:41:50.544050",
-      "owner": "Ответственный (ФИО)",
-      "comments": "без комментариев",
-      "legal_doc": "Нормативный/правовой документ"
-    },
-    "flix.content.film": {
-      "title": "Фильм",
-      "description": "данные о фильме, такие как название, год выпуска, продолжительность, рейтинг и т.д.",
-      "status": "Используется",
-      "processes": "flix.play",
-      "creation_date": "2024-03-19",
-      "modify_date": "2024-03-19 18:41:52.955066",
-      "owner": "Ответственный (ФИО)",
-      "comments": "без комментариев",
-      "legal_doc": "Нормативный/правовой документ"
-    },
-    "rental_rate": {
-      "title": "Арендная ставка",
-      "description": "Арендная ставка",
-      "status": "Используется",
-      "processes": "Используется в бизнес-процессах",
-      "creation_date": "2024-03-19",
-      "modify_date": "2024-03-19 18:42:00.140235",
-      "owner": "Ответственный (ФИО)",
-      "comments": "без комментариев",
-      "legal_doc": "Нормативный/правовой документ"
-    },
-    "replacement_cost": {
-      "title": "replacement_cost",
-      "description": "Восстановительная стоимость",
-      "status": "Используется",
-      "processes": "Используется в бизнес-процессах",
-      "creation_date": "2024-03-19",
-      "modify_date": "2024-03-19 18:42:02.590357",
-      "owner": "Ответственный (ФИО)",
-      "comments": "без комментариев",
-      "legal_doc": "Нормативный/правовой документ"
-    },
-    "rating": {
-      "title": "Рейтинг",
-      "description": "Рейтинг фильма",
-      "status": "Используется",
-      "processes": "flix.brows_cat",
-      "creation_date": "2024-03-19",
-      "modify_date": "2024-03-19 18:42:03.714730",
       "owner": "Ответственный (ФИО)",
       "comments": "без комментариев",
       "legal_doc": "Нормативный/правовой документ"

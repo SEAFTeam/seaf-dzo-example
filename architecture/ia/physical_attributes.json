@@ -34,45 +34,6 @@
       "linked_table": null,
       "linked_key": null
     },
-    "store.store_id": {
-      "title": "store_id",
-      "type": "integer",
-      "constraints": [
-        "PRIMARY KEY"
-      ],
-      "physical_table": "store",
-      "linked_table": null,
-      "linked_key": null
-    },
-    "store.manager_staff_id": {
-      "title": "manager_staff_id",
-      "type": "smallint",
-      "constraints": [
-        "FOREIGN KEY"
-      ],
-      "physical_table": "store",
-      "linked_table": "staff",
-      "linked_key": "staff.staff_id"
-    },
-    "store.address_id": {
-      "title": "address_id",
-      "type": "smallint",
-      "constraints": [
-        "FOREIGN KEY"
-      ],
-      "FK_flag": true,
-      "physical_table": "store",
-      "linked_table": "address",
-      "linked_key": "address.address_id"
-    },
-    "store.last_update": {
-      "title": "last_update",
-      "type": "timestamp without time zone",
-      "constraints": null,
-      "physical_table": "store",
-      "linked_table": null,
-      "linked_key": null
-    },
     "address.address_id": {
       "title": "address_id",
       "type": "integer",
@@ -120,6 +81,7 @@
       "constraints": [
         "FOREIGN KEY"
       ],
+      "FK_flag": true,
       "physical_table": "address",
       "linked_table": "city",
       "linked_key": "city.city_id"
@@ -380,42 +342,6 @@
       "linked_table": null,
       "linked_key": null
     },
-    "inventory.inventory_id": {
-      "title": "inventory_id",
-      "type": "integer",
-      "constraints": [
-        "PRIMARY KEY"
-      ],
-      "physical_table": "inventory",
-      "linked_table": null,
-      "linked_key": null
-    },
-    "inventory.film_id": {
-      "title": "film_id",
-      "type": "smallint",
-      "constraints": [
-        "FOREIGN KEY"
-      ],
-      "physical_table": "inventory",
-      "linked_table": "film",
-      "linked_key": "film.film_id"
-    },
-    "inventory.store_id": {
-      "title": "store_id",
-      "type": "smallint",
-      "constraints": null,
-      "physical_table": "inventory",
-      "linked_table": null,
-      "linked_key": null
-    },
-    "inventory.last_update": {
-      "title": "last_update",
-      "type": "timestamp without time zone",
-      "constraints": null,
-      "physical_table": "inventory",
-      "linked_table": null,
-      "linked_key": null
-    },
     "language.language_id": {
       "title": "language_id",
       "type": "integer",
@@ -439,70 +365,6 @@
       "type": "timestamp without time zone",
       "constraints": null,
       "physical_table": "language",
-      "linked_table": null,
-      "linked_key": null
-    },
-    "rental.rental_id": {
-      "title": "rental_id",
-      "type": "integer",
-      "constraints": [
-        "PRIMARY KEY"
-      ],
-      "physical_table": "rental",
-      "linked_table": null,
-      "linked_key": null
-    },
-    "rental.rental_date": {
-      "title": "rental_date",
-      "type": "timestamp without time zone",
-      "constraints": null,
-      "physical_table": "rental",
-      "linked_table": null,
-      "linked_key": null
-    },
-    "rental.inventory_id": {
-      "title": "inventory_id",
-      "type": "integer",
-      "constraints": [
-        "FOREIGN KEY"
-      ],
-      "physical_table": "rental",
-      "linked_table": "inventory",
-      "linked_key": "inventory.inventory_id"
-    },
-    "rental.customer_id": {
-      "title": "customer_id",
-      "type": "smallint",
-      "constraints": [
-        "FOREIGN KEY"
-      ],
-      "physical_table": "rental",
-      "linked_table": "customer",
-      "linked_key": "customer.customer_id"
-    },
-    "rental.return_date": {
-      "title": "return_date",
-      "type": "timestamp without time zone",
-      "constraints": null,
-      "physical_table": "rental",
-      "linked_table": null,
-      "linked_key": null
-    },
-    "rental.staff_id": {
-      "title": "staff_id",
-      "type": "smallint",
-      "constraints": [
-        "FOREIGN KEY"
-      ],
-      "physical_table": "rental",
-      "linked_table": "staff",
-      "linked_key": "staff.staff_id"
-    },
-    "rental.last_update": {
-      "title": "last_update",
-      "type": "timestamp without time zone",
-      "constraints": null,
-      "physical_table": "rental",
       "linked_table": null,
       "linked_key": null
     },

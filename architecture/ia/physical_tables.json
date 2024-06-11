@@ -121,7 +121,7 @@
       "dbms": "postgresql",
       "database": "dvdrental",
       "schema": "public",
-      "logical_entity": "staff"
+      "logical_entity": "flix.staff"
     },
     "flix.fl.payment": {
       "title": "payment",

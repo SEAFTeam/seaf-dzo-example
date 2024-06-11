@@ -193,7 +193,7 @@
       "code": "first_name",
       "title": "имя",
       "description": "character varying.None",
-      "logical_entity": "staff",
+      "logical_entity": "flix.staff",
       "business_term": "first_name",
       "link_attr": null
     },
@@ -201,7 +201,7 @@
       "code": "last_name",
       "title": "фамилия",
       "description": "character varying.None",
-      "logical_entity": "staff",
+      "logical_entity": "flix.staff",
       "business_term": "last_name",
       "link_attr": null
     },
@@ -209,7 +209,7 @@
       "code": "address",
       "title": "адрес",
       "description": "smallint.['FOREIGN KEY']",
-      "logical_entity": "staff",
+      "logical_entity": "flix.staff",
       "business_term": "address",
       "link_attr": "address"
     },
@@ -217,7 +217,7 @@
       "code": "email",
       "title": "email сотрудника",
       "description": "character varying.None",
-      "logical_entity": "staff",
+      "logical_entity": "flix.staff",
       "business_term": "email",
       "link_attr": null
     },

@@ -119,13 +119,13 @@
       "business_term": "rental_rate",
       "comments": "без комментариев"
     },
-    "staff": {
+    "flix.staff": {
       "code": "staff",
       "title": "персонал",
       "description": "staff-personal команда",
       "category": "Прочее",
       "status": "Используется",
-      "business_term": "staff",
+      "business_term": "flix.staff",
       "comments": "без комментариев"
     },
     "payment": {

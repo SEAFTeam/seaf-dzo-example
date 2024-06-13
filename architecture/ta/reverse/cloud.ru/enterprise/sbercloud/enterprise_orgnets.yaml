@@ -3,7 +3,7 @@ seaf.ta.reverse.vmwarecloud.orgnets:
         id: be8bcd3d-947f-4a32-89a5-d773857211dd
         original_id: urn:vcloud:network:be8bcd3d-947f-4a32-89a5-d773857211dd
         type: orgNetwork
-        name: DBNET
+        title: DBNET
         description: ''
         netmask: 255.255.255.0
         gateway: 192.168.1.1
@@ -16,9 +16,9 @@ seaf.ta.reverse.vmwarecloud.orgnets:
         status: REALIZED
         org_id: flix.orgs.ade0d087-ac75-4ec9-9f7c-f443f9b6164b
         vdc_id: ''
-        vdc_name: ''
+        vdc_title: ''
         vdcgroup_id: flix.vdcgroups.ec2a42cb-e497-4352-be77-ea137a2e52de
-        vdcgroup_name: Internal_net
+        vdcgroup_title: Internal_net
         connected: false
         dns:
             - 8.8.8.8
@@ -35,7 +35,7 @@ seaf.ta.reverse.vmwarecloud.orgnets:
         id: 434f23fa-782c-4387-bdcb-52730534ca4e
         original_id: urn:vcloud:network:434f23fa-782c-4387-bdcb-52730534ca4e
         type: orgNetwork
-        name: Segment_01
+        title: Segment_01
         description: ''
         netmask: 255.255.255.0
         gateway: 192.168.5.1
@@ -48,9 +48,9 @@ seaf.ta.reverse.vmwarecloud.orgnets:
         status: REALIZED
         org_id: flix.orgs.ade0d087-ac75-4ec9-9f7c-f443f9b6164b
         vdc_id: ''
-        vdc_name: ''
+        vdc_title: ''
         vdcgroup_id: flix.vdcgroups.e4fd2d5e-1736-4f17-b804-c72ad696aa3a
-        vdcgroup_name: DocHub_SEAF_DCG
+        vdcgroup_title: DocHub_SEAF_DCG
         connected: false
         dns:
             - 8.8.8.8
@@ -67,7 +67,7 @@ seaf.ta.reverse.vmwarecloud.orgnets:
         id: 1eceb49e-04bf-4373-8b13-471e32c4d5b8
         original_id: urn:vcloud:network:1eceb49e-04bf-4373-8b13-471e32c4d5b8
         type: orgNetwork
-        name: Segment_50
+        title: Segment_50
         description: ''
         netmask: 255.255.255.0
         gateway: 192.168.50.1
@@ -80,9 +80,9 @@ seaf.ta.reverse.vmwarecloud.orgnets:
         status: REALIZED
         org_id: flix.orgs.ade0d087-ac75-4ec9-9f7c-f443f9b6164b
         vdc_id: flix.vdcs.464f7346-ea60-48d0-a351-7454dc3a2ddb
-        vdc_name: DocHub_SEAF_test-VDC01
+        vdc_title: DocHub_SEAF_test-VDC01
         vdcgroup_id: ''
-        vdcgroup_name: ''
+        vdcgroup_title: ''
         connected: false
         dns:
             - 8.8.8.8
@@ -99,7 +99,7 @@ seaf.ta.reverse.vmwarecloud.orgnets:
         id: e50537c5-d734-43c3-9e29-15afe479e106
         original_id: urn:vcloud:network:e50537c5-d734-43c3-9e29-15afe479e106
         type: orgNetwork
-        name: Segment_60
+        title: Segment_60
         description: ''
         netmask: 255.255.255.0
         gateway: 192.168.60.1
@@ -112,9 +112,9 @@ seaf.ta.reverse.vmwarecloud.orgnets:
         status: REALIZED
         org_id: flix.orgs.ade0d087-ac75-4ec9-9f7c-f443f9b6164b
         vdc_id: flix.vdcs.d43a43b4-a377-4643-9439-f613cad09964
-        vdc_name: DocHub_SEAF_test-VDC02
+        vdc_title: DocHub_SEAF_test-VDC02
         vdcgroup_id: ''
-        vdcgroup_name: ''
+        vdcgroup_title: ''
         connected: false
         dns:
             - 8.8.8.8
@@ -131,7 +131,7 @@ seaf.ta.reverse.vmwarecloud.orgnets:
         id: 9fcaf8dc-cca0-4ea5-9931-23d70243ed8b
         original_id: urn:vcloud:network:9fcaf8dc-cca0-4ea5-9931-23d70243ed8b
         type: orgNetwork
-        name: WebApp
+        title: WebApp
         description: ''
         netmask: 255.255.255.0
         gateway: 192.168.100.1
@@ -144,9 +144,9 @@ seaf.ta.reverse.vmwarecloud.orgnets:
         status: REALIZED
         org_id: flix.orgs.ade0d087-ac75-4ec9-9f7c-f443f9b6164b
         vdc_id: ''
-        vdc_name: ''
+        vdc_title: ''
         vdcgroup_id: flix.vdcgroups.e4fd2d5e-1736-4f17-b804-c72ad696aa3a
-        vdcgroup_name: DocHub_SEAF_DCG
+        vdcgroup_title: DocHub_SEAF_DCG
         connected: true
         dns:
             - 8.8.8.8

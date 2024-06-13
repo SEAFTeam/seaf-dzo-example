@@ -2,7 +2,7 @@ seaf.ta.reverse.vmwarecloud.vdcgroups:
     flix.vdcgroups.e4fd2d5e-1736-4f17-b804-c72ad696aa3a:
         id: e4fd2d5e-1736-4f17-b804-c72ad696aa3a
         original_id: urn:vcloud:vdcGroup:e4fd2d5e-1736-4f17-b804-c72ad696aa3a
-        name: DocHub_SEAF_DCG
+        title: DocHub_SEAF_DCG
         networkprovidertype: NSX_T
         type: LOCAL
         networkpoolid: flix.netpools.5057807b-9cf8-4684-802c-72fc4cd48098
@@ -11,23 +11,23 @@ seaf.ta.reverse.vmwarecloud.vdcgroups:
         org_id: flix.orgs.ade0d087-ac75-4ec9-9f7c-f443f9b6164b
         networks:
             -   id: flix.orgnets.434f23fa-782c-4387-bdcb-52730534ca4e
-                name: Segment_01
+                title: Segment_01
             -   id: flix.orgnets.9fcaf8dc-cca0-4ea5-9931-23d70243ed8b
-                name: WebApp
+                title: WebApp
         vdcs:
             -   id: flix.vdcs.464f7346-ea60-48d0-a351-7454dc3a2ddb
-                name: DocHub_SEAF_test-VDC01
+                title: DocHub_SEAF_test-VDC01
                 org_id: flix.orgs.ade0d087-ac75-4ec9-9f7c-f443f9b6164b
-                org_name: DocHub_SEAF_test-D5aEk1nqZ
+                org_title: DocHub_SEAF_test-D5aEk1nqZ
             -   id: flix.vdcs.d43a43b4-a377-4643-9439-f613cad09964
-                name: DocHub_SEAF_test-VDC02
+                title: DocHub_SEAF_test-VDC02
                 org_id: flix.orgs.ade0d087-ac75-4ec9-9f7c-f443f9b6164b
-                org_name: DocHub_SEAF_test-D5aEk1nqZ
+                org_title: DocHub_SEAF_test-D5aEk1nqZ
         DC: flix.dc.cloud_ent
     flix.vdcgroups.ec2a42cb-e497-4352-be77-ea137a2e52de:
         id: ec2a42cb-e497-4352-be77-ea137a2e52de
         original_id: urn:vcloud:vdcGroup:ec2a42cb-e497-4352-be77-ea137a2e52de
-        name: Internal_net
+        title: Internal_net
         networkprovidertype: NSX_T
         type: LOCAL
         networkpoolid: flix.netpools.5057807b-9cf8-4684-802c-72fc4cd48098
@@ -36,14 +36,14 @@ seaf.ta.reverse.vmwarecloud.vdcgroups:
         org_id: flix.orgs.ade0d087-ac75-4ec9-9f7c-f443f9b6164b
         networks:
             -   id: flix.orgnets.be8bcd3d-947f-4a32-89a5-d773857211dd
-                name: DBNET
+                title: DBNET
         vdcs:
             -   id: flix.vdcs.464f7346-ea60-48d0-a351-7454dc3a2ddb
-                name: DocHub_SEAF_test-VDC01
+                title: DocHub_SEAF_test-VDC01
                 org_id: flix.orgs.ade0d087-ac75-4ec9-9f7c-f443f9b6164b
-                org_name: DocHub_SEAF_test-D5aEk1nqZ
+                org_title: DocHub_SEAF_test-D5aEk1nqZ
             -   id: flix.vdcs.d43a43b4-a377-4643-9439-f613cad09964
-                name: DocHub_SEAF_test-VDC02
+                title: DocHub_SEAF_test-VDC02
                 org_id: flix.orgs.ade0d087-ac75-4ec9-9f7c-f443f9b6164b
-                org_name: DocHub_SEAF_test-D5aEk1nqZ
+                org_title: DocHub_SEAF_test-D5aEk1nqZ
         DC: flix.dc.cloud_ent

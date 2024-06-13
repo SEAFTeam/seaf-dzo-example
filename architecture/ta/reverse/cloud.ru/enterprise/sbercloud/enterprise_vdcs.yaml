@@ -2,34 +2,34 @@ seaf.ta.reverse.vmwarecloud.vdcs:
     flix.vdcs.464f7346-ea60-48d0-a351-7454dc3a2ddb:
         id: 464f7346-ea60-48d0-a351-7454dc3a2ddb
         original_id: urn:vcloud:vdc:464f7346-ea60-48d0-a351-7454dc3a2ddb
-        name: DocHub_SEAF_test-VDC01
+        title: DocHub_SEAF_test-VDC01
         allocationtype: ALLOCATION_POOL
-        org_name: DocHub_SEAF_test-D5aEk1nqZ
+        org_title: DocHub_SEAF_test-D5aEk1nqZ
         org_id: flix.orgs.ade0d087-ac75-4ec9-9f7c-f443f9b6164b
         availableNetworks:
             -   id: flix.orgnets.be8bcd3d-947f-4a32-89a5-d773857211dd
-                name: DBNET
+                title: DBNET
             -   id: flix.orgnets.434f23fa-782c-4387-bdcb-52730534ca4e
-                name: Segment_01
+                title: Segment_01
             -   id: flix.orgnets.1eceb49e-04bf-4373-8b13-471e32c4d5b8
-                name: Segment_50
+                title: Segment_50
             -   id: flix.orgnets.9fcaf8dc-cca0-4ea5-9931-23d70243ed8b
-                name: WebApp
+                title: WebApp
         DC: flix.dc.cloud_ent
     flix.vdcs.d43a43b4-a377-4643-9439-f613cad09964:
         id: d43a43b4-a377-4643-9439-f613cad09964
         original_id: urn:vcloud:vdc:d43a43b4-a377-4643-9439-f613cad09964
-        name: DocHub_SEAF_test-VDC02
+        title: DocHub_SEAF_test-VDC02
         allocationtype: ALLOCATION_POOL
-        org_name: DocHub_SEAF_test-D5aEk1nqZ
+        org_title: DocHub_SEAF_test-D5aEk1nqZ
         org_id: flix.orgs.ade0d087-ac75-4ec9-9f7c-f443f9b6164b
         availableNetworks:
             -   id: flix.orgnets.be8bcd3d-947f-4a32-89a5-d773857211dd
-                name: DBNET
+                title: DBNET
             -   id: flix.orgnets.434f23fa-782c-4387-bdcb-52730534ca4e
-                name: Segment_01
+                title: Segment_01
             -   id: flix.orgnets.e50537c5-d734-43c3-9e29-15afe479e106
-                name: Segment_60
+                title: Segment_60
             -   id: flix.orgnets.9fcaf8dc-cca0-4ea5-9931-23d70243ed8b
-                name: WebApp
+                title: WebApp
         DC: flix.dc.cloud_ent

@@ -28,12 +28,12 @@ seaf.ta.components.server:
             addresses:
                 - 192.168.1.200
                 - 192.168.100.20
-            subnet_names:
+            subnet_titles:
                 - DBNET
                 - WebApp
             tags: []
             vdc_id: flix.vdcs.d43a43b4-a377-4643-9439-f613cad09964
-            vdc_name: DocHub_SEAF_test-VDC02
+            vdc_title: DocHub_SEAF_test-VDC02
             vapp_id: flix.vapps.8570756b-fa4a-46dd-b557-92281453942b
             tenant: ''
     flix.servers.263789e6-1d31-46ac-b649-bf81e4fee2df:
@@ -63,11 +63,11 @@ seaf.ta.components.server:
             original_id: urn:vcloud:vm:263789e6-1d31-46ac-b649-bf81e4fee2df
             addresses:
                 - 192.168.50.2
-            subnet_names:
+            subnet_titles:
                 - Segment_50
             tags: []
             vdc_id: flix.vdcs.464f7346-ea60-48d0-a351-7454dc3a2ddb
-            vdc_name: DocHub_SEAF_test-VDC01
+            vdc_title: DocHub_SEAF_test-VDC01
             vapp_id: flix.vapps.665e0498-e0c0-4684-bf20-8b428ee25b89
             tenant: ''
     flix.servers.442cd6a1-b632-4f28-ab84-709647d30697:
@@ -97,11 +97,11 @@ seaf.ta.components.server:
             original_id: urn:vcloud:vm:442cd6a1-b632-4f28-ab84-709647d30697
             addresses:
                 - 192.168.60.2
-            subnet_names:
+            subnet_titles:
                 - Segment_60
             tags: []
             vdc_id: flix.vdcs.d43a43b4-a377-4643-9439-f613cad09964
-            vdc_name: DocHub_SEAF_test-VDC02
+            vdc_title: DocHub_SEAF_test-VDC02
             vapp_id: flix.vapps.cc60841b-d544-4998-abb3-bb27ed78c8d0
             tenant: ''
     flix.servers.628d061c-ae97-4f1a-87ff-77eaef45e73d:
@@ -131,11 +131,11 @@ seaf.ta.components.server:
             original_id: urn:vcloud:vm:628d061c-ae97-4f1a-87ff-77eaef45e73d
             addresses:
                 - 192.168.1.20
-            subnet_names:
+            subnet_titles:
                 - DBNET
             tags: []
             vdc_id: flix.vdcs.d43a43b4-a377-4643-9439-f613cad09964
-            vdc_name: DocHub_SEAF_test-VDC02
+            vdc_title: DocHub_SEAF_test-VDC02
             vapp_id: flix.vapps.8570756b-fa4a-46dd-b557-92281453942b
             tenant: ''
     flix.servers.7b49d0ff-07f3-4b5d-84cd-5aafc82b4851:
@@ -165,11 +165,11 @@ seaf.ta.components.server:
             original_id: urn:vcloud:vm:7b49d0ff-07f3-4b5d-84cd-5aafc82b4851
             addresses:
                 - 192.168.1.10
-            subnet_names:
+            subnet_titles:
                 - DBNET
             tags: []
             vdc_id: flix.vdcs.464f7346-ea60-48d0-a351-7454dc3a2ddb
-            vdc_name: DocHub_SEAF_test-VDC01
+            vdc_title: DocHub_SEAF_test-VDC01
             vapp_id: flix.vapps.83c11c8e-e1bd-4b66-b33b-b9a63625839b
             tenant: ''
     flix.servers.ec87f708-d56f-4220-a1e4-922cd3bfada9:
@@ -201,12 +201,12 @@ seaf.ta.components.server:
             addresses:
                 - 192.168.1.100
                 - 192.168.100.10
-            subnet_names:
+            subnet_titles:
                 - DBNET
                 - WebApp
             tags: []
             vdc_id: flix.vdcs.464f7346-ea60-48d0-a351-7454dc3a2ddb
-            vdc_name: DocHub_SEAF_test-VDC01
+            vdc_title: DocHub_SEAF_test-VDC01
             vapp_id: flix.vapps.83c11c8e-e1bd-4b66-b33b-b9a63625839b
             tenant: ''
 

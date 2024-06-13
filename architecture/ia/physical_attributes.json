@@ -6,6 +6,10 @@
       "constraints": [
         "PRIMARY KEY"
       ],
+      "pdn_flag": false,
+      "cde_flag": false,
+      "PK_flag": true,
+      "FK_flag": false,
       "physical_table": "actor",
       "linked_table": null,
       "linked_key": null
@@ -116,6 +120,10 @@
       "constraints": [
         "PRIMARY KEY"
       ],
+      "pdn_flag": false,
+      "cde_flag": false,
+      "PK_flag": true,
+      "FK_flag": false,
       "physical_table": "category",
       "linked_table": null,
       "linked_key": null
@@ -142,6 +150,10 @@
       "constraints": [
         "PRIMARY KEY"
       ],
+      "pdn_flag": false,
+      "cde_flag": false,
+      "PK_flag": true,
+      "FK_flag": false,
       "physical_table": "city",
       "linked_table": null,
       "linked_key": null
@@ -160,6 +172,10 @@
       "constraints": [
         "FOREIGN KEY"
       ],
+      "pdn_flag": false,
+      "cde_flag": false,
+      "PK_flag": true,
+      "FK_flag": false,
       "physical_table": "city",
       "linked_table": "country",
       "linked_key": "country.country_id"
@@ -178,6 +194,10 @@
       "constraints": [
         "PRIMARY KEY"
       ],
+      "pdn_flag": false,
+      "cde_flag": false,
+      "PK_flag": true,
+      "FK_flag": false,
       "physical_table": "country",
       "linked_table": null,
       "linked_key": null
@@ -204,14 +224,10 @@
       "constraints": [
         "PRIMARY KEY"
       ],
-      "physical_table": "customer",
-      "linked_table": null,
-      "linked_key": null
-    },
-    "customer.store_id": {
-      "title": "store_id",
-      "type": "smallint",
-      "constraints": null,
+      "pdn_flag": false,
+      "cde_flag": false,
+      "PK_flag": true,
+      "FK_flag": false,
       "physical_table": "customer",
       "linked_table": null,
       "linked_key": null
@@ -246,6 +262,10 @@
       "constraints": [
         "FOREIGN KEY"
       ],
+      "pdn_flag": false,
+      "cde_flag": false,
+      "PK_flag": false,
+      "FK_flag": true,
       "physical_table": "customer",
       "linked_table": "address",
       "linked_key": "address.address_id"
@@ -289,6 +309,10 @@
         "FOREIGN KEY",
         "PRIMARY KEY"
       ],
+      "pdn_flag": false,
+      "cde_flag": false,
+      "PK_flag": true,
+      "FK_flag": true,
       "physical_table": "film_actor",
       "linked_table": "actor",
       "linked_key": "actor.actor_id"
@@ -300,6 +324,10 @@
         "FOREIGN KEY",
         "PRIMARY KEY"
       ],
+      "pdn_flag": false,
+      "cde_flag": false,
+      "PK_flag": true,
+      "FK_flag": true,
       "physical_table": "film_actor",
       "linked_table": "film",
       "linked_key": "film.film_id"
@@ -319,6 +347,10 @@
         "PRIMARY KEY",
         "FOREIGN KEY"
       ],
+      "pdn_flag": false,
+      "cde_flag": false,
+      "PK_flag": true,
+      "FK_flag": true,
       "physical_table": "film_category",
       "linked_table": "film",
       "linked_key": "film.film_id"
@@ -330,6 +362,10 @@
         "PRIMARY KEY",
         "FOREIGN KEY"
       ],
+      "pdn_flag": false,
+      "cde_flag": false,
+      "PK_flag": true,
+      "FK_flag": true,
       "physical_table": "film_category",
       "linked_table": "category",
       "linked_key": "category.category_id"
@@ -348,6 +384,10 @@
       "constraints": [
         "PRIMARY KEY"
       ],
+      "pdn_flag": false,
+      "cde_flag": false,
+      "PK_flag": true,
+      "FK_flag": false,
       "physical_table": "language",
       "linked_table": null,
       "linked_key": null
@@ -374,6 +414,10 @@
       "constraints": [
         "PRIMARY KEY"
       ],
+      "pdn_flag": false,
+      "cde_flag": false,
+      "PK_flag": true,
+      "FK_flag": false,
       "physical_table": "staff",
       "linked_table": null,
       "linked_key": null
@@ -400,6 +444,10 @@
       "constraints": [
         "FOREIGN KEY"
       ],
+      "pdn_flag": false,
+      "cde_flag": false,
+      "PK_flag": false,
+      "FK_flag": true,
       "physical_table": "staff",
       "linked_table": "address",
       "linked_key": "address.address_id"
@@ -407,14 +455,6 @@
     "staff.email": {
       "title": "email",
       "type": "character varying",
-      "constraints": null,
-      "physical_table": "staff",
-      "linked_table": null,
-      "linked_key": null
-    },
-    "staff.store_id": {
-      "title": "store_id",
-      "type": "smallint",
       "constraints": null,
       "physical_table": "staff",
       "linked_table": null,
@@ -466,6 +506,10 @@
       "constraints": [
         "PRIMARY KEY"
       ],
+      "pdn_flag": false,
+      "cde_flag": false,
+      "PK_flag": true,
+      "FK_flag": false,
       "physical_table": "payment",
       "linked_table": null,
       "linked_key": null
@@ -476,6 +520,10 @@
       "constraints": [
         "FOREIGN KEY"
       ],
+      "pdn_flag": false,
+      "cde_flag": false,
+      "PK_flag": false,
+      "FK_flag": true,
       "physical_table": "payment",
       "linked_table": "customer",
       "linked_key": "customer.customer_id"
@@ -486,19 +534,13 @@
       "constraints": [
         "FOREIGN KEY"
       ],
+      "pdn_flag": false,
+      "cde_flag": false,
+      "PK_flag": false,
+      "FK_flag": true,
       "physical_table": "payment",
       "linked_table": "staff",
       "linked_key": "staff.staff_id"
-    },
-    "payment.rental_id": {
-      "title": "rental_id",
-      "type": "integer",
-      "constraints": [
-        "FOREIGN KEY"
-      ],
-      "physical_table": "payment",
-      "linked_table": "rental",
-      "linked_key": "rental.rental_id"
     },
     "payment.amount": {
       "title": "amount",
@@ -522,6 +564,10 @@
       "constraints": [
         "PRIMARY KEY"
       ],
+      "pdn_flag": false,
+      "cde_flag": false,
+      "PK_flag": true,
+      "FK_flag": false,
       "physical_table": "film",
       "linked_table": null,
       "linked_key": null
@@ -556,6 +602,10 @@
       "constraints": [
         "FOREIGN KEY"
       ],
+      "pdn_flag": false,
+      "cde_flag": false,
+      "PK_flag": false,
+      "FK_flag": true,
       "physical_table": "film",
       "linked_table": "language",
       "linked_key": "language.language_id"

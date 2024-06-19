@@ -1,38 +1,43 @@
-seaf.ta.reverse.vmwarecloud.egws:
+seaf.ta.components.network:
     flix.egws.29181421-2891-47aa-82ef-1cdbcf0b87c9:
         id: 29181421-2891-47aa-82ef-1cdbcf0b87c9
-        original_id: urn:vcloud:gateway:29181421-2891-47aa-82ef-1cdbcf0b87c9
         title: DocHub_SEAF_test-VDC01-EDGE01
         description: null
-        type: NSXT_BACKED
-        vdc_id: null
-        vdc_title: null
-        vdcgroup_id: flix.vdcgroups.e4fd2d5e-1736-4f17-b804-c72ad696aa3a
-        vdcgroup_title: DocHub_SEAF_DCG
-        org_id: flix.orgs.ade0d087-ac75-4ec9-9f7c-f443f9b6164b
-        gatewayinterfaces:
-            -   title: pd10-02-t0-shared-01
-                network_id: flix.orgnets.94e65c18-3eca-40aa-9957-242a36eb9e43
-                iftype: uplink
-                usefordefaultroute: No idea where to get from new API
-                connected: true
-                subnetparticipation:
-                    -   gateway: 46.243.141.254
-                        netmask: 255.255.255.128
-                        ipaddress: 46.243.141.134
-                        ipranges:
-                            -   startaddress: 46.243.141.134
-                                endaddress: 46.243.141.134
-            -   title: WebApp
-                network_id: flix.orgnets.9fcaf8dc-cca0-4ea5-9931-23d70243ed8b
-                iftype: INTERNAL
-                usefordefaultroute: false
-                connected: true
-                subnetparticipation:
-                    -   gateway: 192.168.100.1
-                        netmask: 255.255.255.0
-                        ipaddress: 192.168.100.1
-                        ipranges:
-                            -   startaddress: 192.168.100.2
-                                endaddress: 192.168.100.254
-        DC: flix.dc.cloud_ent
+        realization_type: Виртуальный
+        placement_type: Периметр
+        reverse:
+            reverse_type: VMwareCloud
+            original_id: urn:vcloud:gateway:29181421-2891-47aa-82ef-1cdbcf0b87c9
+            type: NSXT_BACKED
+            vdc: null
+            vdc_title: null
+            vdcgroup: flix.vdcgroups.e4fd2d5e-1736-4f17-b804-c72ad696aa3a
+            vdcgroup_title: DocHub_SEAF_DCG
+            org: flix.orgs.ade0d087-ac75-4ec9-9f7c-f443f9b6164b
+            gatewayinterfaces:
+                -   title: pd10-02-t0-shared-01
+                    network: flix.orgnets.94e65c18-3eca-40aa-9957-242a36eb9e43
+                    iftype: uplink
+                    usefordefaultroute: No idea where to get from new API
+                    connected: true
+                    subnetparticipation:
+                        -   gateway: 46.243.141.254
+                            netmask: 255.255.255.128
+                            ipaddress: 46.243.141.134
+                            ipranges:
+                                -   startaddress: 46.243.141.134
+                                    endaddress: 46.243.141.134
+                -   title: WebApp
+                    network: flix.orgnets.9fcaf8dc-cca0-4ea5-9931-23d70243ed8b
+                    iftype: INTERNAL
+                    usefordefaultroute: false
+                    connected: true
+                    subnetparticipation:
+                        -   gateway: 192.168.100.1
+                            netmask: 255.255.255.0
+                            ipaddress: 192.168.100.1
+                            ipranges:
+                                -   startaddress: 192.168.100.2
+                                    endaddress: 192.168.100.254
+        dc: flix.dc.cloud_ent
+

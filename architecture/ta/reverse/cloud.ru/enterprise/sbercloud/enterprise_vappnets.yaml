@@ -1,121 +1,199 @@
-seaf.ta.reverse.vmwarecloud.vappnets:
+seaf.ta.services.network:
     flix.vappnets.0caa071a-2ff4-43df-8e54-e1b04ceda6db:
         id: 0caa071a-2ff4-43df-8e54-e1b04ceda6db
-        original_id: urn:vcloud:network:0caa071a-2ff4-43df-8e54-e1b04ceda6db
         title: Segment_60
-        vapp_id: flix.vapps.cc60841b-d544-4998-abb3-bb27ed78c8d0
-        gateway: 192.168.60.1
-        netmask: 255.255.255.0
-        dns:
-            - 8.8.8.8
-        fencemode: bridged
-        islinked: true
-        parentnetwork_id: flix.orgnets.e50537c5-d734-43c3-9e29-15afe479e106
-        ipscopes:
-            -   gateway: 192.168.60.1
-                netmask: 255.255.255.0
-                subnetprefixlength: 24
-                ipranges:
-                    -   startaddress: 192.168.60.2
-                        endaddress: 192.168.60.254
-        DC: flix.dc.cloud_ent
+        description: ''
+        type: Проводная
+        lan_type: LAN
+        az: ''
+        segment: ''
+        vlan: ''
+        ipnetwork: ''
+        purpose: ''
+        network_appliance_id: ''
+        reverse:
+            original_id: urn:vcloud:network:0caa071a-2ff4-43df-8e54-e1b04ceda6db
+            type: vAppNetwork
+            reverse_type: VMwareCloud
+            vapp: flix.vapps.cc60841b-d544-4998-abb3-bb27ed78c8d0
+            gateway: 192.168.60.1
+            netmask: 255.255.255.0
+            dns:
+                - 8.8.8.8
+            fencemode: bridged
+            connected: true
+            parentnetwork: flix.orgnets.e50537c5-d734-43c3-9e29-15afe479e106
+            ipscopes:
+                -   gateway: 192.168.60.1
+                    netmask: 255.255.255.0
+                    subnetprefixlength: 24
+                    ipranges:
+                        -   startaddress: 192.168.60.2
+                            endaddress: 192.168.60.254
+        dc_id:
+            - flix.dc.cloud_ent
     flix.vappnets.7bfd8e44-f146-4494-95ed-0ad64c01f530:
         id: 7bfd8e44-f146-4494-95ed-0ad64c01f530
-        original_id: urn:vcloud:network:7bfd8e44-f146-4494-95ed-0ad64c01f530
         title: WebApp
-        vapp_id: flix.vapps.8570756b-fa4a-46dd-b557-92281453942b
-        gateway: 192.168.100.1
-        netmask: 255.255.255.0
-        dns:
-            - 8.8.8.8
-        fencemode: bridged
-        islinked: true
-        parentnetwork_id: flix.orgnets.9fcaf8dc-cca0-4ea5-9931-23d70243ed8b
-        ipscopes:
-            -   gateway: 192.168.100.1
-                netmask: 255.255.255.0
-                subnetprefixlength: 24
-                ipranges:
-                    -   startaddress: 192.168.100.2
-                        endaddress: 192.168.100.254
-        DC: flix.dc.cloud_ent
+        description: ''
+        type: Проводная
+        lan_type: LAN
+        az: ''
+        segment: ''
+        vlan: ''
+        ipnetwork: ''
+        purpose: ''
+        network_appliance_id: ''
+        reverse:
+            original_id: urn:vcloud:network:7bfd8e44-f146-4494-95ed-0ad64c01f530
+            type: vAppNetwork
+            reverse_type: VMwareCloud
+            vapp: flix.vapps.8570756b-fa4a-46dd-b557-92281453942b
+            gateway: 192.168.100.1
+            netmask: 255.255.255.0
+            dns:
+                - 8.8.8.8
+            fencemode: bridged
+            connected: true
+            parentnetwork: flix.orgnets.9fcaf8dc-cca0-4ea5-9931-23d70243ed8b
+            ipscopes:
+                -   gateway: 192.168.100.1
+                    netmask: 255.255.255.0
+                    subnetprefixlength: 24
+                    ipranges:
+                        -   startaddress: 192.168.100.2
+                            endaddress: 192.168.100.254
+        dc_id:
+            - flix.dc.cloud_ent
     flix.vappnets.ab6caf1e-654d-4cbb-8441-70114c84f435:
         id: ab6caf1e-654d-4cbb-8441-70114c84f435
-        original_id: urn:vcloud:network:ab6caf1e-654d-4cbb-8441-70114c84f435
         title: Segment_50
-        vapp_id: flix.vapps.665e0498-e0c0-4684-bf20-8b428ee25b89
-        gateway: 192.168.50.1
-        netmask: 255.255.255.0
-        dns:
-            - 8.8.8.8
-        fencemode: bridged
-        islinked: true
-        parentnetwork_id: flix.orgnets.1eceb49e-04bf-4373-8b13-471e32c4d5b8
-        ipscopes:
-            -   gateway: 192.168.50.1
-                netmask: 255.255.255.0
-                subnetprefixlength: 24
-                ipranges:
-                    -   startaddress: 192.168.50.2
-                        endaddress: 192.168.50.254
-        DC: flix.dc.cloud_ent
+        description: ''
+        type: Проводная
+        lan_type: LAN
+        az: ''
+        segment: ''
+        vlan: ''
+        ipnetwork: ''
+        purpose: ''
+        network_appliance_id: ''
+        reverse:
+            original_id: urn:vcloud:network:ab6caf1e-654d-4cbb-8441-70114c84f435
+            type: vAppNetwork
+            reverse_type: VMwareCloud
+            vapp: flix.vapps.665e0498-e0c0-4684-bf20-8b428ee25b89
+            gateway: 192.168.50.1
+            netmask: 255.255.255.0
+            dns:
+                - 8.8.8.8
+            fencemode: bridged
+            connected: true
+            parentnetwork: flix.orgnets.1eceb49e-04bf-4373-8b13-471e32c4d5b8
+            ipscopes:
+                -   gateway: 192.168.50.1
+                    netmask: 255.255.255.0
+                    subnetprefixlength: 24
+                    ipranges:
+                        -   startaddress: 192.168.50.2
+                            endaddress: 192.168.50.254
+        dc_id:
+            - flix.dc.cloud_ent
     flix.vappnets.e423f924-eb81-4b6d-bb59-06b52213b16a:
         id: e423f924-eb81-4b6d-bb59-06b52213b16a
-        original_id: urn:vcloud:network:e423f924-eb81-4b6d-bb59-06b52213b16a
         title: WebApp
-        vapp_id: flix.vapps.83c11c8e-e1bd-4b66-b33b-b9a63625839b
-        gateway: 192.168.100.1
-        netmask: 255.255.255.0
-        dns:
-            - 8.8.8.8
-        fencemode: bridged
-        islinked: true
-        parentnetwork_id: flix.orgnets.9fcaf8dc-cca0-4ea5-9931-23d70243ed8b
-        ipscopes:
-            -   gateway: 192.168.100.1
-                netmask: 255.255.255.0
-                subnetprefixlength: 24
-                ipranges:
-                    -   startaddress: 192.168.100.2
-                        endaddress: 192.168.100.254
-        DC: flix.dc.cloud_ent
+        description: ''
+        type: Проводная
+        lan_type: LAN
+        az: ''
+        segment: ''
+        vlan: ''
+        ipnetwork: ''
+        purpose: ''
+        network_appliance_id: ''
+        reverse:
+            original_id: urn:vcloud:network:e423f924-eb81-4b6d-bb59-06b52213b16a
+            type: vAppNetwork
+            reverse_type: VMwareCloud
+            vapp: flix.vapps.83c11c8e-e1bd-4b66-b33b-b9a63625839b
+            gateway: 192.168.100.1
+            netmask: 255.255.255.0
+            dns:
+                - 8.8.8.8
+            fencemode: bridged
+            connected: true
+            parentnetwork: flix.orgnets.9fcaf8dc-cca0-4ea5-9931-23d70243ed8b
+            ipscopes:
+                -   gateway: 192.168.100.1
+                    netmask: 255.255.255.0
+                    subnetprefixlength: 24
+                    ipranges:
+                        -   startaddress: 192.168.100.2
+                            endaddress: 192.168.100.254
+        dc_id:
+            - flix.dc.cloud_ent
     flix.vappnets.ec7382d7-cd01-4fba-be92-bac3190d8e70:
         id: ec7382d7-cd01-4fba-be92-bac3190d8e70
-        original_id: urn:vcloud:network:ec7382d7-cd01-4fba-be92-bac3190d8e70
         title: DBNET
-        vapp_id: flix.vapps.83c11c8e-e1bd-4b66-b33b-b9a63625839b
-        gateway: 192.168.1.1
-        netmask: 255.255.255.0
-        dns:
-            - 8.8.8.8
-        fencemode: bridged
-        islinked: true
-        parentnetwork_id: flix.orgnets.be8bcd3d-947f-4a32-89a5-d773857211dd
-        ipscopes:
-            -   gateway: 192.168.1.1
-                netmask: 255.255.255.0
-                subnetprefixlength: 24
-                ipranges:
-                    -   startaddress: 192.168.1.2
-                        endaddress: 192.168.1.254
-        DC: flix.dc.cloud_ent
+        description: ''
+        type: Проводная
+        lan_type: LAN
+        az: ''
+        segment: ''
+        vlan: ''
+        ipnetwork: ''
+        purpose: ''
+        network_appliance_id: ''
+        reverse:
+            original_id: urn:vcloud:network:ec7382d7-cd01-4fba-be92-bac3190d8e70
+            type: vAppNetwork
+            reverse_type: VMwareCloud
+            vapp: flix.vapps.83c11c8e-e1bd-4b66-b33b-b9a63625839b
+            gateway: 192.168.1.1
+            netmask: 255.255.255.0
+            dns:
+                - 8.8.8.8
+            fencemode: bridged
+            connected: true
+            parentnetwork: flix.orgnets.be8bcd3d-947f-4a32-89a5-d773857211dd
+            ipscopes:
+                -   gateway: 192.168.1.1
+                    netmask: 255.255.255.0
+                    subnetprefixlength: 24
+                    ipranges:
+                        -   startaddress: 192.168.1.2
+                            endaddress: 192.168.1.254
+        dc_id:
+            - flix.dc.cloud_ent
     flix.vappnets.f2071d7e-d088-4d09-8f7d-06353a694af2:
         id: f2071d7e-d088-4d09-8f7d-06353a694af2
-        original_id: urn:vcloud:network:f2071d7e-d088-4d09-8f7d-06353a694af2
         title: DBNET
-        vapp_id: flix.vapps.8570756b-fa4a-46dd-b557-92281453942b
-        gateway: 192.168.1.1
-        netmask: 255.255.255.0
-        dns:
-            - 8.8.8.8
-        fencemode: bridged
-        islinked: true
-        parentnetwork_id: flix.orgnets.be8bcd3d-947f-4a32-89a5-d773857211dd
-        ipscopes:
-            -   gateway: 192.168.1.1
-                netmask: 255.255.255.0
-                subnetprefixlength: 24
-                ipranges:
-                    -   startaddress: 192.168.1.2
-                        endaddress: 192.168.1.254
-        DC: flix.dc.cloud_ent
+        description: ''
+        type: Проводная
+        lan_type: LAN
+        az: ''
+        segment: ''
+        vlan: ''
+        ipnetwork: ''
+        purpose: ''
+        network_appliance_id: ''
+        reverse:
+            original_id: urn:vcloud:network:f2071d7e-d088-4d09-8f7d-06353a694af2
+            type: vAppNetwork
+            reverse_type: VMwareCloud
+            vapp: flix.vapps.8570756b-fa4a-46dd-b557-92281453942b
+            gateway: 192.168.1.1
+            netmask: 255.255.255.0
+            dns:
+                - 8.8.8.8
+            fencemode: bridged
+            connected: true
+            parentnetwork: flix.orgnets.be8bcd3d-947f-4a32-89a5-d773857211dd
+            ipscopes:
+                -   gateway: 192.168.1.1
+                    netmask: 255.255.255.0
+                    subnetprefixlength: 24
+                    ipranges:
+                        -   startaddress: 192.168.1.2
+                            endaddress: 192.168.1.254
+        dc_id:
+            - flix.dc.cloud_ent

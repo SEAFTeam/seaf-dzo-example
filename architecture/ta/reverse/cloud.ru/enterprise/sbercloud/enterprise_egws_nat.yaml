@@ -1,7 +1,7 @@
 seaf.ta.reverse.vmwarecloud.egws_nat:
     flix.egws_nat.48ed8a2d-6b92-448d-8de6-5cdbb1c4b15c:
         id: 48ed8a2d-6b92-448d-8de6-5cdbb1c4b15c
-        gw_id: flix.egws.29181421-2891-47aa-82ef-1cdbcf0b87c9
+        gw: flix.egws.29181421-2891-47aa-82ef-1cdbcf0b87c9
         title: ping for 192.168.100.10
         description: null
         enabled: true
@@ -13,10 +13,10 @@ seaf.ta.reverse.vmwarecloud.egws_nat:
         snat_dst_address: null
         dnat_ext_port: null
         fw_match: MATCH_INTERNAL_ADDRESS
-        DC: flix.dc.cloud_ent
+        dc: flix.dc.cloud_ent
     flix.egws_nat.28a15691-c74f-4299-bcb8-8d2c7b7da7fb:
         id: 28a15691-c74f-4299-bcb8-8d2c7b7da7fb
-        gw_id: flix.egws.29181421-2891-47aa-82ef-1cdbcf0b87c9
+        gw: flix.egws.29181421-2891-47aa-82ef-1cdbcf0b87c9
         title: ping for 192.168.100.20
         description: null
         enabled: true
@@ -28,4 +28,4 @@ seaf.ta.reverse.vmwarecloud.egws_nat:
         snat_dst_address: null
         dnat_ext_port: null
         fw_match: MATCH_INTERNAL_ADDRESS
-        DC: flix.dc.cloud_ent
+        dc: flix.dc.cloud_ent

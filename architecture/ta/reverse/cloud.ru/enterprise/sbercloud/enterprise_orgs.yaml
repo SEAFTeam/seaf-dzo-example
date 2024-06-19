@@ -4,4 +4,4 @@ seaf.ta.reverse.vmwarecloud.orgs:
         original_id: urn:vcloud:org:ade0d087-ac75-4ec9-9f7c-f443f9b6164b
         title: DocHub_SEAF_test-D5aEk1nqZ
         description: DocHub_SEAF_test-D5aEk1nqZ
-        DC: flix.dc.cloud_ent
+        dc: flix.dc.cloud_ent

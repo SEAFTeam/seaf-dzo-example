@@ -704,15 +704,15 @@ seaf.ta.components.server:
       - flix.stand.prod
   flix.server_virtual.03:
     title: Виртуальный сервер
-    server_id: server_virtual.03
-    fqdn_name: server_virtual.03.flix.ru
+    id: server_virtual.03
+    fqdn: server_virtual.03.flix.ru
     virtualization_id: flix.cluster_virtualization.vk.01
     disks:
       - disks :
-          availabilityzone_id: dc_az.moscow
+          az: dc_az.moscow
           size: 100
           type: SSD
-    ram_qty: 16
+    ram: 16
     nic_qty: 2
     type: Виртуальный
     os:
@@ -721,9 +721,28 @@ seaf.ta.components.server:
     cpu:
       cores: 4
       frequency: 1700
-    availabilityzone_id:
+    az:
       - flix.dc_az.moscow
     description: Сервер приложений для прикладного компонента Авторизация
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   flix.server_virtual.04:
     title: Виртуальный сервер
     server_id: server_virtual.04

@@ -4,30 +4,30 @@ seaf.ta.reverse.vmwarecloud.vapps:
         original_id: urn:vcloud:vapp:665e0498-e0c0-4684-bf20-8b428ee25b89
         title: Segment-50-VM-e8f7f110-5f37-4541-a46f-0b1f08d2b86f
         description: This vApp is created automatically on behalf of the user.
-        vdc_id: flix.vdcs.464f7346-ea60-48d0-a351-7454dc3a2ddb
+        vdc: flix.vdcs.464f7346-ea60-48d0-a351-7454dc3a2ddb
         vdc_title: DocHub_SEAF_test-VDC01
-        DC: flix.dc.cloud_ent
+        dc: flix.dc.cloud_ent
     flix.vapps.83c11c8e-e1bd-4b66-b33b-b9a63625839b:
         id: 83c11c8e-e1bd-4b66-b33b-b9a63625839b
         original_id: urn:vcloud:vapp:83c11c8e-e1bd-4b66-b33b-b9a63625839b
         title: App_Test_1
         description: null
-        vdc_id: flix.vdcs.464f7346-ea60-48d0-a351-7454dc3a2ddb
+        vdc: flix.vdcs.464f7346-ea60-48d0-a351-7454dc3a2ddb
         vdc_title: DocHub_SEAF_test-VDC01
-        DC: flix.dc.cloud_ent
+        dc: flix.dc.cloud_ent
     flix.vapps.8570756b-fa4a-46dd-b557-92281453942b:
         id: 8570756b-fa4a-46dd-b557-92281453942b
         original_id: urn:vcloud:vapp:8570756b-fa4a-46dd-b557-92281453942b
         title: App_Test_2
         description: null
-        vdc_id: flix.vdcs.d43a43b4-a377-4643-9439-f613cad09964
+        vdc: flix.vdcs.d43a43b4-a377-4643-9439-f613cad09964
         vdc_title: DocHub_SEAF_test-VDC02
-        DC: flix.dc.cloud_ent
+        dc: flix.dc.cloud_ent
     flix.vapps.cc60841b-d544-4998-abb3-bb27ed78c8d0:
         id: cc60841b-d544-4998-abb3-bb27ed78c8d0
         original_id: urn:vcloud:vapp:cc60841b-d544-4998-abb3-bb27ed78c8d0
         title: Segment-60-VM-ba23b045-0df1-4fec-9808-66152e655b28
         description: This vApp is created automatically on behalf of the user.
-        vdc_id: flix.vdcs.d43a43b4-a377-4643-9439-f613cad09964
+        vdc: flix.vdcs.d43a43b4-a377-4643-9439-f613cad09964
         vdc_title: DocHub_SEAF_test-VDC02
-        DC: flix.dc.cloud_ent
+        dc: flix.dc.cloud_ent

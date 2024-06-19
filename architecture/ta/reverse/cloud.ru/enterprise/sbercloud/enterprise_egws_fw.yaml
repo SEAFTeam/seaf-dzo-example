@@ -1,7 +1,7 @@
 seaf.ta.reverse.vmwarecloud.egws_fw:
     flix.egws_fw.f2beb6f8-3416-4b43-8c87-b2c8c52890b1:
         id: f2beb6f8-3416-4b43-8c87-b2c8c52890b1
-        gw_id: flix.egws.29181421-2891-47aa-82ef-1cdbcf0b87c9
+        gw: flix.egws.29181421-2891-47aa-82ef-1cdbcf0b87c9
         title: ping 77.88.8.8
         description: null
         enabled: true
@@ -32,10 +32,10 @@ seaf.ta.reverse.vmwarecloud.egws_fw:
                     dst_ports: []
                 -   protocol: ICMPv4
                     dst_ports: []
-        DC: flix.dc.cloud_ent
+        dc: flix.dc.cloud_ent
     flix.egws_fw.d2a8489b-1de0-4e41-9726-888e4b79de56:
         id: d2a8489b-1de0-4e41-9726-888e4b79de56
-        gw_id: flix.egws.29181421-2891-47aa-82ef-1cdbcf0b87c9
+        gw: flix.egws.29181421-2891-47aa-82ef-1cdbcf0b87c9
         title: ping 8.8.8.8
         description: null
         enabled: true
@@ -56,4 +56,4 @@ seaf.ta.reverse.vmwarecloud.egws_fw:
                     dst_ports: []
                 -   protocol: ICMPv4
                     dst_ports: []
-        DC: flix.dc.cloud_ent
+        dc: flix.dc.cloud_ent

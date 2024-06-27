@@ -261,7 +261,7 @@ seaf.ta.services.network:
 #### Создаём описание внутренних сети
   flix.lan.192.168.1.0:
     title: LAN сеть
-    network_id: lan.192.168.1.0
+    id: lan.192.168.1.0
     type: LAN
     segment: Сегмент обработки данных
     lan_type: Проводная
@@ -277,7 +277,7 @@ seaf.ta.services.network:
 
   flix.lan.192.168.2.0:
     title: LAN сеть
-    network_id: lan.192.168.2.0
+    id: lan.192.168.2.0
     type: LAN
     segment: Сегмент обработки данных
     lan_type: Проводная
@@ -293,7 +293,7 @@ seaf.ta.services.network:
 
   flix.lan.192.168.3.0:
     title: LAN сеть
-    network_id: lan.192.168.3.0
+    id: lan.192.168.3.0
     type: LAN
     segment: Сегмент обработки данных
     lan_type: Проводная
@@ -309,7 +309,7 @@ seaf.ta.services.network:
 
   flix.lan.192.168.4.0:
     title: LAN сеть
-    network_id: lan.192.168.4.0
+    id: lan.192.168.4.0
     type: LAN
     segment: Клиентский
     lan_type: Проводная
@@ -330,9 +330,9 @@ seaf.ta.services.network:
     network_appliance_id:
       - flix.network.cisco.01
     wan_ip: 1.1.1.0/28
-    network_id: wan.1.1.1.0
+    id: wan.1.1.1.0
     type: WAN
-    availabilityzone_id:
+    az:
       - flix.dc_az.moscow
     dc_id:
       - flix.dc.01
@@ -344,9 +344,9 @@ seaf.ta.services.network:
     network_appliance_id:
       - flix.network.cisco.02
     wan_ip: 1.1.1.16/28
-    network_id: wan.1.1.1.16
+    id: wan.1.1.1.16
     type: WAN
-    availabilityzone_id:
+    az:
       - flix.dc_az.moscow
     dc_id:
       - flix.dc.01
@@ -358,9 +358,9 @@ seaf.ta.services.network:
     network_appliance_id:
       -
     wan_ip: 2.2.2.0/28
-    network_id: wan.2.2.2.0
+    id: wan.2.2.2.0
     type: WAN
-    availabilityzone_id:
+    az:
       - flix.dc_az.moscow
     dc_id:
       - flix.dc.01
@@ -372,9 +372,9 @@ seaf.ta.services.network:
     network_appliance_id:
       -
     wan_ip: 1.1.1.48/28
-    network_id: wan.1.1.1.48
+    id: wan.1.1.1.48
     type: WAN
-    availabilityzone_id:
+    az:
       - flix.dc_az.moscow
     dc_id:
       - flix.dc.02
@@ -386,9 +386,9 @@ seaf.ta.services.network:
     network_appliance_id:
       - flix.network.cisco.03
     wan_ip: 1.1.1.32/28
-    network_id: wan.1.1.1.32
+    id: wan.1.1.1.32
     type: WAN
-    availabilityzone_id:
+    az:
       - flix.dc_az.moscow
     office_id: flix.office.hq
 
@@ -401,12 +401,12 @@ seaf.ta.services.network:
     type: LAN
     lan_type: Проводная
     segment: Буферный (DMZ)
-    network_id: dmz.10.10.10.0
+    id: dmz.10.10.10.0
     network_appliance_id:
       - flix.network.fortigate.01
     dc_id:
       - flix.dc.01
-    availabilityzone_id:
+    az:
       - flix.dc_az.moscow
 
 #### Создаём описание линков
@@ -455,8 +455,8 @@ seaf.ta.components.server:
   flix.server_metal.01:
     title: Физический сервер
     description: ''
-    server_id: server_metal.01
-    fqdn_name: server_metal.01.flix.ru
+    id: server_metal.01
+    fqdn: server_metal.01.flix.ru
     disks:
       - disks :
           availabilityzone_id: dc_az.moscow
@@ -473,19 +473,19 @@ seaf.ta.components.server:
     cpu:
       cores: 4
       frequency: 1700
-    ram_qty: 128
+    ram: 128
     dc_id: flix.dc.02
     vendor: HP
     type: Физический
     model: DL360 G8
     storage_id: flix.hw_storage.01
-    network_connection: flix.lan.192.168.2.0
+    subnets: flix.lan.192.168.2.0
     stand_id:
       - flix.stand.prod
   flix.server_metal.02:
     title: Физический сервер
-    server_id: server_metal.02
-    fqdn_name: server_metal.02.flix.ru
+    id: server_metal.02
+    fqdn: server_metal.02.flix.ru
     disks:
       - disks :
           availabilityzone_id: dc_az.moscow
@@ -498,7 +498,7 @@ seaf.ta.components.server:
     cpu:
       cores: 4
       frequency: 1700
-    ram_qty: 128
+    ram: 128
     dc_id: flix.dc.02
     vendor: HP
     type: Физический
@@ -508,8 +508,8 @@ seaf.ta.components.server:
       - flix.stand.prod
   flix.server_metal.03:
     title: Физический сервер
-    server_id: server_metal.03
-    fqdn_name: server_metal.03.flix.ru
+    id: server_metal.03
+    fqdn: server_metal.03.flix.ru
     disks:
       - disks :
           availabilityzone_id: dc_az.moscow
@@ -522,7 +522,7 @@ seaf.ta.components.server:
     cpu:
       cores: 4
       frequency: 1700
-    ram_qty: 128
+    ram: 128
     dc_id: flix.dc.02
     vendor: HP
     type: Физический
@@ -532,8 +532,8 @@ seaf.ta.components.server:
       - flix.stand.prod
   flix.server_metal.04:
     title: Физический сервер
-    server_id: server_metal.04
-    fqdn_name: server_metal.04.flix.ru
+    id: server_metal.04
+    fqdn: server_metal.04.flix.ru
     disks:
       - disks :
           availabilityzone_id: dc_az.moscow
@@ -546,7 +546,7 @@ seaf.ta.components.server:
     cpu:
       cores: 4
       frequency: 1700
-    ram_qty: 128
+    ram: 128
     dc_id: flix.dc.02
     vendor: HP
     type: Физический
@@ -556,8 +556,8 @@ seaf.ta.components.server:
       - flix.stand.prod
   flix.server_metal.05:
     title: Физический сервер
-    server_id: server_metal.05
-    fqdn_name: server_metal.05.flix.ru
+    id: server_metal.05
+    fqdn: server_metal.05.flix.ru
     disks:
       - disks :
           availabilityzone_id: dc_az.moscow
@@ -570,7 +570,7 @@ seaf.ta.components.server:
     cpu:
       cores: 4
       frequency: 1700
-    ram_qty: 128
+    ram: 128
     dc_id: flix.dc.02
     vendor: HP
     type: Физический
@@ -580,8 +580,8 @@ seaf.ta.components.server:
       - flix.stand.prod
   flix.server_metal.06:
     title: Физический сервер
-    server_id: server_metal.06
-    fqdn_name: server_metal.06.flix.ru
+    id: server_metal.06
+    fqdn: server_metal.06.flix.ru
     disks:
       - disks :
           availabilityzone_id: dc_az.moscow
@@ -594,7 +594,7 @@ seaf.ta.components.server:
     cpu:
       cores: 4
       frequency: 1700
-    ram_qty: 128
+    ram: 128
     dc_id: flix.dc.02
     vendor: HP
     type: Физический
@@ -602,8 +602,8 @@ seaf.ta.components.server:
     storage_id: flix.hw_storage.01
   flix.server_metal.07:
     title: Физический сервер
-    server_id: server_metal.07
-    fqdn_name: server_metal.07.flix.ru
+    id: server_metal.07
+    fqdn: server_metal.07.flix.ru
     disks:
       - disks :
           availabilityzone_id: dc_az.moscow
@@ -616,7 +616,7 @@ seaf.ta.components.server:
     cpu:
       cores: 4
       frequency: 1700
-    ram_qty: 128
+    ram: 128
     dc_id: flix.dc.02
     vendor: HP
     type: Физический
@@ -626,8 +626,8 @@ seaf.ta.components.server:
       - flix.stand.prod
   flix.server_metal.08:
     title: Физический сервер
-    server_id: server_metal.08
-    fqdn_name: server_metal.08.flix.ru
+    id: server_metal.08
+    fqdn: server_metal.08.flix.ru
     disks:
       - disks :
           availabilityzone_id: dc_az.moscow
@@ -640,7 +640,7 @@ seaf.ta.components.server:
     cpu:
       cores: 4
       frequency: 1700
-    ram_qty: 128
+    ram: 128
     dc_id: flix.dc.02
     vendor: HP
     type: Физический
@@ -652,8 +652,8 @@ seaf.ta.components.server:
 #### Сервера для прикладного компонента Авторизация
   flix.server_virtual.01:
     title: Виртуальный сервер
-    server_id: server_virtual.01
-    fqdn_name: server_virtual.01.flix.ru
+    id: server_virtual.01
+    fqdn: server_virtual.01.flix.ru
     virtualization_id: flix.cluster_virtualization.cloud.01
     disks:
       - disk0:
@@ -664,7 +664,7 @@ seaf.ta.components.server:
           availabilityzone_id: dc_az.moscow
           size: 101
           type: SATA
-    ram_qty: 16
+    ram: 16
     nic_qty: 2
     type: Виртуальный
     os:
@@ -673,22 +673,22 @@ seaf.ta.components.server:
     cpu:
       cores: 4
       frequency: 1700
-    availabilityzone_id:
+    az:
       - flix.dc_az.moscow
     description: Сервер приложений для прикладного компонента Авторизация
     stand_id:
       - flix.stand.prod
   flix.server_virtual.02:
     title: Виртуальный сервер
-    server_id: server_virtual.02
-    fqdn_name: server_virtual.02.flix.ru
+    id: server_virtual.02
+    fqdn: server_virtual.02.flix.ru
     virtualization_id: flix.cluster_virtualization.cloud.01
     disks:
       - disks :
           availabilityzone_id: dc_az.moscow
           size: 100
           type: SSD
-    ram_qty: 16
+    ram: 16
     nic_qty: 2
     type: Виртуальный
     os:
@@ -697,7 +697,7 @@ seaf.ta.components.server:
     cpu:
       cores: 4
       frequency: 1700
-    availabilityzone_id:
+    az:
       - flix.dc_az.moscow
     description: Сервер приложений для прикладного компонента Авторизация
     stand_id:
@@ -724,36 +724,17 @@ seaf.ta.components.server:
     az:
       - flix.dc_az.moscow
     description: Сервер приложений для прикладного компонента Авторизация
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   flix.server_virtual.04:
     title: Виртуальный сервер
-    server_id: server_virtual.04
-    fqdn_name: server_virtual.04.flix.ru
+    id: server_virtual.04
+    fqdn: server_virtual.04.flix.ru
     virtualization_id: flix.cluster_virtualization.vk.01
     disks:
       - disks :
           availabilityzone_id: dc_az.moscow
           size: 100
           type: SSD
-    ram_qty: 16
+    ram: 16
     nic_qty: 2
     type: Виртуальный
     os:
@@ -762,7 +743,7 @@ seaf.ta.components.server:
     cpu:
       cores: 4
       frequency: 1700
-    availabilityzone_id:
+    az:
       - flix.dc_az.moscow
     description: Сервер приложений для прикладного компонента Авторизация
     stand_id:
@@ -770,15 +751,15 @@ seaf.ta.components.server:
 #### Сервера для k8s кластера
   flix.server_virtual.05:
     title: Виртуальный сервер
-    server_id: server_virtual.05
-    fqdn_name: server_virtual.05.flix.ru
+    id: server_virtual.05
+    fqdn: server_virtual.05.flix.ru
     virtualization_id: flix.cluster_virtualization.cloud.02
     disks:
       - disks :
           availabilityzone_id: dc_az.moscow
           size: 100
           type: SSD
-    ram_qty: 16
+    ram: 16
     nic_qty: 2
     type: Виртуальный
     os:
@@ -787,22 +768,22 @@ seaf.ta.components.server:
     cpu:
       cores: 4
       frequency: 1700
-    availabilityzone_id:
+    az:
       - flix.dc_az.moscow
     description: Сервер приложений для кластера K8s
     stand_id:
       - flix.stand.prod
   flix.server_virtual.06:
     title: Виртуальный сервер
-    server_id: server_virtual.06
-    fqdn_name: server_virtual.06.flix.ru
+    id: server_virtual.06
+    fqdn: server_virtual.06.flix.ru
     virtualization_id: flix.cluster_virtualization.cloud.02
     disks:
       - disks :
           availabilityzone_id: dc_az.moscow
           size: 100
           type: SSD
-    ram_qty: 16
+    ram: 16
     nic_qty: 2
     type: Виртуальный
     os:
@@ -811,14 +792,14 @@ seaf.ta.components.server:
     cpu:
       cores: 4
       frequency: 1700
-    availabilityzone_id:
+    az:
       - flix.dc_az.moscow
     description: Сервер приложений для кластера K8s
     stand_id:
       - flix.stand.prod
   flix.server_virtual.07:
     title: Виртуальный сервер
-    server_id: server_virtual.07
+    id: server_virtual.07
     fqdn_name: server_virtual.07.flix.ru
     virtualization_id: flix.cluster_virtualization.cloud.02
     disks:
@@ -826,7 +807,7 @@ seaf.ta.components.server:
           availabilityzone_id: dc_az.moscow
           size: 100
           type: SSD
-    ram_qty: 16
+    ram: 16
     nic_qty: 2
     type: Виртуальный
     os:
@@ -842,7 +823,7 @@ seaf.ta.components.server:
       - flix.stand.prod
   flix.server_virtual.08:
     title: Виртуальный сервер
-    server_id: server_virtual.08
+    id: server_virtual.08
     fqdn_name: server_virtual.08.flix.ru
     virtualization_id: flix.cluster_virtualization.cloud.02
     disks:
@@ -850,7 +831,7 @@ seaf.ta.components.server:
           availabilityzone_id: dc_az.moscow
           size: 100
           type: SSD
-    ram_qty: 16
+    ram: 16
     nic_qty: 2
     type: Виртуальный
     os:
@@ -859,22 +840,22 @@ seaf.ta.components.server:
     cpu:
       cores: 4
       frequency: 1700
-    availabilityzone_id:
+    az:
       - flix.dc_az.moscow
     description: Сервер приложений для кластера K8s
     stand_id:
       - flix.stand.prod
   flix.server_virtual.09:
     title: Виртуальный сервер
-    server_id: server_virtual.09
-    fqdn_name: server_virtual.09.flix.ru
+    id: server_virtual.09
+    fqdn: server_virtual.09.flix.ru
     virtualization_id: flix.cluster_virtualization.cloud.02
     disks:
       - disks :
           availabilityzone_id: dc_az.moscow
           size: 100
           type: SSD
-    ram_qty: 16
+    ram: 16
     nic_qty: 2
     type: Виртуальный
     os:
@@ -883,22 +864,22 @@ seaf.ta.components.server:
     cpu:
       cores: 4
       frequency: 1700
-    availabilityzone_id:
+    az:
       - flix.dc_az.moscow
     description: Сервер приложений для кластера K8s
     stand_id:
       - flix.stand.prod
   flix.server_virtual.10:
     title: Виртуальный сервер
-    server_id: server_virtual.10
-    fqdn_name: server_virtual.10.flix.ru
+    id: server_virtual.10
+    fqdn: server_virtual.10.flix.ru
     virtualization_id: flix.cluster_virtualization.cloud.02
     disks:
       - disks :
           availabilityzone_id: dc_az.moscow
           size: 100
           type: SSD
-    ram_qty: 16
+    ram: 16
     nic_qty: 2
     type: Виртуальный
     os:
@@ -907,7 +888,7 @@ seaf.ta.components.server:
     cpu:
       cores: 4
       frequency: 1700
-    availabilityzone_id:
+    az:
       - flix.dc_az.moscow
     description: Сервер приложений для кластера K8s
     stand_id:

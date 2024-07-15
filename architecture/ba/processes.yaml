@@ -49,7 +49,7 @@ seaf.ba.processes:
     next_processes:
       - flix.access_management
     consumes:
-    - alfa.fl.payment
+      - alfa.fl.payment
 
   flix.brows_cat:
     title: Выбор фильма

@@ -4,3 +4,4 @@ imports:
   - logical_entities.json
   - physical_attributes.json
   - physical_tables.json
+  - aggregat.json

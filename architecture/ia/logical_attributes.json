@@ -3,7 +3,7 @@
     "flix.content.film.description": {
       "code": "description",
       "title": "Краткое описание",
-      "description": "seaf-dzo-example/architecture/ia/logical_attributes.json",
+      "description": "трэйлер к фильму",
       "logical_entity": "flix.content.film",
       "link_attr": null
     },
@@ -13,7 +13,8 @@
       "description": "категория фильма",
       "logical_entity": "flix.content.film",
       "business_term": "flix.content.category",
-      "link_attr": "flix.content.category"
+      "link_attr": "flix.content.category",
+      "link_type": "ассоциация"
     },
     "flix.content.film.actors": {
       "code": "actor",
@@ -22,7 +23,7 @@
       "logical_entity": "flix.content.film",
       "business_term": "flix.content.actor",
       "link_attr": "flix.content.actor",
-      "link_type": "аггрегация"
+      "link_type": "ассоциация"
     },
     "flix.content.film.actresses": {
       "code": "actress",
@@ -31,7 +32,7 @@
       "logical_entity": "flix.content.film",
       "business_term": "flix.content.actor",
       "link_attr": "flix.content.actress",
-      "link_type": "аггрегация"
+      "link_type": "ассоциация"
     },
     "flix.content.film.release_year": {
       "code": "release_year",
@@ -46,7 +47,8 @@
       "description": "оригинальный язык фильма",
       "logical_entity": "flix.content.film",
       "business_term": "flix.content.language",
-      "link_attr": "flix.content.language"
+      "link_attr": "flix.content.language",
+      "link_type": "агрегация"
     },
     "flix.content.film.rental_duration": {
       "code": "rental_duration",
@@ -70,7 +72,6 @@
       "business_term": "flix.recom.rating",
       "link_attr": null
     },
-
     "flix.content.actor.first_name": {
       "code": "first_name",
       "title": "Имя",
@@ -92,9 +93,8 @@
       "logical_entity": "flix.content.actor",
       "business_term": "flix.content.film",
       "link_attr": "flix.content.film",
-      "link_type": "аггрегация"
+      "link_type": "ассоциация"
     },
-    
     "flix.content.actress.first_name": {
       "code": "first_name",
       "title": "Имя",
@@ -116,7 +116,7 @@
       "logical_entity": "flix.content.actress",
       "business_term": "flix.content.film",
       "link_attr": "flix.content.film",
-      "link_type": "аггрегация"
+      "link_type": "ассоциация"
     },
     
     "flix.address.district": {
@@ -131,7 +131,8 @@
       "title": "город",
       "description": "название города",
       "logical_entity": "flix.address",
-      "link_attr": "flix.city"
+      "link_attr": "flix.city",
+      "link_type": "агрегация"
     },
     "flix.address.postal_code": {
       "code": "postal_code",
@@ -192,7 +193,8 @@
       "description": "адрес сотрудника",
       "logical_entity": "flix.staff",
       "business_term": "flix.address",
-      "link_attr": "flix.addressUL"
+      "link_attr": "flix.addressUL",
+      "link_type": "композиция"
     },
     "flix.staff.email": {
       "code": "email",
@@ -228,26 +230,23 @@
       "description": "адрес пользователя",
       "logical_entity": "alfa.fl.customer",
       "business_term": "flix.address",
-      "link_attr": "flix.address"
+      "link_attr": "flix.address",
+      "link_type": "композиция"
     },
     "alfa.fl.payment.customer": {
       "code": "customer",
       "title": "покупатель",
       "logical_entity": "alfa.fl.payment",
-      "link_attr": "alfa.fl.customer"
+      "link_attr": "alfa.fl.customer",
+      "link_type": "композиция"
     },
     "alfa.fl.payment.staff": {
       "code": "staff",
       "title": "менеджер продаж",
       "logical_entity": "alfa.fl.payment",
       "business_term": "flix.staff",
-      "link_attr": "flix.staff"
-    },
-    "alfa.fl.payment.rental": {
-      "code": "rental",
-      "title": "договор оплаты",
-      "logical_entity": "alfa.fl.payment",
-      "link_attr": "rental"
+      "link_attr": "flix.staff",
+      "link_type": "композиция"
     },
     "alfa.fl.payment.amount": {
       "code": "amount",

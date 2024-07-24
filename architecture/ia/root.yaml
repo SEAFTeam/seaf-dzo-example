@@ -1,6 +1,7 @@
 imports:
   - business_terms.json
   - logical_attributes.json
+  - logical_links.json
   - logical_entities.json
   - physical_attributes.json
   - physical_tables.json

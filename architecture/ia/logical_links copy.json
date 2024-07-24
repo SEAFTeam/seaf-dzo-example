@@ -1,0 +1,128 @@
+{
+  "seaf.ia.logical_links": {
+    "flix.content.film.category": {
+      "code": "category",
+      "title": "категория",
+      "description": "категория фильма",
+      "logical_entity": "flix.content.film",
+      "linked_entity": "flix.content.category",
+      "type": "ассоциация",
+      "plurality": "0:N",
+      "multiplicityA": null,
+      "multiplicityB":  null,
+      "cardinality": null
+    },
+    "flix.content.film.actors": {
+      "code": "actor",
+      "title": "актеры",
+      "description": "актерский состав фильма",
+      "logical_entity": "flix.content.film",
+      "linked_entity": "flix.content.actor",
+      "type": "ассоциация",
+      "plurality": "1:N"
+    },
+    "flix.content.film.actresses": {
+      "code": "actress",
+      "title": "актрисы",
+      "description": "актерский состав фильма",
+      "logical_entity": "flix.content.film",
+      "linked_entity": "flix.content.actress",
+      "type": "ассоциация",
+      "plurality": "1:N"
+    },
+    "flix.content.film.language": {
+      "code": "language",
+      "title": "язык",
+      "description": "оригинальный язык фильма",
+      "logical_entity": "flix.content.film",
+      "linked_entity": "flix.content.language",
+      "type": "агрегация",
+      "plurality": "1:N"
+    },
+    "flix.content.actor.films": {
+      "code": "films",
+      "title": "фильмы",
+      "description": "Фильмография актера",
+      "logical_entity": "flix.content.actor",
+      "linked_entity": "flix.content.film",
+      "type": "ассоциация",
+      "plurality": "0:N"
+    },
+    "flix.content.actress.films": {
+      "code": "films",
+      "title": "фильмы",
+      "description": "Фильмография актрисы",
+      "logical_entity": "flix.content.actress",
+      "linked_entity": "flix.content.film",
+      "type": "ассоциация",
+      "plurality": "0:N"
+    },   
+    "flix.address.city": {
+      "code": "city",
+      "title": "город",
+      "description": "название города",
+      "logical_entity": "flix.address",
+      "linked_entity": "flix.city",
+      "type": "зависимость",
+      "plurality": "1:1"
+    },
+    "flix.addressFL.parent": {
+      "code": "parent",
+      "title": "Родительский класс",
+      "logical_entity": "flix.addressFL",
+      "linked_entity": "flix.address",
+      "type": "обобщение",
+      "plurality": "0:N"
+    },
+    "flix.addressUL.parent": {
+      "code": "parent",
+      "title": "Родительский класс",
+      "logical_entity": "flix.addressUL",
+      "linked_entity": "flix.address",
+      "type": "обобщение",
+      "plurality": "0:N"
+    },
+    "flix.city.country": {
+      "code": "country",
+      "title": "страна",
+      "logical_entity": "flix.city",
+      "linked_entity": "flix.country",
+      "type": "зависимость",
+      "plurality": "1:1"
+    },
+
+    "flix.staff.address": {
+      "code": "address",
+      "title": "адрес",
+      "description": "адрес сотрудника",
+      "logical_entity": "flix.staff",
+      "linked_entity": "flix.addressUL",
+      "type": "композиция",
+      "plurality": "0:1"
+    },
+    "alfa.fl.customer.address": {
+      "code": "address",
+      "title": "адрес",
+      "description": "адрес пользователя",
+      "logical_entity": "alfa.fl.customer",
+      "linked_entity": "flix.addressFL",
+      "type": "композиция",
+      "plurality": "0:1"
+    },
+    "alfa.fl.payment.customer": {
+      "code": "customer",
+      "title": "покупатель",
+      "logical_entity": "alfa.fl.payment",
+      "linked_entity": "alfa.fl.customer",
+      "type": "композиция",
+      "plurality": "0:N"
+    },
+    "alfa.fl.payment.staff": {
+      "code": "staff",
+      "title": "менеджер продаж",
+      "logical_entity": "alfa.fl.payment",
+      "linked_entity": "flix.staff",
+      "type": "композиция"
+    }
+  }
+}

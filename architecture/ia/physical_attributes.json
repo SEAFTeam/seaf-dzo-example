@@ -514,6 +514,20 @@
       "linked_table": null,
       "linked_key": null
     },
+    "payment.film_id": {
+      "title": "film_id",
+      "type": "integer",
+      "constraints": [
+        "FOREIGN KEY"
+      ],
+      "pdn_flag": false,
+      "cde_flag": false,
+      "PK_flag": true,
+      "FK_flag": false,
+      "physical_table": "payment",
+      "linked_table": "film",
+      "linked_key": "film.film_id"
+    },
     "payment.customer_id": {
       "title": "customer_id",
       "type": "smallint",

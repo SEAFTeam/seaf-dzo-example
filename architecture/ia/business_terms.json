@@ -1,5 +1,5 @@
 {
-  "seaf.ia.business_terms": {
+  "seaf.ia.business_objects": {
     "flix.content.film": {
       "title": "Фильм",
       "description": "данные о фильме, такие как название, год выпуска, продолжительность, рейтинг и т.д.",

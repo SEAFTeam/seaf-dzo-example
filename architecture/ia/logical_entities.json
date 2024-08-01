@@ -1,5 +1,5 @@
 {
-  "seaf.ia.logical_entities": {
+  "seaf.ia.data_objects": {
     "flix.content.film": {
       "code": "film",
       "title": "фильм",
@@ -7,7 +7,7 @@
       "aggregat": "sd.flix",
       "category": "Прочее",
       "status": "Используется",
-      "business_term": "flix.content.film",
+      "business_objects": "flix.content.film",
       "comments": "без комментариев"
     },
     "flix.content.language": {
@@ -17,7 +17,7 @@
       "category": "Прочее",
       "aggregat": "sd.flix",
       "status": "Используется",
-      "business_term": "flix.content.language",
+      "business_objects": "flix.content.language",
       "comments": "без комментариев"
     },
     "flix.content.category": {
@@ -27,7 +27,7 @@
       "aggregat": "sd.flix",
       "category": "Прочее",
       "status": "Используется",
-      "business_term": [
+      "business_objects": [
         "flix.content.category",
         "flix.recom.rating"
       ],
@@ -40,7 +40,7 @@
       "aggregat": "sd.flix",
       "category": "Прочее",
       "status": "Используется",
-      "business_term": [
+      "business_objects": [
         "flix.content.actor"
       ],
       "comments": "без комментариев"
@@ -52,7 +52,7 @@
       "aggregat": "sd.flix",
       "category": "Прочее",
       "status": "Используется",
-      "business_term": "flix.content.actor",
+      "business_objects": "flix.content.actor",
       "comments": "без комментариев"
     },
     "flix.address": {
@@ -62,7 +62,7 @@
       "aggregat": "sd.flix",
       "category": "Прочее",
       "status": "Используется",
-      "business_term": "flix.address",
+      "business_objects": "flix.address",
       "comments": "без комментариев"
     },
     "flix.addressFL": {
@@ -72,7 +72,7 @@
       "aggregat": "sd.flix",
       "category": "Прочее",
       "status": "Используется",
-      "business_term": "flix.address",
+      "business_objects": "flix.address",
       "comments": "без комментариев"
     },
     "flix.addressUL": {
@@ -82,7 +82,7 @@
       "aggregat": "sd.flix",
       "category": "Прочее",
       "status": "Используется",
-      "business_term": "flix.address",
+      "business_objects": "flix.address",
       "comments": "без комментариев"
     },
     "flix.city": {
@@ -92,7 +92,7 @@
       "aggregat": "sd.flix",
       "category": "Прочее",
       "status": "Используется",
-      "business_term": "flix.address",
+      "business_objects": "flix.address",
       "comments": "без комментариев"
     },
     "flix.country": {
@@ -102,7 +102,7 @@
       "aggregat": "sd.flix",
       "category": "Прочее",
       "status": "Используется",
-      "business_term": "flix.address",
+      "business_objects": "flix.address",
       "comments": "без комментариев"
     },
     "flix.staff": {
@@ -112,7 +112,7 @@
       "aggregat": "sd.flix",
       "category": "Прочее",
       "status": "Используется",
-      "business_term": "flix.staff",
+      "business_objects": "flix.staff",
       "comments": "без комментариев"
     },
     "alfa.fl.customer": {
@@ -122,7 +122,7 @@
       "aggregat": "sd.alfa",
       "category": "Прочее",
       "status": "Используется",
-      "business_term": "alfa.fl.customer",
+      "business_objects": "alfa.fl.customer",
       "comments": "без комментариев"
     },
     "alfa.fl.payment": {
@@ -132,7 +132,7 @@
       "aggregat": "sd.alfa",
       "category": "Прочее",
       "status": "Используется",
-      "business_term": "alfa.fl.payment",
+      "business_objects": "alfa.fl.payment",
       "comments": "без комментариев"
     }
   }

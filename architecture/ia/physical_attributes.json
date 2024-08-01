@@ -59,7 +59,7 @@
       "physical_table": "address",
       "linked_table": null,
       "linked_key": null,
-      "business_term": [
+      "business_objects": [
         "address"
       ]
     },

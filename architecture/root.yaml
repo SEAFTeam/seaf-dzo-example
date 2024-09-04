@@ -4,7 +4,6 @@ imports:
   - ba/root.yaml
   - ia/root.yaml
   - tools/root.yaml
-  - interface/root.yaml
   - adr/root.yaml
   - change/requirements.yaml
   - change/standarts.yaml

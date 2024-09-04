@@ -7,3 +7,4 @@ imports:
   - interface/root.yaml
   - adr/root.yaml
   - change/requirements.yaml
+  - change/standarts.yaml

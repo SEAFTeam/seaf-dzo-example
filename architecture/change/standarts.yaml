@@ -1,0 +1,50 @@
+seaf.change.requirements:
+  test:
+    title: Описание
+    description: Описание для теста
+    type: business
+    functionality:
+      - flix.home_cinema.auth
+    verifications:
+      checks:
+        title: Проверки
+        condition: Условие для проверки
+    sber:
+      applicability_level:
+        - Business Critical
+      standard_version: '3.1'
+      obj_und_ctrl:
+        - sber.obj.dc
+      id_sib: ТАCDC_1-Ч01.02.1-01-02
+
+  sber.standards.TACDC_1-Ch01.02.1-01-02:
+    statement: >-
+      Для расположения АС уровня критичности Mission Critical и Business Critical, уровень надежности ЦОД должен быть сертифицирован/соответствовать классу надежности не ниже Tier III,по классификации Uptime Institute Tier Standard.
+    exceptions_acceptance_level: Уровень 1
+    sber:
+      id_sib: ТАCDC_1-Ч01.02.1-01-02
+      standard_version: 3.1
+      applicability_level:
+        - Mission Critical
+        - Business Critical
+      obj_und_ctrl:
+        - sber.obj.dc
+
+  sber.standards.TACIR_1-Ch03.03.9-02:
+    statement: >-
+      Платформа виртуализации должна обеспечивать синхронизацию времени от доверенных источников.
+    exceptions_acceptance_level: Уровень 1
+    sber:
+      id_sib: TACIR_1-Ч03.03.9-02
+      standard_version: 3.1
+      applicability_level:
+        - Mission Critical
+        - Business Critical
+        - Business Operational
+        - Office Productivity
+      obj_und_ctrl:
+        - sber.obj.virtualization
+
+  sber.standards.TACIR2333:
+
+

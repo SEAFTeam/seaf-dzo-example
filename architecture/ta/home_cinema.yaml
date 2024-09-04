@@ -49,7 +49,8 @@ seaf.ta.services.dc:
     dc_rack_qty: 5
     dc_tier: '3'
     dc_ownership: Аренда
-    availabilityzone_id: flix.dc_az.moscow
+    availabilityzone_id:
+     - flix.dc_az.moscow
     app_components:
       - flix.home_cinema.auth.app
       - flix.home_cinema.auth.token_manager
@@ -63,7 +64,8 @@ seaf.ta.services.dc:
     dc_type: Основной
     dc_address: Садовый проезд
     dc_rack_qty: 0
-    availabilityzone_id: flix.dc_az.moscow
+    availabilityzone_id:
+     - flix.dc_az.moscow
     dc_tier: '3'
     dc_ownership: Аренда
     app_components:
@@ -80,7 +82,8 @@ seaf.ta.services.dc:
     dc_address: Нет адреса
     dc_rack_qty: 0
     dc_tier: Tier III
-    availabilityzone_id: flix.dc_az.moscow
+    availabilityzone_id:
+     - flix.dc_az.moscow
 
 #### Создаём офис
 seaf.ta.services.office:

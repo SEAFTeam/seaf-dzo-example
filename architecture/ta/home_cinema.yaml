@@ -200,7 +200,7 @@ seaf.ta.components.network:
     model: ASR 1001-X
     dc_id: flix.dc.01
     network_appliance_id: cisco.01
-    placement_type: Периметр
+    placement_type: Ext-WAN-Edge
     purpose: Пограничный маршрутизатор
     address: 192.168.1.1
     stand_id:
@@ -213,7 +213,7 @@ seaf.ta.components.network:
     model: 4800F
     dc_id: flix.dc.01
     network_appliance_id: fortigate.01
-    placement_type: Периметр
+    placement_type: Ext-WAN-Edge
     purpose: Пограничный маршрутизатор
     address: 10.10.10.1
     stand_id:
@@ -225,7 +225,7 @@ seaf.ta.components.network:
     realization_type: Физический
     model: 4800F
     network_appliance_id: fortigate.02
-    placement_type: Периметр
+    placement_type: Ext-WAN-Edge
     purpose: Пограничный маршрутизатор
     address: 10.10.10.1
     office: office.hq
@@ -240,7 +240,7 @@ seaf.ta.components.network:
     model: ASR 1001-X
     dc_id: flix.dc.01
     network_appliance_id: cisco.02
-    placement_type: Периметр
+    placement_type: Ext-WAN-Edge
     purpose: VPN шлюз
     address: 192.168.1.2
     stand_id:
@@ -253,7 +253,7 @@ seaf.ta.components.network:
     model: ASR 1001-X
     office: office.hq
     network_appliance_id: cisco.03
-    placement_type: Периметр
+    placement_type: Internal DC Network
     purpose: VPN шлюз
     address: 192.168.1.2
     stand_id:

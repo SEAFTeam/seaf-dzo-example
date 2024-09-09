@@ -37,9 +37,6 @@
       "data_object": [
         "flix.content.actor",
         "flix.content.actress"
-      ],
-      "business_objects": [
-        "flix.content.actor"
       ]
     },
     "film_actor": {
@@ -58,11 +55,7 @@
       "dbms": "postgresql",
       "database": "dvdrental",
       "schema": "public",
-      "data_object": null,
-      "business_objects": [
-        "flix.content.category",
-        "flix.recom.rating"
-      ]
+      "data_object": null
     },
 
     "address": {

@@ -31,8 +31,7 @@
       "status": "Используется",
       "master_system": "flix.home_cinema.catalog",
       "business_objects": [
-        "flix.content.category",
-        "flix.recom.rating"
+        "flix.content.category"
       ],
       "comments": "без комментариев"
     },
@@ -68,29 +67,11 @@
       "category": "Прочее",
       "status": "Используется",
       "master_system": "flix.1c",
-      "business_objects": "flix.address",
-      "comments": "без комментариев"
-    },
-    "flix.addressFL": {
-      "code": "addressFL",
-      "title": "адрес Ф.Л.",
-      "description": "физический адрес",
-      "aggregat": "sd.flix",
-      "category": "Прочее",
-      "status": "Используется",
-      "master_system": "flix.1c",
-      "business_objects": "flix.address",
-      "comments": "без комментариев"
-    },
-    "flix.addressUL": {
-      "code": "addressUL",
-      "title": "адрес Ю.Л.",
-      "description": "юридический адрес",
-      "aggregat": "sd.flix",
-      "category": "Прочее",
-      "status": "Используется",
-      "master_system": "flix.1c",
-      "business_objects": "flix.address",
+      "business_objects": [
+        "flix.flix.address",
+        "flix.addressFL",
+        "flix.addressUL"
+      ],
       "comments": "без комментариев"
     },
     "flix.city": {
@@ -133,7 +114,7 @@
       "aggregat": "sd.alfa",
       "category": "Прочее",
       "status": "Используется",
-      "master_system": "alfa",
+      "master_system": "alfa.payment_gate",
       "business_objects": "alfa.fl.customer",
       "comments": "без комментариев"
     },

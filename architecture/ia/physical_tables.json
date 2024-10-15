@@ -6,8 +6,8 @@
       "system": "flix.home_cinema.catalog",
       "dbms": "postgresql",
       "database": "dvdrental",
-      "schema": "public",
-      "data_object": "flix.content.film"
+      "schema_name": "public",
+      "data_objects": "flix.content.film"
     },
     "language": {
       "title": "language",
@@ -15,8 +15,8 @@
       "system": "flix.home_cinema.catalog",
       "dbms": "postgresql",
       "database": "dvdrental",
-      "schema": "public",
-      "data_object": "flix.content.language"
+      "schema_name": "public",
+      "data_objects": "flix.content.language"
     },
     "category": {
       "title": "category",
@@ -24,8 +24,8 @@
       "system": "flix.home_cinema.catalog",
       "dbms": "postgresql",
       "database": "dvdrental",
-      "schema": "public",
-      "data_object": "flix.content.category"
+      "schema_name": "public",
+      "data_objects": "flix.content.category"
     },
     "actor": {
       "title": "actor",
@@ -33,8 +33,8 @@
       "system": "flix.home_cinema.catalog",
       "dbms": "postgresql",
       "database": "dvdrental",
-      "schema": "public",
-      "data_object": [
+      "schema_name": "public",
+      "data_objects": [
         "flix.content.actor",
         "flix.content.actress"
       ]
@@ -45,8 +45,8 @@
       "system": "flix.home_cinema.catalog",
       "dbms": "postgresql",
       "database": "dvdrental",
-      "schema": "public",
-      "data_object": null
+      "schema_name": "public",
+      "data_objects": null
     },
     "film_category": {
       "title": "film_category",
@@ -54,55 +54,55 @@
       "system": "flix.home_cinema.catalog",
       "dbms": "postgresql",
       "database": "dvdrental",
-      "schema": "public",
-      "data_object": null
+      "schema_name": "public",
+      "data_objects": null
     },
 
     "address": {
       "title": "address",
       "description": "адрес",
-      "system": "flix.1c",
+      "system": "flix.1c.db",
       "dbms": "postgresql",
       "database": "dvdrental",
-      "schema": "public",
-      "data_object": "flix.address"
+      "schema_name": "public",
+      "data_objects": "flix.address"
     },
     "city": {
       "title": "city",
       "description": "город",
-      "system": "flix.1c",
+      "system": "flix.1c.db",
       "dbms": "postgresql",
       "database": "dvdrental",
-      "schema": "public",
-      "data_object": "flix.city"
+      "schema_name": "public",
+      "data_objects": "flix.city"
     },
     "country": {
       "title": "country",
       "description": "страна",
-      "system": "flix.1c",
+      "system": "flix.1c.db",
       "dbms": "postgresql",
       "database": "dvdrental",
-      "schema": "public",
-      "data_object": "flix.country"
+      "schema_name": "public",
+      "data_objects": "flix.country"
     },
     "staff": {
       "title": "staff",
       "description": "персонал",
-      "system": "flix.1c",
+      "system": "flix.1c.db",
       "dbms": "postgresql",
       "database": "dvdrental",
-      "schema": "public",
-      "data_object": "flix.staff"
+      "schema_name": "public",
+      "data_objects": "flix.staff"
     },
     "customer": {
       "title": "customer",
       "description": "заказчик",
-      "system": "alfa",
+      "system": "alfa.payment_gate",
       "dbms": "postgresql",
       "database": "dvdrental",
-      "schema": "public",
+      "schema_name": "public",
       "pdn_flag": true,
-      "data_object": "alfa.fl.customer"
+      "data_objects": "alfa.fl.customer"
     },
     "payment": {
       "title": "payment",
@@ -110,9 +110,9 @@
       "system": "alfa.payment_gate",
       "dbms": "postgresql",
       "database": "dvdrental",
-      "schema": "public",
+      "schema_name": "public",
       "cde_flag": true,
-      "data_object": "alfa.fl.payment"
+      "data_objects": "alfa.fl.payment"
     }
   }
 }

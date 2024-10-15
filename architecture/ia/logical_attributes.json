@@ -5,138 +5,74 @@
       "title": "Краткое описание",
       "description": "трэйлер к фильму",
       "data_object": "flix.content.film",
-      "link_attr": null
+      "business_object": "flix.content.trailer"
     },
     "flix.content.film.release_year": {
       "code": "release_year",
       "title": "год выпуска",
       "description": "год выпуска фильма в прокат",
       "data_object": "flix.content.film",
-      "link_attr": null
+      "business_object": "flix.content.film"
     },
     "flix.content.film.rental_duration": {
       "code": "rental_duration",
       "title": "длительность проката",
       "description": "длительность проката фильма в домашнем кинотеатре",
       "data_object": "flix.content.film",
-      "link_attr": null
+      "business_object": "flix.content.rental_duration"
     },
     "flix.content.film.length": {
       "code": "length",
       "title": "продолжительность фильма",
       "description": "продолжительность фильма",
       "data_object": "flix.content.film",
-      "link_attr": null
+      "business_object": "flix.content.film"
     },
     "flix.content.film.rating": {
       "code": "rating",
       "title": "рэйтинг",
       "description": "оценка фильма IMDB",
       "data_object": "flix.content.film",
-      "business_objects": "flix.recom.rating",
-      "link_attr": null
-    },
-    "flix.content.actor.first_name": {
-      "code": "first_name",
-      "title": "Имя",
-      "description": "Имя актера",
-      "data_object": "flix.content.actor",
-      "link_attr": null
-    },
-    "flix.content.actor.last_name": {
-      "code": "last_name",
-      "title": "Фамилия",
-      "description": "Фамилия актера",
-      "data_object": "flix.content.actor",
-      "link_attr": null
-    },
-    "flix.content.actress.first_name": {
-      "code": "first_name",
-      "title": "Имя",
-      "description": "Имя актрисы",
-      "data_object": "flix.content.actress",
-      "link_attr": null
-    },
-    "flix.content.actress.last_name": {
-      "code": "last_name",
-      "title": "Фамилия",
-      "description": "Фамилия актрисы",
-      "data_object": "flix.content.actress",
-      "link_attr": null
-    },    
-    "flix.address.district": {
-      "code": "district",
-      "title": "район",
-      "description": "район в городе",
-      "data_object": "flix.address",
-      "link_attr": null
+      "business_object": "flix.recom.rating"
     },
     "flix.address.postal_code": {
       "code": "postal_code",
       "title": "почтовый индекс",
       "description": "почтовый индекс",
       "data_object": "flix.address",
-      "link_attr": null
+      "business_object": "flix.postal_code"
     },
     "flix.address.phone": {
       "code": "phone",
       "title": "телефон",
       "description": "телефон для связи",
       "data_object": "flix.address",
-      "link_attr": null
-    },
-    "flix.staff.first_name": {
-      "code": "first_name",
-      "title": "имя",
-      "description": "имя сотрудника",
-      "data_object": "flix.staff",
-      "link_attr": null
-    },
-    "flix.staff.last_name": {
-      "code": "last_name",
-      "title": "фамилия",
-      "description": "фамилия сотрудника",
-      "data_object": "flix.staff",
-      "link_attr": null
+      "business_object": "flix.phone"
     },
     "flix.staff.email": {
       "code": "email",
       "title": "email сотрудника",
       "description": "email сотрудника",
       "data_object": "flix.staff",
-      "link_attr": null
-    },
-    "alfa.fl.customer.first_name": {
-      "code": "first_name",
-      "title": "Имя",
-      "description": "имя пользователя",
-      "data_object": "alfa.fl.customer",
-      "link_attr": null
-    },
-    "alfa.fl.customer.last_name": {
-      "code": "last_name",
-      "title": "Фамилия",
-      "description": "фамилия пользователя",
-      "data_object": "alfa.fl.customer",
-      "link_attr": null
+      "business_object": "flix.email"
     },
     "alfa.fl.customer.email": {
       "code": "email",
-      "title": "email",
+      "title": "email заказчика",
       "data_object": "alfa.fl.customer",
-      "link_attr": null
+      "business_object": "flix.email"
     },
     "alfa.fl.payment.amount": {
       "code": "amount",
       "title": "стоимость",
       "data_object": "alfa.fl.payment",
-      "link_attr": null
+      "business_object": "flix.fl.payment_amount"
     },
     "alfa.fl.payment.payment_date": {
       "code": "payment_date",
       "title": "дата оплаты",
       "data_object": "alfa.fl.payment",
-      "link_attr": null
+      "business_object": "flix.fl.payment_date"
     }
   }
 }

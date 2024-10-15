@@ -8,8 +8,8 @@
       ],
       "pdn_flag": false,
       "cde_flag": false,
-      "PK_flag": true,
-      "FK_flag": false,
+      "pk_flag": true,
+      "fk_flag": false,
       "physical_table": "actor",
       "linked_table": null,
       "linked_key": null
@@ -46,7 +46,7 @@
       ],
       "pdn_flag": false,
       "cde_flag": false,
-      "PK_flag": true,
+      "pk_flag": true,
       "physical_table": "address",
       "linked_table": null,
       "linked_key": null
@@ -58,10 +58,7 @@
       "pdn_flag": true,
       "physical_table": "address",
       "linked_table": null,
-      "linked_key": null,
-      "business_objects": [
-        "address"
-      ]
+      "linked_key": null
     },
     "address.address2": {
       "title": "address2",
@@ -85,7 +82,7 @@
       "constraints": [
         "FOREIGN KEY"
       ],
-      "FK_flag": true,
+      "fk_flag": true,
       "physical_table": "address",
       "linked_table": "city",
       "linked_key": "city.city_id"
@@ -122,8 +119,8 @@
       ],
       "pdn_flag": false,
       "cde_flag": false,
-      "PK_flag": true,
-      "FK_flag": false,
+      "pk_flag": true,
+      "fk_flag": false,
       "physical_table": "category",
       "linked_table": null,
       "linked_key": null
@@ -152,8 +149,8 @@
       ],
       "pdn_flag": false,
       "cde_flag": false,
-      "PK_flag": true,
-      "FK_flag": false,
+      "pk_flag": true,
+      "fk_flag": false,
       "physical_table": "city",
       "linked_table": null,
       "linked_key": null
@@ -174,8 +171,8 @@
       ],
       "pdn_flag": false,
       "cde_flag": false,
-      "PK_flag": true,
-      "FK_flag": false,
+      "pk_flag": true,
+      "fk_flag": false,
       "physical_table": "city",
       "linked_table": "country",
       "linked_key": "country.country_id"
@@ -196,8 +193,8 @@
       ],
       "pdn_flag": false,
       "cde_flag": false,
-      "PK_flag": true,
-      "FK_flag": false,
+      "pk_flag": true,
+      "fk_flag": false,
       "physical_table": "country",
       "linked_table": null,
       "linked_key": null
@@ -226,8 +223,8 @@
       ],
       "pdn_flag": false,
       "cde_flag": false,
-      "PK_flag": true,
-      "FK_flag": false,
+      "pk_flag": true,
+      "fk_flag": false,
       "physical_table": "customer",
       "linked_table": null,
       "linked_key": null
@@ -264,8 +261,8 @@
       ],
       "pdn_flag": false,
       "cde_flag": false,
-      "PK_flag": false,
-      "FK_flag": true,
+      "pk_flag": false,
+      "fk_flag": true,
       "physical_table": "customer",
       "linked_table": "address",
       "linked_key": "address.address_id"
@@ -311,8 +308,8 @@
       ],
       "pdn_flag": false,
       "cde_flag": false,
-      "PK_flag": true,
-      "FK_flag": true,
+      "pk_flag": true,
+      "fk_flag": true,
       "physical_table": "film_actor",
       "linked_table": "actor",
       "linked_key": "actor.actor_id"
@@ -326,8 +323,8 @@
       ],
       "pdn_flag": false,
       "cde_flag": false,
-      "PK_flag": true,
-      "FK_flag": true,
+      "pk_flag": true,
+      "fk_flag": true,
       "physical_table": "film_actor",
       "linked_table": "film",
       "linked_key": "film.film_id"
@@ -349,8 +346,8 @@
       ],
       "pdn_flag": false,
       "cde_flag": false,
-      "PK_flag": true,
-      "FK_flag": true,
+      "pk_flag": true,
+      "fk_flag": true,
       "physical_table": "film_category",
       "linked_table": "film",
       "linked_key": "film.film_id"
@@ -364,8 +361,8 @@
       ],
       "pdn_flag": false,
       "cde_flag": false,
-      "PK_flag": true,
-      "FK_flag": true,
+      "pk_flag": true,
+      "fk_flag": true,
       "physical_table": "film_category",
       "linked_table": "category",
       "linked_key": "category.category_id"
@@ -386,8 +383,8 @@
       ],
       "pdn_flag": false,
       "cde_flag": false,
-      "PK_flag": true,
-      "FK_flag": false,
+      "pk_flag": true,
+      "fk_flag": false,
       "physical_table": "language",
       "linked_table": null,
       "linked_key": null
@@ -416,8 +413,8 @@
       ],
       "pdn_flag": false,
       "cde_flag": false,
-      "PK_flag": true,
-      "FK_flag": false,
+      "pk_flag": true,
+      "fk_flag": false,
       "physical_table": "staff",
       "linked_table": null,
       "linked_key": null
@@ -446,8 +443,8 @@
       ],
       "pdn_flag": false,
       "cde_flag": false,
-      "PK_flag": false,
-      "FK_flag": true,
+      "pk_flag": false,
+      "fk_flag": true,
       "physical_table": "staff",
       "linked_table": "address",
       "linked_key": "address.address_id"
@@ -508,8 +505,8 @@
       ],
       "pdn_flag": false,
       "cde_flag": false,
-      "PK_flag": true,
-      "FK_flag": false,
+      "pk_flag": true,
+      "fk_flag": false,
       "physical_table": "payment",
       "linked_table": null,
       "linked_key": null
@@ -522,8 +519,8 @@
       ],
       "pdn_flag": false,
       "cde_flag": false,
-      "PK_flag": true,
-      "FK_flag": false,
+      "pk_flag": true,
+      "fk_flag": false,
       "physical_table": "payment",
       "linked_table": "film",
       "linked_key": "film.film_id"
@@ -536,8 +533,8 @@
       ],
       "pdn_flag": false,
       "cde_flag": false,
-      "PK_flag": false,
-      "FK_flag": true,
+      "pk_flag": false,
+      "fk_flag": true,
       "physical_table": "payment",
       "linked_table": "customer",
       "linked_key": "customer.customer_id"
@@ -550,8 +547,8 @@
       ],
       "pdn_flag": false,
       "cde_flag": false,
-      "PK_flag": false,
-      "FK_flag": true,
+      "pk_flag": false,
+      "fk_flag": true,
       "physical_table": "payment",
       "linked_table": "staff",
       "linked_key": "staff.staff_id"
@@ -580,8 +577,8 @@
       ],
       "pdn_flag": false,
       "cde_flag": false,
-      "PK_flag": true,
-      "FK_flag": false,
+      "pk_flag": true,
+      "fk_flag": false,
       "physical_table": "film",
       "linked_table": null,
       "linked_key": null
@@ -618,8 +615,8 @@
       ],
       "pdn_flag": false,
       "cde_flag": false,
-      "PK_flag": false,
-      "FK_flag": true,
+      "pk_flag": false,
+      "fk_flag": true,
       "physical_table": "film",
       "linked_table": "language",
       "linked_key": "language.language_id"

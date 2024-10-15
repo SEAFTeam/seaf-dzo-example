@@ -3,8 +3,24 @@
     "flix.content.film": {
       "title": "Фильм",
       "description": "данные о фильме, такие как название, год выпуска, продолжительность, рейтинг и т.д.",
-      "status": "Используется",
-      "processes": "flix.play",
+      "creation_date": "2024-03-19",
+      "modify_date": "2024-03-19 18:41:52.955066",
+      "owner": "Ответственный (ФИО)",
+      "comments": "без комментариев",
+      "legal_doc": "Нормативный/правовой документ"
+    },
+    "flix.content.trailer": {
+      "title": "Трейлер",
+      "description": "краткое превью фильма",
+      "creation_date": "2024-03-19",
+      "modify_date": "2024-03-19 18:41:52.955066",
+      "owner": "Ответственный (ФИО)",
+      "comments": "без комментариев",
+      "legal_doc": "Нормативный/правовой документ"
+    },
+    "flix.content.rental_duration": {
+      "title": "длительность проката",
+      "description": "длительность проката фильма в домашнем кинотеатре",
       "creation_date": "2024-03-19",
       "modify_date": "2024-03-19 18:41:52.955066",
       "owner": "Ответственный (ФИО)",
@@ -14,8 +30,6 @@
     "flix.content.language": {
       "title": "Язык",
       "description": "Язык оригинала фильма",
-      "status": "Используется",
-      "processes": "flix.brows_cat",
       "creation_date": "2024-03-19",
       "modify_date": "2024-03-19 18:41:07.558793",
       "owner": "Ответственный (ФИО)",
@@ -25,8 +39,6 @@
     "flix.content.category": {
       "title": "Категория",
       "description": "Категория фильма",
-      "status": "Используется",
-      "processes": "Используется в бизнес-процессах",
       "creation_date": "2024-03-19",
       "modify_date": "2024-03-19 18:40:34.088676",
       "owner": "Ответственный (ФИО)",
@@ -36,8 +48,6 @@
     "flix.content.actor": {
       "title": "Актёр",
       "description": "данные актера, включая имя и фамилию",
-      "status": "Используется",
-      "processes": "Используется в бизнес-процессах",
       "creation_date": "2024-03-19",
       "modify_date": "2024-03-19 18:40:21.558617",
       "owner": "Ответственный (ФИО)",
@@ -47,8 +57,6 @@
     "flix.recom.rating": {
       "title": "Рейтинг",
       "description": "Рейтинг фильма",
-      "status": "Используется",
-      "processes": "flix.brows_cat",
       "creation_date": "2024-03-19",
       "modify_date": "2024-03-19 18:42:03.714730",
       "owner": "Ответственный (ФИО)",
@@ -58,8 +66,6 @@
     "flix.staff": {
       "title": "Сотрудник",
       "description": "данные о персонале",
-      "status": "Используется",
-      "processes": "alfa.fl_auth.sign_in",
       "creation_date": "2024-03-19",
       "modify_date": "2024-03-19 18:40:40.508516",
       "owner": "Ответственный (ФИО)",
@@ -69,8 +75,51 @@
     "flix.address": {
       "title": "Адрес",
       "description": "адресные данные для сотрудников и клиентов",
-      "status": "Используется",
-      "processes": "flix.streaming_ondemand",
+      "creation_date": "2024-03-19",
+      "modify_date": "2024-03-19 18:40:27.373968",
+      "owner": "Ответственный (ФИО)",
+      "comments": "без комментариев",
+      "legal_doc": "Нормативный/правовой документ"
+    },
+    "flix.addressFL": {
+      "title": "Адрес ФЛ",
+      "description": "адрес филического лица",
+      "creation_date": "2024-03-19",
+      "modify_date": "2024-03-19 18:40:27.373968",
+      "owner": "Ответственный (ФИО)",
+      "comments": "без комментариев",
+      "legal_doc": "Нормативный/правовой документ"
+    },
+    "flix.addressUL": {
+      "title": "Адрес ЮЛ",
+      "description": "адрес юридического лица",
+      "creation_date": "2024-03-19",
+      "modify_date": "2024-03-19 18:40:27.373968",
+      "owner": "Ответственный (ФИО)",
+      "comments": "без комментариев",
+      "legal_doc": "Нормативный/правовой документ"
+    },
+    "flix.phone": {
+      "title": "телефон",
+      "description": "телефон прикреплянный к адресу",
+      "creation_date": "2024-03-19",
+      "modify_date": "2024-03-19 18:40:27.373968",
+      "owner": "Ответственный (ФИО)",
+      "comments": "без комментариев",
+      "legal_doc": "Нормативный/правовой документ"
+    },
+    "flix.postal_code": {
+      "title": "почтовый индекс",
+      "description": "почтовый индекс",
+      "creation_date": "2024-03-19",
+      "modify_date": "2024-03-19 18:40:27.373968",
+      "owner": "Ответственный (ФИО)",
+      "comments": "без комментариев",
+      "legal_doc": "Нормативный/правовой документ"
+    },
+    "flix.email": {
+      "title": "email",
+      "description": "адрес электронной почты",
       "creation_date": "2024-03-19",
       "modify_date": "2024-03-19 18:40:27.373968",
       "owner": "Ответственный (ФИО)",
@@ -80,8 +129,6 @@
     "alfa.fl.customer": {
       "title": "Клиент",
       "description": "данные клиента",
-      "status": "Используется",
-      "processes": "alfa.fl_auth.sign_in",
       "creation_date": "2024-03-19",
       "modify_date": "2024-03-19 18:40:40.508516",
       "owner": "Ответственный (ФИО)",
@@ -91,8 +138,26 @@
     "alfa.fl.payment": {
       "title": "Оплата",
       "description": "платежи клиента",
-      "status": "Используется",
-      "processes": "alfa.payments.aquiring",
+      "creation_date": "2024-03-19",
+      "modify_date": "2024-03-19 18:41:50.544050",
+      "owner": "Ответственный (ФИО)",
+      "comments": "без комментариев",
+      "legal_doc": "Нормативный/правовой документ"
+    }
+    ,
+    "alfa.fl.payment_amount": {
+      "title": "Стоимость оплаты",
+      "description": "стоимость оплаты услуг домашнего кинотеатра заказчиком",
+      "creation_date": "2024-03-19",
+      "modify_date": "2024-03-19 18:41:50.544050",
+      "owner": "Ответственный (ФИО)",
+      "comments": "без комментариев",
+      "legal_doc": "Нормативный/правовой документ"
+    }
+    ,
+    "alfa.fl.payment_date": {
+      "title": "Дата оплаты",
+      "description": "дата оплаты услуг домашнего кинотеатра заказчиком",
       "creation_date": "2024-03-19",
       "modify_date": "2024-03-19 18:41:50.544050",
       "owner": "Ответственный (ФИО)",

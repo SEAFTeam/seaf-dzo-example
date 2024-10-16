@@ -13,7 +13,7 @@
       ]
     },
     "sa.flix": {
-      "code": "flix",
+      "code": "saflix",
       "title": "ПО flix",
       "description": "Предметная область",
       "type": "Предметная область",
@@ -24,7 +24,7 @@
       ]
     },
     "sa.alfa": {
-      "code": "alfa",
+      "code": "saalfa",
       "title": "ПО alfa",
       "description": "Предметная область",
       "type": "Предметная область",

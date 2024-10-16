@@ -68,7 +68,7 @@
       "status": "Используется",
       "master_system": "flix.1c",
       "business_objects": [
-        "flix.flix.address",
+        "flix.address",
         "flix.addressFL",
         "flix.addressUL"
       ],

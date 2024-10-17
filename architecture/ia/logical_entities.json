@@ -1,0 +1,133 @@
+{
+  "seaf.ia.data_objects": {
+    "flix.content.film": {
+      "code": "film",
+      "title": "фильм",
+      "description": "названия фильмов",
+      "aggregat": "sd.flix",
+      "category": "Прочее",
+      "status": "Используется",
+      "master_system": "flix.home_cinema.catalog",
+      "business_objects": "flix.content.film",
+      "comments": "без комментариев"
+    },
+    "flix.content.language": {
+      "code": "language",
+      "title": "язык",
+      "description": "language - язык фильма",
+      "category": "Прочее",
+      "aggregat": "sd.flix",
+      "status": "Используется",
+      "master_system": "flix.home_cinema.catalog",
+      "business_objects": "flix.content.language",
+      "comments": "без комментариев"
+    },
+    "flix.content.category": {
+      "code": "film_category",
+      "title": "категория",
+      "description": "Кинофильмы по категориям",
+      "aggregat": "sd.flix",
+      "category": "Прочее",
+      "status": "Используется",
+      "master_system": "flix.home_cinema.catalog",
+      "business_objects": [
+        "flix.content.category"
+      ],
+      "comments": "без комментариев"
+    },
+    "flix.content.actor": {
+      "code": "actor",
+      "title": "актёр",
+      "description": "актеры мужчины",
+      "aggregat": "sd.flix",
+      "category": "Прочее",
+      "status": "Используется",
+      "master_system": "flix.home_cinema.catalog",
+      "business_objects": [
+        "flix.content.actor"
+      ],
+      "comments": "без комментариев"
+    },
+    "flix.content.actress": {
+      "code": "actress",
+      "title": "актриса",
+      "description": "актрисы женщины",
+      "aggregat": "sd.flix",
+      "category": "Прочее",
+      "status": "Используется",
+      "master_system": "flix.home_cinema.catalog",
+      "business_objects": "flix.content.actor",
+      "comments": "без комментариев"
+    },
+    "flix.address": {
+      "code": "address",
+      "title": "адрес",
+      "description": "полный адрес",
+      "aggregat": "sd.flix",
+      "category": "Прочее",
+      "status": "Используется",
+      "master_system": "flix.1c",
+      "business_objects": [
+        "flix.address",
+        "flix.addressFL",
+        "flix.addressUL"
+      ],
+      "comments": "без комментариев"
+    },
+    "flix.city": {
+      "code": "city",
+      "title": "город",
+      "description": "названия городов",
+      "aggregat": "sd.flix",
+      "category": "Прочее",
+      "status": "Используется",
+      "master_system": "flix.1c",
+      "business_objects": "flix.address",
+      "comments": "без комментариев"
+    },
+    "flix.country": {
+      "code": "country",
+      "title": "страна",
+      "description": "названия стран",
+      "aggregat": "sd.flix",
+      "category": "Прочее",
+      "status": "Используется",
+      "master_system": "flix.1c",
+      "business_objects": "flix.address",
+      "comments": "без комментариев"
+    },
+    "flix.staff": {
+      "code": "staff",
+      "title": "персонал",
+      "description": "staff-personal команда",
+      "aggregat": "sd.flix",
+      "category": "Прочее",
+      "status": "Используется",
+      "master_system": "flix.1c",
+      "business_objects": "flix.staff",
+      "comments": "без комментариев"
+    },
+    "alfa.fl.customer": {
+      "code": "customer",
+      "title": "заказчик",
+      "description": "customer-заказчик",
+      "aggregat": "sd.alfa",
+      "category": "Прочее",
+      "status": "Используется",
+      "master_system": "alfa.payment_gate",
+      "business_objects": "alfa.fl.customer",
+      "comments": "без комментариев"
+    },
+    "alfa.fl.payment": {
+      "code": "payment",
+      "title": "оплата",
+      "description": "payment-Оплата",
+      "aggregat": "sd.alfa",
+      "category": "Прочее",
+      "status": "Используется",
+      "master_system": "alfa.payment_gate",
+      "business_objects": "alfa.fl.payment",
+      "comments": "без комментариев"
+    }
+  }
+}

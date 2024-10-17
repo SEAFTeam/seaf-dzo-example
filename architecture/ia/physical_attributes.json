@@ -1,0 +1,689 @@
+{
+  "seaf.ia.physical_attributes": {
+    "actor.actor_id": {
+      "title": "actor_id",
+      "type": "integer",
+      "constraints": [
+        "PRIMARY KEY"
+      ],
+      "pdn_flag": false,
+      "cde_flag": false,
+      "pk_flag": true,
+      "fk_flag": false,
+      "physical_table": "actor",
+      "linked_table": null,
+      "linked_key": null
+    },
+    "actor.first_name": {
+      "title": "first_name",
+      "type": "character varying",
+      "constraints": null,
+      "physical_table": "actor",
+      "linked_table": null,
+      "linked_key": null
+    },
+    "actor.last_name": {
+      "title": "last_name",
+      "type": "character varying",
+      "constraints": null,
+      "physical_table": "actor",
+      "linked_table": null,
+      "linked_key": null
+    },
+    "actor.last_update": {
+      "title": "last_update",
+      "type": "timestamp without time zone",
+      "constraints": null,
+      "physical_table": "actor",
+      "linked_table": null,
+      "linked_key": null
+    },
+    "address.address_id": {
+      "title": "address_id",
+      "type": "integer",
+      "constraints": [
+        "PRIMARY KEY"
+      ],
+      "pdn_flag": false,
+      "cde_flag": false,
+      "pk_flag": true,
+      "physical_table": "address",
+      "linked_table": null,
+      "linked_key": null
+    },
+    "address.address": {
+      "title": "address",
+      "type": "character varying",
+      "constraints": null,
+      "pdn_flag": true,
+      "physical_table": "address",
+      "linked_table": null,
+      "linked_key": null
+    },
+    "address.address2": {
+      "title": "address2",
+      "type": "character varying",
+      "constraints": null,
+      "physical_table": "address",
+      "linked_table": null,
+      "linked_key": null
+    },
+    "address.district": {
+      "title": "district",
+      "type": "character varying",
+      "constraints": null,
+      "physical_table": "address",
+      "linked_table": null,
+      "linked_key": null
+    },
+    "address.city_id": {
+      "title": "city_id",
+      "type": "smallint",
+      "constraints": [
+        "FOREIGN KEY"
+      ],
+      "fk_flag": true,
+      "physical_table": "address",
+      "linked_table": "city",
+      "linked_key": "city.city_id"
+    },
+    "address.postal_code": {
+      "title": "postal_code",
+      "type": "character varying",
+      "constraints": null,
+      "physical_table": "address",
+      "linked_table": null,
+      "linked_key": null
+    },
+    "address.phone": {
+      "title": "phone",
+      "type": "character varying",
+      "constraints": null,
+      "physical_table": "address",
+      "linked_table": null,
+      "linked_key": null
+    },
+    "address.last_update": {
+      "title": "last_update",
+      "type": "timestamp without time zone",
+      "constraints": null,
+      "physical_table": "address",
+      "linked_table": null,
+      "linked_key": null
+    },
+    "category.category_id": {
+      "title": "category_id",
+      "type": "integer",
+      "constraints": [
+        "PRIMARY KEY"
+      ],
+      "pdn_flag": false,
+      "cde_flag": false,
+      "pk_flag": true,
+      "fk_flag": false,
+      "physical_table": "category",
+      "linked_table": null,
+      "linked_key": null
+    },
+    "category.name": {
+      "title": "title",
+      "type": "character varying",
+      "constraints": null,
+      "physical_table": "category",
+      "linked_table": null,
+      "linked_key": null
+    },
+    "category.last_update": {
+      "title": "last_update",
+      "type": "timestamp without time zone",
+      "constraints": null,
+      "physical_table": "category",
+      "linked_table": null,
+      "linked_key": null
+    },
+    "city.city_id": {
+      "title": "city_id",
+      "type": "integer",
+      "constraints": [
+        "PRIMARY KEY"
+      ],
+      "pdn_flag": false,
+      "cde_flag": false,
+      "pk_flag": true,
+      "fk_flag": false,
+      "physical_table": "city",
+      "linked_table": null,
+      "linked_key": null
+    },
+    "city.city": {
+      "title": "city",
+      "type": "character varying",
+      "constraints": null,
+      "physical_table": "city",
+      "linked_table": null,
+      "linked_key": null
+    },
+    "city.country_id": {
+      "title": "country_id",
+      "type": "smallint",
+      "constraints": [
+        "FOREIGN KEY"
+      ],
+      "pdn_flag": false,
+      "cde_flag": false,
+      "pk_flag": true,
+      "fk_flag": false,
+      "physical_table": "city",
+      "linked_table": "country",
+      "linked_key": "country.country_id"
+    },
+    "city.last_update": {
+      "title": "last_update",
+      "type": "timestamp without time zone",
+      "constraints": null,
+      "physical_table": "city",
+      "linked_table": null,
+      "linked_key": null
+    },
+    "country.country_id": {
+      "title": "country_id",
+      "type": "integer",
+      "constraints": [
+        "PRIMARY KEY"
+      ],
+      "pdn_flag": false,
+      "cde_flag": false,
+      "pk_flag": true,
+      "fk_flag": false,
+      "physical_table": "country",
+      "linked_table": null,
+      "linked_key": null
+    },
+    "country.country": {
+      "title": "country",
+      "type": "character varying",
+      "constraints": null,
+      "physical_table": "country",
+      "linked_table": null,
+      "linked_key": null
+    },
+    "country.last_update": {
+      "title": "last_update",
+      "type": "timestamp without time zone",
+      "constraints": null,
+      "physical_table": "country",
+      "linked_table": null,
+      "linked_key": null
+    },
+    "customer.customer_id": {
+      "title": "customer_id",
+      "type": "integer",
+      "constraints": [
+        "PRIMARY KEY"
+      ],
+      "pdn_flag": false,
+      "cde_flag": false,
+      "pk_flag": true,
+      "fk_flag": false,
+      "physical_table": "customer",
+      "linked_table": null,
+      "linked_key": null
+    },
+    "customer.first_name": {
+      "title": "first_name",
+      "type": "character varying",
+      "constraints": null,
+      "physical_table": "customer",
+      "linked_table": null,
+      "linked_key": null
+    },
+    "customer.last_name": {
+      "title": "last_name",
+      "type": "character varying",
+      "constraints": null,
+      "physical_table": "customer",
+      "linked_table": null,
+      "linked_key": null
+    },
+    "customer.email": {
+      "title": "email",
+      "type": "character varying",
+      "constraints": null,
+      "physical_table": "customer",
+      "linked_table": null,
+      "linked_key": null
+    },
+    "customer.address_id": {
+      "title": "address_id",
+      "type": "smallint",
+      "constraints": [
+        "FOREIGN KEY"
+      ],
+      "pdn_flag": false,
+      "cde_flag": false,
+      "pk_flag": false,
+      "fk_flag": true,
+      "physical_table": "customer",
+      "linked_table": "address",
+      "linked_key": "address.address_id"
+    },
+    "customer.activebool": {
+      "title": "activebool",
+      "type": "boolean",
+      "constraints": null,
+      "physical_table": "customer",
+      "linked_table": null,
+      "linked_key": null
+    },
+    "customer.create_date": {
+      "title": "create_date",
+      "type": "date",
+      "constraints": null,
+      "physical_table": "customer",
+      "linked_table": null,
+      "linked_key": null
+    },
+    "customer.last_update": {
+      "title": "last_update",
+      "type": "timestamp without time zone",
+      "constraints": null,
+      "physical_table": "customer",
+      "linked_table": null,
+      "linked_key": null
+    },
+    "customer.active": {
+      "title": "active",
+      "type": "integer",
+      "constraints": null,
+      "physical_table": "customer",
+      "linked_table": null,
+      "linked_key": null
+    },
+    "film_actor.actor_id": {
+      "title": "actor_id",
+      "type": "smallint",
+      "constraints": [
+        "FOREIGN KEY",
+        "PRIMARY KEY"
+      ],
+      "pdn_flag": false,
+      "cde_flag": false,
+      "pk_flag": true,
+      "fk_flag": true,
+      "physical_table": "film_actor",
+      "linked_table": "actor",
+      "linked_key": "actor.actor_id"
+    },
+    "film_actor.film_id": {
+      "title": "film_id",
+      "type": "smallint",
+      "constraints": [
+        "FOREIGN KEY",
+        "PRIMARY KEY"
+      ],
+      "pdn_flag": false,
+      "cde_flag": false,
+      "pk_flag": true,
+      "fk_flag": true,
+      "physical_table": "film_actor",
+      "linked_table": "film",
+      "linked_key": "film.film_id"
+    },
+    "film_actor.last_update": {
+      "title": "last_update",
+      "type": "timestamp without time zone",
+      "constraints": null,
+      "physical_table": "film_actor",
+      "linked_table": null,
+      "linked_key": null
+    },
+    "film_category.film_id": {
+      "title": "film_id",
+      "type": "smallint",
+      "constraints": [
+        "PRIMARY KEY",
+        "FOREIGN KEY"
+      ],
+      "pdn_flag": false,
+      "cde_flag": false,
+      "pk_flag": true,
+      "fk_flag": true,
+      "physical_table": "film_category",
+      "linked_table": "film",
+      "linked_key": "film.film_id"
+    },
+    "film_category.category_id": {
+      "title": "category_id",
+      "type": "smallint",
+      "constraints": [
+        "PRIMARY KEY",
+        "FOREIGN KEY"
+      ],
+      "pdn_flag": false,
+      "cde_flag": false,
+      "pk_flag": true,
+      "fk_flag": true,
+      "physical_table": "film_category",
+      "linked_table": "category",
+      "linked_key": "category.category_id"
+    },
+    "film_category.last_update": {
+      "title": "last_update",
+      "type": "timestamp without time zone",
+      "constraints": null,
+      "physical_table": "film_category",
+      "linked_table": null,
+      "linked_key": null
+    },
+    "language.language_id": {
+      "title": "language_id",
+      "type": "integer",
+      "constraints": [
+        "PRIMARY KEY"
+      ],
+      "pdn_flag": false,
+      "cde_flag": false,
+      "pk_flag": true,
+      "fk_flag": false,
+      "physical_table": "language",
+      "linked_table": null,
+      "linked_key": null
+    },
+    "language.name": {
+      "title": "title",
+      "type": "character",
+      "constraints": null,
+      "physical_table": "language",
+      "linked_table": null,
+      "linked_key": null
+    },
+    "language.last_update": {
+      "title": "last_update",
+      "type": "timestamp without time zone",
+      "constraints": null,
+      "physical_table": "language",
+      "linked_table": null,
+      "linked_key": null
+    },
+    "staff.staff_id": {
+      "title": "staff_id",
+      "type": "integer",
+      "constraints": [
+        "PRIMARY KEY"
+      ],
+      "pdn_flag": false,
+      "cde_flag": false,
+      "pk_flag": true,
+      "fk_flag": false,
+      "physical_table": "staff",
+      "linked_table": null,
+      "linked_key": null
+    },
+    "staff.first_name": {
+      "title": "first_name",
+      "type": "character varying",
+      "constraints": null,
+      "physical_table": "staff",
+      "linked_table": null,
+      "linked_key": null
+    },
+    "staff.last_name": {
+      "title": "last_name",
+      "type": "character varying",
+      "constraints": null,
+      "physical_table": "staff",
+      "linked_table": null,
+      "linked_key": null
+    },
+    "staff.address_id": {
+      "title": "address_id",
+      "type": "smallint",
+      "constraints": [
+        "FOREIGN KEY"
+      ],
+      "pdn_flag": false,
+      "cde_flag": false,
+      "pk_flag": false,
+      "fk_flag": true,
+      "physical_table": "staff",
+      "linked_table": "address",
+      "linked_key": "address.address_id"
+    },
+    "staff.email": {
+      "title": "email",
+      "type": "character varying",
+      "constraints": null,
+      "physical_table": "staff",
+      "linked_table": null,
+      "linked_key": null
+    },
+    "staff.active": {
+      "title": "active",
+      "type": "boolean",
+      "constraints": null,
+      "physical_table": "staff",
+      "linked_table": null,
+      "linked_key": null
+    },
+    "staff.username": {
+      "title": "username",
+      "type": "character varying",
+      "constraints": null,
+      "physical_table": "staff",
+      "linked_table": null,
+      "linked_key": null
+    },
+    "staff.password": {
+      "title": "password",
+      "type": "character varying",
+      "constraints": null,
+      "physical_table": "staff",
+      "linked_table": null,
+      "linked_key": null
+    },
+    "staff.last_update": {
+      "title": "last_update",
+      "type": "timestamp without time zone",
+      "constraints": null,
+      "physical_table": "staff",
+      "linked_table": null,
+      "linked_key": null
+    },
+    "staff.picture": {
+      "title": "picture",
+      "type": "bytea",
+      "constraints": null,
+      "physical_table": "staff",
+      "linked_table": null,
+      "linked_key": null
+    },
+    "payment.payment_id": {
+      "title": "payment_id",
+      "type": "integer",
+      "constraints": [
+        "PRIMARY KEY"
+      ],
+      "pdn_flag": false,
+      "cde_flag": false,
+      "pk_flag": true,
+      "fk_flag": false,
+      "physical_table": "payment",
+      "linked_table": null,
+      "linked_key": null
+    },
+    "payment.film_id": {
+      "title": "film_id",
+      "type": "integer",
+      "constraints": [
+        "FOREIGN KEY"
+      ],
+      "pdn_flag": false,
+      "cde_flag": false,
+      "pk_flag": true,
+      "fk_flag": false,
+      "physical_table": "payment",
+      "linked_table": "film",
+      "linked_key": "film.film_id"
+    },
+    "payment.customer_id": {
+      "title": "customer_id",
+      "type": "smallint",
+      "constraints": [
+        "FOREIGN KEY"
+      ],
+      "pdn_flag": false,
+      "cde_flag": false,
+      "pk_flag": false,
+      "fk_flag": true,
+      "physical_table": "payment",
+      "linked_table": "customer",
+      "linked_key": "customer.customer_id"
+    },
+    "payment.staff_id": {
+      "title": "staff_id",
+      "type": "smallint",
+      "constraints": [
+        "FOREIGN KEY"
+      ],
+      "pdn_flag": false,
+      "cde_flag": false,
+      "pk_flag": false,
+      "fk_flag": true,
+      "physical_table": "payment",
+      "linked_table": "staff",
+      "linked_key": "staff.staff_id"
+    },
+    "payment.amount": {
+      "title": "amount",
+      "type": "numeric",
+      "constraints": null,
+      "physical_table": "payment",
+      "linked_table": null,
+      "linked_key": null
+    },
+    "payment.payment_date": {
+      "title": "payment_date",
+      "type": "timestamp without time zone",
+      "constraints": null,
+      "physical_table": "payment",
+      "linked_table": null,
+      "linked_key": null
+    },
+    "film.film_id": {
+      "title": "film_id",
+      "type": "integer",
+      "constraints": [
+        "PRIMARY KEY"
+      ],
+      "pdn_flag": false,
+      "cde_flag": false,
+      "pk_flag": true,
+      "fk_flag": false,
+      "physical_table": "film",
+      "linked_table": null,
+      "linked_key": null
+    },
+    "film.title": {
+      "title": "title",
+      "type": "character varying",
+      "constraints": null,
+      "physical_table": "film",
+      "linked_table": null,
+      "linked_key": null
+    },
+    "film.description": {
+      "title": "description",
+      "type": "text",
+      "constraints": null,
+      "physical_table": "film",
+      "linked_table": null,
+      "linked_key": null
+    },
+    "film.release_year": {
+      "title": "release_year",
+      "type": "integer",
+      "constraints": null,
+      "physical_table": "film",
+      "linked_table": null,
+      "linked_key": null
+    },
+    "film.language_id": {
+      "title": "language_id",
+      "type": "smallint",
+      "constraints": [
+        "FOREIGN KEY"
+      ],
+      "pdn_flag": false,
+      "cde_flag": false,
+      "pk_flag": false,
+      "fk_flag": true,
+      "physical_table": "film",
+      "linked_table": "language",
+      "linked_key": "language.language_id"
+    },
+    "film.rental_duration": {
+      "title": "rental_duration",
+      "type": "smallint",
+      "constraints": null,
+      "physical_table": "film",
+      "linked_table": null,
+      "linked_key": null
+    },
+    "film.rental_rate": {
+      "title": "rental_rate",
+      "type": "numeric",
+      "constraints": null,
+      "physical_table": "film",
+      "linked_table": null,
+      "linked_key": null
+    },
+    "film.length": {
+      "title": "length",
+      "type": "smallint",
+      "constraints": null,
+      "physical_table": "film",
+      "linked_table": null,
+      "linked_key": null
+    },
+    "film.replacement_cost": {
+      "title": "replacement_cost",
+      "type": "numeric",
+      "constraints": null,
+      "physical_table": "film",
+      "linked_table": null,
+      "linked_key": null
+    },
+    "film.rating": {
+      "title": "rating",
+      "type": "USER-DEFINED",
+      "constraints": null,
+      "physical_table": "film",
+      "linked_table": null,
+      "linked_key": null
+    },
+    "film.last_update": {
+      "title": "last_update",
+      "type": "timestamp without time zone",
+      "constraints": null,
+      "physical_table": "film",
+      "linked_table": null,
+      "linked_key": null
+    },
+    "film.special_features": {
+      "title": "special_features",
+      "type": "ARRAY",
+      "constraints": null,
+      "physical_table": "film",
+      "linked_table": null,
+      "linked_key": null
+    },
+    "film.fulltext": {
+      "title": "fulltext",
+      "type": "tsvector",
+      "constraints": null,
+      "physical_table": "film",
+      "linked_table": null,
+      "linked_key": null
+    }
+  }
+}

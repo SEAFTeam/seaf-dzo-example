@@ -50,6 +50,7 @@ seaf.app.integrations:
     from: alfa.payment_gate
     to: flix.home_cinema.payments
     data-objects:
-      - payments.data_objects.payment
+#      - payments.data_objects.payment
+      - flix.fl.payment
     sber:
       status: Используется

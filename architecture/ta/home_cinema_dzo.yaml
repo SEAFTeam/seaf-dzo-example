@@ -166,8 +166,8 @@ seaf.ta.services.k8s:
 seaf.ta.components.server:
   flix.server_metal.09:
     title: Физический сервер
-    server_id: server_metal.09
-    fqdn_name: server_metal.09.flix.ru
+    id: server_metal.09
+    fqdn: server_metal.09.flix.ru
     disks:
       - disks:
           availabilityzone_id: dc_az.moscow
@@ -180,7 +180,7 @@ seaf.ta.components.server:
     cpu:
       cores: 4
       frequency: 1700
-    ram_qty: 128
+    ram: 128
     dc_id: flix.dc.02
     vendor: HP
     type: Физический
@@ -196,8 +196,8 @@ seaf.ta.components.server:
 
   flix.server_metal.10:
     title: Физический сервер
-    server_id: server_metal.10
-    fqdn_name: server_metal.10.flix.ru
+    id: server_metal.10
+    fqdn: server_metal.10.flix.ru
     disks:
       - disks:
           availabilityzone_id: dc_az.moscow
@@ -210,7 +210,7 @@ seaf.ta.components.server:
     cpu:
       cores: 4
       frequency: 1700
-    ram_qty: 128
+    ram: 128
     dc_id: flix.dc.02
     vendor: HP
     type: Физический

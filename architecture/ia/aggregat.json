@@ -1,0 +1,54 @@
+{
+  "seaf.ia.aggregat": {
+    "pr.sap": {
+      "code": "sap",
+      "title": "Проект миграции",
+      "description": "Проект миграции SAP",
+      "type": "Проект",
+      "owner": "Ответственный (ФИО)",
+      "unit": "Функциональный блок",
+      "content": [
+        "sa.flix",
+        "sa.alfa"
+      ]
+    },
+    "sa.flix": {
+      "code": "saflix",
+      "title": "ПО flix",
+      "description": "Предметная область",
+      "type": "Предметная область",
+      "owner": "Ответственный (ФИО)",
+      "unit": "Функциональный блок",
+      "content": [
+        "sd.flix"
+      ]
+    },
+    "sa.alfa": {
+      "code": "saalfa",
+      "title": "ПО alfa",
+      "description": "Предметная область",
+      "type": "Предметная область",
+      "owner": "Ответственный (ФИО)",
+      "unit": "Функциональный блок",
+      "content": [
+        "sd.alfa"
+      ]
+    },
+    "sd.flix": {
+      "code": "flix",
+      "title": "Поддомен flix",
+      "description": "Поддомен предметной области",
+      "type": "Поддомен",
+      "owner": "Ответственный (ФИО)",
+      "unit": "Функциональный блок"
+    },
+    "sd.alfa": {
+      "code": "alfa",
+      "title": "Поддомен alfa",
+      "description": "Поддомен предметной области",
+      "type": "Поддомен",
+      "owner": "Ответственный (ФИО)",
+      "unit": "Функциональный блок"
+    }
+  }
+}

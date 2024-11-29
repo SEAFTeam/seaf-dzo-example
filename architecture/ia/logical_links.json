@@ -1,0 +1,97 @@
+{
+  "seaf.ia.logical_links": {
+    "film2category": {
+      "description": "категория фильма",
+      "entity_a": "flix.content.film",
+      "entity_b": "flix.content.category",
+      "type": "ассоциация",
+      "multiplicity_a": "0:N",
+      "multiplicity_b":  "1:N"
+    },
+
+    "film2actors": {
+      "description": "актерский состав, фильморгафия",
+      "entity_a": "flix.content.film",
+      "entity_b": "flix.content.actor",
+      "type": "ассоциация",
+      "multiplicity_a": "1:N",
+      "multiplicity_b": "0:N"
+    },
+
+    "film2actresses": {
+      "description": "актерский состав, фильморгафия",
+      "entity_a": "flix.content.film",
+      "entity_b": "flix.content.actress",
+      "type": "ассоциация",
+      "multiplicity_a": "1:N",
+      "multiplicity_b": "0:N"
+    },
+
+    "film2language": {
+      "description": "оригинальный язык фильма",
+      "entity_a": "flix.content.film",
+      "entity_b": "flix.content.language",
+      "type": "ассоциация",
+      "multiplicity_a": "0:N",
+      "multiplicity_b": "0:N"
+    },
+
+    "address2city": {
+      "description": "адрес, город",
+      "entity_a": "flix.address",
+      "entity_b": "flix.city",
+      "type": "ассоциация",
+      "multiplicity_a": "0:N",
+      "multiplicity_b": "0:1"
+    },
+
+    "city2country": {
+      "entity_a": "flix.city",
+      "entity_b": "flix.country",
+      "type": "ассоциация",
+      "multiplicity_a": "0:N",
+      "multiplicity_b": "0:1"
+    },
+
+    "staff2address": {
+      "description": "адрес сотрудника",
+      "entity_a": "flix.staff",
+      "entity_b": "flix.address",
+      "type": "ассоциация",
+      "multiplicity_a": "0:N",
+      "multiplicity_b": "1:1"
+    },
+    "customer2address": {
+      "description": "адрес пользователя",
+      "entity_a": "alfa.fl.customer",
+      "entity_b": "flix.address",
+      "type": "ассоциация",
+      "multiplicity_a": "1:N",
+      "multiplicity_b": "1:1"
+    },
+    "payment2customer": {
+      "description": "оплаты покупателя",
+      "entity_a": "alfa.fl.payment",
+      "entity_b": "alfa.fl.customer",
+      "type": "ассоциация",
+      "multiplicity_a": "0:N",
+      "multiplicity_b": "1:1"
+    },
+    "payment2film": {
+      "description": "покупки фильма",
+      "entity_a": "alfa.fl.payment",
+      "entity_b": "flix.content.film",
+      "type": "ассоциация",
+      "multiplicity_a": "0:N",
+      "multiplicity_b": "1:1"
+    },
+    "payment2staff": {
+      "description": "оплаты, проведенные сотрудником",
+      "entity_a": "alfa.fl.payment",
+      "entity_b": "flix.staff",
+      "type": "ассоциация",
+      "multiplicity_a": "0:N",
+      "multiplicity_b": "1:1"
+    }
+  }
+}

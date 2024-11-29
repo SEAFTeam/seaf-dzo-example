@@ -40,7 +40,7 @@ seaf.ba.processes:
     next_processes:
       - flix.brows_cat
     produces:
-      - flix.business_objects.client
+      - alfa.fl.customer
 
   alfa.payments.aquiring:
     title: Оплата онлайн
@@ -48,7 +48,9 @@ seaf.ba.processes:
       - alfa.payments
     next_processes:
       - flix.access_management
-  
+    consumes:
+      - alfa.fl.payment
+
   flix.brows_cat:
     title: Выбор фильма
     owner: flix.team.product
@@ -64,3 +66,6 @@ seaf.ba.processes:
     products:
       - flix.home_cinema
     is_part_of: flix.streaming_ondemand
+    produces:
+      - flix.content.film
+      - flix.content.actor

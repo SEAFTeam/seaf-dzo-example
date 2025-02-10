@@ -257,7 +257,8 @@ seaf.ta.services.monitoring:
     ha: true
     availabilityzone_id:
       - flix.dc_az.moscow
-    role: Инфраструктурный
+    role:
+      - Инфраструктурный
     app_components:
       - flix.home_cinema.auth.app
       - flix.home_cinema.auth.token_manager
@@ -291,3 +292,12 @@ seaf.change.requirements:
       test_check:
         title: Провести учения
         condition: Учения завершились успешно
+
+seaf.ta.components.network_segment:
+  flix.network_segment.dmz.02:
+    title: DMZ сеть
+    id: dmz.02
+    sber:
+      networks: flix.dmz.10.10.10.0
+      zone: DMZ
+      dc: flix.dc.01

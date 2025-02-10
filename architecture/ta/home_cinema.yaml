@@ -92,6 +92,7 @@ seaf.ta.services.office:
     title: Головной офис
     description: Головной офис компании
     address: Берёзовый бульвар, д.14
+    region_id: flix.dc_region.russia
 
 #### Создаём окружения для сервисов
 seaf.ta.services.environment:
@@ -350,8 +351,6 @@ seaf.ta.services.network:
     wan_ip: 1.1.1.0/28
     id: wan.1.1.1.0
     type: WAN
-    az:
-      - flix.dc_az.moscow
     dc:
       - flix.dc.01
 
@@ -364,8 +363,6 @@ seaf.ta.services.network:
     wan_ip: 1.1.1.16/28
     id: wan.1.1.1.16
     type: WAN
-    az:
-      - flix.dc_az.moscow
     dc:
       - flix.dc.01
 
@@ -378,8 +375,6 @@ seaf.ta.services.network:
     wan_ip: 2.2.2.0/28
     id: wan.2.2.2.0
     type: WAN
-    az:
-      - flix.dc_az.moscow
     dc:
       - flix.dc.01
 
@@ -392,8 +387,6 @@ seaf.ta.services.network:
     wan_ip: 1.1.1.48/28
     id: wan.1.1.1.48
     type: WAN
-    az:
-      - flix.dc_az.moscow
     dc:
       - flix.dc.02
 
@@ -406,8 +399,6 @@ seaf.ta.services.network:
     wan_ip: 1.1.1.32/28
     id: wan.1.1.1.32
     type: WAN
-    az:
-      - flix.dc_az.moscow
     office: flix.office.hq
 
 #### Создаём описание пограничных сетей

@@ -125,10 +125,10 @@ seaf.ta.components.k8s_image:
     image_id: k8s_image.transaction
 
 seaf.ta.components.network:
-  flix.network.cisco.04:
+  flix.network.cisco.11:
     title: Cisco ASR 1001-X
     description: Аппаратный маршрутизатор
-    network_appliance_id: cisco.04
+    network_appliance_id: cisco.11
     model: ASR 1001-X
     realization_type:  Физический
     address: 192.168.1.2
@@ -136,6 +136,8 @@ seaf.ta.components.network:
     placement_type: Периметр
     sber:
       auth_type: Двухфакторная
+      class: Иное
+      device_type: Маршрутизатор (роутер)
 
 seaf.ta.services.k8s:
   flix.k8s.02:

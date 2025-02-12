@@ -141,7 +141,7 @@ seaf.ta.services.k8s:
   flix.k8s.02:
     kubernetes_id: k8s.02
     description: K8s кластер в az.moscow
-    availabilityzone_id:
+    availabilityzone:
       - flix.dc_az.moscow
     software:  '1.28'
     master_qty: 3
@@ -231,7 +231,7 @@ seaf.ta.components.hw_storage:
     storage_id: hw_storage.02
     vendor: IBM Storwize 7000
     volume: 10000
-    dc_id: flix.dc.01
+    dc: flix.dc.01
     disk_type: SSD
     protocols: FC, Ethernet
     sber:
@@ -255,7 +255,7 @@ seaf.ta.services.monitoring:
     description: Инфра мониторинг 2
     monitoring_id: monitoring.02
     ha: true
-    availabilityzone_id:
+    availabilityzone:
       - flix.dc_az.moscow
     role:
       - Инфраструктурный
@@ -293,7 +293,7 @@ seaf.change.requirements:
         title: Провести учения
         condition: Учения завершились успешно
 
-seaf.ta.components.network_segment:
+seaf.ta.services.network_segment:
   flix.network_segment.dmz.02:
     title: DMZ сеть
     id: dmz.02

@@ -298,7 +298,7 @@ seaf.ta.components.network:
 
 #### Создаём описание сетей
 #### Создаём описание сетевых сегментов
-seaf.ta.components.network_segment:
+seaf.ta.services.network_segment:
   flix.network_segment.dmz.01:
     title: DMZ сеть
     id: dmz.01

@@ -186,7 +186,6 @@ seaf.ta.components.network:
     model: 4800F
     dc: flix.dc.01
     network_appliance_id: fortigate.01
-    placement_segment: flix.network_segment.inet_edge.01
     purpose: Пограничный маршрутизатор
     address: 10.10.11.1
     stand_id:
@@ -203,7 +202,6 @@ seaf.ta.components.network:
     realization_type: Физический
     model: 4800F
     network_appliance_id: fortigate.02
-    placement_segment: flix.network_segment.inet_edge.01
     purpose: Пограничный маршрутизатор
     address: 10.10.12.1
     dc: flix.dc.02
@@ -220,7 +218,6 @@ seaf.ta.components.network:
     realization_type: Физический
     model: 4800F
     network_appliance_id: fortigate.03
-    placement_segment: flix.network_segment.inet_edge.01
     purpose: Пограничный маршрутизатор
     address: 10.10.13.1
     dc: flix.dc.03
@@ -239,7 +236,6 @@ seaf.ta.components.network:
     realization_type: Физический
     model: 4800F
     network_appliance_id: fortigate.04
-    placement_segment: flix.network_segment.inet_edge.01
     purpose: Пограничный маршрутизатор
     address: 10.10.14.1
     office: flix.office.hq
@@ -250,7 +246,6 @@ seaf.ta.components.network:
     network_connection_devices:
       - flix.network_links.cloud_hq
 
-#### Создаём описание VPN шлюза
   flix.network.cisco.01:
     title: Cisco ASR 1001-X
     description: Аппаратный маршрутизатор
@@ -258,7 +253,6 @@ seaf.ta.components.network:
     model: ASR 1001-X
     dc: flix.dc.02
     network_appliance_id: cisco.01
-    placement_segment:
     purpose: Маршрутизатор
     address: 192.168.1.1
     stand_id:
@@ -273,7 +267,6 @@ seaf.ta.components.network:
     model: ASR 1001-X
     dc: flix.dc.03
     network_appliance_id: cisco.02
-    placement_segment:
     purpose: Маршрутизатор
     address: 192.168.1.2
     stand_id:
@@ -288,7 +281,6 @@ seaf.ta.components.network:
     model: ASR 1001-X
     office: flix.office.hq
     network_appliance_id: cisco.03
-    placement_segment: flix.network_segment.office.ntwrk.01
     purpose: Маршрутизатор
     address: 192.168.1.2
     stand_id:
@@ -305,13 +297,30 @@ seaf.ta.services.network_segment:
   flix.network_segment.intdc.01:
     title: Internal DC Network
     id: intdc.01
+  flix.network_segment.intdc.02:
+    title: Internal DC Network
+    id: intdc.02
+  flix.network_segment.intdc.03:
+    title: Internal DC Network
+    id: intdc.03
   flix.network_segment.office.ntwrk.01:
     title: Office Network
     id: office.ntwrk.01
   flix.network_segment.inet_edge.01:
     title: Inet Edge
     id: inet_edge.01
-
+  flix.network_segment.inet_edge.02:
+    title: Inet Edge
+    id: inet_edge.02
+  flix.network_segment.inet_edge.03:
+    title: Inet Edge
+    id: inet_edge.03
+  flix.network_segment.inet_edge.04:
+    title: Inet Edge
+    id: inet_edge.04
+  flix.network_segment.inet_edge.05:
+    title: Inet Edge
+    id: inet_edge.05
 #### Создаём описание внутренних сети
 seaf.ta.services.network:
   flix.lan.192.168.1.0:
@@ -332,7 +341,7 @@ seaf.ta.services.network:
     title: LAN сеть
     id: lan.192.168.2.0
     type: LAN
-    segment: flix.network_segment.intdc.01
+    segment: flix.network_segment.intdc.02
     lan_type: Проводная
     ipnetwork: 192.168.2.0/24
     description: Сеть внутри VK
@@ -346,7 +355,7 @@ seaf.ta.services.network:
     title: LAN сеть
     id: lan.192.168.3.0
     type: LAN
-    segment: flix.network_segment.intdc.01
+    segment: flix.network_segment.intdc.03
     lan_type: Проводная
     ipnetwork: 192.168.3.0/24
     description: Сеть внутри co-location Cloud
@@ -377,6 +386,7 @@ seaf.ta.services.network:
     wan_ip: 1.1.1.0/28
     id: wan.1.1.1.0
     type: WAN
+    segment: flix.network_segment.inet_edge.01
     dc:
       - flix.dc.01
 
@@ -387,6 +397,7 @@ seaf.ta.services.network:
     wan_ip: 1.1.1.16/28
     id: wan.1.1.1.16
     type: WAN
+    segment: flix.network_segment.inet_edge.02
     dc:
       - flix.dc.01
 
@@ -397,6 +408,7 @@ seaf.ta.services.network:
     wan_ip: 2.2.2.0/28
     id: wan.2.2.2.0
     type: WAN
+    segment: flix.network_segment.inet_edge.03
     dc:
       - flix.dc.03
 
@@ -406,6 +418,7 @@ seaf.ta.services.network:
     bandwidth: 1000
     wan_ip: 1.1.1.48/28
     id: wan.1.1.1.48
+    segment: flix.network_segment.inet_edge.04
     type: WAN
     dc:
       - flix.dc.02
@@ -417,6 +430,7 @@ seaf.ta.services.network:
     wan_ip: 1.1.1.32/28
     id: wan.1.1.1.32
     type: WAN
+    segment: flix.network_segment.inet_edge.05
     office: flix.office.hq
 
 #### Создаём описание пограничных сетей

@@ -86,6 +86,7 @@ seaf.ta.services.office:
     address: Берёзовый бульвар, д.14
     region: flix.dc_region.russia
 
+
 #### Создаём окружения для сервисов
 seaf.ta.services.environment:
   flix.environment.dev:
@@ -408,6 +409,7 @@ seaf.ta.services.network:
     wan_ip: 2.2.2.0/28
     id: wan.2.2.2.0
     type: WAN
+
     segment: flix.network_segment.inet_edge.03
     dc:
       - flix.dc.03

@@ -298,8 +298,8 @@ seaf.change.requirements:
 seaf.ta.services.network_segment:
   flix.network_segment.dmz.02:
     title: DMZ сеть
-    id: dmz.02
+    network_segment_id: dmz.02
     sber:
       networks: flix.dmz.10.10.10.0
       zone: DMZ
-      dc: flix.dc.01
+      location: flix.dc.01

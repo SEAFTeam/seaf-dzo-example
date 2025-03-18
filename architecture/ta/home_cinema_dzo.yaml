@@ -128,7 +128,7 @@ seaf.ta.components.network:
   flix.network.cisco.11:
     title: Cisco ASR 1001-X
     description: Аппаратный маршрутизатор
-    network_appliance_id: cisco.11
+    id: cisco.11
     model: ASR 1001-X
     realization_type:  Физический
     address: 192.168.1.2
@@ -183,7 +183,7 @@ seaf.ta.components.server:
       cores: 4
       frequency: 1700
     ram: 128
-    dc_id: flix.dc.02
+    location: flix.dc.02
     vendor: HP
     type: Физический
     model: DL360 G8
@@ -213,7 +213,7 @@ seaf.ta.components.server:
       cores: 4
       frequency: 1700
     ram: 128
-    dc_id: flix.dc.02
+    location: flix.dc.02
     vendor: HP
     type: Физический
     model: DL360 G8
@@ -300,6 +300,5 @@ seaf.ta.services.network_segment:
     title: DMZ сеть
     network_segment_id: dmz.02
     sber:
-      networks: flix.dmz.10.10.10.0
       zone: DMZ
-      location: flix.dc.01
+      location: flix.dc.1

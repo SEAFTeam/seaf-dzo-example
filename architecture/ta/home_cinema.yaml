@@ -64,7 +64,7 @@ seaf.ta.services.office:
     title: Головной офис
     description: Головной офис компании
     address: Берёзовый бульвар, д.14
-    region_id: flix.dc_region.russia
+    region: flix.dc_region.russia
 
 #### Создаём окружения для сервисов
 seaf.ta.services.environment:
@@ -212,7 +212,7 @@ seaf.ta.components.network:
     purpose: Пограничный маршрутизатор
     address: 10.10.13.1
     dc: flix.dc.03
-    stand_id:
+    stand:
       - flix.stand.prod
     network_connection:
       - flix.wan.2.2.2.0
@@ -246,7 +246,7 @@ seaf.ta.components.network:
     id: cisco.01
     purpose: Маршрутизатор
     address: 192.168.1.1
-    stand_id:
+    stand:
       - flix.stand.prod
     network_connection:
       - flix.lan.192.168.2.0
@@ -322,7 +322,7 @@ seaf.ta.services.network:
     lan_type: Проводная
     ipnetwork: 192.168.1.0/24
     description: Сеть внутри Cloud
-    dc:
+    location:
       - flix.dc.01
     vlan: 160
     stand:
@@ -336,7 +336,7 @@ seaf.ta.services.network:
     lan_type: Проводная
     ipnetwork: 192.168.2.0/24
     description: Сеть внутри VK
-    dc:
+    location:
       - flix.dc.02
     vlan: 150
     stand:
@@ -350,7 +350,7 @@ seaf.ta.services.network:
     lan_type: Проводная
     ipnetwork: 192.168.3.0/24
     description: Сеть внутри co-location Cloud
-    dc:
+    location:
       - flix.dc.03
     vlan: 110
     stand:
@@ -364,7 +364,8 @@ seaf.ta.services.network:
     lan_type: Проводная
     ipnetwork: 192.168.4.0/24
     description: Сеть внутри головного офиса
-    office: flix.office.hq
+    location:
+      - flix.office.hq
     vlan: 1
     stand:
       - flix.stand.prod
@@ -378,7 +379,7 @@ seaf.ta.services.network:
     id: wan.1.1.1.0
     type: WAN
     segment: flix.network_segment.inet_edge.01
-    dc:
+    location:
       - flix.dc.01
 
   flix.wan.1.1.1.16:
@@ -389,7 +390,7 @@ seaf.ta.services.network:
     id: wan.1.1.1.16
     type: WAN
     segment: flix.network_segment.inet_edge.02
-    dc:
+    location:
       - flix.dc.01
 
   flix.wan.2.2.2.0:
@@ -399,9 +400,8 @@ seaf.ta.services.network:
     wan_ip: 2.2.2.0/28
     id: wan.2.2.2.0
     type: WAN
-
     segment: flix.network_segment.inet_edge.03
-    dc:
+    location:
       - flix.dc.03
 
   flix.wan.1.1.1.48:
@@ -412,7 +412,7 @@ seaf.ta.services.network:
     id: wan.1.1.1.48
     segment: flix.network_segment.inet_edge.04
     type: WAN
-    dc:
+    location:
       - flix.dc.02
 
   flix.wan.1.1.1.32:
@@ -423,7 +423,8 @@ seaf.ta.services.network:
     id: wan.1.1.1.32
     type: WAN
     segment: flix.network_segment.inet_edge.05
-    office: flix.office.hq
+    location:
+      - flix.office.hq
 
 #### Создаём описание пограничных сетей
   flix.dmz.10.10.10.0:
@@ -435,7 +436,7 @@ seaf.ta.services.network:
     lan_type: Проводная
     segment: flix.network_segment.dmz.01
     id: dmz.10.10.10.0
-    dc:
+    location:
       - flix.dc.01
 
 #### Создаём описание линков
@@ -493,7 +494,8 @@ seaf.ta.components.server:
       cores: 4
       frequency: 1700
     ram: 128
-    dc_id: flix.dc.02
+    location:
+      - flix.dc.02
     vendor: HP
     type: Физический
     model: DL360 G8
@@ -520,7 +522,8 @@ seaf.ta.components.server:
       cores: 4
       frequency: 1700
     ram: 128
-    dc_id: flix.dc.02
+    location:
+      - flix.dc.02
     vendor: HP
     type: Физический
     model: DL360 G8
@@ -546,7 +549,8 @@ seaf.ta.components.server:
       cores: 4
       frequency: 1700
     ram: 128
-    dc_id: flix.dc.02
+    location:
+      - flix.dc.02
     vendor: HP
     type: Физический
     model: DL360 G8
@@ -572,7 +576,8 @@ seaf.ta.components.server:
       cores: 4
       frequency: 1700
     ram: 128
-    dc_id: flix.dc.02
+    location:
+      - flix.dc.02
     vendor: HP
     type: Физический
     model: DL360 G8
@@ -598,7 +603,8 @@ seaf.ta.components.server:
       cores: 4
       frequency: 1700
     ram: 128
-    dc_id: flix.dc.02
+    location:
+      - flix.dc.02
     vendor: HP
     type: Физический
     model: DL360 G8
@@ -624,7 +630,8 @@ seaf.ta.components.server:
       cores: 4
       frequency: 1700
     ram: 128
-    dc_id: flix.dc.02
+    location:
+      - flix.dc.02
     vendor: HP
     type: Физический
     model: DL360 G8
@@ -650,7 +657,8 @@ seaf.ta.components.server:
       cores: 4
       frequency: 1700
     ram: 128
-    dc_id: flix.dc.02
+    location:
+      - flix.dc.02
     vendor: HP
     type: Физический
     model: DL360 G8
@@ -676,7 +684,8 @@ seaf.ta.components.server:
       cores: 4
       frequency: 1700
     ram: 128
-    dc_id: flix.dc.02
+    location:
+      - flix.dc.02
     vendor: HP
     type: Физический
     model: DL360 G8
@@ -695,7 +704,7 @@ seaf.ta.components.server:
     virtualization: flix.cluster_virtualization.cloud.01
     disks:
       - disk0:
-          availabilityzone_id: dc_az.moscow
+          az: dc_az.moscow
           size: 100
           type: SSD
       - disk1:
@@ -725,7 +734,7 @@ seaf.ta.components.server:
     virtualization: flix.cluster_virtualization.cloud.01
     disks:
       - disks :
-          availabilityzone_id: dc_az.moscow
+          az: dc_az.moscow
           size: 100
           type: SSD
     ram: 16
@@ -775,7 +784,7 @@ seaf.ta.components.server:
     virtualization: flix.cluster_virtualization.vk.01
     disks:
       - disks :
-          availabilityzone_id: dc_az.moscow
+          az: dc_az.moscow
           size: 100
           type: SSD
     ram: 16
@@ -802,7 +811,7 @@ seaf.ta.components.server:
     virtualization: flix.cluster_virtualization.cloud.02
     disks:
       - disks :
-          availabilityzone_id: dc_az.moscow
+          az: dc_az.moscow
           size: 100
           type: SSD
     ram: 16
@@ -828,7 +837,7 @@ seaf.ta.components.server:
     virtualization: flix.cluster_virtualization.cloud.02
     disks:
       - disks :
-          availabilityzone_id: dc_az.moscow
+          az: dc_az.moscow
           size: 100
           type: SSD
     ram: 16
@@ -854,7 +863,7 @@ seaf.ta.components.server:
     virtualization: flix.cluster_virtualization.cloud.02
     disks:
       - disks :
-          availabilityzone_id: dc_az.moscow
+          az: dc_az.moscow
           size: 100
           type: SSD
     ram: 16
@@ -880,7 +889,7 @@ seaf.ta.components.server:
     virtualization: flix.cluster_virtualization.cloud.02
     disks:
       - disks :
-          availabilityzone_id: dc_az.moscow
+          az: dc_az.moscow
           size: 100
           type: SSD
     ram: 16
@@ -906,7 +915,7 @@ seaf.ta.components.server:
     virtualization: flix.cluster_virtualization.cloud.02
     disks:
       - disks :
-          availabilityzone_id: dc_az.moscow
+          az: dc_az.moscow
           size: 100
           type: SSD
     ram: 16
@@ -932,7 +941,7 @@ seaf.ta.components.server:
     virtualization: flix.cluster_virtualization.cloud.02
     disks:
       - disks :
-          availabilityzone_id: dc_az.moscow
+          az: dc_az.moscow
           size: 100
           type: SSD
     ram: 16
@@ -958,7 +967,7 @@ seaf.ta.components.server:
     virtualization: flix.cluster_virtualization.cloud.02
     disks:
       - disks :
-          availabilityzone_id: dc_az.moscow
+          az: dc_az.moscow
           size: 100
           type: SSD
     ram: 16
@@ -984,7 +993,7 @@ seaf.ta.components.server:
     virtualization: flix.cluster_virtualization.cloud.02
     disks:
       - disks:
-          availabilityzone_id: dc_az.moscow
+          az: dc_az.moscow
           size: 100
           type: SSD
     ram: 16
@@ -1102,13 +1111,6 @@ seaf.ta.services.k8s:
     policy: Kyverno
     stand:
       - flix.stand.prod
-    server_id:
-      - flix.server_virtual.05
-      - flix.server_virtual.06
-      - flix.server_virtual.07
-      - flix.server_virtual.08
-      - flix.server_virtual.09
-      - flix.server_virtual.10
     app_components:
       - flix.home_cinema.payments.app
   
@@ -1131,7 +1133,7 @@ seaf.ta.services.monitoring:
     role:
       - Инфраструктурный
       - Журналирование
-    stand_id:
+    stand:
       - flix.stand.prod
 
 #### Создаём описание сервиса резервного копирования
@@ -1141,7 +1143,7 @@ seaf.ta.services.backup:
     description: Резервное копирование Acronis
     backup_id: backup.01
     path: sw_storage.01
-    availabilityzone_id:
+    availabilityzone:
       - flix.dc_az.moscow
     replication: false
     app_components:
@@ -1150,7 +1152,7 @@ seaf.ta.services.backup:
       - flix.home_cinema.catalog.app
       - flix.home_cinema.payments.app
       - flix.home_cinema.canals.app
-    stand_id:
+    stand:
       - flix.stand.prod
 
 #### Создаём описание лицензий

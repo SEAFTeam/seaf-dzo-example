@@ -183,7 +183,8 @@ seaf.ta.components.server:
       cores: 4
       frequency: 1700
     ram: 128
-    location: flix.dc.02
+    location:
+     - flix.dc.02
     vendor: HP
     type: Физический
     model: DL360 G8
@@ -213,7 +214,8 @@ seaf.ta.components.server:
       cores: 4
       frequency: 1700
     ram: 128
-    location: flix.dc.02
+    location:
+      - flix.dc.02
     vendor: HP
     type: Физический
     model: DL360 G8
@@ -301,4 +303,5 @@ seaf.ta.services.network_segment:
     network_segment_id: dmz.02
     sber:
       zone: DMZ
-      location: flix.dc.1
+      location:
+        - flix.dc.01

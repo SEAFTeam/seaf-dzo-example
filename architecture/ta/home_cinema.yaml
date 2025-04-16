@@ -4,15 +4,10 @@
 #### Создаём Регион
 seaf.ta.services.dc_region:
   flix.dc_region.russia:
-    region_id: dc_region.russia
+    external_id: dc_region.russia
     title: Регион Россия
     description: Регион доступности Россия ООО Фликс
-    app_components:
-      - flix.home_cinema.auth.app
-      - flix.home_cinema.auth.token_manager
-      - flix.home_cinema.catalog.app
-      - flix.home_cinema.canals.app
-      - flix.home_cinema.payments.app
+
 
 #### Создаём AZ
 seaf.ta.services.dc_az:
@@ -20,119 +15,104 @@ seaf.ta.services.dc_az:
     title: Зона доступности Москва
     description: Зона доступности Москва
     region: flix.dc_region.russia
-    az_vendor: Фликс
-    availabilityzone_id: dc_az.moscow
-    app_components:
-      - flix.home_cinema.auth.app
-      - flix.home_cinema.auth.token_manager
-      - flix.home_cinema.catalog.app
-      - flix.home_cinema.canals.app
-      - flix.home_cinema.payments.app
+    vendor: Фликс
+    external_id: dc_az.moscow
+
 
 #### Создаём ЦОД
 seaf.ta.services.dc:
   flix.dc.01:
-    dc_id: dc.01
+    external_id: dc.01
     title: Sber Cloud DC
     description: Sber Cloud Advanced
-    dc_vendor: Sber
-    dc_type: Основной
-    dc_address: Огородный проезд
-    dc_rack_qty: 5
-    dc_tier: '3'
-    dc_ownership: Аренда
-    availabilityzone:
-     - flix.dc_az.moscow
-    app_components:
-      - flix.home_cinema.auth.app
-      - flix.home_cinema.auth.token_manager
-      - flix.home_cinema.catalog.app
+    vendor: Sber
+    type: Основной
+    address: Огородный проезд
+    rack_qty: 5
+    tier: '3'
+    ownership: Аренда
+    availabilityzone: flix.dc_az.moscow
 
   flix.dc.02:
-    dc_id: dc.02
+    external_id: dc.02
     title: VK DC
     description: VK Cloud
-    dc_vendor: Mail
-    dc_type: Основной
-    dc_address: Садовый проезд
-    dc_rack_qty: 0
-    availabilityzone:
-     - flix.dc_az.moscow
-    dc_tier: '3'
-    dc_ownership: Аренда
-    app_components:
-      - flix.home_cinema.auth.app
-      - flix.home_cinema.auth.token_manager
-      - flix.home_cinema.catalog.app
+    vendor: Mail
+    type: Основной
+    address: Садовый проезд
+    rack_qty: 0
+    availabilityzone: flix.dc_az.moscow
+    tier: '3'
+    ownership: Аренда
+
 
   flix.dc.03:
-    dc_id: flix.dc.03
+    external_id: flix.dc.03
     title: Cloud.ru (Услуга по договору №1)
-    dc_ownership: Услуга
-    dc_type: IaaS/PaaS провайдер
-    dc_vendor: Cloud.ru
-    dc_address: Нет адреса
-    dc_rack_qty: 0
-    dc_tier: Tier III
-    availabilityzone:
-     - flix.dc_az.moscow
+    ownership: Услуга
+    type: IaaS/PaaS провайдер
+    vendor: Cloud.ru
+    address: Нет адреса
+    rack_qty: 0
+    tier: Tier III
+    availabilityzone: flix.dc_az.moscow
 
 #### Создаём офис
 seaf.ta.services.office:
   flix.office.hq:
-    office_id: office.hq
+    external_id: office.hq
     title: Головной офис
     description: Головной офис компании
     address: Берёзовый бульвар, д.14
     region: flix.dc_region.russia
 
-
 #### Создаём окружения для сервисов
 seaf.ta.services.environment:
   flix.environment.dev:
-    environment_id: environment.dev
+    external_id: environment.dev
     title: Окружение для разработки
 
   flix.environment.test:
-    environment_id: environment.test
+    external_id: environment.test
     title: Окружение для тестирования
 
   flix.environment.prod:
-    environment_id: environment.prod
+    external_id: environment.prod
     title: Окружение для продакшена
 
 #### Создаём стенды в окружениях
 seaf.ta.services.stand:
   flix.stand.dev:
-    stand_name: stand.dev
-    environment_id: flix.environment.dev
-    title: Стенд для разработки
+    title: stand.dev
+    external_id: flix.environment.dev
+    description: Стенд для разработки
 
   flix.stand.intest:
-    stand_name: stand.intest
-    environment_id: flix.environment.test
-    title: Стенд для интеграционного тестирования
+    title: stand.intest
+    external_id: flix.environment.test
+    description: Стенд для интеграционного тестирования
 
   flix.stand.ntest:
-    stand_name: stand.ntest
-    environment_id: flix.environment.test
-    title: Стенд для нагрузочного тестирования
+    title: stand.ntest
+    external_id: flix.environment.test
+    description: Стенд для нагрузочного тестирования
 
   flix.stand.prod:
-    stand_name: stand.prod
-    environment_id: flix.environment.prod
-    title: Стенд для продакшена
+    title: stand.prod
+    external_id: flix.environment.prod
+    description: Стенд для продакшена
 
   flix.stand.preprod:
-    stand_name: stand.preprod
-    environment_id: flix.environment.prod
+    title: stand.preprod
+    external_id: flix.environment.prod
+    description: Стенд продуктивный
 
 #### Создаём сервис виртуализации
 seaf.ta.services.cluster_virtualization:
   flix.cluster_virtualization.cloud.01:
     title: Кластер виртуализации
     description: Кластер виртуализации в облаке Cloud
-    virtualization_id: cluster_virtualization.cloud.01
+    external_id: cluster_virtualization.cloud.01
     availabilityzone:
       - flix.dc_az.moscow
     app_components:
@@ -142,12 +122,12 @@ seaf.ta.services.cluster_virtualization:
     drs_support: false
     sdrs_support: false
     oversubscription_rate: 3
-    stand_id:
+    stand:
       - flix.stand.prod
   flix.cluster_virtualization.cloud.02:
     title: Кластер виртуализации
     description: Собственный кластер виртуализации в облаке Cloud
-    virtualization_id: cluster_virtualization.cloud.02
+    external_id: cluster_virtualization.cloud.02
     availabilityzone:
       - flix.dc_az.moscow
     app_components:
@@ -160,12 +140,19 @@ seaf.ta.services.cluster_virtualization:
     cluster_reservation_type: Active-Active
     hypervisor: ESX
     oversubscription_rate: 1
-    stand_id:
+    server_id:
+      - flix.server_metal.01
+      - flix.server_metal.02
+      - flix.server_metal.03
+      - flix.server_metal.04
+      - flix.server_metal.05
+      - flix.server_metal.06
+    stand:
         - flix.stand.prod
   flix.cluster_virtualization.vk.01:
     title: Кластер виртуализации в облаке VK
     description: Кластер виртуализации в облаке VK
-    virtualization_id: cluster_virtualization.vk.01
+    external_id: cluster_virtualization.vk.01
     availabilityzone:
       - flix.dc_az.moscow
     app_components:
@@ -175,7 +162,7 @@ seaf.ta.services.cluster_virtualization:
     drs_support: true
     sdrs_support: true
     oversubscription_rate: 1
-    stand_id:
+    stand:
       - flix.stand.prod
 
 #### Создаём описание сетевых устройств
@@ -183,13 +170,16 @@ seaf.ta.components.network:
   flix.network.fortigate.01:
     title: FortiGate 4800F
     description: Аппаратный маршрутизатор
+    type: Маршрутизатор
     realization_type: Физический
     model: 4800F
-    dc: flix.dc.01
-    network_appliance_id: fortigate.01
+    location:
+      - flix.dc.01
+    external_id: cisco.01
+    placement_segment: flix.network_segment.inet_edge.01
     purpose: Пограничный маршрутизатор
-    address: 10.10.11.1
-    stand_id:
+    address: 192.168.1.1
+    stand:
       - flix.stand.prod
     network_connection:
       - flix.wan.1.1.1.0
@@ -200,13 +190,16 @@ seaf.ta.components.network:
   flix.network.fortigate.02:
     title: FortiGate 4800F
     description: Аппаратный маршрутизатор
+    type: Маршрутизатор
     realization_type: Физический
     model: 4800F
-    network_appliance_id: fortigate.02
+    location:
+      - flix.dc.02
+    external_id: fortigate.02
+    placement_segment: flix.network_segment.inet_edge.01
     purpose: Пограничный маршрутизатор
-    address: 10.10.12.1
-    dc: flix.dc.02
-    stand_id:
+    address: 10.10.10.1
+    stand:
       - flix.stand.prod
     network_connection:
       - flix.wan.1.1.1.48
@@ -216,13 +209,17 @@ seaf.ta.components.network:
   flix.network.fortigate.03:
     title: FortiGate 4800F
     description: Аппаратный маршрутизатор
+    type: Маршрутизатор
     realization_type: Физический
     model: 4800F
+    external_id: fortigate.02
+    placement_segment: flix.network_segment.inet_edge.01
     network_appliance_id: fortigate.03
     purpose: Пограничный маршрутизатор
     address: 10.10.13.1
-    dc: flix.dc.03
-    stand_id:
+    location:
+      - flix.dc.03
+    stand:
       - flix.stand.prod
     network_connection:
       - flix.wan.2.2.2.0
@@ -234,13 +231,15 @@ seaf.ta.components.network:
   flix.network.fortigate.04:
     title: FortiGate 4800F
     description: Аппаратный маршрутизатор
+    type: Маршрутизатор
     realization_type: Физический
     model: 4800F
-    network_appliance_id: fortigate.04
+    external_id: fortigate.04
     purpose: Пограничный маршрутизатор
     address: 10.10.14.1
-    office: flix.office.hq
-    stand_id:
+    location:
+      - flix.office.hq
+    stand:
       - flix.stand.prod
     network_connection:
       - flix.wan.1.1.1.32
@@ -250,13 +249,15 @@ seaf.ta.components.network:
   flix.network.cisco.01:
     title: Cisco ASR 1001-X
     description: Аппаратный маршрутизатор
+    type: Маршрутизатор
     realization_type: Физический
     model: ASR 1001-X
-    dc: flix.dc.02
-    network_appliance_id: cisco.01
+    location:
+      - flix.dc.02
+    external_id: cisco.01
     purpose: Маршрутизатор
     address: 192.168.1.1
-    stand_id:
+    stand:
       - flix.stand.prod
     network_connection:
       - flix.lan.192.168.2.0
@@ -264,13 +265,15 @@ seaf.ta.components.network:
   flix.network.cisco.02:
     title: Cisco ASR 1001-X
     description: Аппаратный маршрутизатор
+    type: Маршрутизатор
     realization_type: Физический
     model: ASR 1001-X
-    dc: flix.dc.03
-    network_appliance_id: cisco.02
+    location:
+      - flix.dc.03
+    external_id: cisco.02
     purpose: Маршрутизатор
     address: 192.168.1.2
-    stand_id:
+    stand:
       - flix.stand.prod
     network_connection:
       - flix.lan.192.168.3.0
@@ -278,13 +281,15 @@ seaf.ta.components.network:
   flix.network.cisco.03:
     title: Cisco ASR 1001-X
     description: Аппаратный маршрутизатор
+    type: Маршрутизатор
     realization_type: Физический
     model: ASR 1001-X
-    office: flix.office.hq
-    network_appliance_id: cisco.03
+    location:
+      - flix.office.hq
+    external_id: cisco.03
     purpose: Маршрутизатор
     address: 192.168.1.2
-    stand_id:
+    stand:
       - flix.stand.prod
     network_connection:
       - flix.lan.192.168.4.0
@@ -294,89 +299,90 @@ seaf.ta.components.network:
 seaf.ta.services.network_segment:
   flix.network_segment.dmz.01:
     title: DMZ сеть
-    id: dmz.01
+    external_id: dmz.01
   flix.network_segment.intdc.01:
     title: Internal DC Network
-    id: intdc.01
+    external_id: intdc.01
   flix.network_segment.intdc.02:
     title: Internal DC Network
-    id: intdc.02
+    external_id: intdc.02
   flix.network_segment.intdc.03:
     title: Internal DC Network
-    id: intdc.03
+    external_id: intdc.03
   flix.network_segment.office.ntwrk.01:
     title: Office Network
-    id: office.ntwrk.01
+    external_id: office.ntwrk.01
   flix.network_segment.inet_edge.01:
     title: Inet Edge
-    id: inet_edge.01
+    external_id: inet_edge.01
   flix.network_segment.inet_edge.02:
     title: Inet Edge
-    id: inet_edge.02
+    external_id: inet_edge.02
   flix.network_segment.inet_edge.03:
     title: Inet Edge
-    id: inet_edge.03
+    external_id: inet_edge.03
   flix.network_segment.inet_edge.04:
     title: Inet Edge
-    id: inet_edge.04
+    external_id: inet_edge.04
   flix.network_segment.inet_edge.05:
     title: Inet Edge
-    id: inet_edge.05
+    external_id: inet_edge.05
 #### Создаём описание внутренних сети
 seaf.ta.services.network:
   flix.lan.192.168.1.0:
     title: LAN сеть
-    id: lan.192.168.1.0
+    external_id: lan.192.168.1.0
     type: LAN
     segment: flix.network_segment.intdc.01
     lan_type: Проводная
     ipnetwork: 192.168.1.0/24
     description: Сеть внутри Cloud
-    dc:
+    location:
       - flix.dc.01
     vlan: 160
-    stand_id:
+    stand:
       - flix.stand.prod
 
   flix.lan.192.168.2.0:
     title: LAN сеть
-    id: lan.192.168.2.0
+    external_id: lan.192.168.2.0
     type: LAN
     segment: flix.network_segment.intdc.02
     lan_type: Проводная
     ipnetwork: 192.168.2.0/24
     description: Сеть внутри VK
-    dc:
+    location:
       - flix.dc.02
     vlan: 150
-    stand_id:
+    stand:
       - flix.stand.prod
 
   flix.lan.192.168.3.0:
     title: LAN сеть
-    id: lan.192.168.3.0
+    external_id: lan.192.168.3.0
     type: LAN
     segment: flix.network_segment.intdc.03
     lan_type: Проводная
     ipnetwork: 192.168.3.0/24
     description: Сеть внутри co-location Cloud
-    dc:
+    location:
       - flix.dc.03
     vlan: 110
-    stand_id:
+    stand:
       - flix.stand.prod
 
   flix.lan.192.168.4.0:
     title: LAN сеть
-    id: lan.192.168.4.0
+    external_id: lan.192.168.4.0
     type: LAN
     segment: flix.network_segment.office.ntwrk.01
     lan_type: Проводная
     ipnetwork: 192.168.4.0/24
     description: Сеть внутри головного офиса
-    office: flix.office.hq
+    location:
+      - flix.office.hq
     vlan: 1
-    stand_id:
+    stand:
       - flix.stand.prod
 
 #### Создаём описание внешних сетей
@@ -385,10 +391,10 @@ seaf.ta.services.network:
     provider: RT
     bandwidth: 1000
     wan_ip: 1.1.1.0/28
-    id: wan.1.1.1.0
+    external_id: wan.1.1.1.0
     type: WAN
     segment: flix.network_segment.inet_edge.01
-    dc:
+    location:
       - flix.dc.01
 
   flix.wan.1.1.1.16:
@@ -396,10 +402,10 @@ seaf.ta.services.network:
     provider: RT
     bandwidth: 1000
     wan_ip: 1.1.1.16/28
-    id: wan.1.1.1.16
+    external_id: wan.1.1.1.16
     type: WAN
     segment: flix.network_segment.inet_edge.02
-    dc:
+    location:
       - flix.dc.01
 
   flix.wan.2.2.2.0:
@@ -407,11 +413,10 @@ seaf.ta.services.network:
     provider: Cloud
     bandwidth: 1000
     wan_ip: 2.2.2.0/28
-    id: wan.2.2.2.0
+    external_id: wan.2.2.2.0
     type: WAN
-
     segment: flix.network_segment.inet_edge.03
-    dc:
+    location:
       - flix.dc.03
 
   flix.wan.1.1.1.48:
@@ -419,10 +424,10 @@ seaf.ta.services.network:
     provider: VK
     bandwidth: 1000
     wan_ip: 1.1.1.48/28
-    id: wan.1.1.1.48
+    external_id: wan.1.1.1.48
     segment: flix.network_segment.inet_edge.04
     type: WAN
-    dc:
+    location:
       - flix.dc.02
 
   flix.wan.1.1.1.32:
@@ -430,10 +435,11 @@ seaf.ta.services.network:
     provider:  MTS
     bandwidth: 100
     wan_ip: 1.1.1.32/28
-    id: wan.1.1.1.32
+    external_id: wan.1.1.1.32
     type: WAN
     segment: flix.network_segment.inet_edge.05
-    office: flix.office.hq
+    location:
+      - flix.office.hq
 
 #### Создаём описание пограничных сетей
   flix.dmz.10.10.10.0:
@@ -444,8 +450,8 @@ seaf.ta.services.network:
     type: LAN
     lan_type: Проводная
     segment: flix.network_segment.dmz.01
-    id: dmz.10.10.10.0
-    dc:
+    external_id: dmz.10.10.10.0
+    location:
       - flix.dc.01
 
 #### Создаём описание линков
@@ -454,7 +460,7 @@ seaf.ta.services.network_links:
     title: VK Cloud линк
     description: Связь между VK и Cloud
     type: VPN Site-to-site
-    networklinks_id: network_links.vk_cloud
+    external_id: network_links.vk_cloud
     ch_type: Основной
     bandwidth: 100
     ch_number: '600'
@@ -464,7 +470,7 @@ seaf.ta.services.network_links:
     title: HQ линк
     description: Связь между Cloud и головным офисом
     type: VPN Site-to-site
-    networklinks_id: network_links.cloud_hq
+    external_id: network_links.cloud_hq
     ch_type: Основной
     bandwidth: 100
     ch_number: '700'
@@ -473,9 +479,8 @@ seaf.ta.services.network_links:
   flix.network_links.cloud_laptop:
     title: Клиентский линк
     description: Связь между Cloud и клиентскими устройствами
-    network_appliance_id:
     type: SSL VPN
-    networklinks_id: network_links.cloud_laptop
+    external_id: network_links.cloud_laptop
     ch_type: Основной
     bandwidth: 10
     ch_number: '800'
@@ -486,16 +491,13 @@ seaf.ta.components.server:
 #### Создаём описание физических серверов
   flix.server_metal.01:
     title: Физический сервер
-    description: ''
-    id: server_metal.01
+    external_id: server_metal.01
     fqdn: server_metal.01.flix.ru
     disks:
       - disks :
-          availabilityzone_id: dc_az.moscow
           size: 100
           type: SSD
       - disk1:
-          availabilityzone_id: dc_az.moscow
           size: 101
           type: SATA
     nic_qty: 4
@@ -506,24 +508,24 @@ seaf.ta.components.server:
       cores: 4
       frequency: 1700
     ram: 128
-    dc_id: flix.dc.02
+    location:
+      - flix.dc.02
     vendor: HP
     type: Физический
     model: DL360 G8
-    storage_id:
+    storage:
       - flix.hw_storage.01
     subnets: flix.lan.192.168.2.0
-    stand_id:
+    stand:
       - flix.stand.prod
     is_part_of_cluster_virtualization:
       - flix.cluster_virtualization.cloud.01
   flix.server_metal.02:
     title: Физический сервер
-    id: server_metal.02
+    external_id: server_metal.02
     fqdn: server_metal.02.flix.ru
     disks:
       - disks :
-          availabilityzone_id: dc_az.moscow
           size: 100
           type: SSD
     nic_qty: 4
@@ -534,22 +536,23 @@ seaf.ta.components.server:
       cores: 4
       frequency: 1700
     ram: 128
-    dc_id: flix.dc.02
+    location:
+      - flix.dc.02
     vendor: HP
     type: Физический
     model: DL360 G8
-    storage_id: flix.hw_storage.01
-    stand_id:
+    storage:
+       - flix.hw_storage.01
+    stand:
       - flix.stand.prod
     is_part_of_cluster_virtualization:
       - flix.cluster_virtualization.cloud.01
   flix.server_metal.03:
     title: Физический сервер
-    id: server_metal.03
+    external_id: server_metal.03
     fqdn: server_metal.03.flix.ru
     disks:
       - disks :
-          availabilityzone_id: dc_az.moscow
           size: 100
           type: SSD
     nic_qty: 4
@@ -560,22 +563,23 @@ seaf.ta.components.server:
       cores: 4
       frequency: 1700
     ram: 128
-    dc_id: flix.dc.02
+    location:
+      - flix.dc.02
     vendor: HP
     type: Физический
     model: DL360 G8
-    storage_id: flix.hw_storage.01
-    stand_id:
+    storage:
+      - flix.hw_storage.01
+    stand:
       - flix.stand.prod
     is_part_of_cluster_virtualization:
       - flix.cluster_virtualization.cloud.01
   flix.server_metal.04:
     title: Физический сервер
-    id: server_metal.04
+    external_id: server_metal.04
     fqdn: server_metal.04.flix.ru
     disks:
       - disks :
-          availabilityzone_id: dc_az.moscow
           size: 100
           type: SSD
     nic_qty: 4
@@ -586,22 +590,23 @@ seaf.ta.components.server:
       cores: 4
       frequency: 1700
     ram: 128
-    dc_id: flix.dc.02
+    location:
+      - flix.dc.02
     vendor: HP
     type: Физический
     model: DL360 G8
-    storage_id: flix.hw_storage.01
-    stand_id:
+    storage:
+      - flix.hw_storage.01
+    stand:
       - flix.stand.prod
     is_part_of_cluster_virtualization:
       - flix.cluster_virtualization.cloud.01
   flix.server_metal.05:
     title: Физический сервер
-    id: server_metal.05
+    external_id: server_metal.05
     fqdn: server_metal.05.flix.ru
     disks:
       - disks :
-          availabilityzone_id: dc_az.moscow
           size: 100
           type: SSD
     nic_qty: 4
@@ -612,22 +617,23 @@ seaf.ta.components.server:
       cores: 4
       frequency: 1700
     ram: 128
-    dc_id: flix.dc.02
+    location:
+      - flix.dc.02
     vendor: HP
     type: Физический
     model: DL360 G8
-    storage_id: flix.hw_storage.01
-    stand_id:
+    storage:
+      - flix.hw_storage.01
+    stand:
       - flix.stand.prod
     is_part_of_cluster_virtualization:
       - flix.cluster_virtualization.cloud.01
   flix.server_metal.06:
     title: Физический сервер
-    id: server_metal.06
+    external_id: server_metal.06
     fqdn: server_metal.06.flix.ru
     disks:
       - disks :
-          availabilityzone_id: dc_az.moscow
           size: 100
           type: SSD
     nic_qty: 4
@@ -638,22 +644,23 @@ seaf.ta.components.server:
       cores: 4
       frequency: 1700
     ram: 128
-    dc_id: flix.dc.02
+    location:
+      - flix.dc.02
     vendor: HP
     type: Физический
     model: DL360 G8
-    storage_id: flix.hw_storage.01
-    stand_id:
+    storage:
+      - flix.hw_storage.01
+    stand:
       - flix.stand.prod
     is_part_of_cluster_virtualization:
       - flix.cluster_virtualization.cloud.01
   flix.server_metal.07:
     title: Физический сервер
-    id: server_metal.07
+    external_id: server_metal.07
     fqdn: server_metal.07.flix.ru
     disks:
       - disks :
-          availabilityzone_id: dc_az.moscow
           size: 100
           type: SSD
     nic_qty: 4
@@ -664,22 +671,23 @@ seaf.ta.components.server:
       cores: 4
       frequency: 1700
     ram: 128
-    dc_id: flix.dc.02
+    location:
+      - flix.dc.02
     vendor: HP
     type: Физический
     model: DL360 G8
-    storage_id: flix.hw_storage.01
-    stand_id:
+    storage:
+      - flix.hw_storage.01
+    stand:
       - flix.stand.prod
     sw_storage_connected:
       - flix.sw_storage.01
   flix.server_metal.08:
     title: Физический сервер
-    id: server_metal.08
+    external_id: server_metal.08
     fqdn: server_metal.08.flix.ru
     disks:
       - disks :
-          availabilityzone_id: dc_az.moscow
           size: 100
           type: SSD
     nic_qty: 4
@@ -690,12 +698,14 @@ seaf.ta.components.server:
       cores: 4
       frequency: 1700
     ram: 128
-    dc_id: flix.dc.02
+    location:
+      - flix.dc.02
     vendor: HP
     type: Физический
     model: DL360 G8
-    storage_id: flix.hw_storage.01
-    stand_id:
+    storage:
+      - flix.hw_storage.01
+    stand:
       - flix.stand.prod
     sw_storage_connected:
       - flix.sw_storage.01
@@ -703,12 +713,12 @@ seaf.ta.components.server:
 #### Сервера для прикладного компонента Авторизация
   flix.server_virtual.01:
     title: Виртуальный сервер
-    id: server_virtual.01
+    external_id: server_virtual.01
     fqdn: server_virtual.01.flix.ru
     virtualization: flix.cluster_virtualization.cloud.01
     disks:
       - disk0:
-          availabilityzone_id: dc_az.moscow
+          az: dc_az.moscow
           size: 100
           type: SSD
       - disk1:
@@ -727,18 +737,18 @@ seaf.ta.components.server:
     az:
       - flix.dc_az.moscow
     description: Сервер приложений для прикладного компонента Авторизация
-    stand_id:
+    stand:
       - flix.stand.prod
     is_part_of_cluster:
       - flix.cluster.01
   flix.server_virtual.02:
     title: Виртуальный сервер
-    id: server_virtual.02
+    external_id: server_virtual.02
     fqdn: server_virtual.02.flix.ru
     virtualization: flix.cluster_virtualization.cloud.01
     disks:
       - disks :
-          availabilityzone_id: dc_az.moscow
+          az: dc_az.moscow
           size: 100
           type: SSD
     ram: 16
@@ -753,13 +763,13 @@ seaf.ta.components.server:
     az:
       - flix.dc_az.moscow
     description: Сервер приложений для прикладного компонента Авторизация
-    stand_id:
+    stand:
       - flix.stand.prod
     is_part_of_cluster:
       - flix.cluster.01
   flix.server_virtual.03:
     title: Виртуальный сервер
-    id: server_virtual.03
+    external_id: server_virtual.03
     fqdn: server_virtual.03.flix.ru
     virtualization: flix.cluster_virtualization.vk.01
     disks:
@@ -783,12 +793,12 @@ seaf.ta.components.server:
       - flix.cluster.01
   flix.server_virtual.04:
     title: Виртуальный сервер
-    id: server_virtual.04
+    external_id: server_virtual.04
     fqdn: server_virtual.04.flix.ru
     virtualization: flix.cluster_virtualization.vk.01
     disks:
       - disks :
-          availabilityzone_id: dc_az.moscow
+          az: dc_az.moscow
           size: 100
           type: SSD
     ram: 16
@@ -803,19 +813,19 @@ seaf.ta.components.server:
     az:
       - flix.dc_az.moscow
     description: Сервер приложений для прикладного компонента Авторизация
-    stand_id:
+    stand:
       - flix.stand.prod
     is_part_of_cluster:
       - flix.cluster.01
 #### Сервера для k8s кластера
   flix.server_virtual.05:
     title: Виртуальный сервер
-    id: server_virtual.05
+    external_id: server_virtual.05
     fqdn: server_virtual.05.flix.ru
     virtualization: flix.cluster_virtualization.cloud.02
     disks:
       - disks :
-          availabilityzone_id: dc_az.moscow
+          az: dc_az.moscow
           size: 100
           type: SSD
     ram: 16
@@ -830,18 +840,18 @@ seaf.ta.components.server:
     az:
       - flix.dc_az.moscow
     description: Сервер приложений для кластера K8s
-    stand_id:
+    stand:
       - flix.stand.prod
     is_part_of_k8s_cluster:
       - flix.k8s.01
   flix.server_virtual.06:
     title: Виртуальный сервер
-    id: server_virtual.06
+    external_id: server_virtual.06
     fqdn: server_virtual.06.flix.ru
     virtualization: flix.cluster_virtualization.cloud.02
     disks:
       - disks :
-          availabilityzone_id: dc_az.moscow
+          az: dc_az.moscow
           size: 100
           type: SSD
     ram: 16
@@ -856,18 +866,18 @@ seaf.ta.components.server:
     az:
       - flix.dc_az.moscow
     description: Сервер приложений для кластера K8s
-    stand_id:
+    stand:
       - flix.stand.prod
     is_part_of_k8s_cluster:
       - flix.k8s.01
   flix.server_virtual.07:
     title: Виртуальный сервер
-    id: server_virtual.07
+    external_id: server_virtual.07
     fqdn: server_virtual.07.flix.ru
     virtualization: flix.cluster_virtualization.cloud.02
     disks:
       - disks :
-          availabilityzone_id: dc_az.moscow
+          az: dc_az.moscow
           size: 100
           type: SSD
     ram: 16
@@ -882,18 +892,18 @@ seaf.ta.components.server:
     az:
       - flix.dc_az.moscow
     description: Сервер приложений для кластера K8s
-    stand_id:
+    stand:
       - flix.stand.prod
     is_part_of_k8s_cluster:
       - flix.k8s.01
   flix.server_virtual.08:
     title: Виртуальный сервер
-    id: server_virtual.08
+    external_id: server_virtual.08
     fqdn: server_virtual.08.flix.ru
     virtualization: flix.cluster_virtualization.cloud.02
     disks:
       - disks :
-          availabilityzone_id: dc_az.moscow
+          az: dc_az.moscow
           size: 100
           type: SSD
     ram: 16
@@ -908,18 +918,18 @@ seaf.ta.components.server:
     az:
       - flix.dc_az.moscow
     description: Сервер приложений для кластера K8s
-    stand_id:
+    stand:
       - flix.stand.prod
     is_part_of_k8s_cluster:
       - flix.k8s.01
   flix.server_virtual.09:
     title: Виртуальный сервер
-    id: server_virtual.09
+    external_id: server_virtual.09
     fqdn: server_virtual.09.flix.ru
     virtualization: flix.cluster_virtualization.cloud.02
     disks:
       - disks :
-          availabilityzone_id: dc_az.moscow
+          az: dc_az.moscow
           size: 100
           type: SSD
     ram: 16
@@ -934,18 +944,18 @@ seaf.ta.components.server:
     az:
       - flix.dc_az.moscow
     description: Сервер приложений для кластера K8s
-    stand_id:
+    stand:
       - flix.stand.prod
     is_part_of_k8s_cluster:
       - flix.k8s.01
   flix.server_virtual.10:
     title: Виртуальный сервер
-    id: server_virtual.10
+    external_id: server_virtual.10
     fqdn: server_virtual.10.flix.ru
     virtualization: flix.cluster_virtualization.cloud.02
     disks:
       - disks :
-          availabilityzone_id: dc_az.moscow
+          az: dc_az.moscow
           size: 100
           type: SSD
     ram: 16
@@ -960,18 +970,18 @@ seaf.ta.components.server:
     az:
       - flix.dc_az.moscow
     description: Сервер приложений для кластера K8s
-    stand_id:
+    stand:
       - flix.stand.prod
     is_part_of_k8s_cluster:
       - flix.k8s.01
   flix.server_virtual.11:
     title: Виртуальный сервер
-    id: server_virtual.11
+    external_id: server_virtual.11
     fqdn: server_virtual.11.flix.ru
     virtualization: flix.cluster_virtualization.cloud.02
     disks:
       - disks :
-          availabilityzone_id: dc_az.moscow
+          az: dc_az.moscow
           size: 100
           type: SSD
     ram: 16
@@ -988,16 +998,16 @@ seaf.ta.components.server:
     description: Сервер управления резервным копированием
     is_backup_connected:
       - flix.home_cinema.backup.acronis
-    stand_id:
+    stand:
       - flix.stand.prod
   flix.server_virtual.12:
     title: Виртуальный сервер
-    id: server_virtual.12
+    external_id: server_virtual.12
     fqdn: server_virtual.12.flix.ru
     virtualization: flix.cluster_virtualization.cloud.02
     disks:
       - disks:
-          availabilityzone_id: dc_az.moscow
+          az: dc_az.moscow
           size: 100
           type: SSD
     ram: 16
@@ -1014,7 +1024,7 @@ seaf.ta.components.server:
     description: Сервер управления резервным копированием
     is_monitoring_connected:
       - flix.monitoring.01
-    stand_id:
+    stand:
       - flix.stand.prod
 #### Создаём описание СХД
 #### Создаём описание аппаратных СХД
@@ -1023,12 +1033,12 @@ seaf.ta.components.hw_storage:
     title: СХД
     description: Аппаратное хранилище
     volume: 10000
-    dc: flix.dc.01
-    storage_id: hw_storage.01
+    location: flix.dc.01
+    external_id: hw_storage.01
     vendor: IBM Storwize 7000
     disk_type: SSD
     protocols: FC, Ethernet
-    stand_id:
+    stand:
       - flix.stand.prod
 
 #### Создаём описание программных СХД
@@ -1038,58 +1048,58 @@ seaf.ta.services.storage:
     description: SDS Storage
     volume: 1000
     software: CEPH
-    storage_id: sw_storage.01
+    external_id: sw_storage.01
     availabilityzone:
       - flix.dc_az.moscow
     disk_type: SSD
     protocols: SMB, S3
     type: Software Defined Storage
     erasure_coding: 2
-    stand_id:
+    stand:
       - flix.stand.prod
 
   #### Создаём описание объектных хранилищ
   flix.obj_storage.cloud_s3:
     title: Storage
     description: S3 Storage
-    availabilityzone_id:
+    availabilityzone:
       - flix.dc_az.moscow
     type: Simple Storage Service
     sla: 99
     software: SaaS
-    storage_id: obj_storage.cloud_s3
+    external_id: obj_storage.cloud_s3
     app_components:
       - flix.home_cinema.catalog.app
-    stand_id:
+    stand:
       - flix.stand.prod
   flix.obj_storage.vk_s3:
     title: Storage
     description: S3 Storage
-    availabilityzone_id:
+    availabilityzone:
       - flix.dc_az.moscow
     type: Simple Storage Service
     sla: 99
     software: SaaS
-    storage_id: obj_storage.vk_s3
+    external_id: obj_storage.vk_s3
     app_components:
       - flix.home_cinema.catalog.app
-    stand_id:
+    stand:
       - flix.stand.prod
 
 #### Создаём описание кластеров
 seaf.ta.services.cluster:
  flix.cluster.01:
     title: Кластер приложений Wildfly
-    cluster_id: cluster.01
+    external_id: cluster.01
     availabilityzone:
       - flix.dc_az.moscow
     app_components:
       - flix.home_cinema.catalog.app
       - flix.home_cinema.canals.app
-    cluster_fqdn: wildfly.flix.ru
+    fqdn: wildfly.flix.ru
     cluster_reservation_type: Active-Active
     description: Wildfly cluster for flix.home_cinema.catalog.app
-    stand_id:
+    stand:
       - flix.stand.prod
     requirements:
       - flix.home_cinema.requirement1
@@ -1102,7 +1112,7 @@ seaf.ta.services.k8s:
     description: K8s кластер в az.moscow
     master_qty: 3
     software: '1.28'
-    kubernetes_id: k8s.01
+    external_id: k8s.01
     auth: Keycloack
     worker_qty: 2
     availabilityzone:
@@ -1113,15 +1123,8 @@ seaf.ta.services.k8s:
     service_mesh: Istio
     keys: Vault
     policy: Kyverno
-    stand_id:
+    stand:
       - flix.stand.prod
-    server_id:
-      - flix.server_virtual.05
-      - flix.server_virtual.06
-      - flix.server_virtual.07
-      - flix.server_virtual.08
-      - flix.server_virtual.09
-      - flix.server_virtual.10
     app_components:
       - flix.home_cinema.payments.app
   
@@ -1131,7 +1134,7 @@ seaf.ta.services.monitoring:
   flix.monitoring.01:
     title: Zabbix
     description: Инфра мониторинг
-    monitoring_id: monitoring.01
+    external_id: monitoring.01
     ha: false
     availabilityzone:
       - flix.dc_az.moscow
@@ -1144,7 +1147,7 @@ seaf.ta.services.monitoring:
     role:
       - Инфраструктурный
       - Журналирование
-    stand_id:
+    stand:
       - flix.stand.prod
 
 #### Создаём описание сервиса резервного копирования
@@ -1152,9 +1155,9 @@ seaf.ta.services.backup:
   flix.home_cinema.backup.acronis:
     title: Acronis
     description: Резервное копирование Acronis
-    backup_id: backup.01
+    external_id: backup.01
     path: sw_storage.01
-    availabilityzone_id:
+    availabilityzone:
       - flix.dc_az.moscow
     replication: false
     app_components:
@@ -1163,20 +1166,20 @@ seaf.ta.services.backup:
       - flix.home_cinema.catalog.app
       - flix.home_cinema.payments.app
       - flix.home_cinema.canals.app
-    stand_id:
+    stand:
       - flix.stand.prod
 
 #### Создаём описание лицензий
 seaf.ta.services.software:
   flix.licenses.acronis:
-    software_id: licenses.acronis
+    external_id: licenses.acronis
     vendor: Acronis
     title: СРК Acronis
     expiration: eternal
     type: Закрытая платная
     support: Expired
   flix.licenses.cryptopro:
-    software_id: licenses.cryptopro
+    external_id: licenses.cryptopro
     vendor: CryptoPro
     title: КриптоПро
     expiration: eternal
@@ -1189,7 +1192,7 @@ seaf.ta.services.software:
 #### Создаём клиентские устройства
 seaf.ta.components.user_device:
   flix.user_device.laptop:
-    user_device_id: user_device.laptop
+    external_id: user_device.laptop
     title: Ноутбуки сотрудников
     device_type: Внешнее устройство
     description: Клиентский ноутбук сотрудника

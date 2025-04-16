@@ -307,3 +307,13 @@ seaf.ta.services.network_segment:
       zone: DMZ
       location:
         - flix.dc.01
+
+seaf.ta.services.kb:
+  flix.kb.01:
+    service_class:
+      label: AV
+      software_name: Kaspersky
+      technology: Потоковый антивирус
+    status: Используется
+    network_connection:
+      - flix.lan.192.168.1.0

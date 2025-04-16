@@ -170,6 +170,7 @@ seaf.ta.components.network:
   flix.network.fortigate.01:
     title: FortiGate 4800F
     description: Аппаратный маршрутизатор
+    type: Маршрутизатор
     realization_type: Физический
     model: 4800F
     location:
@@ -189,6 +190,7 @@ seaf.ta.components.network:
   flix.network.fortigate.02:
     title: FortiGate 4800F
     description: Аппаратный маршрутизатор
+    type: Маршрутизатор
     realization_type: Физический
     model: 4800F
     location:
@@ -207,6 +209,7 @@ seaf.ta.components.network:
   flix.network.fortigate.03:
     title: FortiGate 4800F
     description: Аппаратный маршрутизатор
+    type: Маршрутизатор
     realization_type: Физический
     model: 4800F
     external_id: fortigate.02
@@ -228,6 +231,7 @@ seaf.ta.components.network:
   flix.network.fortigate.04:
     title: FortiGate 4800F
     description: Аппаратный маршрутизатор
+    type: Маршрутизатор
     realization_type: Физический
     model: 4800F
     external_id: fortigate.04
@@ -245,6 +249,7 @@ seaf.ta.components.network:
   flix.network.cisco.01:
     title: Cisco ASR 1001-X
     description: Аппаратный маршрутизатор
+    type: Маршрутизатор
     realization_type: Физический
     model: ASR 1001-X
     location:
@@ -260,6 +265,7 @@ seaf.ta.components.network:
   flix.network.cisco.02:
     title: Cisco ASR 1001-X
     description: Аппаратный маршрутизатор
+    type: Маршрутизатор
     realization_type: Физический
     model: ASR 1001-X
     location:
@@ -275,6 +281,7 @@ seaf.ta.components.network:
   flix.network.cisco.03:
     title: Cisco ASR 1001-X
     description: Аппаратный маршрутизатор
+    type: Маршрутизатор
     realization_type: Физический
     model: ASR 1001-X
     location:

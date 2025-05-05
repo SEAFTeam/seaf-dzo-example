@@ -305,8 +305,7 @@ seaf.ta.services.network_segment:
     external_id: dmz.02
     sber:
       zone: DMZ
-      location:
-        - flix.dc.01
+      location: flix.dc.01
 
 seaf.ta.services.kb:
   flix.kb.01:

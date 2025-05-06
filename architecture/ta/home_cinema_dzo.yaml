@@ -205,7 +205,6 @@ seaf.ta.components.server:
     fqdn: server_metal.10.flix.ru
     disks:
       - disks:
-          availabilityzone_id: dc_az.moscow
           size: 100
           type: SSD
     nic_qty: 4

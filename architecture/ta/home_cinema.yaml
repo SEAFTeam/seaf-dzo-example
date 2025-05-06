@@ -727,7 +727,7 @@ seaf.ta.components.server:
           size: 100
           type: SSD
       - disk1:
-          availabilityzone_id: dc_az.moscow
+          az: dc_az.moscow
           size: 100
           type: SATA
     ram: 16

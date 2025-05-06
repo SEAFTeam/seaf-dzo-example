@@ -8,11 +8,11 @@ seaf.ta.components.k8s_deployment:
     maxunavailable: 2
     update_strategy: RollingUpdate
     hpa: false
-    kubernetes_id:
+    kubernetes:
       - flix.k8s.02
     replicas: 10
-    deployment_id: k8s_deployment.auth
-    availabilityzone_id:
+    external_id: k8s_deployment.auth
+    availabilityzone:
       - flix.dc_az.moscow
     k8s_pod: seaf.ta.services.k8s_pod.auth
 
@@ -22,11 +22,11 @@ seaf.ta.components.k8s_deployment:
     maxunavailable: 2
     update_strategy: RollingUpdate
     hpa: false
-    kubernetes_id:
+    kubernetes:
       - flix.k8s.01
     replicas: 10
-    deployment_id: k8s_deployment.payments
-    availabilityzone_id:
+    deployment: k8s_deployment.payments
+    availabilityzone:
      - flix.dc_az.moscow
     k8s_pod: seaf.ta.services.k8s_pod.payments
 
@@ -34,16 +34,16 @@ seaf.ta.components.k8s_statefulset:
   seaf.ta.components.k8s_statefulset.auth:
     description: Микросервис аутентификации
     title:  Микросервис аутентификации
-    statefulset_id: k8s_statefulset.auth
+    external_id: k8s_statefulset.auth
     update_strategy: RollingUpdate
     hpa: false
     replicas: 3
     maxunavailable: 3
-    kubernetes_id:
+    kubernetes:
       - flix.k8s.01
-    availabilityzone_id:
+    availabilityzone:
       - flix.dc_az.moscow
-    container_id: seaf.ta.services.k8s_container.identity
+    container: seaf.ta.services.k8s_container.identity
     k8s_pod:
       - seaf.ta.services.k8s_pod.auth
     name: auth
@@ -57,7 +57,7 @@ seaf.ta.components.k8s_pod:
     access_level: Не привилегированный
     update_strategy: RollingUpdate
     title: Auth Back
-    pod_k8s_id: k8s_pod.auth
+    external_id: k8s_pod.auth
     stoptimeout: 60
     ml: false
     description: Бекенд под
@@ -73,7 +73,7 @@ seaf.ta.components.k8s_pod:
     access_level: Не привилегированный
     update_strategy: RollingUpdate
     title: Payments Back
-    pod_k8s_id: k8s_pod.payments
+    external_id: k8s_pod.payments
     stoptimeout: 60
     ml: false
     description: Бекенд под
@@ -89,7 +89,7 @@ seaf.ta.components.k8s_container:
     emergency_stop: Уровень настройки среды исполнения
     description: Контейнер с бизнес-логикой
     container_cpu: 1000
-    container_id: k8s_container.identity
+    external_id: k8s_container.identity
     affinity: yes
     k8s_image:
       - seaf.ta.services.k8s_image.identity
@@ -101,7 +101,7 @@ seaf.ta.components.k8s_container:
     emergency_stop: Уровень настройки среды исполнения
     description: Transaction Container
     container_cpu: 1000
-    container_id: k8s_container.transaction
+    external_id: k8s_container.transaction
     affinity: yes
     k8s_image:
       - seaf.ta.services.k8s_image.transaction
@@ -113,7 +113,7 @@ seaf.ta.components.k8s_image:
     title: identity
     repo_proved: true
     description: Образ контейнера
-    image_id:
+    image:
       - k8s_image.identity
 
   seaf.ta.services.k8s_image.transaction:
@@ -122,13 +122,14 @@ seaf.ta.components.k8s_image:
     title: transaction
     repo_proved: true
     description: Образ контейнера
-    image_id: k8s_image.transaction
+    image:
+     - k8s_image.transaction
 
 seaf.ta.components.network:
-  flix.network.cisco.04:
+  flix.network.cisco.11:
     title: Cisco ASR 1001-X
     description: Аппаратный маршрутизатор
-    network_appliance_id: cisco.04
+    external_id: cisco.11
     model: ASR 1001-X
     realization_type:  Физический
     address: 192.168.1.2
@@ -136,12 +137,15 @@ seaf.ta.components.network:
     placement_type: Периметр
     sber:
       auth_type: Двухфакторная
+      class: Иное
+      device_type: Маршрутизатор (роутер)
 
 seaf.ta.services.k8s:
   flix.k8s.02:
-    kubernetes_id: k8s.02
-    description: K8s кластер в az.moscow
-    availabilityzone_id:
+    title: K8s кластер расширенный
+    external_id: k8s.02
+    description: K8s кластер в az.moscow расширенный
+    availabilityzone:
       - flix.dc_az.moscow
     software:  '1.28'
     master_qty: 3
@@ -166,7 +170,7 @@ seaf.ta.services.k8s:
 seaf.ta.components.server:
   flix.server_metal.09:
     title: Физический сервер
-    id: server_metal.09
+    external_id: server_metal.09
     fqdn: server_metal.09.flix.ru
     disks:
       - disks:
@@ -181,7 +185,8 @@ seaf.ta.components.server:
       cores: 4
       frequency: 1700
     ram: 128
-    dc_id: flix.dc.02
+    location:
+     - flix.dc.02
     vendor: HP
     type: Физический
     model: DL360 G8
@@ -196,11 +201,10 @@ seaf.ta.components.server:
 
   flix.server_metal.10:
     title: Физический сервер
-    id: server_metal.10
+    external_id: server_metal.10
     fqdn: server_metal.10.flix.ru
     disks:
       - disks:
-          availabilityzone_id: dc_az.moscow
           size: 100
           type: SSD
     nic_qty: 4
@@ -211,7 +215,8 @@ seaf.ta.components.server:
       cores: 4
       frequency: 1700
     ram: 128
-    dc_id: flix.dc.02
+    location:
+      - flix.dc.02
     vendor: HP
     type: Физический
     model: DL360 G8
@@ -228,10 +233,11 @@ seaf.ta.components.hw_storage:
   flix.hw_storage.02:
     title: СХД
     description: Аппаратное хранилище
-    storage_id: hw_storage.02
+    external_id: hw_storage.02
     vendor: IBM Storwize 7000
     volume: 10000
-    dc_id: flix.dc.01
+    location:
+       - flix.dc.01
     disk_type: SSD
     protocols: FC, Ethernet
     sber:
@@ -253,11 +259,12 @@ seaf.ta.services.monitoring:
   flix.monitoring.02:
     title: Zabbix
     description: Инфра мониторинг 2
-    monitoring_id: monitoring.02
+    external_id: monitoring.02
     ha: true
-    availabilityzone_id:
+    availabilityzone:
       - flix.dc_az.moscow
-    role: Инфраструктурный
+    role:
+      - Инфраструктурный
     app_components:
       - flix.home_cinema.auth.app
       - flix.home_cinema.auth.token_manager
@@ -291,3 +298,21 @@ seaf.change.requirements:
       test_check:
         title: Провести учения
         condition: Учения завершились успешно
+
+seaf.ta.services.network_segment:
+  flix.network_segment.dmz.02:
+    title: DMZ сеть
+    external_id: dmz.02
+    sber:
+      zone: DMZ
+      location: flix.dc.01
+
+seaf.ta.services.kb:
+  flix.kb.01:
+    service_class:
+      label: AV
+      software_name: Kaspersky
+      technology: Потоковый антивирус
+    status: Используется
+    network_connection:
+      - flix.lan.192.168.1.0

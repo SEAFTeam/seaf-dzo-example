@@ -81,6 +81,10 @@ entities:
                   'link': 'entities/seaf.ta/network_md'
               },
               {
+                  'location': 'Архитектура/Техническая/Технические сервисы/Сетевые сегменты',
+                  'link': 'entities/seaf.ta/network_segment_md'
+              },
+              {
                   'location': 'Архитектура/Техническая/Технические сервисы/Сервис доступа к ресурсам сети',
                   'link': 'entities/seaf.ta/network_links_md'
               },

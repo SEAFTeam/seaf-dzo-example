@@ -1038,15 +1038,16 @@ seaf.ta.components.hw_storage:
     title: СХД
     description: Аппаратное хранилище
     volume: 10000
-    location: flix.dc.01
     external_id: hw_storage.01
     vendor: IBM Storwize 7000
     disk_type: SSD
     protocols: FC, Ethernet
     stand:
       - flix.stand.prod
-
-#### Создаём описание программных СХД
+    location:
+      - flix.dc.01
+      
+      #### Создаём описание программных СХД
 seaf.ta.services.storage:
   flix.sw_storage.01:
     title: Storage

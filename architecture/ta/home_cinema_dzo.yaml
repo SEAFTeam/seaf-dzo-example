@@ -9,7 +9,7 @@ seaf.ta.components.k8s_deployment:
     update_strategy: RollingUpdate
     hpa: false
     kubernetes:
-      - flix.k8s.02
+      - flix.k8s.01
     replicas: 10
     external_id: k8s_deployment.auth
     availabilityzone:
@@ -310,8 +310,8 @@ seaf.ta.services.network_segment:
 seaf.ta.services.kb:
   test.esxt.01:
     technology: Потоковый антивирус
-    software_name:
+    software_name: Kaspersky
     label: AV
     status: Создается
     network_connection:
-      - flix.wan.1.1.1.0
+      - flix.lan.192.168.1.0

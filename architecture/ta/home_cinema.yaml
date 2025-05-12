@@ -86,26 +86,31 @@ seaf.ta.services.stand:
     title: stand.dev
     external_id: flix.environment.dev
     description: Стенд для разработки
+    env: flix.environment.dev
 
   flix.stand.intest:
     title: stand.intest
     external_id: flix.environment.test
     description: Стенд для интеграционного тестирования
+    env: flix.environment.test
 
   flix.stand.ntest:
     title: stand.ntest
     external_id: flix.environment.test
     description: Стенд для нагрузочного тестирования
+    env: flix.environment.test
 
   flix.stand.prod:
     title: stand.prod
     external_id: flix.environment.prod
     description: Стенд для продакшена
+    env: flix.environment.prod
 
   flix.stand.preprod:
     title: stand.preprod
-    external_id: flix.environment.prod
-    description: Стенд продуктивный
+    external_id: flix.environment.preprod
+    description: Стенд предпродуктивный
+    env: flix.environment.prod
 
 #### Создаём сервис виртуализации
 seaf.ta.services.cluster_virtualization:
@@ -722,7 +727,7 @@ seaf.ta.components.server:
           size: 100
           type: SSD
       - disk1:
-          availabilityzone_id: dc_az.moscow
+          az: dc_az.moscow
           size: 100
           type: SATA
     ram: 16
@@ -1033,15 +1038,16 @@ seaf.ta.components.hw_storage:
     title: СХД
     description: Аппаратное хранилище
     volume: 10000
-    location: flix.dc.01
     external_id: hw_storage.01
     vendor: IBM Storwize 7000
     disk_type: SSD
     protocols: FC, Ethernet
     stand:
       - flix.stand.prod
-
-#### Создаём описание программных СХД
+    location:
+      - flix.dc.01
+      
+      #### Создаём описание программных СХД
 seaf.ta.services.storage:
   flix.sw_storage.01:
     title: Storage

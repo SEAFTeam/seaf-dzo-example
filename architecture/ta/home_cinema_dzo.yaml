@@ -9,7 +9,7 @@ seaf.ta.components.k8s_deployment:
     update_strategy: RollingUpdate
     hpa: false
     kubernetes:
-      - flix.k8s.02
+      - flix.k8s.01
     replicas: 10
     external_id: k8s_deployment.auth
     availabilityzone:
@@ -205,7 +205,6 @@ seaf.ta.components.server:
     fqdn: server_metal.10.flix.ru
     disks:
       - disks:
-          availabilityzone_id: dc_az.moscow
           size: 100
           type: SSD
     nic_qty: 4
@@ -237,7 +236,8 @@ seaf.ta.components.hw_storage:
     external_id: hw_storage.02
     vendor: IBM Storwize 7000
     volume: 10000
-    dc: flix.dc.01
+    location:
+       - flix.dc.01
     disk_type: SSD
     protocols: FC, Ethernet
     sber:
@@ -305,15 +305,13 @@ seaf.ta.services.network_segment:
     external_id: dmz.02
     sber:
       zone: DMZ
-      location:
-        - flix.dc.01
+      location: flix.dc.01
 
 seaf.ta.services.kb:
-  flix.kb.01:
-    service_class:
-      label: AV
-      software_name: Kaspersky
-      technology: Потоковый антивирус
-    status: Используется
+  test.esxt.01:
+    technology: Потоковый антивирус
+    software_name: Kaspersky
+    label: AV
+    status: Создается
     network_connection:
       - flix.lan.192.168.1.0

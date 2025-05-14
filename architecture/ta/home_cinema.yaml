@@ -145,13 +145,6 @@ seaf.ta.services.cluster_virtualization:
     cluster_reservation_type: Active-Active
     hypervisor: ESX
     oversubscription_rate: 1
-    server_id:
-      - flix.server_metal.01
-      - flix.server_metal.02
-      - flix.server_metal.03
-      - flix.server_metal.04
-      - flix.server_metal.05
-      - flix.server_metal.06
     stand:
         - flix.stand.prod
   flix.cluster_virtualization.vk.01:

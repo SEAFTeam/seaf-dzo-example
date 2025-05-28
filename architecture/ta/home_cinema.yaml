@@ -1097,12 +1097,22 @@ seaf.ta.services.cluster:
       - flix.home_cinema.canals.app
     fqdn: wildfly.flix.ru
     cluster_reservation_type: Active-Active
+    service_type: Cерверы приложений и т.д.
     description: Wildfly cluster for flix.home_cinema.catalog.app
     stand:
       - flix.stand.prod
     requirements:
       - flix.home_cinema.requirement1
       - flix.home_cinema.requirement2
+
+seaf.ta.services.compute_service:
+  flix.compute_service.01:
+    title: SMS Шлюз
+    description: SMS Шлюз для отправки СМС из Системы мониторинга
+    external_id: compute_service.01
+    availabilityzone:
+      - flix.dc_az.moscow
+    service_type: Коммуникации (АТС, Почта, мессенджеры, СМС шлюзы и т.д.)
 
 #### Создаём описание кластеров K8s
 seaf.ta.services.k8s:

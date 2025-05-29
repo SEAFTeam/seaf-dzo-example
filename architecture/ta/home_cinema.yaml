@@ -1158,6 +1158,8 @@ seaf.ta.services.monitoring:
       - Журналирование
     stand:
       - flix.stand.prod
+    network_connection:
+      - flix.lan.192.168.4.0
 
 #### Создаём описание сервиса резервного копирования
 seaf.ta.services.backup:
@@ -1177,6 +1179,8 @@ seaf.ta.services.backup:
       - flix.home_cinema.canals.app
     stand:
       - flix.stand.prod
+    network_connection:
+      - flix.lan.192.168.2.0
 
 #### Создаём описание лицензий
 seaf.ta.services.software:

@@ -145,13 +145,6 @@ seaf.ta.services.cluster_virtualization:
     cluster_reservation_type: Active-Active
     hypervisor: ESX
     oversubscription_rate: 1
-    server_id:
-      - flix.server_metal.01
-      - flix.server_metal.02
-      - flix.server_metal.03
-      - flix.server_metal.04
-      - flix.server_metal.05
-      - flix.server_metal.06
     stand:
         - flix.stand.prod
   flix.cluster_virtualization.vk.01:
@@ -305,6 +298,7 @@ seaf.ta.services.network_segment:
   flix.network_segment.dmz.01:
     title: DMZ сеть
     external_id: dmz.01
+    description: DMZ сеть dmz.01
   flix.network_segment.intdc.01:
     title: Internal DC Network
     external_id: intdc.01
@@ -1104,12 +1098,22 @@ seaf.ta.services.cluster:
       - flix.home_cinema.canals.app
     fqdn: wildfly.flix.ru
     cluster_reservation_type: Active-Active
+    service_type: Cерверы приложений и т.д.
     description: Wildfly cluster for flix.home_cinema.catalog.app
     stand:
       - flix.stand.prod
     requirements:
       - flix.home_cinema.requirement1
       - flix.home_cinema.requirement2
+
+seaf.ta.services.compute_service:
+  flix.compute_service.01:
+    title: SMS Шлюз
+    description: SMS Шлюз для отправки СМС из Системы мониторинга
+    external_id: compute_service.01
+    availabilityzone:
+      - flix.dc_az.moscow
+    service_type: Коммуникации (АТС, Почта, мессенджеры, СМС шлюзы и т.д.)
 
 #### Создаём описание кластеров K8s
 seaf.ta.services.k8s:
@@ -1155,6 +1159,8 @@ seaf.ta.services.monitoring:
       - Журналирование
     stand:
       - flix.stand.prod
+    network_connection:
+      - flix.lan.192.168.4.0
 
 #### Создаём описание сервиса резервного копирования
 seaf.ta.services.backup:
@@ -1174,6 +1180,8 @@ seaf.ta.services.backup:
       - flix.home_cinema.canals.app
     stand:
       - flix.stand.prod
+    network_connection:
+      - flix.lan.192.168.2.0
 
 #### Создаём описание лицензий
 seaf.ta.services.software:

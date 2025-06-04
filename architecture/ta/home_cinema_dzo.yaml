@@ -135,6 +135,8 @@ seaf.ta.components.network:
     address: 192.168.1.2
     purpose: Пограничный маршрутизатор
     placement_type: Периметр
+    is_part_of_IS_service:
+      - test.kb.av.01
     sber:
       auth_type: Двухфакторная
       class: Иное
@@ -307,8 +309,9 @@ seaf.ta.services.network_segment:
       zone: DMZ
       location: flix.dc.01
 
+
 seaf.ta.services.kb:
-  test.esxt.01:
+  test.kb.av.01:
     technology: Потоковый антивирус
     software_name: Kaspersky
     label: AV

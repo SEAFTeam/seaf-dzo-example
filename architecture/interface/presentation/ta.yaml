@@ -51,6 +51,14 @@ entities:
         type: markdown
         template: templates/offices.md
 
+      environment_md:
+        type: markdown
+        template: templates/environment.md
+
+      stand_md:
+        type: markdown
+        template: templates/stand.md
+
       cluster_md:
         type: markdown
         template: templates/clusters.md
@@ -74,6 +82,10 @@ entities:
       network_links_md:
         type: markdown
         template: templates/network_linkss.md
+
+      network_segment_md:
+        type: markdown
+        template: templates/network_segment.md
 
       backup_md:
         type: markdown

@@ -61,6 +61,14 @@ entities:
                   'link': 'entities/seaf.ta/office_md'
               },
               {
+                  'location': 'Архитектура/Техническая/Технические сервисы/Окуржения',
+                  'link': 'entities/seaf.ta/environment_md'
+              },        
+              {
+                  'location': 'Архитектура/Техническая/Технические сервисы/Стенд',
+                  'link': 'entities/seaf.ta/stand_md'
+              },                
+              {
                   'location': 'Архитектура/Техническая/Технические сервисы/Кластеры',
                   'link': 'entities/seaf.ta/cluster_md'
               },

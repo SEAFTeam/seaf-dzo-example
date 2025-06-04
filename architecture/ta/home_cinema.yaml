@@ -298,6 +298,7 @@ seaf.ta.services.network_segment:
   flix.network_segment.dmz.01:
     title: DMZ сеть
     external_id: dmz.01
+    description: DMZ сеть dmz.01
   flix.network_segment.intdc.01:
     title: Internal DC Network
     external_id: intdc.01

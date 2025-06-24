@@ -63,6 +63,10 @@ entities:
         type: markdown
         template: templates/clusters.md
 
+      compute_md:
+        type: markdown
+        template: templates/compute.md
+
       storage_md:
         type: markdown
         template: templates/storages.md

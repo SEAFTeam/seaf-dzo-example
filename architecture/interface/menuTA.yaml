@@ -73,6 +73,10 @@ entities:
                   'link': 'entities/seaf.ta/cluster_md'
               },
               {
+                  'location': 'Архитектура/Техническая/Технические сервисы/Вычислительные сервисы',
+                  'link': 'entities/seaf.ta/compute_md'
+              },
+              {
                   'location': 'Архитектура/Техническая/Технические сервисы/Хранилища',
                   'link': 'entities/seaf.ta/storage_md'
               },

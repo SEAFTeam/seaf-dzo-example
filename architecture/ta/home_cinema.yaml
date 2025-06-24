@@ -174,7 +174,7 @@ seaf.ta.components.network:
     location:
       - flix.dc.01
     external_id: cisco.01
-    placement_segment: flix.network_segment.inet_edge.01
+    segment: flix.network_segment.inet_edge.01
     purpose: Пограничный маршрутизатор
     address: 192.168.1.1
     stand:
@@ -194,7 +194,7 @@ seaf.ta.components.network:
     location:
       - flix.dc.02
     external_id: fortigate.02
-    placement_segment: flix.network_segment.inet_edge.01
+    segment: flix.network_segment.inet_edge.01
     purpose: Пограничный маршрутизатор
     address: 10.10.10.1
     stand:
@@ -211,8 +211,7 @@ seaf.ta.components.network:
     realization_type: Физический
     model: 4800F
     external_id: fortigate.02
-    placement_segment: flix.network_segment.inet_edge.01
-    network_appliance_id: fortigate.03
+    segment: flix.network_segment.inet_edge.01
     purpose: Пограничный маршрутизатор
     address: 10.10.13.1
     location:
@@ -239,6 +238,7 @@ seaf.ta.components.network:
       - flix.office.hq
     stand:
       - flix.stand.prod
+    segment: flix.network_segment.inet_edge.01
     network_connection:
       - flix.wan.1.1.1.32
     network_connection_devices:
@@ -255,6 +255,7 @@ seaf.ta.components.network:
     external_id: cisco.01
     purpose: Маршрутизатор
     address: 192.168.1.1
+    segment: flix.network_segment.intdc.02
     stand:
       - flix.stand.prod
     network_connection:
@@ -271,6 +272,7 @@ seaf.ta.components.network:
     external_id: cisco.02
     purpose: Маршрутизатор
     address: 192.168.1.2
+    segment: flix.network_segment.intdc.03
     stand:
       - flix.stand.prod
     network_connection:
@@ -286,6 +288,7 @@ seaf.ta.components.network:
       - flix.office.hq
     external_id: cisco.03
     purpose: Маршрутизатор
+    segment: flix.network_segment.office.ntwrk.01
     address: 192.168.1.2
     stand:
       - flix.stand.prod
@@ -332,7 +335,8 @@ seaf.ta.services.network:
     title: LAN сеть
     external_id: lan.192.168.1.0
     type: LAN
-    segment: flix.network_segment.intdc.01
+    segment:
+      - flix.network_segment.intdc.01
     lan_type: Проводная
     ipnetwork: 192.168.1.0/24
     description: Сеть внутри Cloud
@@ -346,7 +350,8 @@ seaf.ta.services.network:
     title: LAN сеть
     external_id: lan.192.168.2.0
     type: LAN
-    segment: flix.network_segment.intdc.02
+    segment:
+      - flix.network_segment.intdc.02
     lan_type: Проводная
     ipnetwork: 192.168.2.0/24
     description: Сеть внутри VK
@@ -360,7 +365,8 @@ seaf.ta.services.network:
     title: LAN сеть
     external_id: lan.192.168.3.0
     type: LAN
-    segment: flix.network_segment.intdc.03
+    segment:
+      - flix.network_segment.intdc.03
     lan_type: Проводная
     ipnetwork: 192.168.3.0/24
     description: Сеть внутри co-location Cloud
@@ -374,7 +380,8 @@ seaf.ta.services.network:
     title: LAN сеть
     external_id: lan.192.168.4.0
     type: LAN
-    segment: flix.network_segment.office.ntwrk.01
+    segment:
+      - flix.network_segment.office.ntwrk.01
     lan_type: Проводная
     ipnetwork: 192.168.4.0/24
     description: Сеть внутри головного офиса
@@ -392,7 +399,8 @@ seaf.ta.services.network:
     wan_ip: 1.1.1.0/28
     external_id: wan.1.1.1.0
     type: WAN
-    segment: flix.network_segment.inet_edge.01
+    segment:
+      - flix.network_segment.inet_edge.01
     location:
       - flix.dc.01
 
@@ -403,7 +411,8 @@ seaf.ta.services.network:
     wan_ip: 1.1.1.16/28
     external_id: wan.1.1.1.16
     type: WAN
-    segment: flix.network_segment.inet_edge.02
+    segment:
+      - flix.network_segment.inet_edge.02
     location:
       - flix.dc.01
 
@@ -414,7 +423,8 @@ seaf.ta.services.network:
     wan_ip: 2.2.2.0/28
     external_id: wan.2.2.2.0
     type: WAN
-    segment: flix.network_segment.inet_edge.03
+    segment:
+      - flix.network_segment.inet_edge.03
     location:
       - flix.dc.03
 
@@ -424,7 +434,8 @@ seaf.ta.services.network:
     bandwidth: 1000
     wan_ip: 1.1.1.48/28
     external_id: wan.1.1.1.48
-    segment: flix.network_segment.inet_edge.04
+    segment:
+      - flix.network_segment.inet_edge.04
     type: WAN
     location:
       - flix.dc.02
@@ -436,7 +447,8 @@ seaf.ta.services.network:
     wan_ip: 1.1.1.32/28
     external_id: wan.1.1.1.32
     type: WAN
-    segment: flix.network_segment.inet_edge.05
+    segment:
+      - flix.network_segment.inet_edge.05
     location:
       - flix.office.hq
 
@@ -448,7 +460,8 @@ seaf.ta.services.network:
     purpose: DMZ сеть
     type: LAN
     lan_type: Проводная
-    segment: flix.network_segment.dmz.01
+    segment:
+      - flix.network_segment.dmz.01
     external_id: dmz.10.10.10.0
     location:
       - flix.dc.01
@@ -1208,7 +1221,7 @@ seaf.ta.components.user_device:
   flix.user_device.laptop:
     external_id: user_device.laptop
     title: Ноутбуки сотрудников
-    device_type: Внешнее устройство
+    device_type: АРМ
     description: Клиентский ноутбук сотрудника
     network_connection_devices:
       - flix.network_links.cloud_laptop

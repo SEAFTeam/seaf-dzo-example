@@ -8,7 +8,6 @@ seaf.ta.services.dc_region:
     title: Регион Россия
     description: Регион доступности Россия ООО Фликс
 
-
 #### Создаём AZ
 seaf.ta.services.dc_az:
   flix.dc_az.moscow:
@@ -17,7 +16,6 @@ seaf.ta.services.dc_az:
     region: flix.dc_region.russia
     vendor: Фликс
     external_id: dc_az.moscow
-
 
 #### Создаём ЦОД
 seaf.ta.services.dc:
@@ -1172,6 +1170,8 @@ seaf.ta.services.monitoring:
       - flix.stand.prod
     network_connection:
       - flix.lan.192.168.4.0
+    location:
+      - flix.dc.01
 
 #### Создаём описание сервиса резервного копирования
 seaf.ta.services.backup:
@@ -1221,5 +1221,6 @@ seaf.ta.components.user_device:
     title: Ноутбуки сотрудников
     device_type: АРМ
     description: Клиентский ноутбук сотрудника
+    segment: flix.network_segment.office.ntwrk.01
     network_connection_devices:
       - flix.network_links.cloud_laptop

@@ -1,0 +1,26 @@
+seaf.ta.services.k8s:
+  flix.k8s.02:
+    title: K8s кластер расширенный
+    external_id: k8s.02
+    description: K8s кластер в az.moscow расширенный
+    availabilityzone:
+      - flix.dc_az.moscow
+    software:  '1.28'
+    master_qty: 3
+    worker_qty: 3
+    auth: Keycloack
+    cni: Calico
+    is_own: false
+    app_components:
+      - flix.home_cinema.auth.app
+    cluster_autoscaler: true
+    keys: Vault
+    policy: Kyverno
+    service_mesh: Istio
+    sber:
+      pv: false
+      https_api_connect: true
+      anonymous_api_connect: false
+      tls_version: '1.2'
+      reservation_rate: 100
+      ntp_server: ntp.flix.ru

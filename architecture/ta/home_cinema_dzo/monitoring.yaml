@@ -1,0 +1,25 @@
+seaf.ta.services.monitoring:
+  flix.monitoring.02:
+    title: Zabbix
+    description: Инфра мониторинг 2
+    external_id: monitoring.02
+    ha: true
+    availabilityzone:
+      - flix.dc_az.moscow
+    role:
+      - Инфраструктурный
+    app_components:
+      - flix.home_cinema.auth.app
+      - flix.home_cinema.auth.token_manager
+      - flix.home_cinema.catalog.app
+    sber:
+      siem_anabled: true
+      alarm_transport:
+        - mail
+        - TG
+      monitoring_console: https://monitoring-console.flix.ru
+      history: 365
+      frequency: 5
+      pam_anabled: true
+      cluster_id: $null
+      sber_radar: https://console.radar.alfa.ru/dashboard/

@@ -1,4 +1,4 @@
 imports:
   - reverse/root.yaml
   - home_cinema/root.yaml
-  - home_cinema_dzo.yaml
+  - home_cinema_dzo/root.yaml

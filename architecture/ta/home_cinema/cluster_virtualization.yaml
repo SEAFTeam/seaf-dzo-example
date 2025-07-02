@@ -1,0 +1,48 @@
+#### Создаём сервис виртуализации
+seaf.ta.services.cluster_virtualization:
+  flix.cluster_virtualization.cloud.01:
+    title: Кластер виртуализации
+    description: Кластер виртуализации в облаке Cloud
+    external_id: cluster_virtualization.cloud.01
+    availabilityzone:
+      - flix.dc_az.moscow
+    app_components:
+      - flix.home_cinema.auth.app
+      - flix.home_cinema.auth.token_manager
+      - flix.home_cinema.catalog.app
+    drs_support: false
+    sdrs_support: false
+    oversubscription_rate: 3
+    stand:
+      - flix.stand.prod
+  flix.cluster_virtualization.cloud.02:
+    title: Кластер виртуализации
+    description: Собственный кластер виртуализации в облаке Cloud
+    external_id: cluster_virtualization.cloud.02
+    availabilityzone:
+      - flix.dc_az.moscow
+    app_components:
+      - flix.home_cinema.auth.app
+      - flix.home_cinema.auth.token_manager
+      - flix.home_cinema.catalog.app
+    drs_support: true
+    sdrs_support: true
+    hypervisor: ESX
+    oversubscription_rate: 1
+    stand:
+        - flix.stand.prod
+  flix.cluster_virtualization.vk.01:
+    title: Кластер виртуализации в облаке VK
+    description: Кластер виртуализации в облаке VK
+    external_id: cluster_virtualization.vk.01
+    availabilityzone:
+      - flix.dc_az.moscow
+    app_components:
+      - flix.home_cinema.auth.app
+      - flix.home_cinema.auth.token_manager
+      - flix.home_cinema.catalog.app
+    drs_support: true
+    sdrs_support: true
+    oversubscription_rate: 1
+    stand:
+      - flix.stand.prod

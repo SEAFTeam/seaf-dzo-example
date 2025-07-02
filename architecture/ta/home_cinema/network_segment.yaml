@@ -1,0 +1,34 @@
+#### Создаём описание сетей
+#### Создаём описание сетевых сегментов
+seaf.ta.services.network_segment:
+  flix.network_segment.dmz.01:
+    title: DMZ сеть
+    external_id: dmz.01
+    description: DMZ сеть dmz.01
+  flix.network_segment.intdc.01:
+    title: Internal DC Network
+    external_id: intdc.01
+  flix.network_segment.intdc.02:
+    title: Internal DC Network
+    external_id: intdc.02
+  flix.network_segment.intdc.03:
+    title: Internal DC Network
+    external_id: intdc.03
+  flix.network_segment.office.ntwrk.01:
+    title: Office Network
+    external_id: office.ntwrk.01
+  flix.network_segment.inet_edge.01:
+    title: Inet Edge
+    external_id: inet_edge.01
+  flix.network_segment.inet_edge.02:
+    title: Inet Edge
+    external_id: inet_edge.02
+  flix.network_segment.inet_edge.03:
+    title: Inet Edge
+    external_id: inet_edge.03
+  flix.network_segment.inet_edge.04:
+    title: Inet Edge
+    external_id: inet_edge.04
+  flix.network_segment.inet_edge.05:
+    title: Inet Edge
+    external_id: inet_edge.05

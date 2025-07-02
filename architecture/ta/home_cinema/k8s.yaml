@@ -1,0 +1,22 @@
+#### Создаём описание кластеров K8s
+seaf.ta.services.k8s:
+  flix.k8s.01:
+    title: K8s кластер
+    description: K8s кластер в az.moscow
+    master_qty: 3
+    software: '1.28'
+    external_id: k8s.01
+    auth: Keycloack
+    worker_qty: 2
+    availabilityzone:
+      - flix.dc_az.moscow
+    cni:  Calico
+    is_own: true
+    cluster_autoscaler: true
+    service_mesh: Istio
+    keys: Vault
+    policy: Kyverno
+    stand:
+      - flix.stand.prod
+    app_components:
+      - flix.home_cinema.payments.app

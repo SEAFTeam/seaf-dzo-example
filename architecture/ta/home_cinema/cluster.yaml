@@ -1,0 +1,19 @@
+#### Создаём описание кластеров
+seaf.ta.services.cluster:
+ flix.cluster.01:
+    title: Кластер приложений Wildfly
+    external_id: cluster.01
+    availabilityzone:
+      - flix.dc_az.moscow
+    app_components:
+      - flix.home_cinema.catalog.app
+      - flix.home_cinema.canals.app
+    fqdn: wildfly.flix.ru
+    reservation_type: Active-Active
+    service_type: Cерверы приложений и т.д.
+    description: Wildfly cluster for flix.home_cinema.catalog.app
+    stand:
+      - flix.stand.prod
+    requirements:
+      - flix.home_cinema.requirement1
+      - flix.home_cinema.requirement2

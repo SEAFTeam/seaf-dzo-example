@@ -1,0 +1,8 @@
+seaf.ta.services.compute_service:
+  flix.compute_service.01:
+    title: SMS Шлюз
+    description: SMS Шлюз для отправки СМС из Системы мониторинга
+    external_id: compute_service.01
+    availabilityzone:
+      - flix.dc_az.moscow
+    service_type: Коммуникации (АТС, Почта, мессенджеры, СМС шлюзы и т.д.)

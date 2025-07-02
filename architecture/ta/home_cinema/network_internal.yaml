@@ -1,0 +1,61 @@
+#### Создаём описание внутренних сети
+seaf.ta.services.network:
+  flix.lan.192.168.1.0:
+    title: LAN сеть
+    external_id: lan.192.168.1.0
+    type: LAN
+    segment:
+      - flix.network_segment.intdc.01
+    lan_type: Проводная
+    ipnetwork: 192.168.1.0/24
+    description: Сеть внутри Cloud
+    location:
+      - flix.dc.01
+    vlan: 160
+    stand:
+      - flix.stand.prod
+
+  flix.lan.192.168.2.0:
+    title: LAN сеть
+    external_id: lan.192.168.2.0
+    type: LAN
+    segment:
+      - flix.network_segment.intdc.02
+    lan_type: Проводная
+    ipnetwork: 192.168.2.0/24
+    description: Сеть внутри VK
+    location:
+      - flix.dc.02
+    vlan: 150
+    stand:
+      - flix.stand.prod
+
+  flix.lan.192.168.3.0:
+    title: LAN сеть
+    external_id: lan.192.168.3.0
+    type: LAN
+    segment:
+      - flix.network_segment.intdc.03
+    lan_type: Проводная
+    ipnetwork: 192.168.3.0/24
+    description: Сеть внутри co-location Cloud
+    location:
+      - flix.dc.03
+    vlan: 110
+    stand:
+      - flix.stand.prod
+
+  flix.lan.192.168.4.0:
+    title: LAN сеть
+    external_id: lan.192.168.4.0
+    type: LAN
+    segment:
+      - flix.network_segment.office.ntwrk.01
+    lan_type: Проводная
+    ipnetwork: 192.168.4.0/24
+    description: Сеть внутри головного офиса
+    location:
+      - flix.office.hq
+    vlan: 1
+    stand:
+      - flix.stand.prod

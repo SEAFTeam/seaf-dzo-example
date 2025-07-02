@@ -1,0 +1,24 @@
+#### Создаём описание сервиса мониторинга
+seaf.ta.services.monitoring:
+  flix.monitoring.01:
+    title: Zabbix
+    description: Инфра мониторинг
+    external_id: monitoring.01
+    ha: false
+    availabilityzone:
+      - flix.dc_az.moscow
+    app_components:
+      - flix.home_cinema.auth.app
+      - flix.home_cinema.auth.token_manager
+      - flix.home_cinema.catalog.app
+      - flix.home_cinema.canals.app
+      - flix.home_cinema.payments.app
+    role:
+      - Инфраструктурный
+      - Журналирование
+    stand:
+      - flix.stand.prod
+    network_connection:
+      - flix.lan.192.168.4.0
+    location:
+      - flix.dc.01

@@ -1,0 +1,19 @@
+#### Создаём описание лицензий
+seaf.ta.services.software:
+  flix.licenses.acronis:
+    external_id: licenses.acronis
+    vendor: Acronis
+    title: СРК Acronis
+    expiration: eternal
+    type: Закрытая платная
+    support: Expired
+  flix.licenses.cryptopro:
+    external_id: licenses.cryptopro
+    vendor: CryptoPro
+    title: КриптоПро
+    expiration: eternal
+    type: Закрытая платная
+    support: Expired
+    app_components:
+      - flix.home_cinema.payments.app
+    lic_qty: 10

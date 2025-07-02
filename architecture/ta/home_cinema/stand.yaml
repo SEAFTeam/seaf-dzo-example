@@ -1,0 +1,31 @@
+#### Создаём стенды в окружениях
+seaf.ta.services.stand:
+  flix.stand.dev:
+    title: stand.dev
+    external_id: flix.environment.dev
+    description: Стенд для разработки
+    env: flix.environment.dev
+
+  flix.stand.intest:
+    title: stand.intest
+    external_id: flix.environment.test
+    description: Стенд для интеграционного тестирования
+    env: flix.environment.test
+
+  flix.stand.ntest:
+    title: stand.ntest
+    external_id: flix.environment.test
+    description: Стенд для нагрузочного тестирования
+    env: flix.environment.test
+
+  flix.stand.prod:
+    title: stand.prod
+    external_id: flix.environment.prod
+    description: Стенд для продакшена
+    env: flix.environment.prod
+
+  flix.stand.preprod:
+    title: stand.preprod
+    external_id: flix.environment.preprod
+    description: Стенд предпродуктивный
+    env: flix.environment.prod

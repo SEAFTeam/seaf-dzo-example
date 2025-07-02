@@ -1,0 +1,131 @@
+#### Создаём описание сетевых устройств
+seaf.ta.components.network:
+  flix.network.fortigate.01:
+    title: FortiGate 4800F
+    description: Аппаратный маршрутизатор
+    type: Маршрутизатор
+    realization_type: Физический
+    model: 4800F
+    location:
+      - flix.dc.01
+    external_id: cisco.01
+    segment: flix.network_segment.inet_edge.01
+    purpose: Пограничный маршрутизатор
+    address: 192.168.1.1
+    stand:
+      - flix.stand.prod
+    network_connection:
+      - flix.wan.1.1.1.0
+      - flix.wan.1.1.1.16
+      - flix.dmz.10.10.10.0
+      - flix.lan.192.168.1.0
+
+  flix.network.fortigate.02:
+    title: FortiGate 4800F
+    description: Аппаратный маршрутизатор
+    type: Маршрутизатор
+    realization_type: Физический
+    model: 4800F
+    location:
+      - flix.dc.02
+    external_id: fortigate.02
+    segment: flix.network_segment.inet_edge.01
+    purpose: Пограничный маршрутизатор
+    address: 10.10.10.1
+    stand:
+      - flix.stand.prod
+    network_connection:
+      - flix.wan.1.1.1.48
+    network_connection_devices:
+      - flix.network_links.vk_cloud
+
+  flix.network.fortigate.03:
+    title: FortiGate 4800F
+    description: Аппаратный маршрутизатор
+    type: Маршрутизатор
+    realization_type: Физический
+    model: 4800F
+    external_id: fortigate.02
+    segment: flix.network_segment.inet_edge.01
+    purpose: Пограничный маршрутизатор
+    address: 10.10.13.1
+    location:
+      - flix.dc.03
+    stand:
+      - flix.stand.prod
+    network_connection:
+      - flix.wan.2.2.2.0
+    network_connection_devices:
+      - flix.network_links.vk_cloud
+      - flix.network_links.cloud_hq
+      - flix.network_links.cloud_laptop
+
+  flix.network.fortigate.04:
+    title: FortiGate 4800F
+    description: Аппаратный маршрутизатор
+    type: Маршрутизатор
+    realization_type: Физический
+    model: 4800F
+    external_id: fortigate.04
+    purpose: Пограничный маршрутизатор
+    address: 10.10.14.1
+    location:
+      - flix.office.hq
+    stand:
+      - flix.stand.prod
+    segment: flix.network_segment.inet_edge.01
+    network_connection:
+      - flix.wan.1.1.1.32
+    network_connection_devices:
+      - flix.network_links.cloud_hq
+
+  flix.network.cisco.01:
+    title: Cisco ASR 1001-X
+    description: Аппаратный маршрутизатор
+    type: Маршрутизатор
+    realization_type: Физический
+    model: ASR 1001-X
+    location:
+      - flix.dc.02
+    external_id: cisco.01
+    purpose: Маршрутизатор
+    address: 192.168.1.1
+    segment: flix.network_segment.intdc.02
+    stand:
+      - flix.stand.prod
+    network_connection:
+      - flix.lan.192.168.2.0
+
+  flix.network.cisco.02:
+    title: Cisco ASR 1001-X
+    description: Аппаратный маршрутизатор
+    type: Маршрутизатор
+    realization_type: Физический
+    model: ASR 1001-X
+    location:
+      - flix.dc.03
+    external_id: cisco.02
+    purpose: Маршрутизатор
+    address: 192.168.1.2
+    segment: flix.network_segment.intdc.03
+    stand:
+      - flix.stand.prod
+    network_connection:
+      - flix.lan.192.168.3.0
+
+  flix.network.cisco.03:
+    title: Cisco ASR 1001-X
+    description: Аппаратный маршрутизатор
+    type: Маршрутизатор
+    realization_type: Физический
+    model: ASR 1001-X
+    location:
+      - flix.office.hq
+    external_id: cisco.03
+    purpose: Маршрутизатор
+    segment: flix.network_segment.office.ntwrk.01
+    address: 192.168.1.2
+    stand:
+      - flix.stand.prod
+    network_connection:
+      - flix.lan.192.168.4.0

@@ -1,0 +1,27 @@
+  #### Создаём описание объектных хранилищ
+  flix.obj_storage.cloud_s3:
+    title: Storage
+    description: S3 Storage
+    availabilityzone:
+      - flix.dc_az.moscow
+    type: Simple Storage Service
+    sla: 99
+    software: SaaS
+    external_id: obj_storage.cloud_s3
+    app_components:
+      - flix.home_cinema.catalog.app
+    stand:
+      - flix.stand.prod
+  flix.obj_storage.vk_s3:
+    title: Storage
+    description: S3 Storage
+    availabilityzone:
+      - flix.dc_az.moscow
+    type: Simple Storage Service
+    sla: 99
+    software: SaaS
+    external_id: obj_storage.vk_s3
+    app_components:
+      - flix.home_cinema.catalog.app
+    stand:
+      - flix.stand.prod

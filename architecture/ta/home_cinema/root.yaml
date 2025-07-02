@@ -1,0 +1,27 @@
+imports:
+  - dc_region.yaml
+  - dc_az.yaml
+  - dc.yaml
+  - office.yaml
+  - environment.yaml
+  - stand.yaml
+  - cluster_virtualization.yaml
+  - network.yaml
+  - network_segment.yaml
+  - network_internal.yaml
+  - network_external.yaml
+  - network_dmz.yaml
+  - network_links.yaml
+  - server_physical.yaml
+  - server_virtual.yaml
+  - hw_storage.yaml
+  - sw_storage.yaml
+  - obj_storage.yaml
+  - cluster.yaml
+  - compute_service.yaml
+  - k8s.yaml
+  - monitoring.yaml
+  - backup.yaml
+  - software.yaml
+  - user_device.yaml
+  - logical_link.yaml

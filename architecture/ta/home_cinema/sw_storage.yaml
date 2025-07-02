@@ -1,0 +1,16 @@
+      #### Создаём описание программных СХД
+seaf.ta.services.storage:
+  flix.sw_storage.01:
+    title: Storage
+    description: SDS Storage
+    volume: 1000
+    software: CEPH
+    external_id: sw_storage.01
+    availabilityzone:
+      - flix.dc_az.moscow
+    disk_type: SSD
+    protocols: SMB, S3
+    type: Software Defined Storage
+    erasure_coding: 2
+    stand:
+      - flix.stand.prod

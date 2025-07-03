@@ -3,8 +3,8 @@ seaf.ta.services.logical_link:
   flix.home_cinema.logical_link.fortigate_to_server:
     title: Связь FortiGate с сервером
     description: Логическая связь от FortiGate к серверу
-    from: flix.network.fortigate.01
-    to:
+    source: flix.network.fortigate.01
+    target:
       - flix.server_metal.01
       - flix.server_metal.02
       - flix.server_virtual.01
@@ -15,8 +15,8 @@ seaf.ta.services.logical_link:
   flix.home_cinema.logical_link.cluster_to_monitoring:
     title: Связь кластера с мониторингом
     description: Логическая связь между кластером приложений и сервисом мониторинга
-    from: flix.cluster.01
-    to:
+    source: flix.cluster.01
+    target:
       - flix.monitoring.01
       - flix.monitoring.02
     direction: "<==>"

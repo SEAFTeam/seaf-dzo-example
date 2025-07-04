@@ -5,4 +5,6 @@ seaf.ta.services.compute_service:
     external_id: compute_service.01
     availabilityzone:
       - flix.dc_az.moscow
+    network_connection:
+      - flix.lan.192.168.2.0
     service_type: Коммуникации (АТС, Почта, мессенджеры, СМС шлюзы и т.д.)

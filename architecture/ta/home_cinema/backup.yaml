@@ -7,6 +7,8 @@ seaf.ta.services.backup:
     path: sw_storage.01
     availabilityzone:
       - flix.dc_az.moscow
+    network_connection:
+      - flix.lan.192.168.2.0
     replication: false
     app_components:
       - flix.home_cinema.auth.app
@@ -16,5 +18,3 @@ seaf.ta.services.backup:
       - flix.home_cinema.canals.app
     stand:
       - flix.stand.prod
-    network_connection:
-      - flix.lan.192.168.2.0

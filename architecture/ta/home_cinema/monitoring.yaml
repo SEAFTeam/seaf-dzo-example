@@ -7,6 +7,8 @@ seaf.ta.services.monitoring:
     ha: false
     availabilityzone:
       - flix.dc_az.moscow
+    network_connection:
+      - flix.lan.192.168.4.0
     app_components:
       - flix.home_cinema.auth.app
       - flix.home_cinema.auth.token_manager
@@ -18,7 +20,5 @@ seaf.ta.services.monitoring:
       - Журналирование
     stand:
       - flix.stand.prod
-    network_connection:
-      - flix.lan.192.168.4.0
     location:
       - flix.dc.01

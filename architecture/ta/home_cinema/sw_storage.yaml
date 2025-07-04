@@ -8,6 +8,8 @@ seaf.ta.services.storage:
     external_id: sw_storage.01
     availabilityzone:
       - flix.dc_az.moscow
+    network_connection:
+      - flix.lan.192.168.2.0
     disk_type: SSD
     protocols: SMB, S3
     type: Software Defined Storage

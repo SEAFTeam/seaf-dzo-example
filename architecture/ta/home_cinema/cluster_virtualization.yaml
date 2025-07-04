@@ -6,6 +6,8 @@ seaf.ta.services.cluster_virtualization:
     external_id: cluster_virtualization.cloud.01
     availabilityzone:
       - flix.dc_az.moscow
+    network_connection:
+      - flix.lan.192.168.2.0
     app_components:
       - flix.home_cinema.auth.app
       - flix.home_cinema.auth.token_manager
@@ -21,6 +23,8 @@ seaf.ta.services.cluster_virtualization:
     external_id: cluster_virtualization.cloud.02
     availabilityzone:
       - flix.dc_az.moscow
+    network_connection:
+      - flix.lan.192.168.2.0
     app_components:
       - flix.home_cinema.auth.app
       - flix.home_cinema.auth.token_manager
@@ -37,6 +41,8 @@ seaf.ta.services.cluster_virtualization:
     external_id: cluster_virtualization.vk.01
     availabilityzone:
       - flix.dc_az.moscow
+    network_connection:
+      - flix.lan.192.168.2.0
     app_components:
       - flix.home_cinema.auth.app
       - flix.home_cinema.auth.token_manager

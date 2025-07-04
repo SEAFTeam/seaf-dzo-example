@@ -10,6 +10,8 @@ seaf.ta.services.k8s:
     worker_qty: 2
     availabilityzone:
       - flix.dc_az.moscow
+    network_connection:
+      - flix.lan.192.168.2.0
     cni:  Calico
     is_own: true
     cluster_autoscaler: true

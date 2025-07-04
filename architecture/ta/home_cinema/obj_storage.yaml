@@ -1,9 +1,11 @@
-  #### Создаём описание объектных хранилищ
+#### Создаём описание объектных хранилищ
   flix.obj_storage.cloud_s3:
     title: Storage
     description: S3 Storage
     availabilityzone:
       - flix.dc_az.moscow
+    network_connection:
+      - flix.lan.192.168.2.0
     type: Simple Storage Service
     sla: 99
     software: SaaS
@@ -17,6 +19,8 @@
     description: S3 Storage
     availabilityzone:
       - flix.dc_az.moscow
+    network_connection:
+      - flix.lan.192.168.2.0
     type: Simple Storage Service
     sla: 99
     software: SaaS

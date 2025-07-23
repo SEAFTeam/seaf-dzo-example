@@ -6,7 +6,7 @@ seaf.ta.services.cluster:
     availabilityzone:
       - flix.dc_az.moscow
     network_connection:
-      - flix.lan.192.168.2.0
+      - flix.lan.192.168.2.011
     app_components:
       - flix.home_cinema.catalog.app
       - flix.home_cinema.canals.app

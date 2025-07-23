@@ -3,6 +3,8 @@ seaf.ta.services.k8s:
     title: K8s кластер расширенный
     external_id: k8s.02
     description: K8s кластер в az.moscow расширенный
+    network_connection:
+      - flix.lan.192.168.2.0
     availabilityzone:
       - flix.dc_az.moscow
     software:  '1.28'

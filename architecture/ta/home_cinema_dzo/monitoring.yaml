@@ -8,6 +8,8 @@ seaf.ta.services.monitoring:
       - flix.dc_az.moscow
     role:
       - Инфраструктурный
+    network_connection:
+      - flix.lan.192.168.4.0
     app_components:
       - flix.home_cinema.auth.app
       - flix.home_cinema.auth.token_manager

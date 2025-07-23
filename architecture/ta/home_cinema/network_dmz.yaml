@@ -1,3 +1,4 @@
+seaf.ta.services.network:
 #### Создаём описание пограничных сетей
   flix.dmz.10.10.10.0:
     title: DMZ сеть

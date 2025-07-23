@@ -7,6 +7,8 @@ seaf.ta.components.network:
     realization_type:  Физический
     address: 192.168.1.2
     purpose: Пограничный маршрутизатор
+    network_connection:
+      - flix.wan.1.1.1.16
     placement_type: Периметр
     is_part_of_IS_service:
       - test.kb.av.01

@@ -1,60 +1,61 @@
+  seaf.ta.services.network:
 #### Создаём описание внешних сетей
-  flix.wan.1.1.1.0:
-    title: WAN сеть
-    provider: RT
-    bandwidth: 1000
-    wan_ip: 1.1.1.0/28
-    external_id: wan.1.1.1.0
-    type: WAN
-    segment:
-      - flix.network_segment.inet_edge.01
-    location:
-      - flix.dc.01
+    flix.wan.1.1.1.0:
+      title: WAN сеть
+      provider: RT
+      bandwidth: 1000
+      wan_ip: 1.1.1.0/28
+      external_id: wan.1.1.1.0
+      type: WAN
+      segment:
+        - flix.network_segment.inet_edge.01
+      location:
+        - flix.dc.01
 
-  flix.wan.1.1.1.16:
-    title: WAN сеть
-    provider: RT
-    bandwidth: 1000
-    wan_ip: 1.1.1.16/28
-    external_id: wan.1.1.1.16
-    type: WAN
-    segment:
-      - flix.network_segment.inet_edge.02
-    location:
-      - flix.dc.01
+    flix.wan.1.1.1.16:
+      title: WAN сеть
+      provider: RT
+      bandwidth: 1000
+      wan_ip: 1.1.1.16/28
+      external_id: wan.1.1.1.16
+      type: WAN
+      segment:
+        - flix.network_segment.inet_edge.02
+      location:
+        - flix.dc.01
 
-  flix.wan.2.2.2.0:
-    title: WAN сеть
-    provider: Cloud
-    bandwidth: 1000
-    wan_ip: 2.2.2.0/28
-    external_id: wan.2.2.2.0
-    type: WAN
-    segment:
-      - flix.network_segment.inet_edge.03
-    location:
-      - flix.dc.03
+    flix.wan.2.2.2.0:
+      title: WAN сеть
+      provider: Cloud
+      bandwidth: 1000
+      wan_ip: 2.2.2.0/28
+      external_id: wan.2.2.2.0
+      type: WAN
+      segment:
+        - flix.network_segment.inet_edge.03
+      location:
+        - flix.dc.03
 
-  flix.wan.1.1.1.48:
-    title: WAN сеть
-    provider: VK
-    bandwidth: 1000
-    wan_ip: 1.1.1.48/28
-    external_id: wan.1.1.1.48
-    segment:
-      - flix.network_segment.inet_edge.04
-    type: WAN
-    location:
-      - flix.dc.02
+    flix.wan.1.1.1.48:
+      title: WAN сеть
+      provider: VK
+      bandwidth: 1000
+      wan_ip: 1.1.1.48/28
+      external_id: wan.1.1.1.48
+      segment:
+        - flix.network_segment.inet_edge.04
+      type: WAN
+      location:
+        - flix.dc.02
 
-  flix.wan.1.1.1.32:
-    title: WAN сеть
-    provider:  MTS
-    bandwidth: 100
-    wan_ip: 1.1.1.32/28
-    external_id: wan.1.1.1.32
-    type: WAN
-    segment:
-      - flix.network_segment.inet_edge.05
-    location:
-      - flix.office.hq
+    flix.wan.1.1.1.32:
+      title: WAN сеть
+      provider:  MTS
+      bandwidth: 100
+      wan_ip: 1.1.1.32/28
+      external_id: wan.1.1.1.32
+      type: WAN
+      segment:
+        - flix.network_segment.inet_edge.05
+      location:
+        - flix.office.hq

@@ -1,0 +1,175 @@
+seaf.ta.services.kb:
+  flix.kb.waf_1:
+    title: 'WAF'
+    description: WAF for All-App
+    technology: 'Защита веб-приложений WAF'
+    network_connection:
+      - flix.lan.dc01.inet_edge
+      - flix.wan.dc01.isp.01
+      - flix.wan.dc01.isp.02
+      - flix.lan.dc02.inet_edge
+      - flix.wan.dc02.isp.01
+      - flix.wan.dc02.isp.02
+    software_name: Nginx
+    label: WAF
+    status: Используется
+  flix.kb.ddos_1:
+    title: DDOS
+    description: Сервис защиты от DDOs от BiZone
+    technology: Защита от атак типа "Отказ от обслуживания"
+    network_connection:
+      - flix.lan.dc01.inet_edge
+      - flix.wan.dc01.isp.01
+      - flix.lan.dc02.inet_edge
+      - flix.wan.dc02.isp.01
+    software_name: DDOS
+    label: DDoS
+    status: Создается
+  flix.service.kb.skud:
+    title: СКУД
+    description: Сервис СКУД в офисе
+    technology: Управление доступом пользователей
+    network_connection:
+      - flix.lan.office.pr.security
+    software_name: Аркан
+    label: CS
+    status: Используется
+  flix.service.kb.radius:
+    title: RADIUS
+    description: Сервис RADIUS в ЦОД1
+    technology: Управление доступом пользователей
+    network_connection:
+      - flix.lan.dc01.int.sec.prod
+      - flix.lan.dc02.int.sec.prod
+    software_name: Аркан
+    label: IDFW
+    status: Используется
+  flix.kb.1:
+    title: Инструментальный контроль защищенности
+    description: Сервис кибер безопасности
+    technology: Инструментальный контроль защищенности
+    network_connection:
+      - flix.lan.dc01.dmz.prod
+      - flix.lan.dc02.dmz.prod
+    software_name: Sonarqube
+    label: SCAN
+    status: Используется
+  flix.kb.2:
+    title: S2
+    description: Сервис кибер безопасности
+    technology: Управление доступом пользователей
+    network_connection:
+      - flix.lan.dc01.int.sec.prod
+      - flix.lan.dc02.int.sec.prod
+    software_name: S2
+    label: FW
+    status: Используется
+  flix.kb.3:
+    title: S3
+    description: Сервис кибер безопасности
+    technology: Управление доступом пользователей
+    network_connection:
+      - flix.lan.dc01.int.sec.prod
+      - flix.lan.dc02.int.sec.prod
+    software_name: S3
+    label: IDS
+    status: Используется
+  flix.kb.4:
+    title: МСЭ
+    description: Сервис кибер безопасности
+    technology: Межсетевое экранирование
+    network_connection:
+      - flix.lan.dc01.dmz.prod
+      - flix.lan.dc01.int.prod
+      - flix.lan.dc02.dmz.prod
+      - flix.lan.dc02.int.prod
+    software_name: Forti
+    label: FW
+    status: Используется
+  flix.kb.5:
+    title: Сервис антивирус
+    description: Сервис кибер безопасности
+    technology: Потоковый антивирус
+    network_connection:
+      - flix.lan.dc01.int.sec.prod
+      - flix.lan.dc02.int.sec.prod
+    software_name: Kaspersky
+    label: AV
+    status: Используется
+  flix.kb.6:
+    title: S6
+    description: Сервис кибер безопасности
+    technology: Контроль подключений к сети
+    network_connection:
+      - flix.lan.dc01.int.sec.prod
+      - flix.lan.dc02.int.sec.prod
+    software_name: S6
+    label: ALG
+    status: Используется
+  flix.kb.7:
+    title: S7
+    description: Сервис кибер безопасности
+    technology: 'Шлюзы безопасности прикладного уровня'
+    network_connection:
+      - flix.lan.dc01.ext.wan
+      - flix.lan.dc02.ext.wan
+  flix.kb.8:
+    title: S8
+    description: Сервис кибер безопасности
+    technology: Контентная фильтрация и разграничение доступа в Интернет
+    network_connection:
+      - flix.lan.dc01.dmz.prod
+      - flix.lan.dc02.dmz.prod
+    software_name: S8
+    label: ALG
+    status: Используется
+  flix.kb.9:
+    title: S9
+    description: Сервис кибер безопасности
+    technology: Аудит событий КБ
+    network_connection:
+      - flix.lan.dc01.dmz.prod
+      - flix.lan.dc02.dmz.prod
+    software_name: S9
+    label: ALG
+    status: Используется
+  flix.kb.seam:
+    title: SEAM
+    description: Сервис кибер безопасности
+    technology: Аудит событий КБ
+    network_connection:
+      - flix.wan.dc01.isp.01
+      - flix.wan.dc02.isp.01
+    software_name: SEAM
+    label: IPS
+    status: Используется
+  flix.kb.sandbox:
+    title: Sandbox
+    description: Сервис кибер безопасности
+    technology: Динамический анализ угроз Sandbox
+    network_connection:
+      - flix.lan.dc01.dmz.prod
+      - flix.lan.dc02.dmz.prod
+    software_name: Sandbox
+    label: Sandbox
+    status: Используется
+  flix.kb.11:
+    title: S11
+    description: Сервис кибер безопасности
+    technology: Безопасность конфигураций
+    network_connection:
+      - flix.lan.dc01.dmz.prod
+      - flix.lan.dc02.dmz.prod
+    software_name: S11
+    label: ALG
+    status: Используется
+  flix.kb.12:
+    title: S12
+    description: Сервис кибер безопасности
+    technology: Безопасность конфигураций
+    network_connection:
+      - flix.lan.dc01.int.sec.prod
+      - flix.lan.dc02.int.sec.prod
+    software_name: S12
+    label: ALG
+    status: Используется

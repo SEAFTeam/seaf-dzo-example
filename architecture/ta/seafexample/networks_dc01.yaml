@@ -1,0 +1,158 @@
+seaf.ta.services.network:
+  flix.wan.dc01.isp.01:
+    title: ISP01 DC01
+    type: WAN
+    provider: Beeline
+    bandwidth: 1000
+    wan_ip: 10.30.10.0/24
+    description: Сеть ISP основного провайдера для ЦОД-01
+    segment: flix.network_segment.dc.internet
+
+  flix.wan.dc01.isp.02:
+    title: ISP02 DC01
+    type: WAN
+    provider: Ростелеком
+    bandwidth: 10000
+    wan_ip: 10.30.11.0/24
+    description: Сеть ISP резервного провайдера для ЦОД-01
+    segment: flix.network_segment.dc.internet
+
+  flix.wan.dc01.sp.01:
+    title: SP01 DC01
+    type: WAN
+    provider: МТС
+    bandwidth: 10000
+    wan_ip: 10.30.12.0/24
+    description: Сеть SP провайдера основного транспортного канала
+    segment: flix.network_segment.dc.transport
+
+  flix.wan.dc01.sp.02:
+    title: SP02 DC01
+    type: WAN
+    provider: Ростелеком
+    bandwidth: 10000
+    wan_ip: 10.30.13.0/24
+    description: Сеть SP провайдера резервного транспортного канала
+    segment: flix.network_segment.dc.transport
+
+  flix.lan.dc01.inet_edge:
+    title: DC01-Internet-edge
+    type: LAN
+    lan_type: Проводная
+    segment: [flix.network_segment.dc.inet_edge]
+    vlan: 110
+    ipnetwork: 198.51.100.0/24
+    description: Сеть модуля подключения к Интернет в ЦОД-01
+
+  flix.lan.dc.int.it.services:
+    title: INT-IT Services
+    type: LAN
+    lan_type: Проводная
+    segment: [flix.network_segment.dc.int_net]
+    vlan: 27
+    ipnetwork: 10.10.27.0/24
+    description: Internal It services in Sber DC
+
+  flix.lan.dc.int.test:
+    title: INT-TEST
+    type: LAN
+    lan_type: Проводная
+    segment: [flix.network_segment.dc.int_net]
+    vlan: 26
+    ipnetwork: 10.10.26.0/24
+    description: Internal test network in Sber DC
+
+  flix.lan.dc.int.sec.prod:
+    title: SDZ-PROD
+    type: LAN
+    lan_type: Проводная
+    segment: [flix.network_segment.dc.int_security_net]
+    vlan: 29
+    ipnetwork: 10.10.29.0/24
+    description: Внутренняя защищенная сеть ЦОД-а
+
+  flix.lan.dc.dmz.prod:
+    title: DMZ-PROD
+    type: LAN
+    lan_type: Проводная
+    segment: [flix.network_segment.dc.dmz]
+    vlan: 21
+    ipnetwork: 10.10.21.0/24
+    description: DMZ Prod
+
+  flix.lan.dc.int.prod:
+    title: INT-PROD
+    type: LAN
+    lan_type: Проводная
+    segment: [flix.network_segment.dc.int_net]
+    vlan: 40
+    ipnetwork: 10.10.40.0/24
+    description: Internal Prod in Sber DC
+
+  flix.lan.dc.dmz.vpn:
+    title: DMZ-VPN
+    type: LAN
+    lan_type: Проводная
+    segment: [flix.network_segment.dc.dmz]
+    vlan: 25
+    ipnetwork: 10.10.25.0/24
+    description: DMZ VPN in Sber DC
+
+  flix.lan.dc.ext.wan:
+    title: EXT-WAN
+    type: LAN
+    lan_type: Проводная
+    segment: [flix.network_segment.dc.ext_wan_edge]
+    vlan: 31
+    ipnetwork: 203.0.113.0/24
+    description: External WAN in Sber DC
+
+  flix.lan.dc.int.wan:
+    title: INT-WAN
+    type: LAN
+    lan_type: Проводная
+    segment: [flix.network_segment.dc.int_wan_edge]
+    vlan: 32
+    ipnetwork: 10.10.32.0/24
+    description: Internal WAN in Sber DC
+
+  flix.lan.dc.dmz.test:
+    title: DMZ-TEST
+    type: LAN
+    lan_type: Проводная
+    segment: [flix.network_segment.dc.dmz]
+    vlan: 24
+    ipnetwork: 10.10.24.0/24
+    description: DMZ Test in Sber DC
+
+  
+
+  flix.lan.dc.int.dmz:
+    title: INT-DMZ
+    type: LAN
+    lan_type: Проводная
+    segment: [flix.network_segment.dc.dmz]
+    vlan: 30
+    ipnetwork: 10.10.30.0/24
+    description: Internal DMZ in Sber DC
+
+  flix.lan.dc01.dmz.vdi:
+    title: DMZ-VDI-DC01
+    type: LAN
+    lan_type: Проводная
+    segment: [flix.network_segment.dc.dmz]
+    vlan: 216
+    ipnetwork: 10.10.26.0/24
+    description: DMZ VDI in Sber DC
+
+  flix.lan.192.168.101.0:
+    title: LAN сеть Sber
+    external_id: lan.192.168.101.0
+    type: LAN
+    segment: [flix.network_segment.dc.int_net]
+    lan_type: Проводная
+    ipnetwork: 192.168.101.0/24
+    description: Сеть внутри Sber
+    vlan: 101
+    stand:
+      - flix.stand.prod

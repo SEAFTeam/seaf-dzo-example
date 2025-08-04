@@ -1,0 +1,14 @@
+seaf.ta.services.backup:
+  flix.backup.cyberbackup:
+    title: Cyberbackup
+    description: Резервное копирование Cyberbackup
+    path: /mnt/backup
+    replication: false
+    network_connection:
+      - flix.lan.dc.int.it.services
+      - flix.lan.dc02.int.it.services
+    stand:
+      - flix.stand.prod
+    availabilityzone:
+      - flix.dc_az.moscow
+    location: [flix.dc.01, flix.dc.02]

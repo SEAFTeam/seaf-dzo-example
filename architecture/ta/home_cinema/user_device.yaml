@@ -1,12 +1,9 @@
-#### Создаём клиентские устройства
 seaf.ta.components.user_device:
   flix.user_device.laptop:
-    external_id: user_device.laptop
-    title: Ноутбуки сотрудников
-    device_type: АРМ
     description: Клиентский ноутбук сотрудника
-    segment: flix.network_segment.office.ntwrk.01
+    device_type: АРМ
+    location:
+    - flix.office.hq
     network_connection:
-      - flix.lan.192.168.3.0
-    network_connection_devices:
-      - flix.network_links.cloud_laptop
+    - flix.lan.office.int.lan
+    title: Ноутбуки сотрудников

@@ -1,31 +1,14 @@
-#### Создаём описание линков
 seaf.ta.services.network_links:
-  flix.network_links.vk_cloud:
-    title: VK Cloud линк
-    description: Связь между VK и Cloud
-    type: VPN Site-to-site
-    external_id: network_links.vk_cloud
-    ch_type: Основной
-    bandwidth: 100
-    ch_number: '600'
-    provider: МТС
-
-  flix.network_links.cloud_hq:
-    title: HQ линк
-    description: Связь между Cloud и головным офисом
-    type: VPN Site-to-site
-    external_id: network_links.cloud_hq
-    ch_type: Основной
-    bandwidth: 100
-    ch_number: '700'
-    provider: МТС
-
-  flix.network_links.cloud_laptop:
-    title: Клиентский линк
-    description: Связь между Cloud и клиентскими устройствами
-    type: SSL VPN
-    external_id: network_links.cloud_laptop
-    ch_type: Основной
-    bandwidth: 10
-    ch_number: '800'
-    provider: МТС
+  flix.link.hq_to_dc01:
+    description: VPN туннель между головным офисом и ЦОД Sber
+    encapsulation: GRE
+    encryption: ipsec
+    network_connection:
+    - office.network.core
+    - sbercloud.network.core
+    routing: bgpevpn
+    sla: provider
+    technology: s2svpn
+    title: Канал связи Офис - ЦОД-01
+    typeL1: Ethernet(over Dark Fiber)
+    typeL2: MPLS

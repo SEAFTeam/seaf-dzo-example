@@ -1,20 +1,16 @@
-#### Создаём описание сервиса резервного копирования
 seaf.ta.services.backup:
-  flix.home_cinema.backup.acronis:
-    title: Acronis
-    description: Резервное копирование Acronis
-    external_id: backup.01
-    path: sw_storage.01
+  flix.backup.cyberbackup:
     availabilityzone:
-      - flix.dc_az.moscow
+    - flix.dc_az.moscow
+    description: Резервное копирование Cyberbackup
+    location:
+    - flix.dc.01
+    - flix.dc.02
     network_connection:
-      - flix.lan.192.168.2.0
+    - flix.lan.dc01.int.it.services
+    - flix.lan.dc02.int.it.services
+    path: /mnt/backup
     replication: false
-    app_components:
-      - flix.home_cinema.auth.app
-      - flix.home_cinema.auth.token_manager
-      - flix.home_cinema.catalog.app
-      - flix.home_cinema.payments.app
-      - flix.home_cinema.canals.app
     stand:
-      - flix.stand.prod
+    - flix.stand.prod
+    title: Cyberbackup

@@ -1,9 +1,0 @@
-seaf.ta.services.network_links:
-  flix.link.hq_to_dc01:
-    title: Канал связи Офис - ЦОД-01
-    description: VPN туннель между головным офисом и ЦОД Sber
-    type: VPN Site-to-site
-    provider: МТС
-    bandwidth: 100
-    ch_type: Основной
-    ch_number: '900'

@@ -1,7 +1,0 @@
-seaf.ta.services.office:
-  flix.office.hq:
-    external_id: office.hq
-    title: Головной офис
-    description: Головной офис компании
-    address: Берёзовый бульвар, д.14
-    region: flix.dc_region.russia

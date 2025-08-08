@@ -1,5 +1,0 @@
-seaf.ta.services.dc_region:
-  flix.dc_region.russia:
-    external_id: dc_region.russia
-    title: Регион Россия
-    description: Регион доступности Россия ООО Фликс

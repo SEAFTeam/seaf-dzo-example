@@ -1,0 +1,28 @@
+seaf.ta.components.k8s_deployment:
+  seaf.ta.components.k8s_deployment.auth:
+    title: Auth
+    description: Микросервис аутентификации
+    maxunavailable: 2
+    update_strategy: RollingUpdate
+    hpa: false
+    kubernetes:
+      - flix.k8s.01
+    replicas: 10
+    external_id: k8s_deployment.auth
+    availabilityzone:
+      - flix.dc_az.moscow
+    k8s_pod: seaf.ta.services.k8s_pod.auth
+
+  seaf.ta.components.k8s_deployment.payments:
+    title: Payments
+    description: Микросервис платежей
+    maxunavailable: 2
+    update_strategy: RollingUpdate
+    hpa: false
+    kubernetes:
+      - flix.k8s.01
+    replicas: 10
+    deployment: k8s_deployment.payments
+    availabilityzone:
+     - flix.dc_az.moscow
+    k8s_pod: seaf.ta.services.k8s_pod.payments

@@ -1,0 +1,9 @@
+seaf.ta.components.user_device:
+  flix.user_device.laptop:
+    description: Клиентский ноутбук сотрудника
+    device_type: АРМ
+    location:
+    - flix.office.hq
+    network_connection:
+    - flix.lan.office.int.lan
+    title: Ноутбуки сотрудников

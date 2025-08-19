@@ -1,0 +1,23 @@
+seaf.ta.services.dc:
+  flix.dc.01:
+    address: Огородный проезд
+    availabilityzone: flix.dc_az.moscow
+    description: Sber Cloud Advanced
+    external_id: dc.01
+    ownership: Аренда
+    rack_qty: 5
+    tier: '3'
+    title: Sber Cloud DC
+    type: Основной
+    vendor: Sber
+  flix.dc.02:
+    address: Садовый проезд
+    availabilityzone: flix.dc_az.moscow
+    description: VK Cloud
+    external_id: dc.02
+    ownership: Аренда
+    rack_qty: 0
+    tier: '3'
+    title: VK DC
+    type: Основной
+    vendor: Mail

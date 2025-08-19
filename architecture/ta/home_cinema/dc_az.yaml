@@ -1,0 +1,7 @@
+seaf.ta.services.dc_az:
+  flix.dc_az.moscow:
+    description: Зона доступности Москва
+    external_id: dc_az.moscow
+    region: flix.dc_region.russia
+    title: Зона доступности Москва
+    vendor: Фликс

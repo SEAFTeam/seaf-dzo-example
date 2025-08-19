@@ -1,0 +1,161 @@
+seaf.ta.services.network:
+  flix.lan.192.168.2.0:
+    description: Сеть внутри VK
+    external_id: lan.192.168.2.0
+    ipnetwork: 192.168.2.0/24
+    lan_type: Проводная
+    segment:
+    - flix.network_segment.dc02.int_net
+    stand:
+    - flix.stand.prod
+    title: LAN сеть VK
+    type: LAN
+    vlan: 150
+  flix.lan.dc02.dmz.prod:
+    description: DMZ Prod in VK DC
+    ipnetwork: 10.20.21.0/24
+    lan_type: Проводная
+    segment:
+    - flix.network_segment.dc02.dmz
+    title: DMZ-PROD-DC02
+    type: LAN
+    vlan: 221
+  flix.lan.dc02.dmz.test:
+    description: DMZ Test in VK DC
+    ipnetwork: 10.20.24.0/24
+    lan_type: Проводная
+    segment:
+    - flix.network_segment.dc02.dmz
+    title: DMZ-TEST DC02
+    type: LAN
+    vlan: 124
+  flix.lan.dc02.dmz.vdi:
+    description: DMZ VDI in VK DC
+    ipnetwork: 10.20.26.0/24
+    lan_type: Проводная
+    segment:
+    - flix.network_segment.dc02.dmz
+    title: DMZ-VDI-DC02
+    type: LAN
+    vlan: 226
+  flix.lan.dc02.dmz.vpn:
+    description: DMZ VPN in VK DC
+    ipnetwork: 10.20.25.0/24
+    lan_type: Проводная
+    segment:
+    - flix.network_segment.dc02.dmz
+    title: DMZ-VPN-DC02
+    type: LAN
+    vlan: 225
+  flix.lan.dc02.ext.wan:
+    description: External WAN in VK DC
+    ipnetwork: 203.0.114.0/24
+    lan_type: Проводная
+    segment:
+    - flix.network_segment.dc02.ext_wan_edge
+    title: EXT-WAN DC02
+    type: LAN
+    vlan: 131
+  flix.lan.dc02.inet_edge:
+    description: Сеть модуля подключения к Интернет в ЦОД-02
+    ipnetwork: 198.51.101.0/24
+    lan_type: Проводная
+    segment:
+    - flix.network_segment.dc02.inet_edge
+    title: DC02-Internet-edge
+    type: LAN
+    vlan: 120
+  flix.lan.dc02.int.dmz:
+    description: Internal DMZ in VK DC
+    ipnetwork: 10.20.30.0/24
+    lan_type: Проводная
+    segment:
+    - flix.network_segment.dc02.dmz
+    title: INT-DMZ DC02
+    type: LAN
+    vlan: 130
+  flix.lan.dc02.int.it.services:
+    description: Internal It services in VK DC
+    ipnetwork: 10.20.27.0/24
+    lan_type: Проводная
+    segment:
+    - flix.network_segment.dc02.int_net
+    title: INT-IT Services DC02
+    type: LAN
+    vlan: 127
+  flix.lan.dc02.int.prod:
+    description: Internal Prod in VK DC
+    ipnetwork: 10.20.40.0/24
+    lan_type: Проводная
+    segment:
+    - flix.network_segment.dc02.int_net
+    title: INT-PROD DC02
+    type: LAN
+    vlan: 140
+  flix.lan.dc02.int.sec.prod:
+    description: Внутренняя защищенная сеть ЦОД-а
+    ipnetwork: 10.20.29.0/24
+    lan_type: Проводная
+    segment:
+    - flix.network_segment.dc02.int_security_net
+    title: SDZ-PROD DC02
+    type: LAN
+    vlan: 129
+  flix.lan.dc02.int.test:
+    description: Internal test network in VK DC
+    ipnetwork: 10.20.26.0/24
+    lan_type: Проводная
+    segment:
+    - flix.network_segment.dc02.int_net
+    title: INT-TEST DC02
+    type: LAN
+    vlan: 126
+  flix.lan.dc02.int.wan:
+    description: Internal WAN in VK DC
+    ipnetwork: 10.20.32.0/24
+    lan_type: Проводная
+    segment:
+    - flix.network_segment.dc02.int_wan_edge
+    title: INT-WAN DC02
+    type: LAN
+    vlan: 132
+  flix.wan.dc02.isp.01:
+    autonomus_system: AS12345
+    bandwidth: 1000
+    ip_version: v4
+    location:
+    - flix.dc.02
+    provider: Beeline
+    segment: flix.network_segment.dc02.internet
+    title: ISP01 DC02
+    type: WAN
+    wan_ip: 10.40.10.0/24
+  flix.wan.dc02.isp.02:
+    autonomus_system: AS12345
+    bandwidth: 10000
+    ip_version: v4
+    location:
+    - flix.dc.02
+    provider: Ростелеком
+    segment: flix.network_segment.dc02.internet
+    title: ISP02 DC02
+    type: WAN
+    wan_ip: 10.40.11.0/24
+  flix.wan.dc02.sp.01:
+    autonomus_system: AS12345
+    bandwidth: 10000
+    ip_version: v4
+    provider: МТС
+    segment: flix.network_segment.dc02.transport
+    title: SP01 DC02
+    type: WAN
+    wan_ip: 10.40.12.0/24
+  flix.wan.dc02.sp.02:
+    autonomus_system: AS12345
+    bandwidth: 10000
+    ip_version: v4
+    provider: Ростелеком
+    segment: flix.network_segment.dc02.transport
+    title: SP02 DC02
+    type: WAN
+    wan_ip: 10.40.13.0/24

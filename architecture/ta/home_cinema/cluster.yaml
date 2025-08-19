@@ -1,0 +1,156 @@
+seaf.ta.services.cluster:
+  flix.cluster.ad:
+    availabilityzone:
+    - flix.dc_az.moscow
+    description: Кластер Active Directory
+    location:
+    - flix.dc.01
+    - flix.dc.02
+    network_connection:
+    - flix.lan.dc01.int.it.services
+    - flix.lan.dc02.int.it.services
+    service_type: Управление ИТ-службой, ИТ-инфраструктурой и ИТ-активами (CMDB, ITSM и т.д.)
+    stand:
+    - flix.stand.prod
+    title: Кластер AD
+  flix.cluster.app_ac1:
+    availabilityzone:
+    - flix.dc_az.moscow
+    description: Кластер приложений AC1
+    location:
+    - flix.dc.01
+    - flix.dc.02
+    network_connection:
+    - flix.lan.dc01.int.prod
+    - flix.lan.dc02.int.prod
+    service_type: Cерверы приложений и т.д.
+    stand:
+    - flix.stand.prod
+    title: Кластер приложений AC1
+  flix.cluster.app_ac2:
+    availabilityzone:
+    - flix.dc_az.moscow
+    description: Кластер приложений AC2
+    location:
+    - flix.dc.01
+    - flix.dc.02
+    network_connection:
+    - flix.lan.dc01.int.prod
+    - flix.lan.dc02.int.prod
+    service_type: Cерверы приложений и т.д.
+    stand:
+    - flix.stand.prod
+    title: Кластер приложений AC2
+  flix.cluster.db_ac1:
+    availabilityzone:
+    - flix.dc_az.moscow
+    description: Кластер СУБД рекомендаций
+    location:
+    - flix.dc.01
+    - flix.dc.02
+    network_connection:
+    - flix.lan.dc01.int.prod
+    - flix.lan.dc02.int.prod
+    service_type: СУБД
+    stand:
+    - flix.stand.prod
+    title: Кластер СУБД рекомендаций
+    app_components:
+    - flix.home_cinema.recomendation.app
+  flix.cluster.db_ac2:
+    availabilityzone:
+    - flix.dc_az.moscow
+    description: Кластер СУБД токенов
+    location:
+    - flix.dc.01
+    - flix.dc.02
+    network_connection:
+    - flix.lan.dc01.int.prod
+    - flix.lan.dc02.int.prod
+    service_type: СУБД
+    stand:
+    - flix.stand.prod
+    title: Кластер СУБД токенов
+    app_components:
+    - flix.home_cinema.auth.token_manager
+  flix.cluster.db_ac3:
+    availabilityzone:
+    - flix.dc_az.moscow
+    description: Кластер базы данных 1С
+    location:
+    - flix.dc.01
+    - flix.dc.02
+    network_connection:
+    - flix.lan.dc01.int.prod
+    - flix.lan.dc02.int.prod
+    service_type: СУБД
+    stand:
+    - flix.stand.prod
+    title: Кластер базы данных 1С
+    app_components:
+    - flix.1c.db
+  flix.cluster.mail:
+    availabilityzone:
+    - flix.dc_az.moscow
+    description: Почтовый кластер
+    location:
+    - flix.dc.01
+    - flix.dc.02
+    network_connection:
+    - flix.lan.dc01.int.it.services
+    - flix.lan.dc02.int.it.services
+    service_type: Коммуникации (АТС, Почта, мессенджеры, СМС шлюзы и т.д.)
+    stand:
+    - flix.stand.prod
+    title: Почтовый кластер
+  flix.cluster.vdi:
+    availabilityzone:
+    - flix.dc_az.moscow
+    description: Кластер vdi
+    location:
+    - flix.dc.01
+    - flix.dc.02
+    network_connection:
+    - flix.lan.dc01.dmz.vdi
+    - flix.lan.dc02.dmz.vdi
+    service_type: Виртуализация рабочих мест (ВАРМ и VDI)
+    stand:
+    - flix.stand.prod
+    title: Кластер vdi
+  flix.cluster.wildfly:
+    availabilityzone:
+    - flix.dc_az.moscow
+    description: Wildfly cluster for flix.home_cinema.catalog.app
+    external_id: cluster.01
+    fqdn: wildfly.flix.ru
+    location:
+    - flix.dc.01
+    - flix.dc.02
+    network_connection:
+    - flix.lan.192.168.101.0
+    - flix.lan.192.168.2.0
+    reservation_type: Active-Active
+    service_type: Cерверы приложений и т.д.
+    stand:
+    - flix.stand.prod
+    title: Кластер приложений Wildfly
+    app_components:
+      - flix.home_cinema.auth
+  flix.cluster.1c:
+    network_connection:
+      - flix.lan.192.168.2.0
+      - flix.lan.192.168.101.0
+    availabilityzone:
+      - flix.dc_az.moscow
+    location:
+      - flix.dc.01
+      - flix.dc.02
+    external_id: cluster.1c
+    service_type: Cерверы приложений и т.д.
+    title: Кластер приложений 1С
+    description: flix.cluster.wildfly
+    reservation_type: Active-Active
+    stand:
+      - flix.stand.prod
+    app_components:
+      - flix.1c

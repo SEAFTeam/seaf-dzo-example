@@ -29,15 +29,9 @@ flowchart TB
 
 ## Развертывание
 
-1. Установите DocHub используя [инструкцию](https://github.com/RabotaRu/DocHub#быстрый-старт). 
-   Для ознакомления, рекомендуется использовать вариант развертывания - плагин для IDEA;
-2. Установите менеджер архитектурных пакетов [archpkg](https://www.npmjs.com/package/archpkg);
-3. Клонируйте данный репозиторий и перейдите в директорию проекта;
-4. Установите зависимости командой:
-   ```console
-   npx archpkg install
-   ```
-5. Перед тем как приступить к работе с проектом, нужно установить graphviz c помощью команды:
+1. Предварительно ознакомьтесь с [документацией](https://gitverse.ru/seafteam/seaf-archtool-core#user-content-быстрый-старт) и установите [актуальную версию ArchTool](https://gitverse.ru/seafteam/seaf-archtool-core/releases). Для первого ознакомления рекомендуется использовать вариант развертывания в виде плагина для IDEA (файл SEAF.ArchTool.JBPlugin-х.хх.х);
+2. Клонируйте данный репозиторий и перейдите в директорию проекта. Установите все пакеты, от которых указана зависимость в корневом манифесте dochub.yaml;
+3. Перед тем как приступить к работе с проектом, нужно установить graphviz c помощью команды:
     ```console
         linux: 
                  sudo apt-get install graphviz
@@ -49,8 +43,8 @@ flowchart TB
 6. Откройте проект в IDE.
 
 **ВНИМАНИЕ:**
- Рекомендуется использовать плагин IDEA версии 3.12.0 и выше!
- Ссылка на [плагин](https://github.com/RabotaRu/DocHub/tree/master/distrib).
+ Рекомендуется использовать плагин ArchTool IDEA версии v4.18.1 и выше!
+ Ссылка на [релизы SEAF.ArchTool IDEA Plugin в предназначенном для плагина репозитории](https://gitverse.ru/seafteam/seaf-archtool-ideplugin-jetbrains/releases).
 
 ## Структура меню
 ```
@@ -103,7 +97,7 @@ flowchart TB
 ## Системные требования:
 ```
 nodejs 20.х.х
-Dochub latest
+ArchTool latest
 ```
 
 

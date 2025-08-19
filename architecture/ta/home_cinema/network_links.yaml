@@ -1,0 +1,14 @@
+seaf.ta.services.network_links:
+  flix.link.hq_to_dc01:
+    description: VPN туннель между головным офисом и ЦОД Sber
+    encapsulation: GRE
+    encryption: ipsec
+    network_connection:
+    - office.network.core
+    - sbercloud.network.core
+    routing: bgpevpn
+    sla: provider
+    technology: s2svpn
+    title: Канал связи Офис - ЦОД-01
+    typeL1: Ethernet(over Dark Fiber)
+    typeL2: MPLS

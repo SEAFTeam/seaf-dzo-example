@@ -1,0 +1,9 @@
+seaf.ta.services.software:
+  flix.licenses.cryptopro:
+    expiration: eternal
+    external_id: licenses.cryptopro
+    lic_qty: 10
+    support: Expired
+    title: КриптоПро
+    type: Закрытая платная
+    vendor: CryptoPro

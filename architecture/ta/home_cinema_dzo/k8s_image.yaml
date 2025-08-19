@@ -1,0 +1,18 @@
+seaf.ta.components.k8s_image:
+  seaf.ta.services.k8s_image.identity:
+    repo_path: https://repo.flix.ru/repo
+    image_size: 1000
+    title: identity
+    repo_proved: true
+    description: Образ контейнера
+    image:
+      - k8s_image.identity
+
+  seaf.ta.services.k8s_image.transaction:
+    repo_path: https://repo.flix.ru/repo
+    image_size: 1000
+    title: transaction
+    repo_proved: true
+    description: Образ контейнера
+    image:
+     - k8s_image.transaction

@@ -1,0 +1,17 @@
+seaf.ta.components.k8s_statefulset:
+  seaf.ta.components.k8s_statefulset.auth:
+    description: Микросервис аутентификации
+    title:  Микросервис аутентификации
+    external_id: k8s_statefulset.auth
+    update_strategy: RollingUpdate
+    hpa: false
+    replicas: 3
+    maxunavailable: 3
+    kubernetes:
+      - flix.k8s.01
+    availabilityzone:
+      - flix.dc_az.moscow
+    container: seaf.ta.services.k8s_container.identity
+    k8s_pod:
+      - seaf.ta.services.k8s_pod.auth
+    name: auth

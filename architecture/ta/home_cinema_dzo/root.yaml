@@ -1,0 +1,14 @@
+imports:
+  - k8s_deployment.yaml
+  - k8s_statefulset.yaml
+  - k8s_pod.yaml
+  - k8s_container.yaml
+  - k8s_image.yaml
+  - network.yaml
+  - k8s_service.yaml
+  - server.yaml
+  - hw_storage.yaml
+  - monitoring.yaml
+  - requirements.yaml
+  - network_segment.yaml
+  - kb.yaml

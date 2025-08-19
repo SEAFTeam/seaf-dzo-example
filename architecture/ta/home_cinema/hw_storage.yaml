@@ -1,0 +1,27 @@
+seaf.ta.components.hw_storage:
+  flix.hw_storage.01:
+    description: Аппаратное хранилище
+    disk_type: SSD
+    external_id: hw_storage.01
+    location:
+    - flix.dc.01
+    protocols: FC, Ethernet
+    sber:
+      compression_rate: 5
+      dedup_rate: 2
+      erasure_coding: 1
+      links_qty: 4
+      ntp_server: ntp.flix.ru
+      nvram_amount: 64
+      pwr_supply_qty: 4
+      reservation_ratio: 100
+      snapshot_lic: true
+      ssd_cache_qty: 4
+      storage_console: https://console-hw-storage.01.flix.ru
+      storage_controller_qty: 2
+      storage_spare_disk_qty: 2
+    stand:
+    - flix.stand.prod
+    title: СХД IBM
+    vendor: IBM Storwize 7000
+    volume: 10000

@@ -61,8 +61,20 @@ entities:
                   'link': 'entities/seaf.ta/office_md'
               },
               {
+                  'location': 'Архитектура/Техническая/Технические сервисы/Окуржения',
+                  'link': 'entities/seaf.ta/environment_md'
+              },        
+              {
+                  'location': 'Архитектура/Техническая/Технические сервисы/Стенд',
+                  'link': 'entities/seaf.ta/stand_md'
+              },                
+              {
                   'location': 'Архитектура/Техническая/Технические сервисы/Кластеры',
                   'link': 'entities/seaf.ta/cluster_md'
+              },
+              {
+                  'location': 'Архитектура/Техническая/Технические сервисы/Вычислительные сервисы',
+                  'link': 'entities/seaf.ta/compute_md'
               },
               {
                   'location': 'Архитектура/Техническая/Технические сервисы/Хранилища',
@@ -79,6 +91,10 @@ entities:
               {
                   'location': 'Архитектура/Техническая/Технические сервисы/Сети',
                   'link': 'entities/seaf.ta/network_md'
+              },
+              {
+                  'location': 'Архитектура/Техническая/Технические сервисы/Сетевые сегменты',
+                  'link': 'entities/seaf.ta/network_segment_md'
               },
               {
                   'location': 'Архитектура/Техническая/Технические сервисы/Сервис доступа к ресурсам сети',

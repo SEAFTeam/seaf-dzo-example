@@ -1,0 +1,24 @@
+seaf.ta.components.k8s_container:
+  seaf.ta.services.k8s_container.identity:
+    container_ram: 512
+    title: Identity Container
+    container_type: Контейнер с бизнес-логикой
+    emergency_stop: Уровень настройки среды исполнения
+    description: Контейнер с бизнес-логикой
+    container_cpu: 1000
+    external_id: k8s_container.identity
+    affinity: yes
+    k8s_image:
+      - seaf.ta.services.k8s_image.identity
+
+  seaf.ta.services.k8s_container.transaction:
+    container_ram: 512
+    title: Transaction Container
+    container_type: Контейнер с бизнес-логикой
+    emergency_stop: Уровень настройки среды исполнения
+    description: Transaction Container
+    container_cpu: 1000
+    external_id: k8s_container.transaction
+    affinity: yes
+    k8s_image:
+      - seaf.ta.services.k8s_image.transaction

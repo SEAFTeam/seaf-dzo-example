@@ -1,0 +1,6 @@
+seaf.ta.services.stand:
+  flix.stand.prod:
+    description: Стенд для продакшена
+    env: flix.environment.prod
+    external_id: flix.environment.prod
+    title: stand.prod

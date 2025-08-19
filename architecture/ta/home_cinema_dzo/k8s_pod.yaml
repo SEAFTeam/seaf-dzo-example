@@ -1,0 +1,32 @@
+seaf.ta.components.k8s_pod:
+  seaf.ta.services.k8s_pod.auth:
+    tmp_storage: 100
+    pv: false
+    scheduled: false
+    secrets: Yes
+    access_level: Не привилегированный
+    update_strategy: RollingUpdate
+    title: Auth Back
+    external_id: k8s_pod.auth
+    stoptimeout: 60
+    ml: false
+    description: Бекенд под
+    priorityclass: 5
+    container_id:
+      - seaf.ta.services.k8s_container.identity
+
+  seaf.ta.services.k8s_pod.payments:
+    tmp_storage: 100
+    pv: false
+    scheduled: false
+    secrets: Yes
+    access_level: Не привилегированный
+    update_strategy: RollingUpdate
+    title: Payments Back
+    external_id: k8s_pod.payments
+    stoptimeout: 60
+    ml: false
+    description: Бекенд под
+    priorityclass: 5
+    container_id:
+      - seaf.ta.services.k8s_container.transaction

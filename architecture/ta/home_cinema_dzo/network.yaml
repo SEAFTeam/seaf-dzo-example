@@ -1,0 +1,18 @@
+seaf.ta.components.network:
+  flix.network.cisco.11:
+    title: Cisco ASR 1001-X
+    description: Аппаратный маршрутизатор
+    external_id: cisco.11
+    model: ASR 1001-X
+    realization_type:  Физический
+    address: 192.168.1.2
+    purpose: Пограничный маршрутизатор
+    network_connection:
+      - flix.wan.1.1.1.16
+    placement_type: Периметр
+    is_part_of_IS_service:
+      - test.kb.av.01
+    sber:
+      auth_type: Двухфакторная
+      class: Иное
+      device_type: Маршрутизатор (роутер)

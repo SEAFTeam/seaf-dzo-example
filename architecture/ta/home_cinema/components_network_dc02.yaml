@@ -1,0 +1,233 @@
+seaf.ta.components.network:
+  flix.kb.fpsu_1_dc02:
+    description: ФПСУ для шифрования канала
+    location:
+    - flix.dc.02
+    model: Защита 100
+    network_connection:
+    - flix.lan.dc02.dmz.vpn
+    - flix.wan.dc02.isp.01
+    - flix.lan.dc02.dmz.vdi
+    realization_type: Физический
+    segment: flix.network_segment.dc02.dmz
+    title: FPSU-1 DC02
+    type: Криптошлюз
+  flix.network.dc.fw.01_dc02:
+    address: 10.10.21.1
+    description: Пограничный NGFW
+    location:
+    - flix.dc.02
+    model: 4800F
+    network_connection:
+    - flix.lan.dc02.inet_edge
+    - flix.lan.dc02.dmz.prod
+    - flix.lan.dc02.dmz.test
+    purpose: Пограничный NGFW Internet
+    realization_type: Физический
+    segment: flix.network_segment.dc02.dmz
+    title: NGFW-01 DC02
+    type: МСЭ
+  flix.network.dc.fw.02_dc02:
+    address: 10.10.21.2
+    description: Пограничный NGFW
+    location:
+    - flix.dc.02
+    model: 4800F
+    network_connection:
+    - flix.lan.dc02.inet_edge
+    - flix.lan.dc02.dmz.prod
+    - flix.lan.dc02.dmz.test
+    purpose: Пограничный NGFW Internet
+    realization_type: Физический
+    segment: flix.network_segment.dc02.dmz
+    title: NGFW-02 DC02
+    type: МСЭ
+  flix.network.dc.fw.03_dc02:
+    address: 10.10.21.3
+    description: Сегментирующий NGFW
+    location:
+    - flix.dc.02
+    model: 4800F
+    network_connection:
+    - flix.lan.dc02.ext.wan
+    - flix.lan.dc02.dmz.prod
+    - flix.lan.dc02.int.dmz
+    - flix.lan.dc02.dmz.test
+    purpose: Сегментирующий NGFW
+    realization_type: Физический
+    segment: flix.network_segment.dc02.dmz
+    title: NGFW-03 DC02
+    type: МСЭ
+  flix.network.dc.fw.04_dc02:
+    address: 10.10.21.4
+    description: Сегментирующий NGFW
+    location:
+    - flix.dc.02
+    model: 4800F
+    network_connection:
+    - flix.lan.dc02.ext.wan
+    - flix.lan.dc02.dmz.prod
+    - flix.lan.dc02.int.dmz
+    - flix.lan.dc02.dmz.test
+    purpose: Сегментирующий NGFW
+    realization_type: Физический
+    segment: flix.network_segment.dc02.dmz
+    title: NGFW-04 DC02
+    type: МСЭ
+  flix.network.dc.fw.05_dc02:
+    address: 10.10.26.1
+    description: Сегментирующий NGFW
+    location:
+    - flix.dc.02
+    model: 4800F
+    network_connection:
+    - flix.lan.dc02.int.wan
+    - flix.lan.dc02.int.test
+    purpose: Сегментирующий NGFW
+    realization_type: Физический
+    segment: flix.network_segment.dc02.int_wan_edge
+    title: NGFW-05 DC02
+    type: МСЭ
+  flix.network.dc.fw.06_dc02:
+    address: 10.10.26.2
+    description: Сегментирующий NGFW
+    location:
+    - flix.dc.02
+    model: 4800F
+    network_connection:
+    - flix.lan.dc02.int.wan
+    - flix.lan.dc02.int.test
+    purpose: Сегментирующий NGFW
+    realization_type: Физический
+    segment: flix.network_segment.dc02.int_wan_edge
+    title: NGFW-06 DC02
+    type: МСЭ
+  flix.network.dc.fw.07_dc02:
+    address: 10.10.29.1
+    description: Сегментирующий NGFW
+    location:
+    - flix.dc.02
+    model: 4800F
+    network_connection:
+    - flix.lan.dc02.int.sec.prod
+    - flix.lan.dc02.int.prod
+    purpose: Сегментирующий NGFW
+    realization_type: Физический
+    segment: flix.network_segment.dc02.int_security_net
+    title: NGFW-07 DC02
+    type: МСЭ
+  flix.network.dc.fw.08_dc02:
+    address: 10.10.29.2
+    description: Сегментирующий NGFW
+    location:
+    - flix.dc.02
+    model: 4800F
+    network_connection:
+    - flix.lan.dc02.int.sec.prod
+    - flix.lan.dc02.int.prod
+    purpose: Сегментирующий NGFW
+    realization_type: Физический
+    segment: flix.network_segment.dc02.int_security_net
+    title: NGFW-08 DC02
+    type: МСЭ
+  flix.network.dc.ngfw.cntxt1_dc02:
+    description: Контекст правил безопасности NGFW
+    location:
+    - flix.dc.02
+    model: FortiGate 4800F
+    network_connection:
+    - flix.lan.dc02.dmz.prod
+    - flix.lan.dc02.int.it.services
+    - flix.lan.dc02.int.prod
+    - flix.lan.192.168.2.0
+    purpose: Контекст NGFW
+    realization_type: Виртуальный
+    segment: flix.network_segment.dc02.dmz
+    title: CNTXT1 NGFW-01/02 DC02
+    type: МСЭ
+  flix.network.dc.router.01_dc02:
+    address: 10.110.10.2
+    description: Пограничный маршрутизатор интернет провайдера
+    location:
+    - flix.dc.02
+    model: ASR 1001-X
+    network_connection:
+    - flix.wan.dc02.isp.01
+    - flix.lan.dc02.inet_edge
+    network_connection_devices:
+    - flix.link.hq_to_dc01
+    purpose: Пограничный маршрутизатор
+    realization_type: Физический
+    segment: flix.network_segment.dc02.inet_edge
+    title: DC Router 01 DC02
+    type: Маршрутизатор
+  flix.network.dc.router.02_dc02:
+    address: 10.110.10.3
+    description: Пограничный маршрутизатор интернет провайдера
+    location:
+    - flix.dc.02
+    model: ASR 1001-X
+    network_connection:
+    - flix.wan.dc02.isp.02
+    - flix.lan.dc02.inet_edge
+    purpose: Пограничный маршрутизатор
+    realization_type: Физический
+    segment: flix.network_segment.dc02.inet_edge
+    title: DC Router 02 DC02
+    type: Маршрутизатор
+  flix.network.dc.router.03_dc02:
+    address: 10.20.31.3
+    description: Пограничный маршрутизатор SP1
+    location:
+    - flix.dc.02
+    model: ASR 1001-X
+    network_connection:
+    - flix.wan.dc02.isp.01
+    - flix.lan.dc02.ext.wan
+    purpose: Пограничный маршрутизатор EXT_WAN
+    realization_type: Физический
+    segment: flix.network_segment.dc02.ext_wan_edge
+    title: DC Router 03 DC02
+    type: Маршрутизатор
+  flix.network.dc.router.04_dc02:
+    address: 10.20.31.4
+    description: Пограничный маршрутизатор SP2
+    location:
+    - flix.dc.02
+    model: ASR 1001-X
+    network_connection:
+    - flix.wan.dc02.isp.02
+    - flix.lan.dc02.ext.wan
+    purpose: Пограничный маршрутизатор EXT_WAN
+    realization_type: Физический
+    segment: flix.network_segment.dc02.ext_wan_edge
+    title: DC Router 04 DC02
+    type: Маршрутизатор
+  flix.network.dc.router.05_dc02:
+    address: 10.20.32.5
+    description: Пограничный маршрутизатор WAN SP1
+    location:
+    - flix.dc.02
+    model: ASR 1001-X
+    network_connection:
+    - flix.wan.dc02.sp.01
+    - flix.lan.dc02.int.wan
+    purpose: Пограничный маршрутизатор
+    realization_type: Физический
+    segment: flix.network_segment.dc02.int_wan_edge
+    title: DC Router 05 DC02
+    type: Маршрутизатор
+  flix.network.dc.router.06_dc02:
+    address: 10.20.32.6
+    description: Пограничный маршрутизатор WAN SP2
+    location:
+    - flix.dc.02
+    model: ASR 1001-X
+    network_connection:
+    - flix.wan.dc02.sp.02
+    - flix.lan.dc02.int.wan
+    purpose: Пограничный маршрутизатор
+    realization_type: Физический
+    segment: flix.network_segment.dc02.int_wan_edge
+    title: DC Router 06 DC02
+    type: Маршрутизатор

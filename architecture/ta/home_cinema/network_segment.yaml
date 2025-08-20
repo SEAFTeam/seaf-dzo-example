@@ -1,0 +1,111 @@
+seaf.ta.services.network_segment:
+  flix.network_segment.dc.dmz:
+    sber:
+      location: flix.dc.01
+      zone: DMZ
+    title: DMZ
+  flix.network_segment.dc.ext_wan_edge:
+    sber:
+      location: flix.dc.01
+      zone: EXT-WAN-EDGE
+    title: EXT WAN-EDGE
+  flix.network_segment.dc.inet_edge:
+    sber:
+      location: flix.dc.01
+      zone: INET-EDGE
+    title: INET-EDGE
+  flix.network_segment.dc.int_net:
+    sber:
+      location: flix.dc.01
+      zone: INT-NET
+    title: Внутренняя сеть ЦОД
+  flix.network_segment.dc.int_security_net:
+    sber:
+      location: flix.dc.01
+      zone: INT-SECURITY-NET
+    title: Защищенный сегмент данных
+  flix.network_segment.dc.int_wan_edge:
+    sber:
+      location: flix.dc.01
+      zone: INT-WAN-EDGE
+    title: INT WAN-EDGE
+  flix.network_segment.dc.internet:
+    sber:
+      location: flix.dc.01
+      zone: INTERNET
+    title: Internet
+  flix.network_segment.dc.transport:
+    sber:
+      location: flix.dc.01
+      zone: TRANSPORT-WAN
+    title: Транспортная сеть
+  flix.network_segment.dc02.dmz:
+    sber:
+      location: flix.dc.02
+      zone: DMZ
+    title: DMZ DC02
+  flix.network_segment.dc02.ext_wan_edge:
+    sber:
+      location: flix.dc.02
+      zone: EXT-WAN-EDGE
+    title: EXT WAN-EDGE DC02
+  flix.network_segment.dc02.inet_edge:
+    sber:
+      location: flix.dc.02
+      zone: INET-EDGE
+    title: INET-EDGE DC02
+  flix.network_segment.dc02.int_net:
+    sber:
+      location: flix.dc.02
+      zone: INT-NET
+    title: Внутренняя сеть ЦОД DC02
+  flix.network_segment.dc02.int_security_net:
+    sber:
+      location: flix.dc.02
+      zone: INT-SECURITY-NET
+    title: Защищенный сегмент данных DC02
+  flix.network_segment.dc02.int_wan_edge:
+    sber:
+      location: flix.dc.02
+      zone: INT-WAN-EDGE
+    title: INT WAN-EDGE DC02
+  flix.network_segment.dc02.internet:
+    sber:
+      location: flix.dc.02
+      zone: INTERNET
+    title: Internet DC02
+  flix.network_segment.dc02.transport:
+    sber:
+      location: flix.dc.02
+      zone: TRANSPORT-WAN
+    title: Транспортная сеть DC02
+  flix.network_segment.internet:
+    sber:
+      location: flix.office.hq
+      zone: INTERNET
+    title: Internet
+  flix.network_segment.office.access:
+    sber:
+      location: flix.office.hq
+      zone: DMZ
+    title: УС уровня доступа
+  flix.network_segment.office.inet_edge:
+    sber:
+      location: flix.office.hq
+      zone: INET-EDGE
+    title: INET-EDGE
+  flix.network_segment.office.int:
+    sber:
+      location: flix.office.hq
+      zone: INT-NET
+    title: Внутренняя сеть офиса (ЛВС)
+  flix.network_segment.office.wan_edge:
+    sber:
+      location: flix.office.hq
+      zone: INT-WAN-EDGE
+    title: WAN-EDGE
+  flix.network_segment.transport:
+    sber:
+      location: flix.office.hq
+      zone: TRANSPORT-WAN
+    title: Транспортная сеть

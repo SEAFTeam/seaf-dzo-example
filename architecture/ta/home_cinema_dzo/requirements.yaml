@@ -1,0 +1,17 @@
+seaf.change.requirements:
+  flix.home_cinema.requirement1:
+    title: RPO
+    type: non-functional
+    description: RPO 9 часов
+    verifications:
+      test_check:
+        title: Провести учения
+        condition: Учения завершились успешно
+  flix.home_cinema.requirement2:
+    title: RTO
+    type: non-functional
+    description: RTO 2 часа
+    verifications:
+      test_check:
+        title: Провести учения
+        condition: Учения завершились успешно

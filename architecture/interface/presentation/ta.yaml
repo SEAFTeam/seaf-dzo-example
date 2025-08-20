@@ -85,7 +85,7 @@ entities:
 
       network_links_md:
         type: markdown
-        template: templates/network_linkss.md
+        template: templates/network_links.md
 
       network_segment_md:
         type: markdown

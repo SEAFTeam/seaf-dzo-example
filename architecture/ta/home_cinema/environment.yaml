@@ -1,0 +1,10 @@
+seaf.ta.services.environment:
+  flix.environment.dev:
+    external_id: environment.dev
+    title: Окружение для разработки
+  flix.environment.prod:
+    external_id: environment.prod
+    title: Окружение для продакшена
+  flix.environment.test:
+    external_id: environment.test
+    title: Окружение для тестирования

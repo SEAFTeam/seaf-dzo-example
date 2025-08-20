@@ -1,0 +1,172 @@
+seaf.ta.services.network:
+  flix.lan.office.admin.ARM:
+    description: Сеть АРМ администраторов
+    ipnetwork: 192.168.5.0/24
+    lan_type: Проводная
+    segment:
+    - flix.network_segment.office.int
+    title: АРМ Admin
+    type: LAN
+    vlan: 19
+  flix.lan.office.ext.lan:
+    description: Core сети УС офиса
+    ipnetwork: 192.168.10.0/24
+    lan_type: Проводная
+    segment:
+    - flix.network_segment.office.access
+    title: OF-EXT LAN
+    type: LAN
+    vlan: 13
+  flix.lan.office.inet_edge:
+    description: Сеть модуля подключения к внешним сетям
+    ipnetwork: 203.0.113.0/24
+    lan_type: Проводная
+    segment:
+    - flix.network_segment.office.inet_edge
+    title: OF-Internet EDGE LAN
+    type: LAN
+    vlan: 11
+  flix.lan.office.inet_guest_edge:
+    description: Сеть модуля подключения к внешним сетям - гостевая
+    ipnetwork: 198.51.100.0/24
+    lan_type: Проводная
+    segment:
+    - flix.network_segment.office.inet_edge
+    title: OF-Guest Internet EDGE LAN
+    type: LAN
+    vlan: 10
+  flix.lan.office.int.lan:
+    description: Core сети УС офиса
+    ipnetwork: 192.168.0.0/20
+    lan_type: Проводная
+    segment:
+    - flix.network_segment.office.int
+    title: OF-INT LAN
+    type: LAN
+    vlan: 16
+  flix.lan.office.ipphones:
+    description: Сеть IP телефонов
+    ipnetwork: 192.168.7.0/24
+    lan_type: Проводная
+    segment:
+    - flix.network_segment.office.int
+    title: IP Phones
+    type: LAN
+    vlan: 21
+  flix.lan.office.mgmt:
+    description: Сеть интерфейсов управления
+    ipnetwork: 192.168.9.0/24
+    lan_type: Проводная
+    segment:
+    - flix.network_segment.office.int
+    title: OF-MGMT
+    type: LAN
+    vlan: 22
+  flix.lan.office.pr.security:
+    description: Сеть периметровых средств безопасности
+    ipnetwork: 192.168.8.0/24
+    lan_type: Проводная
+    segment:
+    - flix.network_segment.office.int
+    title: PR-Security
+    type: LAN
+    vlan: 22
+  flix.lan.office.printers:
+    description: Сеть печатающих устройств
+    ipnetwork: 192.168.6.0/24
+    lan_type: Проводная
+    segment:
+    - flix.network_segment.office.int
+    title: Printers
+    type: LAN
+    vlan: 20
+  flix.lan.office.security:
+    description: Сеть систем безопасности офиса
+    ipnetwork: 192.168.12.0/24
+    lan_type: Проводная
+    segment:
+    - flix.network_segment.office.access
+    title: OF-Security
+    type: LAN
+    vlan: 15
+  flix.lan.office.wan_edge:
+    description: Сеть модуля транспортной сети
+    ipnetwork: 10.10.12.0/24
+    lan_type: Проводная
+    segment:
+    - flix.network_segment.office.wan_edge
+    title: OF-WAN EDGE LAN
+    type: LAN
+    vlan: 12
+  flix.lan.office.wifi.arm:
+    description: Беспроводная сеть АРМ
+    ipnetwork: 192.168.3.0/24
+    lan_type: Беспроводная
+    segment:
+    - flix.network_segment.office.int
+    title: Wi-Fi АРМ
+    type: LAN
+    vlan: 17
+  flix.lan.office.wifi.guest:
+    description: Сеть гостевого WiFi
+    ipnetwork: 192.168.11.0/24
+    lan_type: Беспроводная
+    segment:
+    - flix.network_segment.office.access
+    title: WiFi Guest LAN
+    type: LAN
+    vlan: 14
+  flix.lan.office.wired.ARM:
+    description: Проводная сеть АРМ
+    ipnetwork: 192.168.4.0/24
+    lan_type: Проводная
+    segment:
+    - flix.network_segment.office.int
+    title: Wired АРМ
+    type: LAN
+    vlan: 18
+  flix.wan.office.isp.01:
+    autonomus_system: AS12345
+    bandwidth: 1000
+    ip_version: v4
+    provider: МТС
+    segment: flix.network_segment.internet
+    title: ISP01 Office
+    type: WAN
+    wan_ip: 10.20.11.0/24
+  flix.wan.office.isp.02:
+    autonomus_system: AS12345
+    bandwidth: 1000
+    ip_version: v4
+    provider: Megafon
+    segment: flix.network_segment.internet
+    title: ISP02 Office
+    type: WAN
+    wan_ip: 10.20.12.0/24
+  flix.wan.office.isp.guest:
+    autonomus_system: AS12345
+    bandwidth: 1000
+    ip_version: v4
+    provider: МТС
+    segment: flix.network_segment.internet
+    title: ISP Guest
+    type: WAN
+    wan_ip: 10.20.10.0/24
+  flix.wan.office.sp.01:
+    autonomus_system: AS12345
+    bandwidth: 10000
+    ip_version: v4
+    provider: МТС
+    segment: flix.network_segment.transport
+    title: SP01 Office
+    type: WAN
+    wan_ip: 10.20.13.0/24
+  flix.wan.office.sp.02:
+    autonomus_system: AS12345
+    bandwidth: 10000
+    ip_version: v4
+    provider: Ростелеком
+    segment: flix.network_segment.transport
+    title: SP02 Office
+    type: WAN
+    wan_ip: 10.20.14.0/24

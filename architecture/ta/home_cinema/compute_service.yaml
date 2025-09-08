@@ -1,221 +1,221 @@
 seaf.ta.services.compute_service:
   flix.compute_service.ac9.app:
     availabilityzone:
-    - flix.dc_az.moscow
+      - flix.dc_az.moscow
     description: Фронт (десктопное приложение)
     network_connection:
-    - flix.lan.dc01.int.prod
-    - flix.lan.dc02.int.prod
+      - flix.lan.dc01.int.prod
+      - flix.lan.dc02.int.prod
     service_type: Cерверы приложений и т.д.
     stand:
-    - flix.stand.prod
+      - flix.stand.prod
     title: Фронт (десктопное приложение)
   flix.compute_service.ac9.db:
     availabilityzone:
-    - flix.dc_az.moscow
+      - flix.dc_az.moscow
     description: База данных Simphony
     network_connection:
-    - flix.lan.dc01.int.prod
-    - flix.lan.dc02.int.prod
+      - flix.lan.dc01.int.prod
+      - flix.lan.dc02.int.prod
     service_type: СУБД
     stand:
-    - flix.stand.prod
+      - flix.stand.prod
     title: База данных AS9
   flix.compute_service.as8.app:
     availabilityzone:
-    - flix.dc_az.moscow
+      - flix.dc_az.moscow
     description: Сервер АС AdReality
     network_connection:
-    - flix.lan.dc01.int.prod
-    - flix.lan.dc02.int.prod
+      - flix.lan.dc01.int.prod
+      - flix.lan.dc02.int.prod
     service_type: Cерверы приложений и т.д.
     stand:
-    - flix.stand.prod
+      - flix.stand.prod
     title: Фронт (десктопное приложение) АС8
   flix.compute_service.as8.web:
     availabilityzone:
-    - flix.dc_az.moscow
+      - flix.dc_az.moscow
     description: Сервер АС AdReality
     network_connection:
-    - flix.lan.dc01.dmz.prod
-    - flix.lan.dc02.dmz.prod
+      - flix.lan.dc01.dmz.prod
+      - flix.lan.dc02.dmz.prod
     service_type: Cерверы приложений и т.д.
     stand:
-    - flix.stand.prod
+      - flix.stand.prod
     title: Web сервер АС8
   flix.compute_service.bpm.db:
     availabilityzone:
-    - flix.dc_az.moscow
+      - flix.dc_az.moscow
     description: База данных BPM
     network_connection:
-    - flix.lan.dc01.int.prod
-    - flix.lan.dc02.int.prod
+      - flix.lan.dc01.int.prod
+      - flix.lan.dc02.int.prod
     service_type: СУБД
     stand:
-    - flix.stand.prod
+      - flix.stand.prod
     title: База данных BPM
   flix.compute_service.bpm.front:
     availabilityzone:
-    - flix.dc_az.moscow
+      - flix.dc_az.moscow
     description: Система управления бизнес-процессами
     network_connection:
-    - flix.lan.dc01.dmz.prod
-    - flix.lan.dc02.dmz.prod
+      - flix.lan.dc01.dmz.prod
+      - flix.lan.dc02.dmz.prod
     service_type: Cерверы приложений и т.д.
     stand:
-    - flix.stand.prod
+      - flix.stand.prod
     title: Фронт (web-приложение) BPM
   flix.compute_service.cms:
     availabilityzone:
-    - flix.dc_az.moscow
+      - flix.dc_az.moscow
     description: Система управления контентом
     network_connection:
-    - flix.lan.dc01.int.prod
-    - flix.lan.dc02.int.prod
+      - flix.lan.dc01.int.prod
+      - flix.lan.dc02.int.prod
     service_type: СУБД
     stand:
-    - flix.stand.prod
+      - flix.stand.prod
     title: CMS
   flix.compute_service.db_ac5:
     availabilityzone:
-    - flix.dc_az.moscow
+      - flix.dc_az.moscow
     description: База данных AC5
     network_connection:
-    - flix.lan.dc01.int.prod
-    - flix.lan.dc02.int.prod
+      - flix.lan.dc01.int.prod
+      - flix.lan.dc02.int.prod
     service_type: СУБД
     stand:
-    - flix.stand.prod
+      - flix.stand.prod
     title: База данных AC5
   flix.compute_service.dhcp:
     availabilityzone:
-    - flix.dc_az.moscow
+      - flix.dc_az.moscow
     description: Сервис DHCP в ЦОД1
     network_connection:
-    - flix.lan.dc01.int.it.services
-    - flix.lan.dc02.int.it.services
+      - flix.lan.dc01.int.it.services
+      - flix.lan.dc02.int.it.services
     stand:
-    - flix.stand.prod
+      - flix.stand.prod
     title: DHCP
   flix.compute_service.dns:
     availabilityzone:
-    - flix.dc_az.moscow
+      - flix.dc_az.moscow
     description: Сервис DNS в ЦОД1
     network_connection:
-    - flix.lan.dc01.int.it.services
-    - flix.lan.dc02.int.it.services
+      - flix.lan.dc01.int.it.services
+      - flix.lan.dc02.int.it.services
     stand:
-    - flix.stand.prod
+      - flix.stand.prod
     title: DNS
   flix.compute_service.fir:
     availabilityzone:
-    - flix.dc_az.moscow
+      - flix.dc_az.moscow
     description: Файловый ресурс
     network_connection:
-    - flix.lan.dc01.int.prod
-    - flix.lan.dc02.int.prod
+      - flix.lan.dc01.int.prod
+      - flix.lan.dc02.int.prod
     service_type: Файловый ресурс (FTP, NFS, SMB, S3 и т.д.)
     stand:
-    - flix.stand.prod
+      - flix.stand.prod
     title: Файловый ресурс
   flix.compute_service.ntp:
     availabilityzone:
-    - flix.dc_az.moscow
+      - flix.dc_az.moscow
     description: Сервис NTP в ЦОД1
     network_connection:
-    - flix.lan.dc01.int.it.services
-    - flix.lan.dc02.int.it.services
+      - flix.lan.dc01.int.it.services
+      - flix.lan.dc02.int.it.services
     stand:
-    - flix.stand.prod
+      - flix.stand.prod
     title: NTP
   flix.compute_service.web_ac4:
     availabilityzone:
-    - flix.dc_az.moscow
+      - flix.dc_az.moscow
     description: Фронт (web-приложение) AC4
     network_connection:
-    - flix.lan.dc01.int.prod
-    - flix.lan.dc02.int.prod
+      - flix.lan.dc01.int.prod
+      - flix.lan.dc02.int.prod
     service_type: Cерверы приложений и т.д.
     stand:
-    - flix.stand.prod
+      - flix.stand.prod
     title: Фронт (web-приложение) AC4
   flix.compute_service.web_ac5:
     availabilityzone:
-    - flix.dc_az.moscow
+      - flix.dc_az.moscow
     description: Фронт (web-приложение)AC5
     network_connection:
-    - flix.lan.dc01.int.prod
-    - flix.lan.dc02.int.prod
+      - flix.lan.dc01.int.prod
+      - flix.lan.dc02.int.prod
     service_type: Cерверы приложений и т.д.
     stand:
-    - flix.stand.prod
+      - flix.stand.prod
     title: Фронт (web-приложение) AC5
   flix.compute_service.web_ac6:
     availabilityzone:
-    - flix.dc_az.moscow
+      - flix.dc_az.moscow
     description: Шлюз AC6
     network_connection:
-    - flix.lan.dc01.int.prod
-    - flix.lan.dc02.int.prod
+      - flix.lan.dc01.int.prod
+      - flix.lan.dc02.int.prod
     service_type: Шлюз, Балансировщик, прокси
     stand:
-    - flix.stand.prod
+      - flix.stand.prod
     title: Шлюз AC6
   flix.compute_service.web_ac7:
     availabilityzone:
-    - flix.dc_az.moscow
+      - flix.dc_az.moscow
     description: Web AC7
     network_connection:
-    - flix.lan.dc01.int.prod
-    - flix.lan.dc02.int.prod
+      - flix.lan.dc01.int.prod
+      - flix.lan.dc02.int.prod
     service_type: Шлюз, Балансировщик, прокси
     stand:
-    - flix.stand.prod
+      - flix.stand.prod
     title: Web AC7
   flix.compute_service.yandex_metrika:
     availabilityzone:
-    - flix.dc_az.moscow
+      - flix.dc_az.moscow
     description: Yandex Metrika
     network_connection:
-    - flix.lan.dc01.int.prod
-    - flix.lan.dc02.int.prod
+      - flix.lan.dc01.int.prod
+      - flix.lan.dc02.int.prod
     service_type: Cерверы приложений и т.д.
     stand:
-    - flix.stand.prod
+      - flix.stand.prod
     title: Yandex Metrika
   flix.gitlab:
     availabilityzone:
-    - flix.dc_az.moscow
+      - flix.dc_az.moscow
     description: Инструменты разработки GitLab
     network_connection:
-    - flix.lan.dc01.int.it.services
-    - flix.lan.dc02.int.it.services
+      - flix.lan.dc01.int.it.services
+      - flix.lan.dc02.int.it.services
     service_type: Управление разработкой и хранения кода (Gitlab, Jira и т.д.)
     title: Devops инструменты GitLab
   flix.infra.tools_1:
     availabilityzone:
-    - flix.dc_az.moscow
+      - flix.dc_az.moscow
     description: Инструменты автоматизации развертывания инфраструктуры
     network_connection:
-    - flix.lan.dc01.int.prod
-    - flix.lan.dc02.int.prod
+      - flix.lan.dc01.int.prod
+      - flix.lan.dc02.int.prod
     service_type: Управление и автоматизацией (Ansible, Terraform, Jenkins и т.д.)
     title: Ansible
   flix.network.remote_1:
     availabilityzone:
-    - flix.dc_az.moscow
+      - flix.dc_az.moscow
     description: Сервис удаленного доступа
     network_connection:
-    - flix.lan.dc01.dmz.vpn
-    - flix.lan.dc02.dmz.vpn
+      - flix.lan.dc01.dmz.vpn
+      - flix.lan.dc02.dmz.vpn
     service_type: Инфраструктура удаленного доступа
     title: R.Access
   flix.network.tools_1:
     availabilityzone:
-    - flix.dc_az.moscow
+      - flix.dc_az.moscow
     description: Внутренний DNS
     network_connection:
-    - flix.lan.dc01.int.it.services
-    - flix.lan.dc02.int.it.services
+      - flix.lan.dc01.int.it.services
+      - flix.lan.dc02.int.it.services
     service_type: Управление сетевым адресным пространством (DHCP, DNS и т.д.)
     title: DNS

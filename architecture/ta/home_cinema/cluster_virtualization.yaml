@@ -1,31 +1,31 @@
 seaf.ta.services.cluster_virtualization:
   flix.cluster_virtualization.esx.cloudru:
     availabilityzone:
-    - flix.dc_az.moscow
+      - flix.dc_az.moscow
     description: Кластер виртуализации на базе ESX в ЦОД Cloud.ru
     drs_support: true
     hypervisor: ESX
     location:
-    - flix.dc.01
+      - flix.dc.01
     network_connection:
-    - flix.lan.192.168.101.0
+      - flix.lan.192.168.101.0
     oversubscription_rate: 1
     sdrs_support: true
     stand:
-    - flix.stand.prod
+      - flix.stand.prod
     title: Кластер виртуализации ESX в Cloud.ru
   flix.cluster_virtualization.proxmox.vk:
     availabilityzone:
-    - flix.dc_az.moscow
+      - flix.dc_az.moscow
     description: Кластер виртуализации Proxmox в ЦОД VK Cloud
     drs_support: false
     hypervisor: Proxmox VE
     location:
-    - flix.dc.02
+      - flix.dc.02
     network_connection:
-    - flix.lan.192.168.2.0
+      - flix.lan.192.168.2.0
     oversubscription_rate: 1
     sdrs_support: false
     stand:
-    - flix.stand.prod
+      - flix.stand.prod
     title: Кластер виртуализации Proxmox в VK Cloud

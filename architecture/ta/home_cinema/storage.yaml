@@ -1,47 +1,47 @@
 seaf.ta.services.storage:
   flix.obj_storage.cloud_s3:
     availabilityzone:
-    - flix.dc_az.moscow
+      - flix.dc_az.moscow
     description: S3 Storage in Sber Cloud
     external_id: obj_storage.cloud_s3
     network_connection:
-    - flix.lan.dc01.int.it.services
+      - flix.lan.dc01.int.it.services
     sla: 99
     software: SaaS
     stand:
-    - flix.stand.prod
+      - flix.stand.prod
     title: S3 Storage in Sber
     type: Simple Storage Service
   flix.obj_storage.vk_s3:
     availabilityzone:
-    - flix.dc_az.moscow
+      - flix.dc_az.moscow
     description: S3 Storage in VK Cloud
     external_id: obj_storage.vk_s3
     network_connection:
-    - flix.lan.192.168.2.0
+      - flix.lan.192.168.2.0
     sla: 99
     software: SaaS
     stand:
-    - flix.stand.prod
+      - flix.stand.prod
     title: S3 Storage in VK
     type: Simple Storage Service
   flix.sw_storage.01:
     availabilityzone:
-    - flix.dc_az.moscow
+      - flix.dc_az.moscow
     description: SDS Storage
     disk_type: SSD
     erasure_coding: 2
     external_id: sw_storage.01
     location:
-    - flix.dc.01
-    - flix.dc.02
+      - flix.dc.01
+      - flix.dc.02
     network_connection:
-    - flix.lan.192.168.101.0
-    - flix.lan.192.168.2.0
+      - flix.lan.192.168.101.0
+      - flix.lan.192.168.2.0
     protocols: SMB, S3
     software: CEPH
     stand:
-    - flix.stand.prod
+      - flix.stand.prod
     title: Storage CEPH
     type: Software Defined Storage
     volume: 1000

@@ -15,4 +15,4 @@ seaf.ta.components.k8s_image:
     repo_proved: true
     description: Образ контейнера
     image:
-     - k8s_image.transaction
+      - k8s_image.transaction

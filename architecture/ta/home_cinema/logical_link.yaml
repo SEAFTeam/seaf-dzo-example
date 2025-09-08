@@ -4,8 +4,8 @@ seaf.ta.services.logical_link:
     direction: <==>
     source: flix.network.dc.fw.01
     stand:
-    - flix.stand.prod
+      - flix.stand.prod
     target:
-    - flix.cluster.ad
-    - flix.cluster.mail
+      - flix.cluster.ad
+      - flix.cluster.mail
     title: Связь NGFW с серверами

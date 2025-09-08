@@ -4,7 +4,7 @@ seaf.ta.components.network:
     description: Аппаратный маршрутизатор
     external_id: cisco.11
     model: ASR 1001-X
-    realization_type:  Физический
+    realization_type: Физический
     address: 192.168.1.2
     purpose: Пограничный маршрутизатор
     network_connection:

@@ -13,8 +13,8 @@ seaf.ta.services.kb:
     description: Сервис кибер безопасности
     tag: ALG
     network_connection:
-    - flix.lan.dc01.dmz.prod
-    - flix.lan.dc02.dmz.prod
+      - flix.lan.dc01.dmz.prod
+      - flix.lan.dc02.dmz.prod
     software_name: S11
     status: Используется
     technology: Безопасность конфигураций
@@ -23,8 +23,8 @@ seaf.ta.services.kb:
     description: Сервис кибер безопасности
     tag: ALG
     network_connection:
-    - flix.lan.dc01.int.sec.prod
-    - flix.lan.dc02.int.sec.prod
+      - flix.lan.dc01.int.sec.prod
+      - flix.lan.dc02.int.sec.prod
     software_name: S12
     status: Используется
     technology: Безопасность конфигураций
@@ -33,8 +33,8 @@ seaf.ta.services.kb:
     description: Сервис кибер безопасности
     tag: FW
     network_connection:
-    - flix.lan.dc01.int.sec.prod
-    - flix.lan.dc02.int.sec.prod
+      - flix.lan.dc01.int.sec.prod
+      - flix.lan.dc02.int.sec.prod
     software_name: S2
     status: Используется
     technology: Управление доступом пользователей
@@ -43,8 +43,8 @@ seaf.ta.services.kb:
     description: Сервис кибер безопасности
     tag: IDS
     network_connection:
-    - flix.lan.dc01.int.sec.prod
-    - flix.lan.dc02.int.sec.prod
+      - flix.lan.dc01.int.sec.prod
+      - flix.lan.dc02.int.sec.prod
     software_name: S3
     status: Используется
     technology: Управление доступом пользователей
@@ -53,10 +53,10 @@ seaf.ta.services.kb:
     description: Сервис кибер безопасности
     tag: FW
     network_connection:
-    - flix.lan.dc01.dmz.prod
-    - flix.lan.dc01.int.prod
-    - flix.lan.dc02.dmz.prod
-    - flix.lan.dc02.int.prod
+      - flix.lan.dc01.dmz.prod
+      - flix.lan.dc01.int.prod
+      - flix.lan.dc02.dmz.prod
+      - flix.lan.dc02.int.prod
     software_name: Forti
     status: Используется
     technology: Межсетевое экранирование
@@ -65,8 +65,8 @@ seaf.ta.services.kb:
     description: Сервис кибер безопасности
     tag: AV
     network_connection:
-    - flix.lan.dc01.int.sec.prod
-    - flix.lan.dc02.int.sec.prod
+      - flix.lan.dc01.int.sec.prod
+      - flix.lan.dc02.int.sec.prod
     software_name: Kaspersky
     status: Используется
     technology: Потоковый антивирус
@@ -75,8 +75,8 @@ seaf.ta.services.kb:
     description: Сервис кибер безопасности
     tag: ALG
     network_connection:
-    - flix.lan.dc01.int.sec.prod
-    - flix.lan.dc02.int.sec.prod
+      - flix.lan.dc01.int.sec.prod
+      - flix.lan.dc02.int.sec.prod
     software_name: S6
     status: Используется
     technology: Контроль подключений к сети
@@ -84,16 +84,16 @@ seaf.ta.services.kb:
   flix.kb.7:
     description: Сервис кибер безопасности
     network_connection:
-    - flix.lan.dc01.ext.wan
-    - flix.lan.dc02.ext.wan
+      - flix.lan.dc01.ext.wan
+      - flix.lan.dc02.ext.wan
     technology: Шлюзы безопасности прикладного уровня
     title: S7
   flix.kb.8:
     description: Сервис кибер безопасности
     tag: ALG
     network_connection:
-    - flix.lan.dc01.dmz.prod
-    - flix.lan.dc02.dmz.prod
+      - flix.lan.dc01.dmz.prod
+      - flix.lan.dc02.dmz.prod
     software_name: S8
     status: Используется
     technology: Контентная фильтрация и разграничение доступа в Интернет
@@ -102,8 +102,8 @@ seaf.ta.services.kb:
     description: Сервис кибер безопасности
     tag: ALG
     network_connection:
-    - flix.lan.dc01.dmz.prod
-    - flix.lan.dc02.dmz.prod
+      - flix.lan.dc01.dmz.prod
+      - flix.lan.dc02.dmz.prod
     software_name: S9
     status: Используется
     technology: Аудит событий КБ
@@ -112,10 +112,10 @@ seaf.ta.services.kb:
     description: Сервис защиты от DDOs от BiZone
     tag: DDoS
     network_connection:
-    - flix.lan.dc01.inet_edge
-    - flix.wan.dc01.isp.01
-    - flix.lan.dc02.inet_edge
-    - flix.wan.dc02.isp.01
+      - flix.lan.dc01.inet_edge
+      - flix.wan.dc01.isp.01
+      - flix.lan.dc02.inet_edge
+      - flix.wan.dc02.isp.01
     software_name: DDOS
     status: Создается
     technology: Защита от атак типа "Отказ от обслуживания"
@@ -124,8 +124,8 @@ seaf.ta.services.kb:
     description: Сервис кибер безопасности
     tag: Sandbox
     network_connection:
-    - flix.lan.dc01.dmz.prod
-    - flix.lan.dc02.dmz.prod
+      - flix.lan.dc01.dmz.prod
+      - flix.lan.dc02.dmz.prod
     software_name: Sandbox
     status: Используется
     technology: Динамический анализ угроз Sandbox
@@ -134,8 +134,8 @@ seaf.ta.services.kb:
     description: Сервис кибер безопасности
     tag: IPS
     network_connection:
-    - flix.wan.dc01.isp.01
-    - flix.wan.dc02.isp.01
+      - flix.wan.dc01.isp.01
+      - flix.wan.dc02.isp.01
     software_name: SEAM
     status: Используется
     technology: Аудит событий КБ
@@ -144,12 +144,12 @@ seaf.ta.services.kb:
     description: WAF for All-App
     tag: WAF
     network_connection:
-    - flix.lan.dc01.inet_edge
-    - flix.wan.dc01.isp.01
-    - flix.wan.dc01.isp.02
-    - flix.lan.dc02.inet_edge
-    - flix.wan.dc02.isp.01
-    - flix.wan.dc02.isp.02
+      - flix.lan.dc01.inet_edge
+      - flix.wan.dc01.isp.01
+      - flix.wan.dc01.isp.02
+      - flix.lan.dc02.inet_edge
+      - flix.wan.dc02.isp.01
+      - flix.wan.dc02.isp.02
     software_name: Nginx
     status: Используется
     technology: Защита веб-приложений WAF
@@ -158,8 +158,8 @@ seaf.ta.services.kb:
     description: Сервис RADIUS в ЦОД1
     tag: IDFW
     network_connection:
-    - flix.lan.dc01.int.sec.prod
-    - flix.lan.dc02.int.sec.prod
+      - flix.lan.dc01.int.sec.prod
+      - flix.lan.dc02.int.sec.prod
     software_name: Аркан
     status: Используется
     technology: Управление доступом пользователей
@@ -168,7 +168,7 @@ seaf.ta.services.kb:
     description: Сервис СКУД в офисе
     tag: CS
     network_connection:
-    - flix.lan.office.pr.security
+      - flix.lan.office.pr.security
     software_name: Аркан
     status: Используется
     technology: Управление доступом пользователей

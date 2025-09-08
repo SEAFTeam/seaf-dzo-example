@@ -1,7 +1,7 @@
 seaf.ta.components.k8s_statefulset:
   seaf.ta.components.k8s_statefulset.auth:
     description: Микросервис аутентификации
-    title:  Микросервис аутентификации
+    title: Микросервис аутентификации
     external_id: k8s_statefulset.auth
     update_strategy: RollingUpdate
     hpa: false

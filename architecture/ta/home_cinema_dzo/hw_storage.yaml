@@ -6,7 +6,7 @@ seaf.ta.components.hw_storage:
     vendor: IBM Storwize 7000
     volume: 10000
     location:
-       - flix.dc.01
+      - flix.dc.01
     disk_type: SSD
     protocols: FC, Ethernet
     sber:

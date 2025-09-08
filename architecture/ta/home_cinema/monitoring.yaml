@@ -1,47 +1,47 @@
 seaf.ta.services.monitoring:
   flix.monitoring.elk:
     availabilityzone:
-    - flix.dc_az.moscow
+      - flix.dc_az.moscow
     description: Сбор логов
     ha: false
     location:
-    - flix.dc.01
-    - flix.dc.02
+      - flix.dc.01
+      - flix.dc.02
     app_components:
       - flix.1c.db
       - flix.1c
       - flix.home_cinema.payments
     network_connection:
-    - flix.lan.dc01.int.it.services
-    - flix.lan.dc02.int.it.services
+      - flix.lan.dc01.int.it.services
+      - flix.lan.dc02.int.it.services
     role:
-    - Журналирование
+      - Журналирование
     stand:
-    - flix.stand.prod
+      - flix.stand.prod
     title: ELK
   flix.monitoring.zabbix:
     availabilityzone:
-    - flix.dc_az.moscow
+      - flix.dc_az.moscow
     description: Инфраструктурный мониторинг (ДЗО)
     external_id: monitoring.01
     ha: true
     location:
-    - flix.dc.01
-    - flix.dc.02
+      - flix.dc.01
+      - flix.dc.02
     network_connection:
-    - flix.lan.dc01.int.it.services
-    - flix.lan.dc02.int.it.services
+      - flix.lan.dc01.int.it.services
+      - flix.lan.dc02.int.it.services
     role:
-    - Инфраструктурный
-    - Журналирование
+      - Инфраструктурный
+      - Журналирование
     app_components:
       - flix.1c.db
       - flix.1c
       - flix.home_cinema.payments
     sber:
       alarm_transport:
-      - mail
-      - TG
+        - mail
+        - TG
       frequency: 5
       history: 365
       monitoring_console: https://zabbix.flix.ru
@@ -49,5 +49,5 @@ seaf.ta.services.monitoring:
       sber_radar: https://console.radar.sber.ru
       siem_anabled: true
     stand:
-    - flix.stand.prod
+      - flix.stand.prod
     title: Zabbix

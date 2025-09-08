@@ -3,11 +3,11 @@ seaf.ta.components.network:
     address: 192.168.8.15
     description: Пограничный маршрутизатор гостевого интернет провайдера
     location:
-    - flix.office.hq
+      - flix.office.hq
     model: ASR 1001-X
     network_connection:
-    - flix.wan.office.isp.guest
-    - flix.lan.office.inet_guest_edge
+      - flix.wan.office.isp.guest
+      - flix.lan.office.inet_guest_edge
     purpose: Пограничный маршрутизатор
     realization_type: Физический
     segment: flix.network_segment.office.inet_edge
@@ -17,12 +17,12 @@ seaf.ta.components.network:
     address: 192.168.8.21
     description: Пограничный NGFW 1
     location:
-    - flix.office.hq
+      - flix.office.hq
     model: 4800F
     network_connection:
-    - flix.lan.office.inet_edge
-    - flix.lan.office.ext.lan
-    - flix.lan.office.security
+      - flix.lan.office.inet_edge
+      - flix.lan.office.ext.lan
+      - flix.lan.office.security
     purpose: Пограничный NGFW
     realization_type: Физический
     segment: flix.network_segment.office.inet_edge
@@ -32,12 +32,12 @@ seaf.ta.components.network:
     address: 192.168.8.22
     description: Пограничный NGFW 2
     location:
-    - flix.office.hq
+      - flix.office.hq
     model: 4800F
     network_connection:
-    - flix.lan.office.inet_edge
-    - flix.lan.office.ext.lan
-    - flix.lan.office.security
+      - flix.lan.office.inet_edge
+      - flix.lan.office.ext.lan
+      - flix.lan.office.security
     purpose: Пограничный NGFW
     realization_type: Физический
     segment: flix.network_segment.office.inet_edge
@@ -46,11 +46,11 @@ seaf.ta.components.network:
   flix.network.ngfw.cntxt1:
     description: Контекст правил безопасности NGFW
     location:
-    - flix.office.hq
+      - flix.office.hq
     model: FortiGate 4800F
     network_connection:
-    - flix.lan.office.ext.lan
-    - flix.lan.office.int.lan
+      - flix.lan.office.ext.lan
+      - flix.lan.office.int.lan
     purpose: Контекст NGFW
     realization_type: Виртуальный
     segment: flix.network_segment.office.access
@@ -59,11 +59,11 @@ seaf.ta.components.network:
   flix.network.ngfw.cntxt10:
     description: Контекст правил безопасности NGFW для PR-Security
     location:
-    - flix.office.hq
+      - flix.office.hq
     model: FortiGate 4800F
     network_connection:
-    - flix.lan.office.pr.security
-    - flix.lan.office.int.lan
+      - flix.lan.office.pr.security
+      - flix.lan.office.int.lan
     purpose: Контекст NGFW
     realization_type: Виртуальный
     segment: flix.network_segment.office.int
@@ -72,11 +72,11 @@ seaf.ta.components.network:
   flix.network.ngfw.cntxt2:
     description: Контекст правил безопасности NGFW
     location:
-    - flix.office.hq
+      - flix.office.hq
     model: FortiGate 4800F
     network_connection:
-    - flix.lan.office.ext.lan
-    - flix.lan.office.int.lan
+      - flix.lan.office.ext.lan
+      - flix.lan.office.int.lan
     purpose: Контекст NGFW
     realization_type: Виртуальный
     segment: flix.network_segment.office.access
@@ -85,11 +85,11 @@ seaf.ta.components.network:
   flix.network.ngfw.cntxt3:
     description: Контекст правил безопасности NGFW
     location:
-    - flix.office.hq
+      - flix.office.hq
     model: FortiGate 4800F
     network_connection:
-    - flix.lan.office.int.lan
-    - flix.lan.office.wifi.arm
+      - flix.lan.office.int.lan
+      - flix.lan.office.wifi.arm
     purpose: Контекст NGFW
     realization_type: Виртуальный
     segment: flix.network_segment.office.int
@@ -98,11 +98,11 @@ seaf.ta.components.network:
   flix.network.ngfw.cntxt4:
     description: Контекст правил безопасности NGFW
     location:
-    - flix.office.hq
+      - flix.office.hq
     model: FortiGate 4800F
     network_connection:
-    - flix.lan.office.int.lan
-    - flix.lan.office.wired.ARM
+      - flix.lan.office.int.lan
+      - flix.lan.office.wired.ARM
     purpose: Контекст NGFW
     realization_type: Виртуальный
     segment: flix.network_segment.office.int
@@ -111,11 +111,11 @@ seaf.ta.components.network:
   flix.network.ngfw.cntxt5:
     description: Контекст правил безопасности NGFW
     location:
-    - flix.office.hq
+      - flix.office.hq
     model: FortiGate 4800F
     network_connection:
-    - flix.lan.office.int.lan
-    - flix.lan.office.admin.ARM
+      - flix.lan.office.int.lan
+      - flix.lan.office.admin.ARM
     purpose: Контекст NGFW
     realization_type: Виртуальный
     segment: flix.network_segment.office.int
@@ -124,11 +124,11 @@ seaf.ta.components.network:
   flix.network.ngfw.cntxt6:
     description: Контекст правил безопасности NGFW
     location:
-    - flix.office.hq
+      - flix.office.hq
     model: FortiGate 4800F
     network_connection:
-    - flix.lan.office.int.lan
-    - flix.lan.office.printers
+      - flix.lan.office.int.lan
+      - flix.lan.office.printers
     purpose: Контекст NGFW
     realization_type: Виртуальный
     segment: flix.network_segment.office.int
@@ -137,11 +137,11 @@ seaf.ta.components.network:
   flix.network.ngfw.cntxt7:
     description: Контекст правил безопасности NGFW
     location:
-    - flix.office.hq
+      - flix.office.hq
     model: FortiGate 4800F
     network_connection:
-    - flix.lan.office.int.lan
-    - flix.lan.office.ipphones
+      - flix.lan.office.int.lan
+      - flix.lan.office.ipphones
     purpose: Контекст NGFW
     realization_type: Виртуальный
     segment: flix.network_segment.office.int
@@ -150,11 +150,11 @@ seaf.ta.components.network:
   flix.network.ngfw.cntxt8:
     description: Контекст правил безопасности NGFW
     location:
-    - flix.office.hq
+      - flix.office.hq
     model: FortiGate 4800F
     network_connection:
-    - flix.lan.office.int.lan
-    - flix.lan.office.mgmt
+      - flix.lan.office.int.lan
+      - flix.lan.office.mgmt
     purpose: Контекст NGFW
     realization_type: Виртуальный
     segment: flix.network_segment.office.int
@@ -163,11 +163,11 @@ seaf.ta.components.network:
   flix.network.ngfw.cntxt9:
     description: Контекст правил безопасности NGFW для новой MGMT-сети
     location:
-    - flix.office.hq
+      - flix.office.hq
     model: FortiGate 4800F
     network_connection:
-    - flix.lan.office.int.lan
-    - flix.lan.office.wan_edge
+      - flix.lan.office.int.lan
+      - flix.lan.office.wan_edge
     purpose: Контекст NGFW
     realization_type: Виртуальный
     segment: flix.network_segment.office.int
@@ -177,11 +177,11 @@ seaf.ta.components.network:
     address: 192.168.8.23
     description: Пограничный NGFW Guest
     location:
-    - flix.office.hq
+      - flix.office.hq
     model: 4800F
     network_connection:
-    - flix.lan.office.inet_guest_edge
-    - flix.lan.office.wifi.guest
+      - flix.lan.office.inet_guest_edge
+      - flix.lan.office.wifi.guest
     purpose: Пограничный NGFW подключения к интернет гостевой
     realization_type: Физический
     segment: flix.network_segment.office.inet_edge
@@ -191,11 +191,11 @@ seaf.ta.components.network:
     address: 192.168.1.1
     description: Пограничный маршрутизатор ISP1
     location:
-    - flix.office.hq
+      - flix.office.hq
     model: ASR 1001-X
     network_connection:
-    - flix.wan.office.isp.01
-    - flix.lan.office.inet_edge
+      - flix.wan.office.isp.01
+      - flix.lan.office.inet_edge
     purpose: Пограничный маршрутизатор
     realization_type: Физический
     segment: flix.network_segment.office.inet_edge
@@ -205,11 +205,11 @@ seaf.ta.components.network:
     address: 192.168.8.17
     description: Пограничный маршрутизатор ISP2
     location:
-    - flix.office.hq
+      - flix.office.hq
     model: ASR 1001-X
     network_connection:
-    - flix.wan.office.isp.02
-    - flix.lan.office.inet_edge
+      - flix.wan.office.isp.02
+      - flix.lan.office.inet_edge
     purpose: Пограничный маршрутизатор
     realization_type: Физический
     segment: flix.network_segment.office.inet_edge
@@ -219,13 +219,13 @@ seaf.ta.components.network:
     address: 192.168.8.18
     description: Пограничный маршрутизатор SP1
     location:
-    - flix.office.hq
+      - flix.office.hq
     model: ASR 1001-X
     network_connection:
-    - flix.wan.office.sp.01
-    - flix.lan.office.wan_edge
+      - flix.wan.office.sp.01
+      - flix.lan.office.wan_edge
     network_connection_devices:
-    - flix.link.hq_to_dc01
+      - flix.link.hq_to_dc01
     purpose: Пограничный маршрутизатор
     realization_type: Физический
     segment: flix.network_segment.office.wan_edge
@@ -235,11 +235,11 @@ seaf.ta.components.network:
     address: 192.168.8.19
     description: Пограничный маршрутизатор SP2
     location:
-    - flix.office.hq
+      - flix.office.hq
     model: ASR 1001-X
     network_connection:
-    - flix.wan.office.sp.02
-    - flix.lan.office.wan_edge
+      - flix.wan.office.sp.02
+      - flix.lan.office.wan_edge
     purpose: Пограничный маршрутизатор
     realization_type: Физический
     segment: flix.network_segment.office.wan_edge
@@ -249,10 +249,10 @@ seaf.ta.components.network:
     address: 192.168.8.20
     description: WIiFi Router ARM
     location:
-    - flix.office.hq
+      - flix.office.hq
     model: Cisco
     network_connection:
-    - flix.lan.office.mgmt
+      - flix.lan.office.mgmt
     purpose: Controller сети WiFI ARM
     realization_type: Физический
     segment: flix.network_segment.office.int
@@ -262,10 +262,10 @@ seaf.ta.components.network:
     address: 192.168.8.20
     description: WIiFi Router Guest
     location:
-    - flix.office.hq
+      - flix.office.hq
     model: Cisco
     network_connection:
-    - flix.lan.office.wifi.guest
+      - flix.lan.office.wifi.guest
     purpose: Controller сети WiFI Guest
     realization_type: Физический
     segment: flix.network_segment.office.access

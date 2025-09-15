@@ -1,0 +1,8 @@
+seaf.ta.components.k8s_namespace:
+  flix.ns.home_cinema:
+    title: Home Cinema Namespace
+    description: Namespace для компонентов домашнего кинотеатра
+    cluster_ref: flix.k8s.01
+    labels:
+      - app=home-cinema
+

@@ -173,3 +173,99 @@ seaf.ta.services.kb:
     status: Используется
     technology: Управление доступом пользователей
     title: СКУД
+  flix.kb.audit.siem:
+    description: Централизованный сбор и анализ логов (SIEM)
+    tag: Log
+    network_connection:
+      - flix.lan.dc01.int.sec.prod
+      - flix.lan.dc02.int.sec.prod
+      - flix.lan.dc01.int.it.services
+      - flix.lan.dc02.int.it.services
+    software_name: SIEM
+    status: Используется
+    technology: Аудит событий КБ
+    title: SIEM/Logs
+  flix.kb.cmc:
+    description: ЦУЦ для управления сертификатами
+    tag: CMC
+    network_connection:
+      - flix.lan.dc01.int.it.services
+      - flix.lan.dc02.int.it.services
+    software_name: CMC
+    status: Используется
+    technology: Центр управления сертификатами ИБ
+    title: Corporate CMC
+  flix.kb.idm.corp:
+    description: Сервис управления учетными записями (IdM)
+    tag: IdM
+    network_connection:
+      - flix.lan.dc01.int.it.services
+      - flix.lan.dc02.int.it.services
+    software_name: IdM
+    status: Используется
+    technology: Управление учетными записями (IdM)
+    title: Corporate IdM
+  flix.kb.pam.central:
+    description: Сервис привилегированного доступа (PAM)
+    tag: PAM
+    network_connection:
+      - flix.lan.dc01.int.sec.prod
+      - flix.lan.dc02.int.sec.prod
+    software_name: PAM
+    status: Используется
+    technology: Управление привилегированным доступом
+    title: Central PAM
+  flix.kb.registry.harbor:
+    description: Корпоративный реестр контейнеров
+    tag: Registry
+    network_connection:
+      - flix.lan.192.168.101.0
+      - flix.lan.192.168.2.0
+      - flix.lan.dc01.int.it.services
+      - flix.lan.dc02.int.it.services
+    software_name: Harbor
+    status: Используется
+    technology: Реестр контейнеров
+    title: Harbor Registry
+  flix.kb.repo.corp:
+    description: Корпоративный репозиторий ПО
+    tag: Repo
+    network_connection:
+      - flix.lan.dc01.int.it.services
+      - flix.lan.dc02.int.it.services
+    software_name: Nexus
+    status: Используется
+    technology: Репозиторий ПО
+    title: Corporate Repo
+  flix.kb.idp.keycloak:
+    description: Провайдер идентификации (IdP) для доступа к кластеру
+    tag: IdP
+    network_connection:
+      - flix.lan.dc01.int.it.services
+      - flix.lan.dc02.int.it.services
+    software_name: Keycloak
+    status: Используется
+    technology: Провайдер идентификации (IdP)
+    title: Keycloak IdP
+  flix.kb.secrets.vault:
+    description: Хранилище секретов для k8s кластеров
+    tag: Secrets
+    network_connection:
+      - flix.lan.dc01.int.sec.prod
+      - flix.lan.dc02.int.sec.prod
+    software_name: Vault
+    status: Используется
+    technology: Сервис хранения секретов
+    title: Vault Secrets
+  flix.kb.policy.kyverno:
+    description: Политики безопасности для кластеров Kubernetes
+    tag: Policy
+    network_connection:
+      - flix.lan.192.168.101.0
+      - flix.lan.192.168.2.0
+      - flix.lan.dc01.int.it.services
+      - flix.lan.dc02.int.it.services
+    software_name: Kyverno
+    status: Используется
+    technology: Политики Kubernetes
+    title: Kyverno Policy

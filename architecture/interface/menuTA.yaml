@@ -107,7 +107,15 @@ entities:
               {
                   'location': 'Архитектура/Техническая/Сервисы/ПО и лицензии',
                   'link': 'entities/seaf.ta/software_md'
+              },
+              {
+              'location': 'Архитектура/Техническая/Компоненты/K8s Node',
+              'link': 'entities/seaf.ta/k8s_node_md'
+              },
+              {
+              'location': 'Архитектура/Техническая/Сервисы/Сервисы КБ',
+              'link': 'entities/seaf.ta/kb_md'
               }
           ]
       )
-
+      

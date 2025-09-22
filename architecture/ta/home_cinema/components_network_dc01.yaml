@@ -2,12 +2,12 @@ seaf.ta.components.network:
   flix.kb.fpsu_1:
     description: ФПСУ для шифрования канала
     location:
-    - flix.dc.01
+      - flix.dc.01
     model: Защита 100
     network_connection:
-    - flix.lan.dc01.dmz.vpn
-    - flix.wan.dc01.isp.01
-    - flix.lan.dc01.dmz.vdi
+      - flix.lan.dc01.dmz.vpn
+      - flix.wan.dc01.isp.01
+      - flix.lan.dc01.dmz.vdi
     realization_type: Физический
     segment: flix.network_segment.dc.dmz
     title: FPSU-1
@@ -16,12 +16,12 @@ seaf.ta.components.network:
     address: 10.10.21.1
     description: Пограничный NGFW
     location:
-    - flix.dc.01
+      - flix.dc.01
     model: 4800F
     network_connection:
-    - flix.lan.dc01.inet_edge
-    - flix.lan.dc01.dmz.prod
-    - flix.lan.dc01.dmz.test
+      - flix.lan.dc01.inet_edge
+      - flix.lan.dc01.dmz.prod
+      - flix.lan.dc01.dmz.test
     purpose: Пограничный NGFW Internet
     realization_type: Физический
     segment: flix.network_segment.dc.dmz
@@ -31,12 +31,12 @@ seaf.ta.components.network:
     address: 10.10.21.2
     description: Пограничный NGFW
     location:
-    - flix.dc.01
+      - flix.dc.01
     model: 4800F
     network_connection:
-    - flix.lan.dc01.inet_edge
-    - flix.lan.dc01.dmz.test
-    - flix.lan.dc01.dmz.prod
+      - flix.lan.dc01.inet_edge
+      - flix.lan.dc01.dmz.test
+      - flix.lan.dc01.dmz.prod
     purpose: Пограничный NGFW Internet
     realization_type: Физический
     segment: flix.network_segment.dc.dmz
@@ -46,13 +46,13 @@ seaf.ta.components.network:
     address: 10.10.21.3
     description: Сегментирующий NGFW
     location:
-    - flix.dc.01
+      - flix.dc.01
     model: 4800F
     network_connection:
-    - flix.lan.dc01.ext.wan
-    - flix.lan.dc01.dmz.prod
-    - flix.lan.dc01.int.dmz
-    - flix.lan.dc01.dmz.test
+      - flix.lan.dc01.ext.wan
+      - flix.lan.dc01.dmz.prod
+      - flix.lan.dc01.int.dmz
+      - flix.lan.dc01.dmz.test
     purpose: Сегментирующий NGFW
     realization_type: Физический
     segment: flix.network_segment.dc.dmz
@@ -62,13 +62,13 @@ seaf.ta.components.network:
     address: 10.10.21.4
     description: Сегментирующий NGFW
     location:
-    - flix.dc.01
+      - flix.dc.01
     model: 4800F
     network_connection:
-    - flix.lan.dc01.ext.wan
-    - flix.lan.dc01.dmz.prod
-    - flix.lan.dc01.int.dmz
-    - flix.lan.dc01.dmz.test
+      - flix.lan.dc01.ext.wan
+      - flix.lan.dc01.dmz.prod
+      - flix.lan.dc01.int.dmz
+      - flix.lan.dc01.dmz.test
     purpose: Сегментирующий NGFW
     realization_type: Физический
     segment: flix.network_segment.dc.dmz
@@ -78,11 +78,11 @@ seaf.ta.components.network:
     address: 10.10.26.1
     description: Сегментирующий NGFW
     location:
-    - flix.dc.01
+      - flix.dc.01
     model: 4800F
     network_connection:
-    - flix.lan.dc01.int.wan
-    - flix.lan.dc01.int.test
+      - flix.lan.dc01.int.wan
+      - flix.lan.dc01.int.test
     purpose: Сегментирующий NGFW
     realization_type: Физический
     segment: flix.network_segment.dc.int_wan_edge
@@ -92,11 +92,11 @@ seaf.ta.components.network:
     address: 10.10.26.2
     description: Сегментирующий NGFW
     location:
-    - flix.dc.01
+      - flix.dc.01
     model: 4800F
     network_connection:
-    - flix.lan.dc01.int.wan
-    - flix.lan.dc01.int.test
+      - flix.lan.dc01.int.wan
+      - flix.lan.dc01.int.test
     purpose: Сегментирующий NGFW
     realization_type: Физический
     segment: flix.network_segment.dc.int_wan_edge
@@ -106,11 +106,11 @@ seaf.ta.components.network:
     address: 10.10.29.1
     description: Сегментирующий NGFW
     location:
-    - flix.dc.01
+      - flix.dc.01
     model: 4800F
     network_connection:
-    - flix.lan.dc01.int.sec.prod
-    - flix.lan.dc01.int.prod
+      - flix.lan.dc01.int.sec.prod
+      - flix.lan.dc01.int.prod
     purpose: Сегментирующий NGFW
     realization_type: Физический
     segment: flix.network_segment.dc.int_security_net
@@ -120,11 +120,11 @@ seaf.ta.components.network:
     address: 10.10.29.2
     description: Сегментирующий NGFW
     location:
-    - flix.dc.01
+      - flix.dc.01
     model: 4800F
     network_connection:
-    - flix.lan.dc01.int.sec.prod
-    - flix.lan.dc01.int.prod
+      - flix.lan.dc01.int.sec.prod
+      - flix.lan.dc01.int.prod
     purpose: Сегментирующий NGFW
     realization_type: Физический
     segment: flix.network_segment.dc.int_security_net
@@ -133,13 +133,13 @@ seaf.ta.components.network:
   flix.network.dc.ngfw.cntxt1:
     description: Контекст правил безопасности NGFW
     location:
-    - flix.dc.01
+      - flix.dc.01
     model: FortiGate 4800F
     network_connection:
-    - flix.lan.dc01.dmz.prod
-    - flix.lan.dc01.int.prod
-    - flix.lan.192.168.101.0
-    - flix.lan.dc01.int.it.services
+      - flix.lan.dc01.dmz.prod
+      - flix.lan.dc01.int.prod
+      - flix.lan.192.168.101.0
+      - flix.lan.dc01.int.it.services
     purpose: Контекст NGFW
     realization_type: Виртуальный
     segment: flix.network_segment.dc.dmz
@@ -149,13 +149,13 @@ seaf.ta.components.network:
     address: 10.110.10.2
     description: Пограничный маршрутизатор интернет провайдера
     location:
-    - flix.dc.01
+      - flix.dc.01
     model: ASR 1001-X
     network_connection:
-    - flix.wan.dc01.isp.01
-    - flix.lan.dc01.inet_edge
+      - flix.wan.dc01.isp.01
+      - flix.lan.dc01.inet_edge
     network_connection_devices:
-    - flix.link.hq_to_dc01
+      - flix.link.hq_to_dc01
     purpose: Пограничный маршрутизатор
     realization_type: Физический
     segment: flix.network_segment.dc.inet_edge
@@ -165,11 +165,11 @@ seaf.ta.components.network:
     address: 10.110.10.3
     description: Пограничный маршрутизатор интернет провайдера
     location:
-    - flix.dc.01
+      - flix.dc.01
     model: ASR 1001-X
     network_connection:
-    - flix.wan.dc01.isp.02
-    - flix.lan.dc01.inet_edge
+      - flix.wan.dc01.isp.02
+      - flix.lan.dc01.inet_edge
     purpose: Пограничный маршрутизатор
     realization_type: Физический
     segment: flix.network_segment.dc.inet_edge
@@ -179,11 +179,11 @@ seaf.ta.components.network:
     address: 10.10.31.3
     description: Пограничный маршрутизатор SP1
     location:
-    - flix.dc.01
+      - flix.dc.01
     model: ASR 1001-X
     network_connection:
-    - flix.wan.dc01.isp.01
-    - flix.lan.dc01.ext.wan
+      - flix.wan.dc01.isp.01
+      - flix.lan.dc01.ext.wan
     purpose: Пограничный маршрутизатор EXT_WAN
     realization_type: Физический
     segment: flix.network_segment.dc.ext_wan_edge
@@ -193,11 +193,11 @@ seaf.ta.components.network:
     address: 10.10.31.4
     description: Пограничный маршрутизатор SP2
     location:
-    - flix.dc.01
+      - flix.dc.01
     model: ASR 1001-X
     network_connection:
-    - flix.wan.dc01.isp.02
-    - flix.lan.dc01.ext.wan
+      - flix.wan.dc01.isp.02
+      - flix.lan.dc01.ext.wan
     purpose: Пограничный маршрутизатор EXT_WAN
     realization_type: Физический
     segment: flix.network_segment.dc.ext_wan_edge
@@ -207,11 +207,11 @@ seaf.ta.components.network:
     address: 10.10.32.5
     description: Пограничный маршрутизатор WAN SP1
     location:
-    - flix.dc.01
+      - flix.dc.01
     model: ASR 1001-X
     network_connection:
-    - flix.wan.dc01.sp.01
-    - flix.lan.dc01.int.wan
+      - flix.wan.dc01.sp.01
+      - flix.lan.dc01.int.wan
     purpose: Пограничный маршрутизатор
     realization_type: Физический
     segment: flix.network_segment.dc.int_wan_edge
@@ -221,11 +221,11 @@ seaf.ta.components.network:
     address: 10.10.32.6
     description: Пограничный маршрутизатор WAN SP2
     location:
-    - flix.dc.01
+      - flix.dc.01
     model: ASR 1001-X
     network_connection:
-    - flix.wan.dc01.sp.02
-    - flix.lan.dc01.int.wan
+      - flix.wan.dc01.sp.02
+      - flix.lan.dc01.int.wan
     purpose: Пограничный маршрутизатор
     realization_type: Физический
     segment: flix.network_segment.dc.int_wan_edge

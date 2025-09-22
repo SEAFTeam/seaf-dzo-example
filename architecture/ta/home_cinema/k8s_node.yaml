@@ -1,0 +1,70 @@
+seaf.ta.components.k8s_node:
+  flix.k8s.node01.master1:
+    title: K8s Master 1
+    description: Нода master для кластера flix.k8s.01
+    cluster_ref: flix.k8s.01
+    version: '1.28.0'
+    architecture: amd64
+    cpu: 2
+    ram: 8
+    zone: az.moscow
+    labels:
+      - node-role.kubernetes.io/master=true
+    stand:
+      - flix.stand.prod
+
+  flix.k8s.node01.master2:
+    title: K8s Master 2
+    description: Нода master для кластера flix.k8s.01
+    cluster_ref: flix.k8s.01
+    version: '1.28.0'
+    architecture: amd64
+    cpu: 2
+    ram: 8
+    zone: az.moscow
+    labels:
+      - node-role.kubernetes.io/master=true
+    stand:
+      - flix.stand.prod
+
+  flix.k8s.node01.master3:
+    title: K8s Master 3
+    description: Нода master для кластера flix.k8s.01
+    cluster_ref: flix.k8s.01
+    version: '1.28.0'
+    architecture: amd64
+    cpu: 2
+    ram: 8
+    zone: az.moscow
+    labels:
+      - node-role.kubernetes.io/master=true
+    stand:
+      - flix.stand.prod
+
+  flix.k8s.node01.worker1:
+    title: K8s Worker 1
+    description: Нода worker для кластера flix.k8s.01
+    cluster_ref: flix.k8s.01
+    version: '1.28.0'
+    architecture: amd64
+    cpu: 4
+    ram: 16
+    zone: az.moscow
+    labels:
+      - node-role.kubernetes.io/worker=true
+    stand:
+      - flix.stand.prod
+
+  flix.k8s.node01.worker2:
+    title: K8s Worker 2
+    description: Нода worker для кластера flix.k8s.01
+    cluster_ref: flix.k8s.01
+    version: '1.28.0'
+    architecture: amd64
+    cpu: 4
+    ram: 16
+    zone: az.moscow
+    labels:
+      - node-role.kubernetes.io/worker=true
+    stand:
+      - flix.stand.prod

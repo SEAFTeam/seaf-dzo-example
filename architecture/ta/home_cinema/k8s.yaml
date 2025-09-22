@@ -1,68 +1,87 @@
 seaf.ta.services.k8s:
   flix.k8s.01:
-    auth: Keycloack
+    auth: flix.kb.idp.keycloak
     app_components:
-    - flix.home_cinema.auth.app
-    - flix.home_cinema.catalog.app
-    - flix.home_cinema.canals.app
-    - flix.home_cinema.payments.app
-    - flix.home_cinema.recomendation.app
-    - flix.home_cinema.auth.token_manager
+      - flix.home_cinema.auth.app
+      - flix.home_cinema.catalog.app
+      - flix.home_cinema.canals.app
+      - flix.home_cinema.payments.app
+      - flix.home_cinema.recomendation.app
+      - flix.home_cinema.auth.token_manager
     availabilityzone:
-    - flix.dc_az.moscow
+      - flix.dc_az.moscow
     cluster_autoscaler: true
     cni: Calico
     description: K8s кластер в az.moscow
     external_id: k8s.01
     is_own: true
-    keys: Vault
+    keys: flix.kb.secrets.vault
     location:
-    - flix.dc.01
-    - flix.dc.02
-    master_qty: 3
+      - flix.dc.01
+      - flix.dc.02
     network_connection:
-    - flix.lan.192.168.101.0
-    - flix.lan.192.168.2.0
-    policy: Kyverno
+      - flix.lan.192.168.101.0
+      - flix.lan.192.168.2.0
+    policy: flix.kb.policy.kyverno
+    audit: flix.kb.audit.siem
+    audit_policy: flix.kb.audit.siem
+    idm: flix.kb.idm.corp
+    pam: flix.kb.pam.central
+    ca: flix.kb.cmc
+    registries:
+      - flix.kb.registry.harbor
+      - flix.kb.repo.corp
+    monitoring:
+      - flix.monitoring.elk
+    backup:
+      - flix.backup.cyberbackup
+    management_networks:
+      - flix.lan.dc01.int.it.services
+      - flix.lan.dc02.int.it.services
     service_mesh: Istio
     software: '1.28'
     stand:
-    - flix.stand.prod
+      - flix.stand.prod
     title: K8s кластер
-    worker_qty: 2
   flix.k8s.02:
-    auth: Keycloack
+    auth: flix.kb.idp.keycloak
     app_components:
-    - flix.home_cinema.auth.app
-    - flix.home_cinema.catalog.app
-    - flix.home_cinema.canals.app
-    - flix.home_cinema.payments.app
-    - flix.home_cinema.recomendation.app
-    - flix.home_cinema.auth.token_manager
+      - flix.home_cinema.auth.app
+      - flix.home_cinema.catalog.app
+      - flix.home_cinema.canals.app
+      - flix.home_cinema.payments.app
+      - flix.home_cinema.recomendation.app
+      - flix.home_cinema.auth.token_manager
     availabilityzone:
-    - flix.dc_az.moscow
+      - flix.dc_az.moscow
     cluster_autoscaler: true
     cni: Calico
     description: K8s кластер в az.moscow расширенный для ДЗО
     external_id: k8s.02
     is_own: false
-    keys: Vault
+    keys: flix.kb.secrets.vault
     location:
-    - flix.dc.01
-    - flix.dc.02
-    master_qty: 3
+      - flix.dc.01
+      - flix.dc.02
     network_connection:
-    - flix.lan.dc01.int.it.services
-    - flix.lan.dc02.int.it.services
-    policy: Kyverno
-    sber:
-      anonymous_api_connect: false
-      https_api_connect: true
-      ntp_server: ntp.flix.ru
-      pv: false
-      reservation_rate: 100
-      tls_version: '1.2'
+      - flix.lan.dc01.int.it.services
+      - flix.lan.dc02.int.it.services
+    policy: flix.kb.policy.kyverno
+    audit: flix.kb.audit.siem
+    audit_policy: flix.kb.audit.siem
+    idm: flix.kb.idm.corp
+    pam: flix.kb.pam.central
+    ca: flix.kb.cmc
+    registries:
+      - flix.kb.registry.harbor
+      - flix.kb.repo.corp
+    monitoring:
+      - flix.monitoring.elk
+    backup:
+      - flix.backup.cyberbackup
+    management_networks:
+      - flix.lan.dc01.int.it.services
+      - flix.lan.dc02.int.it.services
     service_mesh: Istio
     software: '1.28'
     title: K8s кластер расширенный (ДЗО)
-    worker_qty: 3

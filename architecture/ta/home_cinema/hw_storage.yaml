@@ -4,7 +4,7 @@ seaf.ta.components.hw_storage:
     disk_type: SSD
     external_id: hw_storage.01
     location:
-    - flix.dc.01
+      - flix.dc.01
     protocols: FC, Ethernet
     sber:
       compression_rate: 5
@@ -21,7 +21,7 @@ seaf.ta.components.hw_storage:
       storage_controller_qty: 2
       storage_spare_disk_qty: 2
     stand:
-    - flix.stand.prod
+      - flix.stand.prod
     title: СХД IBM
     vendor: IBM Storwize 7000
     volume: 10000

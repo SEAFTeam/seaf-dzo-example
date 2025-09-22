@@ -5,9 +5,9 @@ seaf.ta.services.network:
     ipnetwork: 192.168.101.0/24
     lan_type: Проводная
     segment:
-    - flix.network_segment.dc.int_net
+      - flix.network_segment.dc.int_net
     stand:
-    - flix.stand.prod
+      - flix.stand.prod
     title: LAN сеть Sber
     type: LAN
     vlan: 101
@@ -16,7 +16,7 @@ seaf.ta.services.network:
     ipnetwork: 10.10.21.0/24
     lan_type: Проводная
     segment:
-    - flix.network_segment.dc.dmz
+      - flix.network_segment.dc.dmz
     title: DMZ-PROD
     type: LAN
     vlan: 21
@@ -25,7 +25,7 @@ seaf.ta.services.network:
     ipnetwork: 10.10.24.0/24
     lan_type: Проводная
     segment:
-    - flix.network_segment.dc.dmz
+      - flix.network_segment.dc.dmz
     title: DMZ-TEST
     type: LAN
     vlan: 24
@@ -34,7 +34,7 @@ seaf.ta.services.network:
     ipnetwork: 10.10.26.0/24
     lan_type: Проводная
     segment:
-    - flix.network_segment.dc.dmz
+      - flix.network_segment.dc.dmz
     title: DMZ-VDI-DC01
     type: LAN
     vlan: 216
@@ -43,7 +43,7 @@ seaf.ta.services.network:
     ipnetwork: 10.10.25.0/24
     lan_type: Проводная
     segment:
-    - flix.network_segment.dc.dmz
+      - flix.network_segment.dc.dmz
     title: DMZ-VPN
     type: LAN
     vlan: 25
@@ -52,7 +52,7 @@ seaf.ta.services.network:
     ipnetwork: 203.0.113.0/24
     lan_type: Проводная
     segment:
-    - flix.network_segment.dc.ext_wan_edge
+      - flix.network_segment.dc.ext_wan_edge
     title: EXT-WAN
     type: LAN
     vlan: 31
@@ -61,7 +61,7 @@ seaf.ta.services.network:
     ipnetwork: 198.51.100.0/24
     lan_type: Проводная
     segment:
-    - flix.network_segment.dc.inet_edge
+      - flix.network_segment.dc.inet_edge
     title: DC01-Internet-edge
     type: LAN
     vlan: 110
@@ -70,7 +70,7 @@ seaf.ta.services.network:
     ipnetwork: 10.10.30.0/24
     lan_type: Проводная
     segment:
-    - flix.network_segment.dc.dmz
+      - flix.network_segment.dc.dmz
     title: INT-DMZ
     type: LAN
     vlan: 30
@@ -79,7 +79,7 @@ seaf.ta.services.network:
     ipnetwork: 10.10.27.0/24
     lan_type: Проводная
     segment:
-    - flix.network_segment.dc.int_net
+      - flix.network_segment.dc.int_net
     title: INT-IT Services
     type: LAN
     vlan: 27
@@ -88,7 +88,7 @@ seaf.ta.services.network:
     ipnetwork: 10.10.40.0/24
     lan_type: Проводная
     segment:
-    - flix.network_segment.dc.int_net
+      - flix.network_segment.dc.int_net
     title: INT-PROD
     type: LAN
     vlan: 40
@@ -97,7 +97,7 @@ seaf.ta.services.network:
     ipnetwork: 10.10.29.0/24
     lan_type: Проводная
     segment:
-    - flix.network_segment.dc.int_security_net
+      - flix.network_segment.dc.int_security_net
     title: SDZ-PROD
     type: LAN
     vlan: 29
@@ -106,7 +106,7 @@ seaf.ta.services.network:
     ipnetwork: 10.10.26.0/24
     lan_type: Проводная
     segment:
-    - flix.network_segment.dc.int_net
+      - flix.network_segment.dc.int_net
     title: INT-TEST
     type: LAN
     vlan: 26
@@ -115,43 +115,43 @@ seaf.ta.services.network:
     ipnetwork: 10.10.32.0/24
     lan_type: Проводная
     segment:
-    - flix.network_segment.dc.int_wan_edge
+      - flix.network_segment.dc.int_wan_edge
     title: INT-WAN
     type: LAN
     vlan: 32
   flix.wan.dc01.isp.01:
     autonomus_system: AS65001
-    bandwidth: 1000
     ip_version: v4
     provider: Beeline
-    segment: flix.network_segment.dc.internet
+    segment:
+      - flix.network_segment.dc.internet
     title: ISP01 DC01
     type: WAN
     wan_ip: 10.30.10.0/24
   flix.wan.dc01.isp.02:
     autonomus_system: AS65002
-    bandwidth: 10000
     ip_version: v4
     provider: Ростелеком
-    segment: flix.network_segment.dc.internet
+    segment:
+      - flix.network_segment.dc.internet
     title: ISP02 DC01
     type: WAN
     wan_ip: 10.30.11.0/24
   flix.wan.dc01.sp.01:
     autonomus_system: AS65003
-    bandwidth: 10000
     ip_version: v4
     provider: МТС
-    segment: flix.network_segment.dc.transport
+    segment:
+      - flix.network_segment.dc.transport
     title: SP01 DC01
     type: WAN
     wan_ip: 10.30.12.0/24
   flix.wan.dc01.sp.02:
     autonomus_system: AS65004
-    bandwidth: 10000
     ip_version: v4
     provider: Ростелеком
-    segment: flix.network_segment.dc.transport
+    segment:
+      - flix.network_segment.dc.transport
     title: SP02 DC01
     type: WAN
     wan_ip: 10.30.13.0/24

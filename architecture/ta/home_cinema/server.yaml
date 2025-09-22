@@ -4,14 +4,14 @@ seaf.ta.components.server:
       cores: 16
       frequency: 2400
     disks:
-    - disk0:
-        size: 200
-        type: SSD
+      - disk0:
+          size: 200
+          type: SSD
     external_id: server_metal.01
     fqdn: server-metal-01.vk.flix.ru
     is_part_of_cluster_virtualization: -flix.cluster_virtualization.proxmox.vk
     location:
-    - flix.dc.02
+      - flix.dc.02
     model: DL360 G10
     nic_qty: 4
     os:
@@ -23,11 +23,11 @@ seaf.ta.components.server:
       power_module_qty: 2
       rack_mount: true
       raid_level:
-      - 1
-      - 6
+        - 1
+        - 6
       raid_spare_disks: 2
     stand:
-    - flix.stand.prod
+      - flix.stand.prod
     title: Физический сервер 01
     type: Физический
     vendor: HP
@@ -36,14 +36,14 @@ seaf.ta.components.server:
       cores: 16
       frequency: 2400
     disks:
-    - disk0:
-        size: 200
-        type: SSD
+      - disk0:
+          size: 200
+          type: SSD
     external_id: server_metal.02
     fqdn: server-metal-02.vk.flix.ru
     is_part_of_cluster_virtualization: -flix.cluster_virtualization.proxmox.vk
     location:
-    - flix.dc.02
+      - flix.dc.02
     model: DL360 G10
     nic_qty: 4
     os:
@@ -55,76 +55,76 @@ seaf.ta.components.server:
       power_module_qty: 2
       rack_mount: true
       raid_level:
-      - 1
-      - 6
+        - 1
+        - 6
       raid_spare_disks: 2
     stand:
-    - flix.stand.prod
+      - flix.stand.prod
     title: Физический сервер 02
     type: Физический
     vendor: HP
   flix.server_virtual.ad01:
     az:
-    - flix.dc_az.moscow
+      - flix.dc_az.moscow
     cpu:
       cores: 4
       frequency: 2200
     disks:
-    - disk0:
-        size: 100
-        type: SSD
+      - disk0:
+          size: 100
+          type: SSD
     external_id: server_virtual.ad01
     fqdn: ad01.sber.flix.ru
     is_part_of_cluster:
-    - flix.cluster.ad
+      - flix.cluster.ad
     location:
-    - flix.dc.01
+      - flix.dc.01
     nic_qty: 2
     os:
       bit: '64'
       type: Windows Server 2019
     ram: 16
     stand:
-    - flix.stand.prod
+      - flix.stand.prod
     title: Виртуальный сервер AD01
     type: Виртуальный
     virtualization: flix.cluster_virtualization.vmware.sber
   flix.server_virtual.ad02:
     az:
-    - flix.dc_az.moscow
+      - flix.dc_az.moscow
     cpu:
       cores: 4
       frequency: 2200
     disks:
-    - disk0:
-        size: 100
-        type: SSD
+      - disk0:
+          size: 100
+          type: SSD
     external_id: server_virtual.ad02
     fqdn: ad02.sber.flix.ru
     is_part_of_cluster:
-    - flix.cluster.ad
+      - flix.cluster.ad
     location:
-    - flix.dc.01
+      - flix.dc.01
     nic_qty: 2
     os:
       bit: '64'
       type: Windows Server 2019
     ram: 16
     stand:
-    - flix.stand.prod
+      - flix.stand.prod
     title: Виртуальный сервер AD02
     type: Виртуальный
     virtualization: flix.cluster_virtualization.vmware.sber
   flix.server_virtual.k8s01-master1:
     az:
-    - flix.dc_az.moscow
+      - flix.dc_az.moscow
     cpu:
       cores: 2
       frequency: 2200
     disks:
-    - disk0:
-        size: 100
-        type: SSD
+      - disk0:
+          size: 100
+          type: SSD
     external_id: server_virtual.k8s01-m1
     fqdn: k8s01-m1.cloud.flix.ru
     is_part_of_k8s_cluster: -flix.k8s.01
@@ -134,20 +134,20 @@ seaf.ta.components.server:
       type: Ubuntu 20.04
     ram: 8
     stand:
-    - flix.stand.prod
+      - flix.stand.prod
     title: K8s Master 1 (Cloud.ru)
     type: Виртуальный
     virtualization: flix.cluster_virtualization.esx.cloudru
   flix.server_virtual.k8s01-worker1:
     az:
-    - flix.dc_az.moscow
+      - flix.dc_az.moscow
     cpu:
       cores: 4
       frequency: 2200
     disks:
-    - disk0:
-        size: 100
-        type: SSD
+      - disk0:
+          size: 100
+          type: SSD
     external_id: server_virtual.k8s01-w1
     fqdn: k8s01-w1.cloud.flix.ru
     is_part_of_k8s_cluster: -flix.k8s.01
@@ -157,107 +157,107 @@ seaf.ta.components.server:
       type: Ubuntu 20.04
     ram: 16
     stand:
-    - flix.stand.prod
+      - flix.stand.prod
     title: K8s Worker 1 (Cloud.ru)
     type: Виртуальный
     virtualization: flix.cluster_virtualization.esx.cloudru
   flix.server_virtual.mail01:
     az:
-    - flix.dc_az.moscow
+      - flix.dc_az.moscow
     cpu:
       cores: 4
       frequency: 2200
     disks:
-    - disk0:
-        size: 200
-        type: SSD
+      - disk0:
+          size: 200
+          type: SSD
     external_id: server_virtual.mail01
     fqdn: mail01.sber.flix.ru
     is_part_of_cluster:
-    - flix.cluster.mail
+      - flix.cluster.mail
     location:
-    - flix.dc.01
+      - flix.dc.01
     nic_qty: 2
     os:
       bit: '64'
       type: Windows Server 2019
     ram: 16
     stand:
-    - flix.stand.prod
+      - flix.stand.prod
     title: Виртуальный сервер Mail01
     type: Виртуальный
     virtualization: flix.cluster_virtualization.vmware.sber
   flix.server_virtual.mail02:
     az:
-    - flix.dc_az.moscow
+      - flix.dc_az.moscow
     cpu:
       cores: 4
       frequency: 2200
     disks:
-    - disk0:
-        size: 200
-        type: SSD
+      - disk0:
+          size: 200
+          type: SSD
     external_id: server_virtual.mail02
     fqdn: mail02.sber.flix.ru
     is_part_of_cluster:
-    - flix.cluster.mail
+      - flix.cluster.mail
     location:
-    - flix.dc.01
+      - flix.dc.01
     nic_qty: 2
     os:
       bit: '64'
       type: Windows Server 2019
     ram: 16
     stand:
-    - flix.stand.prod
+      - flix.stand.prod
     title: Виртуальный сервер Mail02
     type: Виртуальный
     virtualization: flix.cluster_virtualization.vmware.sber
   flix.server_virtual.wildfly01:
     az:
-    - flix.dc_az.moscow
+      - flix.dc_az.moscow
     cpu:
       cores: 4
       frequency: 2200
     disks:
-    - disk0:
-        size: 100
-        type: SSD
+      - disk0:
+          size: 100
+          type: SSD
     external_id: server_virtual.wildfly01
     fqdn: wildfly01.vk.flix.ru
     is_part_of_cluster:
-    - flix.cluster.wildfly
+      - flix.cluster.wildfly
     nic_qty: 2
     os:
       bit: '64'
       type: Ubuntu 20.04
     ram: 16
     stand:
-    - flix.stand.prod
+      - flix.stand.prod
     title: Виртуальный сервер Wildfly 01
     type: Виртуальный
     virtualization: flix.cluster_virtualization.proxmox.vk
   flix.server_virtual.wildfly02:
     az:
-    - flix.dc_az.moscow
+      - flix.dc_az.moscow
     cpu:
       cores: 4
       frequency: 2200
     disks:
-    - disk0:
-        size: 100
-        type: SSD
+      - disk0:
+          size: 100
+          type: SSD
     external_id: server_virtual.wildfly02
     fqdn: wildfly02.vk.flix.ru
     is_part_of_cluster:
-    - flix.cluster.wildfly
+      - flix.cluster.wildfly
     nic_qty: 2
     os:
       bit: '64'
       type: Ubuntu 20.04
     ram: 16
     stand:
-    - flix.stand.prod
+      - flix.stand.prod
     title: Виртуальный сервер Wildfly 02
     type: Виртуальный
     virtualization: flix.cluster_virtualization.proxmox.vk

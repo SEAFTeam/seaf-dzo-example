@@ -24,5 +24,5 @@ seaf.ta.components.k8s_deployment:
     replicas: 10
     deployment: k8s_deployment.payments
     availabilityzone:
-     - flix.dc_az.moscow
+      - flix.dc_az.moscow
     k8s_pod: seaf.ta.services.k8s_pod.payments

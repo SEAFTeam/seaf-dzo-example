@@ -1,0 +1,96 @@
+seaf.ta.components.k8s_deployment:
+  flix.k8s.deployment.auth:
+    title: Auth Deployment
+    description: Развёртывание сервиса аутентификации
+    cluster_ref: flix.k8s.01
+    namespace_ref: flix.ns.home_cinema
+    labels:
+      - app=auth
+      - domain=home-cinema
+    containers:
+      - name: auth
+        image: repo.flix.ru/containers/auth:1.0.0
+        resources:
+          limits:
+            cpu: 500m
+            ram: 512Mi
+
+  flix.k8s.deployment.catalog:
+    title: Catalog Deployment
+    description: Развёртывание сервиса каталога
+    cluster_ref: flix.k8s.01
+    namespace_ref: flix.ns.home_cinema
+    labels:
+      - app=catalog
+      - domain=home-cinema
+    containers:
+      - name: catalog
+        image: repo.flix.ru/containers/catalog:1.0.0
+        resources:
+          limits:
+            cpu: 700m
+            ram: 768Mi
+
+  flix.k8s.deployment.canals:
+    title: Canals Deployment
+    description: Развёртывание сервиса каналов
+    cluster_ref: flix.k8s.01
+    namespace_ref: flix.ns.home_cinema
+    labels:
+      - app=canals
+      - domain=home-cinema
+    containers:
+      - name: canals
+        image: repo.flix.ru/containers/canals:1.0.0
+        resources:
+          limits:
+            cpu: 600m
+            ram: 512Mi
+
+  flix.k8s.deployment.payments:
+    title: Payments Deployment
+    description: Развёртывание сервиса платежей
+    cluster_ref: flix.k8s.01
+    namespace_ref: flix.ns.home_cinema
+    labels:
+      - app=payments
+      - domain=home-cinema
+    containers:
+      - name: payments
+        image: repo.flix.ru/containers/payments:1.0.0
+        resources:
+          limits:
+            cpu: 600m
+            ram: 512Mi
+
+  flix.k8s.deployment.recommendation:
+    title: Recommendation Deployment
+    description: Развёртывание сервиса рекомендаций
+    cluster_ref: flix.k8s.01
+    namespace_ref: flix.ns.home_cinema
+    labels:
+      - app=recommendation
+      - domain=home-cinema
+    containers:
+      - name: recommendation
+        image: repo.flix.ru/containers/recommendation:1.0.0
+        resources:
+          limits:
+            cpu: 800m
+            ram: 1024Mi
+
+  flix.k8s.deployment.token_manager:
+    title: Token Manager Deployment
+    description: Развёртывание сервиса управления токенами
+    cluster_ref: flix.k8s.01
+    namespace_ref: flix.ns.home_cinema
+    labels:
+      - app=token-manager
+      - domain=home-cinema
+    containers:
+      - name: token-manager
+        image: repo.flix.ru/containers/token-manager:1.0.0
+        resources:
+          limits:
+            cpu: 500m
+            ram: 512Mi

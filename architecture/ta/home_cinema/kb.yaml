@@ -88,6 +88,9 @@ seaf.ta.services.kb:
       - flix.lan.dc02.ext.wan
     technology: Шлюзы безопасности прикладного уровня
     title: S7
+    software_name: S7
+    tag: DDoS
+    status: Создается
   flix.kb.8:
     description: Сервис кибер безопасности
     tag: ALG

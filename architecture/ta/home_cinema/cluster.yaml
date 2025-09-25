@@ -23,7 +23,7 @@ seaf.ta.services.cluster:
     network_connection:
       - flix.lan.dc01.int.prod
       - flix.lan.dc02.int.prod
-    service_type: Cерверы приложений и т.д.
+    service_type: Серверы приложений и т.д.
     stand:
       - flix.stand.prod
     title: Кластер приложений AC1
@@ -37,7 +37,7 @@ seaf.ta.services.cluster:
     network_connection:
       - flix.lan.dc01.int.prod
       - flix.lan.dc02.int.prod
-    service_type: Cерверы приложений и т.д.
+    service_type: Серверы приложений и т.д.
     stand:
       - flix.stand.prod
     title: Кластер приложений AC2
@@ -130,7 +130,7 @@ seaf.ta.services.cluster:
       - flix.lan.192.168.101.0
       - flix.lan.192.168.2.0
     reservation_type: Active-Active
-    service_type: Cерверы приложений и т.д.
+    service_type: Серверы приложений и т.д.
     stand:
       - flix.stand.prod
     title: Кластер приложений Wildfly
@@ -146,7 +146,7 @@ seaf.ta.services.cluster:
       - flix.dc.01
       - flix.dc.02
     external_id: cluster.1c
-    service_type: Cерверы приложений и т.д.
+    service_type: Серверы приложений и т.д.
     title: Кластер приложений 1С
     description: flix.cluster.wildfly
     reservation_type: Active-Active

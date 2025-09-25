@@ -6,7 +6,7 @@ seaf.ta.services.compute_service:
     network_connection:
       - flix.lan.dc01.int.prod
       - flix.lan.dc02.int.prod
-    service_type: Cерверы приложений и т.д.
+    service_type: Серверы приложений и т.д.
     stand:
       - flix.stand.prod
     title: Фронт (десктопное приложение)
@@ -28,7 +28,7 @@ seaf.ta.services.compute_service:
     network_connection:
       - flix.lan.dc01.int.prod
       - flix.lan.dc02.int.prod
-    service_type: Cерверы приложений и т.д.
+    service_type: Серверы приложений и т.д.
     stand:
       - flix.stand.prod
     title: Фронт (десктопное приложение) АС8
@@ -39,7 +39,7 @@ seaf.ta.services.compute_service:
     network_connection:
       - flix.lan.dc01.dmz.prod
       - flix.lan.dc02.dmz.prod
-    service_type: Cерверы приложений и т.д.
+    service_type: Серверы приложений и т.д.
     stand:
       - flix.stand.prod
     title: Web сервер АС8
@@ -61,7 +61,7 @@ seaf.ta.services.compute_service:
     network_connection:
       - flix.lan.dc01.dmz.prod
       - flix.lan.dc02.dmz.prod
-    service_type: Cерверы приложений и т.д.
+    service_type: Серверы приложений и т.д.
     stand:
       - flix.stand.prod
     title: Фронт (web-приложение) BPM
@@ -94,6 +94,7 @@ seaf.ta.services.compute_service:
     network_connection:
       - flix.lan.dc01.int.it.services
       - flix.lan.dc02.int.it.services
+    service_type: Управление сетевым адресным пространством (DHCP, DNS и т.д.)
     stand:
       - flix.stand.prod
     title: DHCP
@@ -104,6 +105,7 @@ seaf.ta.services.compute_service:
     network_connection:
       - flix.lan.dc01.int.it.services
       - flix.lan.dc02.int.it.services
+    service_type: Управление сетевым адресным пространством (DHCP, DNS и т.д.)
     stand:
       - flix.stand.prod
     title: DNS
@@ -125,6 +127,7 @@ seaf.ta.services.compute_service:
     network_connection:
       - flix.lan.dc01.int.it.services
       - flix.lan.dc02.int.it.services
+    service_type: Управление сетевым адресным пространством (DHCP, DNS и т.д.)
     stand:
       - flix.stand.prod
     title: NTP
@@ -135,7 +138,7 @@ seaf.ta.services.compute_service:
     network_connection:
       - flix.lan.dc01.int.prod
       - flix.lan.dc02.int.prod
-    service_type: Cерверы приложений и т.д.
+    service_type: Серверы приложений и т.д.
     stand:
       - flix.stand.prod
     title: Фронт (web-приложение) AC4
@@ -146,7 +149,7 @@ seaf.ta.services.compute_service:
     network_connection:
       - flix.lan.dc01.int.prod
       - flix.lan.dc02.int.prod
-    service_type: Cерверы приложений и т.д.
+    service_type: Серверы приложений и т.д.
     stand:
       - flix.stand.prod
     title: Фронт (web-приложение) AC5
@@ -179,7 +182,7 @@ seaf.ta.services.compute_service:
     network_connection:
       - flix.lan.dc01.int.prod
       - flix.lan.dc02.int.prod
-    service_type: Cерверы приложений и т.д.
+    service_type: Серверы приложений и т.д.
     stand:
       - flix.stand.prod
     title: Yandex Metrika

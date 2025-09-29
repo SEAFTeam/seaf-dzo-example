@@ -127,10 +127,10 @@ seaf.ta.services.network:
     vlan: 18
   flix.wan.office.isp.01:
     autonomus_system: AS12345
+    bandwidth: 1000
     ip_version: v4
     provider: МТС
-    segment:
-      - flix.network_segment.internet
+    segment: flix.network_segment.internet
     title: ISP01 Office
     type: WAN
     wan_ip: 10.20.11.0/24

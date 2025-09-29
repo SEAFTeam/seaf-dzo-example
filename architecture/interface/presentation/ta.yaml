@@ -78,10 +78,6 @@ entities:
         type: markdown
         template: templates/k8s_hpa.md
 
-      k8s_node_md:
-        type: markdown
-        template: templates/k8s_node.md
-
       network_appliances_md:
         type: markdown
         template: templates/network_appliances.md
@@ -105,7 +101,3 @@ entities:
       software_md:
         type: markdown
         template: templates/softwares.md
-
-      kb_md:
-        type: markdown
-        template: templates/kb.md

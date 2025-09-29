@@ -121,37 +121,37 @@ seaf.ta.services.network:
     vlan: 32
   flix.wan.dc01.isp.01:
     autonomus_system: AS65001
+    bandwidth: 1000
     ip_version: v4
     provider: Beeline
-    segment:
-      - flix.network_segment.dc.internet
+    segment: flix.network_segment.dc.internet
     title: ISP01 DC01
     type: WAN
     wan_ip: 10.30.10.0/24
   flix.wan.dc01.isp.02:
     autonomus_system: AS65002
+    bandwidth: 10000
     ip_version: v4
     provider: Ростелеком
-    segment:
-      - flix.network_segment.dc.internet
+    segment: flix.network_segment.dc.internet
     title: ISP02 DC01
     type: WAN
     wan_ip: 10.30.11.0/24
   flix.wan.dc01.sp.01:
     autonomus_system: AS65003
+    bandwidth: 10000
     ip_version: v4
     provider: МТС
-    segment:
-      - flix.network_segment.dc.transport
+    segment: flix.network_segment.dc.transport
     title: SP01 DC01
     type: WAN
     wan_ip: 10.30.12.0/24
   flix.wan.dc01.sp.02:
     autonomus_system: AS65004
+    bandwidth: 10000
     ip_version: v4
     provider: Ростелеком
-    segment:
-      - flix.network_segment.dc.transport
+    segment: flix.network_segment.dc.transport
     title: SP02 DC01
     type: WAN
     wan_ip: 10.30.13.0/24

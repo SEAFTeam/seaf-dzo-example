@@ -4,8 +4,8 @@ seaf.ta.services.network_links:
     encapsulation: GRE
     encryption: ipsec
     network_connection:
-    - flix.lan.office.ext.lan
-    - flix.lan.dc01.int.test
+    - office.network.core
+    - sbercloud.network.core
     routing: bgpevpn
     sla: provider
     technology: s2svpn

@@ -15,9 +15,6 @@ imports:
   - cluster_virtualization.yaml
   - cluster.yaml
   - k8s.yaml
-  - k8s_namespace.yaml
-  - k8s_deployment.yaml
-  - k8s_hpa.yaml
   - hw_storage.yaml
   - storage.yaml
   - server.yaml

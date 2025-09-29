@@ -2,6 +2,15 @@
 entities:
   seaf.ta:
     presentations:
+
+      k8s_image_md:
+        type: markdown
+        template: templates/k8s_image.md
+
+      k8s_deployment_md:
+        type: markdown
+        template: templates/k8s_deployment.md
+
       hw_storage_md:
         type: markdown
         template: templates/hw_storage.md
@@ -13,6 +22,14 @@ entities:
       network_md:
         type: markdown
         template: templates/networks.md
+
+      k8s_pod_md:
+        type: markdown
+        template: templates/k8s_pod.md
+
+      k8s_container_md:
+        type: markdown
+        template: templates/k8s_container.md
 
       user_device_md:
         type: markdown
@@ -61,22 +78,6 @@ entities:
       k8s_md:
         type: markdown
         template: templates/k8ss.md
-
-      k8s_namespace_md:
-        type: markdown
-        template: templates/k8s_namespace.md
-
-      k8s_image_md:
-        type: markdown
-        template: templates/k8s_image.md
-
-      k8s_deployment_md:
-        type: markdown
-        template: templates/k8s_deployment.md
-
-      k8s_hpa_md:
-        type: markdown
-        template: templates/k8s_hpa.md
 
       network_appliances_md:
         type: markdown

@@ -1,6 +1,8 @@
-# ООО Фликс
-Пример описания корпоративной архитектуры с использованием специализированного 
-фреймворка [SEAF.DZO](https://github.com/SEAFTeam/seaf-dzo-core) основанного на [SEAF](https://github.com/SEAFTeam/seaf-core).
+# [INACTIVE]
+# Примеры описания архитектур условных компаний с использованием SEAF
+
+Репозиторий содержит примеры описания архитектур условной компании Фликс (Flix) с использованием специализированного
+фреймворка [SEAF.DZO](https://github.com/SEAFTeam/seaf-dzo-core), основанного на [SEAF](https://github.com/SEAFTeam/seaf-core).
 
 Структура примера:
 ```mermaid
@@ -104,4 +106,5 @@ ArchTool latest
 ## Лицензия
 
 Распространяется под лицензией Apache License 2.0 Open source license.
+
 
